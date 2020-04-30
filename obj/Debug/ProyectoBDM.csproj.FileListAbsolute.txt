@@ -1,0 +1,7 @@
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.csprojAssemblyReference.cache
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.clientecs.resources
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.Conexion.resources
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.Properties.Resources.resources
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.ValidacionPersona.resources
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.GenerateResource.cache
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.CoreCompileInputs.cache

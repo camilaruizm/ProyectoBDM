@@ -93,6 +93,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clientecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientecs.Designer.cs">
+      <DependentUpon>clientecs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     <Compile Include="ValidacionPersona.Designer.cs">
       <DependentUpon>ValidacionPersona.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="clientecs.resx">
+      <DependentUpon>clientecs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Conexion.resx">
       <DependentUpon>Conexion.cs</DependentUpon>
     </EmbeddedResource>
