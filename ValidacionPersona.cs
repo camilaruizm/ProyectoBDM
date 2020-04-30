@@ -16,5 +16,11 @@ namespace ProyectoBDM
         {
             InitializeComponent();
         }
+
+        private void BtnCliente_Click(object sender, EventArgs e)
+        {
+            clientecs Clientes = new clientecs();
+            Clientes.Show();
+        }
     }
 }

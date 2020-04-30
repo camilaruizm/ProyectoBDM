@@ -40,6 +40,7 @@
             this.BtnCliente.TabIndex = 1;
             this.BtnCliente.Text = "Soy Cliente";
             this.BtnCliente.UseVisualStyleBackColor = true;
+            this.BtnCliente.Click += new System.EventHandler(this.BtnCliente_Click);
             // 
             // BtnAdministrador
             // 
