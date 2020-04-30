@@ -3,10 +3,10 @@ using System;
 using System.Windows.Forms;
 namespace ProyectoBDM
 {
-    public partial class clientecs : Form
+    public partial class RegistroClientes : Form
     {
         
-        public clientecs()
+        public RegistroClientes()
         {
             InitializeComponent();
         }
@@ -32,6 +32,21 @@ namespace ProyectoBDM
 
 
 
+
+        }
+
+        private void TbDireccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TbTelefono2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
 
         }
     }

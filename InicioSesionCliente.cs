@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace ProyectoBDM
 {
-    public partial class ValidacionPersona : Form
+    public partial class InicioSesionCliente : Form
     {
-        public ValidacionPersona()
+        public InicioSesionCliente()
         {
             InitializeComponent();
         }
 
-        private void BtnCliente_Click(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            InicioSesionCliente Clientes = new InicioSesionCliente();
-            Clientes.Show();
+            RegistroClientes aqui = new RegistroClientes();
+            aqui.Show();
         }
     }
 }
