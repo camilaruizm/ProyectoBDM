@@ -107,3 +107,4 @@ D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.CopyComplete
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.exe
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.pdb
+D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.MenuClientes.resources

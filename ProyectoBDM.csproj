@@ -99,6 +99,11 @@
     <Compile Include="MenuClientes.Designer.cs">
       <DependentUpon>MenuClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RegistroClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,13 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="ValidacionPersona.resx">
       <DependentUpon>ValidacionPersona.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,7 +167,11 @@
   <ItemGroup>
     <Folder Include="Control\" />
     <Folder Include="Modelo\" />
-    <Folder Include="Vista\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Vista\Imagenes\BaseDatos.png" />
+    <Content Include="Vista\Imagenes\MySQL.png" />
+    <Content Include="Vista\Imagenes\server.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
