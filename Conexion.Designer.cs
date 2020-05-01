@@ -71,9 +71,10 @@
             // 
             // BtnConectar
             // 
-            this.BtnConectar.Location = new System.Drawing.Point(420, 186);
+            this.BtnConectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnConectar.Location = new System.Drawing.Point(347, 159);
             this.BtnConectar.Name = "BtnConectar";
-            this.BtnConectar.Size = new System.Drawing.Size(150, 48);
+            this.BtnConectar.Size = new System.Drawing.Size(223, 75);
             this.BtnConectar.TabIndex = 4;
             this.BtnConectar.Text = "Conectar";
             this.BtnConectar.UseVisualStyleBackColor = true;
