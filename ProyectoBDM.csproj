@@ -99,6 +99,18 @@
     <Compile Include="MenuClientes.Designer.cs">
       <DependentUpon>MenuClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="PagarMultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagarMultas.Designer.cs">
+      <DependentUpon>PagarMultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrestamosActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrestamosActivos.Designer.cs">
+      <DependentUpon>PrestamosActivos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -124,11 +136,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SolicitarPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolicitarPrestamo.Designer.cs">
+      <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ValidacionPersona.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ValidacionPersona.Designer.cs">
       <DependentUpon>ValidacionPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerPeliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerPeliculas.Designer.cs">
+      <DependentUpon>VerPeliculas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MenuClientes.resx">
       <DependentUpon>MenuClientes.cs</DependentUpon>
@@ -170,8 +194,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Vista\Imagenes\BaseDatos.png" />
+    <Content Include="Vista\Imagenes\ContrasenaCli.png" />
     <Content Include="Vista\Imagenes\MySQL.png" />
     <Content Include="Vista\Imagenes\server.png" />
+    <Content Include="Vista\Imagenes\UsuarioCli.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
