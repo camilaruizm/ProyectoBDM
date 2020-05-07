@@ -77,8 +77,8 @@ namespace ProyectoBDM
 
         private void TbUsuarioIniCli_Click(object sender, EventArgs e)
         {
-            TbUsuarioIniCli.Clear();
-            TbUsuarioIniCli.ForeColor = Color.Black;
+                TbUsuarioIniCli.Clear();
+                TbUsuarioIniCli.ForeColor = Color.Black;
         }
 
         private void TbContrasenaIniCli_Click(object sender, EventArgs e)
@@ -104,5 +104,6 @@ namespace ProyectoBDM
             BtnSalir.Text = "X";
             BtnSalir.BackColor = Color.Red;
         }
+
     }
 }
