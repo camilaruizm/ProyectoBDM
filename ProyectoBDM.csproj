@@ -93,6 +93,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Crear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crear.Designer.cs">
+      <DependentUpon>Crear.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuClientes.cs">
       <SubType>Form</SubType>
     </Compile>
