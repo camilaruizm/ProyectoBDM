@@ -122,12 +122,6 @@
     <Compile Include="RegistroClientes.Designer.cs">
       <DependentUpon>RegistroClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Conexion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Conexion.Designer.cs">
-      <DependentUpon>Conexion.cs</DependentUpon>
-    </Compile>
     <Compile Include="InicioSesionCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,12 +136,6 @@
     <Compile Include="SolicitarPrestamo.Designer.cs">
       <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ValidacionPersona.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ValidacionPersona.Designer.cs">
-      <DependentUpon>ValidacionPersona.cs</DependentUpon>
-    </Compile>
     <Compile Include="VerPeliculas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,9 +148,6 @@
     <EmbeddedResource Include="RegistroClientes.resx">
       <DependentUpon>RegistroClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Conexion.resx">
-      <DependentUpon>Conexion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="InicioSesionCliente.resx">
       <DependentUpon>InicioSesionCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,9 +155,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ValidacionPersona.resx">
-      <DependentUpon>ValidacionPersona.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
