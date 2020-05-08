@@ -67,7 +67,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(329, 69);
+            this.label2.Location = new System.Drawing.Point(314, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 24);
             this.label2.TabIndex = 1;
@@ -87,7 +87,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(329, 127);
+            this.label4.Location = new System.Drawing.Point(313, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(167, 24);
             this.label4.TabIndex = 3;
@@ -107,7 +107,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(329, 189);
+            this.label6.Location = new System.Drawing.Point(314, 191);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 24);
             this.label6.TabIndex = 5;
@@ -142,7 +142,6 @@
             this.label9.Size = new System.Drawing.Size(312, 46);
             this.label9.TabIndex = 8;
             this.label9.Text = "Creación cuenta";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -178,70 +177,69 @@
             // 
             this.TbNombre1.Location = new System.Drawing.Point(157, 73);
             this.TbNombre1.Name = "TbNombre1";
-            this.TbNombre1.Size = new System.Drawing.Size(100, 20);
+            this.TbNombre1.Size = new System.Drawing.Size(124, 20);
             this.TbNombre1.TabIndex = 12;
             // 
             // TbNombre2
             // 
-            this.TbNombre2.Location = new System.Drawing.Point(502, 74);
+            this.TbNombre2.Location = new System.Drawing.Point(487, 74);
             this.TbNombre2.Name = "TbNombre2";
-            this.TbNombre2.Size = new System.Drawing.Size(100, 20);
+            this.TbNombre2.Size = new System.Drawing.Size(119, 20);
             this.TbNombre2.TabIndex = 13;
             // 
             // TbApellido1
             // 
             this.TbApellido1.Location = new System.Drawing.Point(157, 127);
             this.TbApellido1.Name = "TbApellido1";
-            this.TbApellido1.Size = new System.Drawing.Size(100, 20);
+            this.TbApellido1.Size = new System.Drawing.Size(124, 20);
             this.TbApellido1.TabIndex = 14;
             // 
             // TbApellido2
             // 
-            this.TbApellido2.Location = new System.Drawing.Point(502, 132);
+            this.TbApellido2.Location = new System.Drawing.Point(487, 132);
             this.TbApellido2.Name = "TbApellido2";
-            this.TbApellido2.Size = new System.Drawing.Size(100, 20);
+            this.TbApellido2.Size = new System.Drawing.Size(119, 20);
             this.TbApellido2.TabIndex = 15;
             // 
             // TbTelefono1
             // 
             this.TbTelefono1.Location = new System.Drawing.Point(118, 194);
             this.TbTelefono1.Name = "TbTelefono1";
-            this.TbTelefono1.Size = new System.Drawing.Size(139, 20);
+            this.TbTelefono1.Size = new System.Drawing.Size(163, 20);
             this.TbTelefono1.TabIndex = 16;
             // 
             // TbTelefono2
             // 
-            this.TbTelefono2.Location = new System.Drawing.Point(440, 195);
+            this.TbTelefono2.Location = new System.Drawing.Point(425, 195);
             this.TbTelefono2.Name = "TbTelefono2";
-            this.TbTelefono2.Size = new System.Drawing.Size(162, 20);
+            this.TbTelefono2.Size = new System.Drawing.Size(181, 20);
             this.TbTelefono2.TabIndex = 17;
-            this.TbTelefono2.TextChanged += new System.EventHandler(this.TbTelefono2_TextChanged);
             // 
             // TbDireccion
             // 
             this.TbDireccion.Location = new System.Drawing.Point(118, 263);
             this.TbDireccion.Name = "TbDireccion";
-            this.TbDireccion.Size = new System.Drawing.Size(139, 20);
+            this.TbDireccion.Size = new System.Drawing.Size(163, 20);
             this.TbDireccion.TabIndex = 18;
-            this.TbDireccion.TextChanged += new System.EventHandler(this.TbDireccion_TextChanged);
             // 
             // TbUsuarioC
             // 
             this.TbUsuarioC.Location = new System.Drawing.Point(226, 397);
             this.TbUsuarioC.Name = "TbUsuarioC";
-            this.TbUsuarioC.Size = new System.Drawing.Size(122, 20);
+            this.TbUsuarioC.Size = new System.Drawing.Size(131, 20);
             this.TbUsuarioC.TabIndex = 19;
             // 
             // TbContrasenaC
             // 
             this.TbContrasenaC.Location = new System.Drawing.Point(226, 435);
             this.TbContrasenaC.Name = "TbContrasenaC";
-            this.TbContrasenaC.Size = new System.Drawing.Size(122, 20);
+            this.TbContrasenaC.Size = new System.Drawing.Size(131, 20);
             this.TbContrasenaC.TabIndex = 20;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(389, 392);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 58);
@@ -249,6 +247,8 @@
             this.button1.Text = "INSERTAR";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
             // 
             // RegistroClientes
             // 
@@ -278,6 +278,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "RegistroClientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "clientecs";
             this.ResumeLayout(false);
             this.PerformLayout();

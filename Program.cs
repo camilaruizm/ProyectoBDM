@@ -16,7 +16,7 @@ namespace ProyectoBDM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Conexion());
+            Application.Run(new InicioSesionCliente());
         }
     }
 }

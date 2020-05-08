@@ -8,11 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace ProyectoBDM
 {
     public partial class InicioSesionCliente : Form
     {
+        Thread th;
         MySqlConnection conexion = new MySqlConnection("server=localhost; Database=proyectobdm; user=root; password=root;");
         public InicioSesionCliente()
         {
@@ -41,8 +43,10 @@ namespace ProyectoBDM
             MySqlDataReader leer = InicioSesion.ExecuteReader();
             if (leer.Read())
             {
-                MenuClientes menuCli = new MenuClientes();
-                menuCli.Show();
+                this.Close();
+                th = new Thread(opennewform);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
             }
             else
             {
@@ -51,9 +55,55 @@ namespace ProyectoBDM
             conexion.Close();
         }
 
+        private void opennewform()
+        {
+            Application.Run(new MenuClientes());
+        }
+
         private void InicioSesionCliente_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void BtnIngresar_MouseMove(object sender, MouseEventArgs e)
+        {
+            BtnIngresar.BackColor = Color.Silver;
+        }
+
+        private void BtnIngresar_MouseLeave(object sender, EventArgs e)
+        {
+            BtnIngresar.BackColor = Color.Lavender;
+        }
+
+        private void TbUsuarioIniCli_Click(object sender, EventArgs e)
+        {
+                TbUsuarioIniCli.Clear();
+                TbUsuarioIniCli.ForeColor = Color.Black;
+        }
+
+        private void TbContrasenaIniCli_Click(object sender, EventArgs e)
+        {
+            TbContrasenaIniCli.Clear();
+            TbContrasenaIniCli.PasswordChar = '*';
+            TbContrasenaIniCli.ForeColor = Color.Black;
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnSalir_MouseMove(object sender, MouseEventArgs e)
+        {
+            BtnSalir.Text = "Salir";
+            BtnSalir.BackColor = Color.DarkRed;
+        }
+
+        private void BtnSalir_MouseLeave(object sender, EventArgs e)
+        {
+            BtnSalir.Text = "X";
+            BtnSalir.BackColor = Color.Red;
+        }
+
     }
 }
