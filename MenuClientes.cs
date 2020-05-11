@@ -127,5 +127,20 @@ namespace ProyectoBDM
             BtnSalir.Text = "X";
             BtnSalir.BackColor = Color.Red;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void MenuClientes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LbMenuCliente_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

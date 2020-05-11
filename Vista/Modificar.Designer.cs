@@ -221,6 +221,7 @@
             // btModificar
             // 
             this.btModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
+            this.btModificar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btModificar.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btModificar.Location = new System.Drawing.Point(257, 428);
             this.btModificar.Name = "btModificar";

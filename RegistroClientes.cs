@@ -31,12 +31,22 @@ namespace ProyectoBDM
 
         private void button1_MouseMove(object sender, MouseEventArgs e)
         {
-            button1.BackColor = Color.Silver;
+            btCrearCliente.BackColor = Color.Silver;
         }
 
         private void button1_MouseLeave(object sender, EventArgs e)
         {
-            button1.BackColor = Color.Lavender;
+            btCrearCliente.BackColor = Color.Lavender;
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
