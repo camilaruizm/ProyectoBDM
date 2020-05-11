@@ -38,9 +38,9 @@
             this.LbErrorIniCli = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LbIniCliMal = new System.Windows.Forms.Label();
+            this.BtnSalir = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,45 +48,51 @@
             // LbInicioSesion
             // 
             this.LbInicioSesion.AutoSize = true;
-            this.LbInicioSesion.Font = new System.Drawing.Font("Arial Narrow", 35F);
-            this.LbInicioSesion.Location = new System.Drawing.Point(97, 9);
+            this.LbInicioSesion.Font = new System.Drawing.Font("Agency FB", 25F, System.Drawing.FontStyle.Bold);
+            this.LbInicioSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(40)))), ((int)(((byte)(70)))));
+            this.LbInicioSesion.Location = new System.Drawing.Point(146, 9);
             this.LbInicioSesion.Name = "LbInicioSesion";
-            this.LbInicioSesion.Size = new System.Drawing.Size(295, 55);
+            this.LbInicioSesion.Size = new System.Drawing.Size(193, 41);
             this.LbInicioSesion.TabIndex = 0;
-            this.LbInicioSesion.Text = "Inicio de Sesion";
+            this.LbInicioSesion.Text = "INICIAR SESIÓN";
             // 
             // TbUsuarioIniCli
             // 
-            this.TbUsuarioIniCli.Font = new System.Drawing.Font("Arial", 15F);
+            this.TbUsuarioIniCli.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
+            this.TbUsuarioIniCli.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TbUsuarioIniCli.Font = new System.Drawing.Font("Agency FB", 16F);
             this.TbUsuarioIniCli.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.TbUsuarioIniCli.Location = new System.Drawing.Point(89, 73);
             this.TbUsuarioIniCli.Name = "TbUsuarioIniCli";
-            this.TbUsuarioIniCli.Size = new System.Drawing.Size(185, 30);
+            this.TbUsuarioIniCli.Size = new System.Drawing.Size(185, 26);
             this.TbUsuarioIniCli.TabIndex = 3;
             this.TbUsuarioIniCli.Text = "Usuario";
             this.TbUsuarioIniCli.Click += new System.EventHandler(this.TbUsuarioIniCli_Click);
             // 
             // TbContrasenaIniCli
             // 
-            this.TbContrasenaIniCli.Font = new System.Drawing.Font("Arial", 15F);
+            this.TbContrasenaIniCli.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
+            this.TbContrasenaIniCli.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TbContrasenaIniCli.Font = new System.Drawing.Font("Agency FB", 16F);
             this.TbContrasenaIniCli.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.TbContrasenaIniCli.Location = new System.Drawing.Point(89, 127);
             this.TbContrasenaIniCli.Name = "TbContrasenaIniCli";
-            this.TbContrasenaIniCli.Size = new System.Drawing.Size(185, 30);
+            this.TbContrasenaIniCli.Size = new System.Drawing.Size(185, 26);
             this.TbContrasenaIniCli.TabIndex = 4;
             this.TbContrasenaIniCli.Text = "Contraseña";
             this.TbContrasenaIniCli.Click += new System.EventHandler(this.TbContrasenaIniCli_Click);
             // 
             // BtnIngresar
             // 
-            this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnIngresar.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
+            this.BtnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
+            this.BtnIngresar.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Bold);
+            this.BtnIngresar.ForeColor = System.Drawing.Color.Black;
             this.BtnIngresar.Location = new System.Drawing.Point(309, 100);
             this.BtnIngresar.Name = "BtnIngresar";
             this.BtnIngresar.Size = new System.Drawing.Size(163, 57);
             this.BtnIngresar.TabIndex = 5;
-            this.BtnIngresar.Text = "Ingresar";
-            this.BtnIngresar.UseVisualStyleBackColor = true;
+            this.BtnIngresar.Text = "INGRESAR";
+            this.BtnIngresar.UseVisualStyleBackColor = false;
             this.BtnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
             this.BtnIngresar.MouseLeave += new System.EventHandler(this.BtnIngresar_MouseLeave);
             this.BtnIngresar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnIngresar_MouseMove);
@@ -94,30 +100,33 @@
             // LbMensaje
             // 
             this.LbMensaje.AutoSize = true;
-            this.LbMensaje.Font = new System.Drawing.Font("Arial Narrow", 13F);
+            this.LbMensaje.Font = new System.Drawing.Font("Agency FB", 15F);
+            this.LbMensaje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.LbMensaje.Location = new System.Drawing.Point(308, 175);
             this.LbMensaje.Name = "LbMensaje";
-            this.LbMensaje.Size = new System.Drawing.Size(164, 22);
+            this.LbMensaje.Size = new System.Drawing.Size(141, 24);
             this.LbMensaje.TabIndex = 6;
             this.LbMensaje.Text = "Aun No Tienes Cuenta?";
             // 
             // LbMensaje2
             // 
             this.LbMensaje2.AutoSize = true;
-            this.LbMensaje2.Font = new System.Drawing.Font("Arial Narrow", 13F);
+            this.LbMensaje2.Font = new System.Drawing.Font("Agency FB", 15F);
+            this.LbMensaje2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.LbMensaje2.Location = new System.Drawing.Point(308, 208);
             this.LbMensaje2.Name = "LbMensaje2";
-            this.LbMensaje2.Size = new System.Drawing.Size(74, 22);
+            this.LbMensaje2.Size = new System.Drawing.Size(70, 24);
             this.LbMensaje2.TabIndex = 7;
             this.LbMensaje2.Text = "Registrate";
             // 
             // LinkLbRegistro
             // 
             this.LinkLbRegistro.AutoSize = true;
-            this.LinkLbRegistro.Font = new System.Drawing.Font("Arial Narrow", 13F, System.Drawing.FontStyle.Bold);
-            this.LinkLbRegistro.Location = new System.Drawing.Point(387, 208);
+            this.LinkLbRegistro.Font = new System.Drawing.Font("Agency FB", 15F);
+            this.LinkLbRegistro.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(205)))), ((int)(((byte)(203)))));
+            this.LinkLbRegistro.Location = new System.Drawing.Point(374, 208);
             this.LinkLbRegistro.Name = "LinkLbRegistro";
-            this.LinkLbRegistro.Size = new System.Drawing.Size(48, 22);
+            this.LinkLbRegistro.Size = new System.Drawing.Size(38, 24);
             this.LinkLbRegistro.TabIndex = 8;
             this.LinkLbRegistro.TabStop = true;
             this.LinkLbRegistro.Text = "Aqui!";
@@ -144,14 +153,29 @@
             // LbIniCliMal
             // 
             this.LbIniCliMal.AutoSize = true;
-            this.LbIniCliMal.Font = new System.Drawing.Font("Arial Narrow", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.LbIniCliMal.ForeColor = System.Drawing.Color.Red;
-            this.LbIniCliMal.Location = new System.Drawing.Point(21, 197);
+            this.LbIniCliMal.Font = new System.Drawing.Font("Agency FB", 15F);
+            this.LbIniCliMal.ForeColor = System.Drawing.Color.Crimson;
+            this.LbIniCliMal.Location = new System.Drawing.Point(51, 175);
             this.LbIniCliMal.Name = "LbIniCliMal";
-            this.LbIniCliMal.Size = new System.Drawing.Size(268, 24);
+            this.LbIniCliMal.Size = new System.Drawing.Size(208, 24);
             this.LbIniCliMal.TabIndex = 11;
             this.LbIniCliMal.Text = "Usuario o contraseña incorrectos";
             this.LbIniCliMal.Visible = false;
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(45)))));
+            this.BtnSalir.FlatAppearance.BorderSize = 0;
+            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalir.Font = new System.Drawing.Font("Wingdings 2", 20F);
+            this.BtnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
+            this.BtnSalir.Location = new System.Drawing.Point(418, -2);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(75, 33);
+            this.BtnSalir.TabIndex = 16;
+            this.BtnSalir.Text = "";
+            this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox2
             // 
@@ -171,26 +195,11 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // BtnSalir
-            // 
-            this.BtnSalir.BackColor = System.Drawing.Color.Red;
-            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSalir.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
-            this.BtnSalir.Location = new System.Drawing.Point(411, -1);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(75, 27);
-            this.BtnSalir.TabIndex = 14;
-            this.BtnSalir.Text = "X";
-            this.BtnSalir.UseVisualStyleBackColor = false;
-            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
-            this.BtnSalir.MouseLeave += new System.EventHandler(this.BtnSalir_MouseLeave);
-            this.BtnSalir.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnSalir_MouseMove);
-            // 
             // InicioSesionCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Lavender;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(486, 245);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.pictureBox2);

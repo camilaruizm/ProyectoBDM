@@ -152,5 +152,9 @@ namespace ProyectoBDM
             BtnSalir.BackColor = Color.Red;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
