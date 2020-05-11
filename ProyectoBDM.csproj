@@ -99,6 +99,12 @@
     <Compile Include="Crear.Designer.cs">
       <DependentUpon>Crear.cs</DependentUpon>
     </Compile>
+    <Compile Include="CuentaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentaCliente.Designer.cs">
+      <DependentUpon>CuentaCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     <Compile Include="Vista\Multas.Designer.cs">
       <DependentUpon>Multas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CuentaCliente.resx">
+      <DependentUpon>CuentaCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuAdmin.resx">
       <DependentUpon>MenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,11 +192,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="SolicitarPrestamo.resx">
+      <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VerPeliculas.resx">
       <DependentUpon>VerPeliculas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Modificar.resx">
       <DependentUpon>Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Multas.resx">
+      <DependentUpon>Multas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
