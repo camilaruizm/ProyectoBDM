@@ -42,66 +42,39 @@ namespace ProyectoBDM
             contrasenaCli = TbContrasenaIniCli.Text;
 
             conexion.Open();
-
             MySqlCommand InicioSesionCli = new MySqlCommand();
-
             InicioSesionCli.Connection = conexion;
+            InicioSesionCli.CommandText = ("select nombreUsuario, contrasena, rol from clientes where nombreUsuario = '" + usuarioCli + "'and contrasena = '" + contrasenaCli + "' and rol = 'Usuario'");
+
+            MySqlDataReader leerCli = InicioSesionCli.ExecuteReader();
             
-            InicioSesionCli.CommandText = ("select nombreUsuario, contrasena, rol from clientes where nombreUsuario = '" + usuarioCli + "'and contrasena = '" + contrasenaCli + "' and rol = 'Usuario' ");
-
-            try
-            {
-                MySqlDataReader leerCli = InicioSesionCli.ExecuteReader();
-
-                if (leerCli.Read())
+            if (leerCli.Read())
                 {
                     this.Close();
                     th = new Thread(opennewform);
                     th.SetApartmentState(ApartmentState.STA);
                     th.Start();
                 }
-            }
-            catch (Exception)
-            {
-                LbIniCliMal.Visible = true;
-            }
-           
-               /* MySqlDataReader leerAdm = InicioSesionAdm.ExecuteReader();
-                if (leerAdm.Read())
-                {
-                    this.Close();
-                    th = new Thread(opennewform2);
-                    th.SetApartmentState(ApartmentState.STA);
-                    th.Start();
-                }*/
-
             conexion.Close();
-
             conexion.Open();
-
             MySqlCommand InicioSesionAdm = new MySqlCommand();
-
             InicioSesionAdm.Connection = conexion;
-
             InicioSesionAdm.CommandText = ("select nombreUsuario, contrasena, rol from clientes where nombreUsuario = '" + usuarioCli + "'and contrasena = '" + contrasenaCli + "' and rol = 'Administrador' ");
 
-            try
+            MySqlDataReader leerAdm = InicioSesionAdm.ExecuteReader();
+
+            if (leerAdm.Read())
             {
-                MySqlDataReader leerAdm = InicioSesionAdm.ExecuteReader();
-                if (leerAdm.Read())
+                this.Close();
+                th = new Thread(opennewform2);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
+            }
+            else
                 {
-                    this.Close();
-                    th = new Thread(opennewform2);
-                    th.SetApartmentState(ApartmentState.STA);
-                    th.Start();
+                    LbIniCliMal.Visible = true;
                 }
-            }
-            catch (Exception)
-            {
-                LbIniCliMal.Visible = true;
-            }
-
-
+            conexion.Close();
         }
 
         public void opennewform2()

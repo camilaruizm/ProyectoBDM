@@ -53,6 +53,7 @@
             this.bApelicula.TabIndex = 1;
             this.bApelicula.Text = "PELICULAS";
             this.bApelicula.UseVisualStyleBackColor = false;
+            this.bApelicula.Click += new System.EventHandler(this.bApelicula_Click);
             // 
             // bA_act
             // 

@@ -16,5 +16,10 @@ namespace ProyectoBDM
         {
             InitializeComponent();
         }
+
+        private void bApelicula_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
