@@ -1,8 +1,5 @@
 C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.csprojAssemblyReference.cache
-C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.clientecs.resources
-C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.Conexion.resources
 C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.Properties.Resources.resources
-C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.ValidacionPersona.resources
 C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.GenerateResource.cache
 C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.CoreCompileInputs.cache
 C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\bin\Debug\ProyectoBDM.exe.config
@@ -144,3 +141,9 @@ C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.Core
 C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.CopyComplete
 C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.exe
 C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.pdb
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.MenuAdmin.resources
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.MenuClientes.resources
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.peliculasAdmin.resources
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.RegistroClientes.resources
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.InicioSesionCliente.resources
+C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.Modificar.resources
