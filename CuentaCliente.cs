@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace ProyectoBDM
 {
-    public partial class VerPeliculas : Form
+    public partial class CuentaCliente : Form
     {
-        public VerPeliculas()
+        public CuentaCliente()
         {
             InitializeComponent();
         }
 
-        private void nOMBREToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VerPeliculas_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbTituloIdM_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
