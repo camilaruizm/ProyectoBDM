@@ -34,12 +34,12 @@ namespace ProyectoBDM
 
         private void BtnVerPeliculas_MouseMove(object sender, MouseEventArgs e)
         {
-            BtnPeliculas.BackColor = Color.Silver;
+            BtnVerPeliculas.BackColor = Color.Silver;
         }
 
         private void BtnVerPeliculas_MouseLeave(object sender, EventArgs e)
         {
-            BtnPeliculas.BackColor = Color.Lavender;
+            BtnVerPeliculas.BackColor = Color.Lavender;
         }
 
         private void BtnSolPrestamo_Click(object sender, EventArgs e)
@@ -78,6 +78,16 @@ namespace ProyectoBDM
             Application.Run(new PrestamosActivos());
         }
 
+        private void BtnVerPrestamos_MouseMove(object sender, MouseEventArgs e)
+        {
+            BtnVerPrestamos.BackColor = Color.Silver;
+        }
+
+        private void BtnVerPrestamos_MouseLeave(object sender, EventArgs e)
+        {
+            BtnVerPrestamos.BackColor = Color.Lavender;
+        }
+
         private void BtnPagarMultas_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -89,6 +99,16 @@ namespace ProyectoBDM
         private void Abrir_PM()
         {
             Application.Run(new PagarMultas());
+        }
+
+        private void BtnPagarMultas_MouseMove(object sender, MouseEventArgs e)
+        {
+            BtnPagarMultas.BackColor = Color.Silver;
+        }
+
+        private void BtnPagarMultas_MouseLeave(object sender, EventArgs e)
+        {
+            BtnPagarMultas.BackColor = Color.Lavender;
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
