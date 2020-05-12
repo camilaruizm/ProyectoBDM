@@ -93,12 +93,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="actoresAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="actoresAdmin.Designer.cs">
-      <DependentUpon>actoresAdmin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Crear.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,12 +116,6 @@
     </Compile>
     <Compile Include="PagarMultas.Designer.cs">
       <DependentUpon>PagarMultas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="peliculasAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="peliculasAdmin.Designer.cs">
-      <DependentUpon>peliculasAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="PrestamosActivos.cs">
       <SubType>Form</SubType>
@@ -172,17 +160,11 @@
     <Compile Include="Vista\Modificar.Designer.cs">
       <DependentUpon>Modificar.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="actoresAdmin.resx">
-      <DependentUpon>actoresAdmin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MenuAdmin.resx">
       <DependentUpon>MenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuClientes.resx">
       <DependentUpon>MenuClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="peliculasAdmin.resx">
-      <DependentUpon>peliculasAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroClientes.resx">
       <DependentUpon>RegistroClientes.cs</DependentUpon>
