@@ -147,3 +147,6 @@ C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\Proyect
 C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.RegistroClientes.resources
 C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.InicioSesionCliente.resources
 C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.Modificar.resources
+D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.actoresAdmin.resources
+D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.peliculasAdmin.resources
+D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.Modificar.resources

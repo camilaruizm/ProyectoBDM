@@ -23,8 +23,15 @@ namespace ProyectoBDM
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            RegistroClientes aqui = new RegistroClientes();
-            aqui.Show();
+            this.Close();
+            th = new Thread(opennewform3);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void opennewform3()
+        {
+            Application.Run(new RegistroClientes());
         }
 
         protected void BtnIngresar_Click(object sender, EventArgs e)
