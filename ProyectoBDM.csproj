@@ -105,6 +105,18 @@
     <Compile Include="Crear.Designer.cs">
       <DependentUpon>Crear.cs</DependentUpon>
     </Compile>
+    <Compile Include="direcAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="direcAdmin.Designer.cs">
+      <DependentUpon>direcAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generoPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generoPelicula.Designer.cs">
+      <DependentUpon>generoPelicula.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +186,12 @@
     </Compile>
     <EmbeddedResource Include="actoresAdmin.resx">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="direcAdmin.resx">
+      <DependentUpon>direcAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generoPelicula.resx">
+      <DependentUpon>generoPelicula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuAdmin.resx">
       <DependentUpon>MenuAdmin.cs</DependentUpon>

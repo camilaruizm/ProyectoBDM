@@ -1,6 +1,6 @@
 ﻿namespace ProyectoBDM
 {
-    partial class directoresAdmin
+    partial class direcAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -37,19 +37,19 @@
             this.nombreDir = new System.Windows.Forms.TextBox();
             this.nombreDir2 = new System.Windows.Forms.TextBox();
             this.apellidoDir = new System.Windows.Forms.TextBox();
-            this.apellido2Dir = new System.Windows.Forms.TextBox();
+            this.apellidoDir2 = new System.Windows.Forms.TextBox();
             this.correoDir = new System.Windows.Forms.TextBox();
             this.paisDir = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.imagenDir = new System.Windows.Forms.Button();
-            this.insertarDir = new System.Windows.Forms.Button();
+            this.imageDir = new System.Windows.Forms.Button();
+            this.insertDir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(99, 72);
+            this.label1.Location = new System.Drawing.Point(93, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 0;
@@ -58,7 +58,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(99, 112);
+            this.label2.Location = new System.Drawing.Point(93, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 1;
@@ -67,7 +67,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(99, 155);
+            this.label3.Location = new System.Drawing.Point(93, 148);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 2;
@@ -76,17 +76,16 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(99, 198);
+            this.label4.Location = new System.Drawing.Point(93, 192);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "APELLIDO2";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(99, 238);
+            this.label5.Location = new System.Drawing.Point(96, 239);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 13);
             this.label5.TabIndex = 4;
@@ -95,94 +94,94 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(99, 278);
+            this.label6.Location = new System.Drawing.Point(99, 288);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 5;
-            this.label6.Text = "PAIS";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label6.Text = "PAÍS";
             // 
             // nombreDir
             // 
-            this.nombreDir.Location = new System.Drawing.Point(239, 72);
+            this.nombreDir.Location = new System.Drawing.Point(237, 59);
             this.nombreDir.Name = "nombreDir";
             this.nombreDir.Size = new System.Drawing.Size(100, 20);
             this.nombreDir.TabIndex = 6;
             // 
             // nombreDir2
             // 
-            this.nombreDir2.Location = new System.Drawing.Point(239, 112);
+            this.nombreDir2.Location = new System.Drawing.Point(237, 100);
             this.nombreDir2.Name = "nombreDir2";
             this.nombreDir2.Size = new System.Drawing.Size(100, 20);
             this.nombreDir2.TabIndex = 7;
             // 
             // apellidoDir
             // 
-            this.apellidoDir.Location = new System.Drawing.Point(239, 155);
+            this.apellidoDir.Location = new System.Drawing.Point(237, 148);
             this.apellidoDir.Name = "apellidoDir";
             this.apellidoDir.Size = new System.Drawing.Size(100, 20);
             this.apellidoDir.TabIndex = 8;
             // 
-            // apellido2Dir
+            // apellidoDir2
             // 
-            this.apellido2Dir.Location = new System.Drawing.Point(239, 198);
-            this.apellido2Dir.Name = "apellido2Dir";
-            this.apellido2Dir.Size = new System.Drawing.Size(100, 20);
-            this.apellido2Dir.TabIndex = 9;
+            this.apellidoDir2.Location = new System.Drawing.Point(237, 192);
+            this.apellidoDir2.Name = "apellidoDir2";
+            this.apellidoDir2.Size = new System.Drawing.Size(100, 20);
+            this.apellidoDir2.TabIndex = 9;
             // 
             // correoDir
             // 
-            this.correoDir.Location = new System.Drawing.Point(239, 238);
+            this.correoDir.Location = new System.Drawing.Point(237, 239);
             this.correoDir.Name = "correoDir";
             this.correoDir.Size = new System.Drawing.Size(100, 20);
             this.correoDir.TabIndex = 10;
             // 
             // paisDir
             // 
-            this.paisDir.Location = new System.Drawing.Point(239, 278);
+            this.paisDir.Location = new System.Drawing.Point(237, 288);
             this.paisDir.Name = "paisDir";
             this.paisDir.Size = new System.Drawing.Size(100, 20);
             this.paisDir.TabIndex = 11;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(496, 72);
+            this.pictureBox1.Location = new System.Drawing.Point(463, 59);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 226);
+            this.pictureBox1.Size = new System.Drawing.Size(187, 249);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // imagenDir
+            // imageDir
             // 
-            this.imagenDir.Location = new System.Drawing.Point(687, 167);
-            this.imagenDir.Name = "imagenDir";
-            this.imagenDir.Size = new System.Drawing.Size(75, 23);
-            this.imagenDir.TabIndex = 13;
-            this.imagenDir.Text = "Upload";
-            this.imagenDir.UseVisualStyleBackColor = true;
-            this.imagenDir.Click += new System.EventHandler(this.imagenDir_Click);
+            this.imageDir.Location = new System.Drawing.Point(692, 181);
+            this.imageDir.Name = "imageDir";
+            this.imageDir.Size = new System.Drawing.Size(75, 23);
+            this.imageDir.TabIndex = 13;
+            this.imageDir.Text = "Upload";
+            this.imageDir.UseVisualStyleBackColor = true;
+            this.imageDir.Click += new System.EventHandler(this.imageDir_Click);
             // 
-            // insertarDir
+            // insertDir
             // 
-            this.insertarDir.Location = new System.Drawing.Point(386, 324);
-            this.insertarDir.Name = "insertarDir";
-            this.insertarDir.Size = new System.Drawing.Size(75, 23);
-            this.insertarDir.TabIndex = 14;
-            this.insertarDir.Text = "Insertar";
-            this.insertarDir.UseVisualStyleBackColor = true;
-            this.insertarDir.Click += new System.EventHandler(this.insertarDir_Click);
+            this.insertDir.Location = new System.Drawing.Point(368, 328);
+            this.insertDir.Name = "insertDir";
+            this.insertDir.Size = new System.Drawing.Size(75, 23);
+            this.insertDir.TabIndex = 14;
+            this.insertDir.Text = "INSERTAR";
+            this.insertDir.UseVisualStyleBackColor = true;
+            this.insertDir.Click += new System.EventHandler(this.insertDir_Click);
             // 
-            // directoresAdmin
+            // direcAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.insertarDir);
-            this.Controls.Add(this.imagenDir);
+            this.Controls.Add(this.insertDir);
+            this.Controls.Add(this.imageDir);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.paisDir);
             this.Controls.Add(this.correoDir);
-            this.Controls.Add(this.apellido2Dir);
+            this.Controls.Add(this.apellidoDir2);
             this.Controls.Add(this.apellidoDir);
             this.Controls.Add(this.nombreDir2);
             this.Controls.Add(this.nombreDir);
@@ -192,8 +191,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "directoresAdmin";
-            this.Text = "directoresAdmin";
+            this.Name = "direcAdmin";
+            this.Text = "direcAdmin";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -211,11 +210,11 @@
         private System.Windows.Forms.TextBox nombreDir;
         private System.Windows.Forms.TextBox nombreDir2;
         private System.Windows.Forms.TextBox apellidoDir;
-        private System.Windows.Forms.TextBox apellido2Dir;
+        private System.Windows.Forms.TextBox apellidoDir2;
         private System.Windows.Forms.TextBox correoDir;
         private System.Windows.Forms.TextBox paisDir;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button imagenDir;
-        private System.Windows.Forms.Button insertarDir;
+        private System.Windows.Forms.Button imageDir;
+        private System.Windows.Forms.Button insertDir;
     }
 }

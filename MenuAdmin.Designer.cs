@@ -33,6 +33,7 @@
             this.bA_act = new System.Windows.Forms.Button();
             this.bAdir = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.generoPelicula = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +50,7 @@
             this.bApelicula.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bApelicula.Location = new System.Drawing.Point(37, 57);
             this.bApelicula.Name = "bApelicula";
-            this.bApelicula.Size = new System.Drawing.Size(296, 124);
+            this.bApelicula.Size = new System.Drawing.Size(238, 65);
             this.bApelicula.TabIndex = 1;
             this.bApelicula.Text = "PELICULAS";
             this.bApelicula.UseVisualStyleBackColor = false;
@@ -59,40 +60,55 @@
             // 
             this.bA_act.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.bA_act.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bA_act.Location = new System.Drawing.Point(473, 57);
+            this.bA_act.Location = new System.Drawing.Point(37, 304);
             this.bA_act.Name = "bA_act";
-            this.bA_act.Size = new System.Drawing.Size(283, 124);
+            this.bA_act.Size = new System.Drawing.Size(238, 62);
             this.bA_act.TabIndex = 2;
             this.bA_act.Text = "ACTORES";
             this.bA_act.UseVisualStyleBackColor = false;
+            this.bA_act.Click += new System.EventHandler(this.bA_act_Click);
             // 
             // bAdir
             // 
             this.bAdir.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.bAdir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bAdir.Location = new System.Drawing.Point(37, 249);
+            this.bAdir.Location = new System.Drawing.Point(37, 180);
             this.bAdir.Name = "bAdir";
-            this.bAdir.Size = new System.Drawing.Size(296, 127);
+            this.bAdir.Size = new System.Drawing.Size(238, 70);
             this.bAdir.TabIndex = 3;
             this.bAdir.Text = "DIRECTORES";
             this.bAdir.UseVisualStyleBackColor = false;
+            this.bAdir.Click += new System.EventHandler(this.bAdir_Click);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(473, 249);
+            this.button4.Location = new System.Drawing.Point(433, 239);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(283, 127);
             this.button4.TabIndex = 4;
             this.button4.Text = "CONSULTAS";
             this.button4.UseVisualStyleBackColor = false;
             // 
+            // generoPelicula
+            // 
+            this.generoPelicula.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.generoPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.generoPelicula.Location = new System.Drawing.Point(449, 95);
+            this.generoPelicula.Name = "generoPelicula";
+            this.generoPelicula.Size = new System.Drawing.Size(238, 72);
+            this.generoPelicula.TabIndex = 5;
+            this.generoPelicula.Text = "GÉNEROS";
+            this.generoPelicula.UseVisualStyleBackColor = false;
+            this.generoPelicula.Click += new System.EventHandler(this.generoPelicula_Click);
+            // 
             // MenuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.generoPelicula);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.bAdir);
             this.Controls.Add(this.bA_act);
@@ -112,5 +128,6 @@
         private System.Windows.Forms.Button bA_act;
         private System.Windows.Forms.Button bAdir;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button generoPelicula;
     }
 }

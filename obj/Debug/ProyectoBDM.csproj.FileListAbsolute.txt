@@ -150,3 +150,45 @@ C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\Proyect
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.actoresAdmin.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.peliculasAdmin.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.Modificar.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\ProyectoBDM.exe.config
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\ProyectoBDM.exe
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\ProyectoBDM.pdb
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\BouncyCastle.Crypto.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\Google.Protobuf.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\K4os.Compression.LZ4.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\K4os.Hash.xxHash.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\MySql.Data.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\Renci.SshNet.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\System.Buffers.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\System.Memory.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\System.Numerics.Vectors.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\Ubiety.Dns.Core.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\Zstandard.Net.dll
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\Google.Protobuf.xml
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\K4os.Compression.LZ4.xml
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\K4os.Hash.xxHash.xml
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\MySql.Data.xml
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\Renci.SshNet.xml
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\System.Buffers.xml
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\System.Memory.xml
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\System.Numerics.Vectors.xml
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csprojAssemblyReference.cache
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.actoresAdmin.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.MenuAdmin.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.MenuClientes.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.peliculasAdmin.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.RegistroClientes.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.InicioSesionCliente.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Properties.Resources.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.Modificar.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.GenerateResource.cache
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.CoreCompileInputs.cache
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.CopyComplete
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.exe
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.pdb
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.direcAdmin.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.generoPelicula.resources

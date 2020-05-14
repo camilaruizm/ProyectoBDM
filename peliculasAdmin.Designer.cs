@@ -37,15 +37,15 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.buttonInsertPelicula = new System.Windows.Forms.Button();
             this.textTitulo = new System.Windows.Forms.TextBox();
-            this.textDirector = new System.Windows.Forms.TextBox();
             this.textSinopsis = new System.Windows.Forms.TextBox();
             this.textDuracion = new System.Windows.Forms.TextBox();
-            this.textEstreno = new System.Windows.Forms.TextBox();
             this.cantCopias = new System.Windows.Forms.Label();
             this.textCantCopis = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.generoPelicula = new System.Windows.Forms.Label();
-            this.textGenero = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.actualizarAdmin = new System.Windows.Forms.Button();
+            this.deleteAdmin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -115,7 +115,7 @@
             // 
             // buttonInsertPelicula
             // 
-            this.buttonInsertPelicula.Location = new System.Drawing.Point(270, 305);
+            this.buttonInsertPelicula.Location = new System.Drawing.Point(215, 306);
             this.buttonInsertPelicula.Name = "buttonInsertPelicula";
             this.buttonInsertPelicula.Size = new System.Drawing.Size(75, 23);
             this.buttonInsertPelicula.TabIndex = 8;
@@ -130,13 +130,6 @@
             this.textTitulo.Size = new System.Drawing.Size(152, 20);
             this.textTitulo.TabIndex = 9;
             // 
-            // textDirector
-            // 
-            this.textDirector.Location = new System.Drawing.Point(232, 61);
-            this.textDirector.Name = "textDirector";
-            this.textDirector.Size = new System.Drawing.Size(152, 20);
-            this.textDirector.TabIndex = 10;
-            // 
             // textSinopsis
             // 
             this.textSinopsis.Location = new System.Drawing.Point(232, 102);
@@ -150,13 +143,6 @@
             this.textDuracion.Name = "textDuracion";
             this.textDuracion.Size = new System.Drawing.Size(152, 20);
             this.textDuracion.TabIndex = 12;
-            // 
-            // textEstreno
-            // 
-            this.textEstreno.Location = new System.Drawing.Point(232, 186);
-            this.textEstreno.Name = "textEstreno";
-            this.textEstreno.Size = new System.Drawing.Size(152, 20);
-            this.textEstreno.TabIndex = 13;
             // 
             // cantCopias
             // 
@@ -179,39 +165,58 @@
             this.pictureBox1.Location = new System.Drawing.Point(451, 30);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 232);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // generoPelicula
+            // dateTimePicker1
             // 
-            this.generoPelicula.AutoSize = true;
-            this.generoPelicula.Location = new System.Drawing.Point(115, 268);
-            this.generoPelicula.Name = "generoPelicula";
-            this.generoPelicula.Size = new System.Drawing.Size(53, 13);
-            this.generoPelicula.TabIndex = 17;
-            this.generoPelicula.Text = "GÉNERO";
+            this.dateTimePicker1.Location = new System.Drawing.Point(232, 193);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(204, 20);
+            this.dateTimePicker1.TabIndex = 19;
             // 
-            // textGenero
+            // comboBox2
             // 
-            this.textGenero.Location = new System.Drawing.Point(232, 268);
-            this.textGenero.Name = "textGenero";
-            this.textGenero.Size = new System.Drawing.Size(152, 20);
-            this.textGenero.TabIndex = 18;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(232, 68);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 23;
+            // 
+            // actualizarAdmin
+            // 
+            this.actualizarAdmin.Location = new System.Drawing.Point(351, 306);
+            this.actualizarAdmin.Name = "actualizarAdmin";
+            this.actualizarAdmin.Size = new System.Drawing.Size(85, 23);
+            this.actualizarAdmin.TabIndex = 24;
+            this.actualizarAdmin.Text = "ACTUALIZAR";
+            this.actualizarAdmin.UseVisualStyleBackColor = true;
+            this.actualizarAdmin.Click += new System.EventHandler(this.actualizarAdmin_Click);
+            // 
+            // deleteAdmin
+            // 
+            this.deleteAdmin.Location = new System.Drawing.Point(503, 306);
+            this.deleteAdmin.Name = "deleteAdmin";
+            this.deleteAdmin.Size = new System.Drawing.Size(75, 23);
+            this.deleteAdmin.TabIndex = 25;
+            this.deleteAdmin.Text = "ELIMINAR";
+            this.deleteAdmin.UseVisualStyleBackColor = true;
             // 
             // peliculasAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 542);
-            this.Controls.Add(this.textGenero);
-            this.Controls.Add(this.generoPelicula);
+            this.Controls.Add(this.deleteAdmin);
+            this.Controls.Add(this.actualizarAdmin);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textCantCopis);
             this.Controls.Add(this.cantCopias);
-            this.Controls.Add(this.textEstreno);
             this.Controls.Add(this.textDuracion);
             this.Controls.Add(this.textSinopsis);
-            this.Controls.Add(this.textDirector);
             this.Controls.Add(this.textTitulo);
             this.Controls.Add(this.buttonInsertPelicula);
             this.Controls.Add(this.dataGridView2);
@@ -223,6 +228,7 @@
             this.Controls.Add(this.labelTituloPelicula);
             this.Name = "peliculasAdmin";
             this.Text = "peliculasAdmin";
+            this.Load += new System.EventHandler(this.peliculasAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -241,14 +247,14 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button buttonInsertPelicula;
         private System.Windows.Forms.TextBox textTitulo;
-        private System.Windows.Forms.TextBox textDirector;
         private System.Windows.Forms.TextBox textSinopsis;
         private System.Windows.Forms.TextBox textDuracion;
-        private System.Windows.Forms.TextBox textEstreno;
         private System.Windows.Forms.Label cantCopias;
         private System.Windows.Forms.TextBox textCantCopis;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label generoPelicula;
-        private System.Windows.Forms.TextBox textGenero;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button actualizarAdmin;
+        private System.Windows.Forms.Button deleteAdmin;
     }
 }

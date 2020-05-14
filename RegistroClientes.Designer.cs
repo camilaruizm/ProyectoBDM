@@ -54,8 +54,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.tbCorreo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.dtFechaNCliente = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -340,34 +338,12 @@
             this.label14.TabIndex = 25;
             this.label14.Text = "CORREO:";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Agency FB", 18F);
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.label15.Location = new System.Drawing.Point(28, 259);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(176, 28);
-            this.label15.TabIndex = 27;
-            this.label15.Text = "FECHA DE NACIMIENTO:";
-            // 
-            // dtFechaNCliente
-            // 
-            this.dtFechaNCliente.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.dtFechaNCliente.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold);
-            this.dtFechaNCliente.Location = new System.Drawing.Point(200, 259);
-            this.dtFechaNCliente.Name = "dtFechaNCliente";
-            this.dtFechaNCliente.Size = new System.Drawing.Size(249, 27);
-            this.dtFechaNCliente.TabIndex = 28;
-            // 
             // RegistroClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(662, 552);
-            this.Controls.Add(this.dtFechaNCliente);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.tbCorreo);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label9);
@@ -432,7 +408,5 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbCorreo;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.DateTimePicker dtFechaNCliente;
     }
 }
