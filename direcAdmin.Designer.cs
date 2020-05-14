@@ -45,6 +45,7 @@
             this.insertDir = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.showDirect = new System.Windows.Forms.Button();
+            this.modificarDirector = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -166,7 +167,7 @@
             // 
             // insertDir
             // 
-            this.insertDir.Location = new System.Drawing.Point(368, 328);
+            this.insertDir.Location = new System.Drawing.Point(279, 328);
             this.insertDir.Name = "insertDir";
             this.insertDir.Size = new System.Drawing.Size(75, 23);
             this.insertDir.TabIndex = 14;
@@ -181,10 +182,11 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(665, 150);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // showDirect
             // 
-            this.showDirect.Location = new System.Drawing.Point(728, 446);
+            this.showDirect.Location = new System.Drawing.Point(728, 418);
             this.showDirect.Name = "showDirect";
             this.showDirect.Size = new System.Drawing.Size(75, 23);
             this.showDirect.TabIndex = 16;
@@ -192,11 +194,22 @@
             this.showDirect.UseVisualStyleBackColor = true;
             this.showDirect.Click += new System.EventHandler(this.showDirect_Click);
             // 
+            // modificarDirector
+            // 
+            this.modificarDirector.Location = new System.Drawing.Point(395, 327);
+            this.modificarDirector.Name = "modificarDirector";
+            this.modificarDirector.Size = new System.Drawing.Size(75, 23);
+            this.modificarDirector.TabIndex = 17;
+            this.modificarDirector.Text = "MODIFICAR";
+            this.modificarDirector.UseVisualStyleBackColor = true;
+            this.modificarDirector.Click += new System.EventHandler(this.modificarDirector_Click);
+            // 
             // direcAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 540);
+            this.ClientSize = new System.Drawing.Size(812, 540);
+            this.Controls.Add(this.modificarDirector);
             this.Controls.Add(this.showDirect);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.insertDir);
@@ -216,6 +229,7 @@
             this.Controls.Add(this.label1);
             this.Name = "direcAdmin";
             this.Text = "direcAdmin";
+            this.Load += new System.EventHandler(this.direcAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -242,5 +256,6 @@
         private System.Windows.Forms.Button insertDir;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button showDirect;
+        private System.Windows.Forms.Button modificarDirector;
     }
 }

@@ -15,6 +15,8 @@ namespace ProyectoBDM
         
     {
         string imageUrl = null;
+        int selectedRow;
+        MySqlDataAdapter adaptador = new MySqlDataAdapter();
         public actoresAdmin()
         {
             InitializeComponent();
@@ -42,11 +44,47 @@ namespace ProyectoBDM
 
             conexion.Open();
             string Query = "INSERT INTO ACTORES(nombreActor1,nombreActor2,ApellidoActor1,ApellidoActor2,correoActor,paisActor,fotoA) " +
-                "values('" + textNombreAct + "','" + textNombreAct2 + "','" + textApeAct + "','" + textApeAct2 + "','" + textCorreoAct + "','" +textPaisAct + "','" + arr2 + "');";
+                "values('" + textNombreAct.Text + "','" + textNombreAct2.Text + "','" + textApeAct.Text + "','" + textApeAct2.Text + "','" + textCorreoAct.Text + "','" +textPaisAct.Text + "','" + arr2 + "');";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             MessageBox.Show("!Se ha registrado el actor con exito¡");
+        }
+
+        private void showActor_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+
+            MySqlCommand comando = new MySqlCommand("SELECT * FROM ACTORES", conexion);
+
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dataGridView1.DataSource = tabla;
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedRow = e.RowIndex;
+            DataGridViewRow row = dataGridView1.Rows[selectedRow];
+
+            textNombreAct.Text = row.Cells[1].Value.ToString();
+            textNombreAct2.Text = row.Cells[2].Value.ToString();
+            textApeAct.Text = row.Cells[3].Value.ToString();
+            textApeAct2.Text = row.Cells[4].Value.ToString();
+            textCorreoAct.Text = row.Cells[5].Value.ToString();
+            textPaisAct.Text = row.Cells[6].Value.ToString();
+        }
+
+        private void modificarActor_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow newDataRow = dataGridView1.Rows[selectedRow];
+            newDataRow.Cells[1].Value = textNombreAct.Text;
+            newDataRow.Cells[2].Value = textNombreAct2.Text;
+            newDataRow.Cells[3].Value = textApeAct.Text;
+            newDataRow.Cells[4].Value = textApeAct2.Text;
+            newDataRow.Cells[5].Value = textCorreoAct.Text;
+            newDataRow.Cells[6].Value = textPaisAct.Text;
         }
     }
 }

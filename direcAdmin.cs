@@ -17,11 +17,14 @@ namespace ProyectoBDM
     public partial class direcAdmin : Form
     {
         string imageUrl = null;
+        int selectedRow;
+        MySqlDataAdapter adaptador = new MySqlDataAdapter();
+
         public direcAdmin()
         {
             InitializeComponent();
         }
-
+        
         private void imageDir_Click(object sender, EventArgs e)
         {
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
@@ -57,11 +60,41 @@ namespace ProyectoBDM
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
             MySqlCommand comando = new MySqlCommand("SELECT * FROM DIRECTORES", conexion);
-            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);
             dataGridView1.DataSource = tabla;
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedRow = e.RowIndex;
+            DataGridViewRow row = dataGridView1.Rows[selectedRow];
+
+            nombreDir.Text = row.Cells[1].Value.ToString();
+            nombreDir2.Text = row.Cells[2].Value.ToString();
+            apellidoDir.Text = row.Cells[3].Value.ToString();
+            nombreDir2.Text = row.Cells[4].Value.ToString();
+            correoDir.Text = row.Cells[5].Value.ToString();
+            paisDir.Text = row.Cells[6].Value.ToString();
+        }
+
+        private void modificarDirector_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow newDataRow = dataGridView1.Rows[selectedRow];
+            newDataRow.Cells[1].Value = nombreDir.Text;
+            newDataRow.Cells[2].Value = nombreDir2.Text;
+            newDataRow.Cells[3].Value = apellidoDir.Text;
+            newDataRow.Cells[4].Value = apellidoDir2.Text;
+            newDataRow.Cells[5].Value = correoDir.Text;
+            newDataRow.Cells[6].Value = paisDir.Text;
+        }
+
+        private void direcAdmin_Load(object sender, EventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+           
         }
     }
 }
