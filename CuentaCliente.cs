@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoBDM
 {
-    public partial class Crear : Form
+    public partial class CuentaCliente : Form
     {
-        public Crear()
+        public CuentaCliente()
         {
             InitializeComponent();
         }

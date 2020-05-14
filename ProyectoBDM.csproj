@@ -99,11 +99,11 @@
     <Compile Include="actoresAdmin.Designer.cs">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Crear.cs">
+    <Compile Include="CuentaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Crear.Designer.cs">
-      <DependentUpon>Crear.cs</DependentUpon>
+    <Compile Include="CuentaCliente.Designer.cs">
+      <DependentUpon>CuentaCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="direcAdmin.cs">
       <SubType>Form</SubType>
