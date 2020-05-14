@@ -99,6 +99,12 @@
     <Compile Include="actoresAdmin.Designer.cs">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuscarPeliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPeliculas.Designer.cs">
+      <DependentUpon>BuscarPeliculas.cs</DependentUpon>
+    </Compile>
     <Compile Include="CuentaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,12 +178,6 @@
     <Compile Include="SolicitarPrestamo.Designer.cs">
       <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
     </Compile>
-    <Compile Include="VerPeliculas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VerPeliculas.Designer.cs">
-      <DependentUpon>VerPeliculas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vista\Modificar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +186,9 @@
     </Compile>
     <EmbeddedResource Include="actoresAdmin.resx">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPeliculas.resx">
+      <DependentUpon>BuscarPeliculas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="direcAdmin.resx">
       <DependentUpon>direcAdmin.cs</DependentUpon>
@@ -212,6 +215,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolicitarPrestamo.resx">
+      <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Modificar.resx">
       <DependentUpon>Modificar.cs</DependentUpon>
