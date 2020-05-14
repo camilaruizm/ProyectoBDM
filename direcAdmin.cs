@@ -50,5 +50,18 @@ namespace ProyectoBDM
             conexion.Close();
             MessageBox.Show("!Se ha registrado al director con exito¡");
         }
+
+        private void showDirect_Click(object sender, EventArgs e)
+        {
+
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+
+            MySqlCommand comando = new MySqlCommand("SELECT * FROM DIRECTORES", conexion);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dataGridView1.DataSource = tabla;
+        }
     }
 }

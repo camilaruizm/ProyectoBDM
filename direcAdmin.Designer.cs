@@ -43,7 +43,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.imageDir = new System.Windows.Forms.Button();
             this.insertDir = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.showDirect = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -171,11 +174,31 @@
             this.insertDir.UseVisualStyleBackColor = true;
             this.insertDir.Click += new System.EventHandler(this.insertDir_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(57, 378);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(665, 150);
+            this.dataGridView1.TabIndex = 15;
+            // 
+            // showDirect
+            // 
+            this.showDirect.Location = new System.Drawing.Point(728, 446);
+            this.showDirect.Name = "showDirect";
+            this.showDirect.Size = new System.Drawing.Size(75, 23);
+            this.showDirect.TabIndex = 16;
+            this.showDirect.Text = "SHOW";
+            this.showDirect.UseVisualStyleBackColor = true;
+            this.showDirect.Click += new System.EventHandler(this.showDirect_Click);
+            // 
             // direcAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 540);
+            this.Controls.Add(this.showDirect);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.insertDir);
             this.Controls.Add(this.imageDir);
             this.Controls.Add(this.pictureBox1);
@@ -194,6 +217,7 @@
             this.Name = "direcAdmin";
             this.Text = "direcAdmin";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,5 +240,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button imageDir;
         private System.Windows.Forms.Button insertDir;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button showDirect;
     }
 }

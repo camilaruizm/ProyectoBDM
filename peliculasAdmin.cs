@@ -97,7 +97,7 @@ namespace ProyectoBDM
         {
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             conexion.Open();
-            string Query ="UPDATE PELICULAS SET ID="
+           
 
         }
     }
