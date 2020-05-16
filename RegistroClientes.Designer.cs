@@ -74,7 +74,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Agency FB", 18F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.label2.Location = new System.Drawing.Point(28, 163);
+            this.label2.Location = new System.Drawing.Point(28, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(150, 28);
             this.label2.TabIndex = 1;
@@ -85,7 +85,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Agency FB", 18F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.label3.Location = new System.Drawing.Point(28, 131);
+            this.label3.Location = new System.Drawing.Point(28, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(142, 28);
             this.label3.TabIndex = 2;
@@ -194,7 +194,7 @@
             this.TbNombre2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.TbNombre2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TbNombre2.Font = new System.Drawing.Font("Agency FB", 16F);
-            this.TbNombre2.Location = new System.Drawing.Point(200, 165);
+            this.TbNombre2.Location = new System.Drawing.Point(200, 133);
             this.TbNombre2.Name = "TbNombre2";
             this.TbNombre2.Size = new System.Drawing.Size(249, 26);
             this.TbNombre2.TabIndex = 13;
@@ -204,7 +204,7 @@
             this.TbApellido1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.TbApellido1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TbApellido1.Font = new System.Drawing.Font("Agency FB", 16F);
-            this.TbApellido1.Location = new System.Drawing.Point(200, 133);
+            this.TbApellido1.Location = new System.Drawing.Point(200, 165);
             this.TbApellido1.Name = "TbApellido1";
             this.TbApellido1.Size = new System.Drawing.Size(249, 26);
             this.TbApellido1.TabIndex = 14;

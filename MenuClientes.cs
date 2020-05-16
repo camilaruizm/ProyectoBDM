@@ -29,7 +29,7 @@ namespace ProyectoBDM
 
         private void Abrir_VP()
         {
-            Application.Run(new VerPeliculas());
+            Application.Run(new verPeliculas());
         }
 
         private void BtnVerPeliculas_MouseMove(object sender, MouseEventArgs e)

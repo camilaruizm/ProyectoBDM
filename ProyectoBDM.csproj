@@ -99,11 +99,17 @@
     <Compile Include="actoresAdmin.Designer.cs">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Crear.cs">
+    <Compile Include="BuscarPeliculas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Crear.Designer.cs">
-      <DependentUpon>Crear.cs</DependentUpon>
+    <Compile Include="BuscarPeliculas.Designer.cs">
+      <DependentUpon>BuscarPeliculas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentaCliente.Designer.cs">
+      <DependentUpon>CuentaCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="direcAdmin.cs">
       <SubType>Form</SubType>
@@ -172,11 +178,11 @@
     <Compile Include="SolicitarPrestamo.Designer.cs">
       <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
     </Compile>
-    <Compile Include="VerPeliculas.cs">
+    <Compile Include="verPeliculas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VerPeliculas.Designer.cs">
-      <DependentUpon>VerPeliculas.cs</DependentUpon>
+    <Compile Include="verPeliculas.Designer.cs">
+      <DependentUpon>verPeliculas.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Modificar.cs">
       <SubType>Form</SubType>
@@ -186,6 +192,9 @@
     </Compile>
     <EmbeddedResource Include="actoresAdmin.resx">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPeliculas.resx">
+      <DependentUpon>BuscarPeliculas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="direcAdmin.resx">
       <DependentUpon>direcAdmin.cs</DependentUpon>
@@ -212,6 +221,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolicitarPrestamo.resx">
+      <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verPeliculas.resx">
+      <DependentUpon>verPeliculas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Modificar.resx">
       <DependentUpon>Modificar.cs</DependentUpon>
