@@ -46,6 +46,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.showActor = new System.Windows.Forms.Button();
             this.modificarActor = new System.Windows.Forms.Button();
+            this.deleteActor = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.idActor = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -167,7 +170,7 @@
             // 
             // insertarActor
             // 
-            this.insertarActor.Location = new System.Drawing.Point(332, 334);
+            this.insertarActor.Location = new System.Drawing.Point(216, 347);
             this.insertarActor.Name = "insertarActor";
             this.insertarActor.Size = new System.Drawing.Size(75, 23);
             this.insertarActor.TabIndex = 14;
@@ -196,7 +199,7 @@
             // 
             // modificarActor
             // 
-            this.modificarActor.Location = new System.Drawing.Point(449, 334);
+            this.modificarActor.Location = new System.Drawing.Point(323, 347);
             this.modificarActor.Name = "modificarActor";
             this.modificarActor.Size = new System.Drawing.Size(75, 23);
             this.modificarActor.TabIndex = 17;
@@ -204,11 +207,40 @@
             this.modificarActor.UseVisualStyleBackColor = true;
             this.modificarActor.Click += new System.EventHandler(this.modificarActor_Click);
             // 
+            // deleteActor
+            // 
+            this.deleteActor.Location = new System.Drawing.Point(444, 346);
+            this.deleteActor.Name = "deleteActor";
+            this.deleteActor.Size = new System.Drawing.Size(75, 23);
+            this.deleteActor.TabIndex = 18;
+            this.deleteActor.Text = "ELIMINAR";
+            this.deleteActor.UseVisualStyleBackColor = true;
+            this.deleteActor.Click += new System.EventHandler(this.deleteActor_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(75, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "ID";
+            // 
+            // idActor
+            // 
+            this.idActor.Location = new System.Drawing.Point(201, 26);
+            this.idActor.Name = "idActor";
+            this.idActor.Size = new System.Drawing.Size(100, 20);
+            this.idActor.TabIndex = 20;
+            // 
             // actoresAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 561);
+            this.Controls.Add(this.idActor);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.deleteActor);
             this.Controls.Add(this.modificarActor);
             this.Controls.Add(this.showActor);
             this.Controls.Add(this.dataGridView1);
@@ -256,5 +288,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button showActor;
         private System.Windows.Forms.Button modificarActor;
+        private System.Windows.Forms.Button deleteActor;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox idActor;
     }
 }

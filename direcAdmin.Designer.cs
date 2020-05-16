@@ -46,6 +46,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.showDirect = new System.Windows.Forms.Button();
             this.modificarDirector = new System.Windows.Forms.Button();
+            this.eliminarDirect = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.idDirector = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -204,11 +207,40 @@
             this.modificarDirector.UseVisualStyleBackColor = true;
             this.modificarDirector.Click += new System.EventHandler(this.modificarDirector_Click);
             // 
+            // eliminarDirect
+            // 
+            this.eliminarDirect.Location = new System.Drawing.Point(505, 326);
+            this.eliminarDirect.Name = "eliminarDirect";
+            this.eliminarDirect.Size = new System.Drawing.Size(75, 23);
+            this.eliminarDirect.TabIndex = 18;
+            this.eliminarDirect.Text = "ELIMINAR";
+            this.eliminarDirect.UseVisualStyleBackColor = true;
+            this.eliminarDirect.Click += new System.EventHandler(this.eliminarDirect_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(112, 25);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(18, 13);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "ID";
+            // 
+            // idDirector
+            // 
+            this.idDirector.Location = new System.Drawing.Point(237, 18);
+            this.idDirector.Name = "idDirector";
+            this.idDirector.Size = new System.Drawing.Size(100, 20);
+            this.idDirector.TabIndex = 20;
+            // 
             // direcAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 540);
+            this.Controls.Add(this.idDirector);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.eliminarDirect);
             this.Controls.Add(this.modificarDirector);
             this.Controls.Add(this.showDirect);
             this.Controls.Add(this.dataGridView1);
@@ -257,5 +289,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button showDirect;
         private System.Windows.Forms.Button modificarDirector;
+        private System.Windows.Forms.Button eliminarDirect;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox idDirector;
     }
 }

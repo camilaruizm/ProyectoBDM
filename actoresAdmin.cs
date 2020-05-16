@@ -65,9 +65,12 @@ namespace ProyectoBDM
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+
             selectedRow = e.RowIndex;
             DataGridViewRow row = dataGridView1.Rows[selectedRow];
 
+            idActor.Text = row.Cells[0].Value.ToString();
             textNombreAct.Text = row.Cells[1].Value.ToString();
             textNombreAct2.Text = row.Cells[2].Value.ToString();
             textApeAct.Text = row.Cells[3].Value.ToString();
@@ -78,13 +81,35 @@ namespace ProyectoBDM
 
         private void modificarActor_Click(object sender, EventArgs e)
         {
-            DataGridViewRow newDataRow = dataGridView1.Rows[selectedRow];
-            newDataRow.Cells[1].Value = textNombreAct.Text;
-            newDataRow.Cells[2].Value = textNombreAct2.Text;
-            newDataRow.Cells[3].Value = textApeAct.Text;
-            newDataRow.Cells[4].Value = textApeAct2.Text;
-            newDataRow.Cells[5].Value = textCorreoAct.Text;
-            newDataRow.Cells[6].Value = textPaisAct.Text;
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            Image img = pictureBox1.Image;
+            byte[] arr2;
+            ImageConverter converter = new ImageConverter();
+            arr2 = (byte[])converter.ConvertTo(img, typeof(byte[]));
+
+            conexion.Open();
+            string Query = "UPDATE  ACTORES SET nombreActor1='" + textNombreAct.Text + "', nombreActor2='" + textNombreAct2.Text + "',apellidoActor1='" + textApeAct.Text + "',apellidoActor2='" + textApeAct2.Text + "',correoActor='" + textCorreoAct.Text + "',paisActor='" + textPaisAct.Text + "',fotoA='" + arr2 + "' where idActor ='" + idActor.Text + "'  "; 
+            MySqlCommand comando = new MySqlCommand(Query, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+            MessageBox.Show("!Se ha modificado el actor con exito¡");
+
+        }
+
+        private void deleteActor_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            Image img = pictureBox1.Image;
+            byte[] arr2;
+            ImageConverter converter = new ImageConverter();
+            arr2 = (byte[])converter.ConvertTo(img, typeof(byte[]));
+
+            conexion.Open();
+            string Query = "DELETE FROM  ACTORES WHERE   idActor ='" + idActor.Text + "'  ";
+            MySqlCommand comando = new MySqlCommand(Query, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+            MessageBox.Show("!Se ha Eliminado el actor con exito¡");
         }
     }
 }

@@ -46,6 +46,8 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.actualizarAdmin = new System.Windows.Forms.Button();
             this.deleteAdmin = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -97,7 +99,7 @@
             // 
             // buttonImagePelicula
             // 
-            this.buttonImagePelicula.Location = new System.Drawing.Point(634, 139);
+            this.buttonImagePelicula.Location = new System.Drawing.Point(693, 139);
             this.buttonImagePelicula.Name = "buttonImagePelicula";
             this.buttonImagePelicula.Size = new System.Drawing.Size(75, 23);
             this.buttonImagePelicula.TabIndex = 6;
@@ -162,7 +164,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(451, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(503, 30);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 232);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -181,8 +183,9 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(232, 68);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(265, 21);
             this.comboBox2.TabIndex = 23;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // actualizarAdmin
             // 
@@ -203,11 +206,31 @@
             this.deleteAdmin.Text = "ELIMINAR";
             this.deleteAdmin.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(118, 270);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "GÉNERO";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(232, 270);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 27;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            // 
             // peliculasAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 542);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.deleteAdmin);
             this.Controls.Add(this.actualizarAdmin);
             this.Controls.Add(this.comboBox2);
@@ -256,5 +279,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button actualizarAdmin;
         private System.Windows.Forms.Button deleteAdmin;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

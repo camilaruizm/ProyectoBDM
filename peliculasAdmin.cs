@@ -73,15 +73,20 @@ namespace ProyectoBDM
                 {
                     MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
-                    string selectQuery = " SELECT nombreDirector1, apellidoDirector1  From Directores";
+                    string selectQuery = " SELECT nombreDirector1, apellidoDirector1  From Directores";                  
                     conexion.Open();
-                    MySqlCommand command = new MySqlCommand(selectQuery, conexion);
+                    MySqlCommand command = new MySqlCommand(selectQuery,conexion);
                     MySqlDataReader reader = command.ExecuteReader();
+                    
+
                     while (reader.Read())
                     {
                         comboBox2.Refresh();
                         comboBox2.Items.Add(reader.GetValue(0).ToString());
+                        
                     }
+                
+
                     conexion.Close();
                 }
                 catch (Exception ex)
@@ -99,6 +104,16 @@ namespace ProyectoBDM
             conexion.Open();
            
 
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+        
         }
     }
 

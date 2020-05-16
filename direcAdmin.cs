@@ -72,29 +72,55 @@ namespace ProyectoBDM
             selectedRow = e.RowIndex;
             DataGridViewRow row = dataGridView1.Rows[selectedRow];
 
+            idDirector.Text = row.Cells[0].Value.ToString();
             nombreDir.Text = row.Cells[1].Value.ToString();
             nombreDir2.Text = row.Cells[2].Value.ToString();
             apellidoDir.Text = row.Cells[3].Value.ToString();
-            nombreDir2.Text = row.Cells[4].Value.ToString();
+            apellidoDir2.Text = row.Cells[4].Value.ToString();
             correoDir.Text = row.Cells[5].Value.ToString();
             paisDir.Text = row.Cells[6].Value.ToString();
+          
+
         }
 
         private void modificarDirector_Click(object sender, EventArgs e)
         {
-            DataGridViewRow newDataRow = dataGridView1.Rows[selectedRow];
-            newDataRow.Cells[1].Value = nombreDir.Text;
-            newDataRow.Cells[2].Value = nombreDir2.Text;
-            newDataRow.Cells[3].Value = apellidoDir.Text;
-            newDataRow.Cells[4].Value = apellidoDir2.Text;
-            newDataRow.Cells[5].Value = correoDir.Text;
-            newDataRow.Cells[6].Value = paisDir.Text;
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            Image img = pictureBox1.Image;
+            byte[] arr3;
+            ImageConverter converter = new ImageConverter();
+            arr3 = (byte[])converter.ConvertTo(img, typeof(byte[]));
+
+
+
+            conexion.Open();
+            
+            string Query = "UPDATE  DIRECTORES SET nombreDirector1='" + nombreDir.Text + "', nombreDirector2 ='" + nombreDir2.Text + "', apellidoDirector1='" + apellidoDir.Text + "', apellidoDirector2='" + apellidoDir2.Text + "', correoDirector='" + correoDir.Text + "', paisDirector='" + paisDir.Text + "', fotoD='" + arr3 + "' where idDirector ='" + idDirector.Text + "'  ";
+            MySqlCommand comando = new MySqlCommand(Query, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+            MessageBox.Show("!Se ha modificado al director con exito¡");
         }
 
         private void direcAdmin_Load(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
            
+        }
+
+        private void eliminarDirect_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            Image img = pictureBox1.Image;
+            byte[] arr3;
+            ImageConverter converter = new ImageConverter();
+            arr3 = (byte[])converter.ConvertTo(img, typeof(byte[]));
+
+            conexion.Open();
+            string Query = "DELETE FROM DIRECTORES where idDirector ='" + idDirector.Text + "'  ";
+            MySqlCommand comando = new MySqlCommand(Query, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+            MessageBox.Show("!Se ha eliminado al director con exito¡");
         }
     }
 }
