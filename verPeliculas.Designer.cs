@@ -38,11 +38,11 @@
             // LbBuscar
             // 
             this.LbBuscar.AutoSize = true;
-            this.LbBuscar.Location = new System.Drawing.Point(75, 69);
+            this.LbBuscar.Location = new System.Drawing.Point(60, 65);
             this.LbBuscar.Name = "LbBuscar";
-            this.LbBuscar.Size = new System.Drawing.Size(86, 13);
+            this.LbBuscar.Size = new System.Drawing.Size(101, 13);
             this.LbBuscar.TabIndex = 0;
-            this.LbBuscar.Text = "Buscar Pelicula: ";
+            this.LbBuscar.Text = "Titulo de la pelicula:";
             // 
             // TbBuscarPelicula
             // 
@@ -62,7 +62,7 @@
             // 
             // BtnBuscarPelicular
             // 
-            this.BtnBuscarPelicular.Location = new System.Drawing.Point(375, 49);
+            this.BtnBuscarPelicular.Location = new System.Drawing.Point(375, 55);
             this.BtnBuscarPelicular.Name = "BtnBuscarPelicular";
             this.BtnBuscarPelicular.Size = new System.Drawing.Size(62, 33);
             this.BtnBuscarPelicular.TabIndex = 3;

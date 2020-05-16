@@ -9,12 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-
+using ProyectoBDM.Control;
 
 namespace ProyectoBDM
 {
     public partial class peliculasAdmin : Form
     {
+        ControlPeliculasAdmi cpa = new ControlPeliculasAdmi();
         string imageUrl = null;
 
         public peliculasAdmin()
@@ -34,7 +35,7 @@ namespace ProyectoBDM
             conexion.Open();
             string Query =
                 "INSERT INTO PELICULAS(titulo,fechaEstreno,sinopsis,duracion,posterPelicula,copiasDisponibles,idDirectorf) " +
-                "values('" + textTitulo.Text + "','" + dateTimePicker1 + "','" + textSinopsis.Text + "','" + textDuracion.Text + "','" + arr + "','" + cantCopias.Text + comboBox2 + "');";
+                "values('" + textTitulo.Text + "','" + dateTimePicker1.Text + "','" + textSinopsis.Text + "','" + textDuracion.Text + "','" + arr + "','" + cantCopias.Text + comboBox2 + "');";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
@@ -67,9 +68,7 @@ namespace ProyectoBDM
 
         private void peliculasAdmin_Load(object sender, EventArgs e)
         {
-          
-            {
-                try
+                /*try
                 {
                     MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
@@ -92,17 +91,28 @@ namespace ProyectoBDM
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                }
+                }*/
 
-            }
+            cpa.llenarComboBox(comboBox1);
+            cpa.llenarComboBoxDirectores(comboBox2);
 
         }
 
         private void actualizarAdmin_Click(object sender, EventArgs e)
         {
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            Image img = pictureBox1.Image;
+            byte[] arrImg;
+            ImageConverter converter = new ImageConverter();
+            arrImg = (byte[])converter.ConvertTo(img, typeof(byte[]));
+
             conexion.Open();
-           
+            string Query = "UPDATE  peliculas SET titulo = '"+textTitulo.Text+"', fechaEstreno= '"+dateTimePicker1+"', sinopsis= '"+textSinopsis.Text+"', duracion = '"+textDuracion.Text+"', posterPelicula = '"+arrImg+"', copiasDisponibles = '"+textCantCopis.Text+"', idDirectorf = '"+comboBox2.ValueMember+"'";
+            MySqlCommand comando = new MySqlCommand(Query, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+            MessageBox.Show("!Se ha modificado al director con exito¡");
+            conexion.Close();
 
         }
 
@@ -113,7 +123,7 @@ namespace ProyectoBDM
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-        
+
         }
     }
 

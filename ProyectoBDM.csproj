@@ -105,6 +105,7 @@
     <Compile Include="BuscarPeliculas.Designer.cs">
       <DependentUpon>BuscarPeliculas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control\ControlPeliculasAdmi.cs" />
     <Compile Include="CuentaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,7 +247,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Control\" />
     <Folder Include="Modelo\" />
   </ItemGroup>
   <ItemGroup>
