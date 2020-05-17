@@ -106,6 +106,7 @@
       <DependentUpon>BuscarPeliculas.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\ControlPeliculasAdmi.cs" />
+    <Compile Include="Control\ControlRegistroClientes.cs" />
     <Compile Include="CuentaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +137,7 @@
     <Compile Include="MenuClientes.Designer.cs">
       <DependentUpon>MenuClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelo\Cliente.cs" />
     <Compile Include="PagarMultas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,10 +161,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="RegistroClientes.cs">
+    <Compile Include="Vista\RegistroClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistroClientes.Designer.cs">
+    <Compile Include="Vista\RegistroClientes.Designer.cs">
       <DependentUpon>RegistroClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="InicioSesionCliente.cs">
@@ -212,7 +214,7 @@
     <EmbeddedResource Include="peliculasAdmin.resx">
       <DependentUpon>peliculasAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistroClientes.resx">
+    <EmbeddedResource Include="Vista\RegistroClientes.resx">
       <DependentUpon>RegistroClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioSesionCliente.resx">
@@ -246,9 +248,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modelo\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Vista\Imagenes\BaseDatos.png" />
     <Content Include="Vista\Imagenes\ContrasenaCli.png" />

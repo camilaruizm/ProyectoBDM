@@ -54,6 +54,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.tbCorreo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.BtnEscogerIma = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -314,7 +315,6 @@
             this.label9.Size = new System.Drawing.Size(50, 24);
             this.label9.TabIndex = 24;
             this.label9.Text = "Cuenta";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // tbCorreo
             // 
@@ -325,7 +325,6 @@
             this.tbCorreo.Name = "tbCorreo";
             this.tbCorreo.Size = new System.Drawing.Size(249, 26);
             this.tbCorreo.TabIndex = 26;
-            this.tbCorreo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label14
             // 
@@ -338,12 +337,26 @@
             this.label14.TabIndex = 25;
             this.label14.Text = "CORREO:";
             // 
+            // BtnEscogerIma
+            // 
+            this.BtnEscogerIma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
+            this.BtnEscogerIma.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.BtnEscogerIma.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Bold);
+            this.BtnEscogerIma.Location = new System.Drawing.Point(506, 270);
+            this.BtnEscogerIma.Name = "BtnEscogerIma";
+            this.BtnEscogerIma.Size = new System.Drawing.Size(111, 30);
+            this.BtnEscogerIma.TabIndex = 27;
+            this.BtnEscogerIma.Text = "Subir";
+            this.BtnEscogerIma.UseVisualStyleBackColor = false;
+            this.BtnEscogerIma.Click += new System.EventHandler(this.BtnEscogerIma_Click);
+            // 
             // RegistroClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(662, 552);
+            this.Controls.Add(this.BtnEscogerIma);
             this.Controls.Add(this.tbCorreo);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label9);
@@ -408,5 +421,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbCorreo;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button BtnEscogerIma;
     }
 }
