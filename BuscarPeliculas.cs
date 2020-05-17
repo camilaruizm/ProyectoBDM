@@ -31,5 +31,10 @@ namespace ProyectoBDM
         {
 
         }
+
+        private void dgvBuscarPeliculas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
