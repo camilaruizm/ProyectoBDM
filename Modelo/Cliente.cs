@@ -28,6 +28,8 @@ namespace ProyectoBDM.Modelo
         public string UserCli { get; set; }
         public string PassCli { get; set; }
 
+        
+
 
     }
 }

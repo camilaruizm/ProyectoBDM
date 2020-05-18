@@ -137,7 +137,16 @@
     <Compile Include="MenuClientes.Designer.cs">
       <DependentUpon>MenuClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelo\Actores.cs" />
     <Compile Include="Modelo\Cliente.cs" />
+    <Compile Include="Modelo\Directores.cs" />
+    <Compile Include="Modelo\Facturas_Prestamos.cs" />
+    <Compile Include="Modelo\Generos.cs" />
+    <Compile Include="Modelo\Multas.cs" />
+    <Compile Include="Modelo\Participaciones.cs" />
+    <Compile Include="Modelo\Peliculas.cs" />
+    <Compile Include="Modelo\Peliculas_Generos.cs" />
+    <Compile Include="Modelo\Prestamos.cs" />
     <Compile Include="PagarMultas.cs">
       <SubType>Form</SubType>
     </Compile>
