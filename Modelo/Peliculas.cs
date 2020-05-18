@@ -10,17 +10,16 @@ namespace ProyectoBDM.Modelo
     class Peliculas
     {
         private string titulo;
-        //private date fechaEstreno;
+        private string fechaEstreno;
         private string sinopsis;
-        private Time duracion;
-        //private longblob posterPelicula;
+        private string duracion;
         private int copiasDisponibles;
         private int idDirectorf;
 
         public string Titulo { get; set; }
-        //public Date FechaEstreno { get; set; }
+        public string FechaEstreno { get; set; }
         public string Sinopsis { get; set; }
-        public Time Duracion { get; set; }
+        public string Duracion { get; set; }
         public int CopiasDisponibles { get; set; }
         private int IdDirectorf { get; set; }
     }

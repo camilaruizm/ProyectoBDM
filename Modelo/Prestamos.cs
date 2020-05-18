@@ -8,8 +8,8 @@ namespace ProyectoBDM.Modelo
 {
     class Prestamos
     {
-        private DateTime fechaHoraIP;
-        private DateTime fechaHoraFP;
+        private string fechaHoraIP;
+        private string fechaHoraFP;
         private int peliculasSolicitadas;
         private string valorTotalP;
         private int idClientef;

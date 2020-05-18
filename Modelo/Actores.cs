@@ -13,8 +13,7 @@ namespace ProyectoBDM.Modelo
         private string apellidoActor1;
         private string apellidoActor2;
         private string correoActor;
-        private string paisActor;
-        //private string fotoA;
+        private string paisActor;       
 
         public string NombreActor1 { get; set; }
         public string NombreActor2 { get; set; }

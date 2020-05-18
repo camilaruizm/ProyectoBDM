@@ -8,12 +8,12 @@ namespace ProyectoBDM.Modelo
 {
     class Facturas_Prestamos
     {
-        private DateTime fechaHoraFM;
+        private string fechaHoraFM;
         private double valorFacturaM;
         private int idPrestamof;
         private int idPeliculaf;
 
-        public DateTime FechaHoraFM { get; set; }
+        public string FechaHoraFM { get; set; }
         public double ValorFacturaM { get; set; }
         public int IdPrestamof { get; set; }
         public int IdPeliculaf { get; set; }
