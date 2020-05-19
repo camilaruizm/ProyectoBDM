@@ -8,8 +8,8 @@ namespace ProyectoBDM.Modelo
 {
     class Multas
     {
-        //private Date fechaGeneracionMulta;
-        //private Date fechaPagoMulta;
+        private string fechaGeneracionMulta;
+        private string fechaPagoMulta;
         private double valorMulta;
         private bool estadoMulta;
         private int idPrestamof2;

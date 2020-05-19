@@ -14,7 +14,6 @@ namespace ProyectoBDM.Modelo
         private string apellidoDirector2;
         private string correoDirector;
         private string paisDirector;
-        //private string fotoD;
 
         public string NombreDiretor1 { get; set; }
         public string NombreDirector2 { get; set; }

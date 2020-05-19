@@ -105,6 +105,7 @@
     <Compile Include="BuscarPeliculas.Designer.cs">
       <DependentUpon>BuscarPeliculas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control\ControlActoresAdmi.cs" />
     <Compile Include="Control\ControlPeliculasAdmi.cs" />
     <Compile Include="Control\ControlRegistroClientes.cs" />
     <Compile Include="CuentaCliente.cs">
@@ -196,12 +197,6 @@
     <Compile Include="verPeliculas.Designer.cs">
       <DependentUpon>verPeliculas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Modificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Modificar.Designer.cs">
-      <DependentUpon>Modificar.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="actoresAdmin.resx">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,9 +234,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="verPeliculas.resx">
       <DependentUpon>verPeliculas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Modificar.resx">
-      <DependentUpon>Modificar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

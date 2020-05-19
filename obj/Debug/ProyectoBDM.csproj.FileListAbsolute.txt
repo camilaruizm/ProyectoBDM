@@ -149,7 +149,6 @@ C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\Proyect
 C:\Users\usuario\Documents\ProyectoBDM\ProyectoBDM\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.Modificar.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.actoresAdmin.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.peliculasAdmin.resources
-D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.Modificar.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\ProyectoBDM.exe.config
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\ProyectoBDM.exe
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\bin\Debug\ProyectoBDM.pdb
