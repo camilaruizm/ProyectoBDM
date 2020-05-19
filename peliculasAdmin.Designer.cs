@@ -42,12 +42,12 @@
             this.cantCopias = new System.Windows.Forms.Label();
             this.textCantCopis = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.actualizarAdmin = new System.Windows.Forms.Button();
             this.deleteAdmin = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.idPelicula = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             // labelTituloPelicula
             // 
             this.labelTituloPelicula.AutoSize = true;
-            this.labelTituloPelicula.Location = new System.Drawing.Point(112, 30);
+            this.labelTituloPelicula.Location = new System.Drawing.Point(112, 25);
             this.labelTituloPelicula.Name = "labelTituloPelicula";
             this.labelTituloPelicula.Size = new System.Drawing.Size(46, 13);
             this.labelTituloPelicula.TabIndex = 0;
@@ -110,14 +110,14 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(97, 348);
+            this.dataGridView2.Location = new System.Drawing.Point(97, 331);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(623, 182);
+            this.dataGridView2.Size = new System.Drawing.Size(623, 199);
             this.dataGridView2.TabIndex = 7;
             // 
             // buttonInsertPelicula
             // 
-            this.buttonInsertPelicula.Location = new System.Drawing.Point(215, 306);
+            this.buttonInsertPelicula.Location = new System.Drawing.Point(211, 280);
             this.buttonInsertPelicula.Name = "buttonInsertPelicula";
             this.buttonInsertPelicula.Size = new System.Drawing.Size(75, 23);
             this.buttonInsertPelicula.TabIndex = 8;
@@ -127,7 +127,7 @@
             // 
             // textTitulo
             // 
-            this.textTitulo.Location = new System.Drawing.Point(232, 23);
+            this.textTitulo.Location = new System.Drawing.Point(232, 22);
             this.textTitulo.Name = "textTitulo";
             this.textTitulo.Size = new System.Drawing.Size(152, 20);
             this.textTitulo.TabIndex = 9;
@@ -171,13 +171,6 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(232, 193);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(204, 20);
-            this.dateTimePicker1.TabIndex = 19;
-            // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
@@ -189,7 +182,7 @@
             // 
             // actualizarAdmin
             // 
-            this.actualizarAdmin.Location = new System.Drawing.Point(351, 306);
+            this.actualizarAdmin.Location = new System.Drawing.Point(322, 280);
             this.actualizarAdmin.Name = "actualizarAdmin";
             this.actualizarAdmin.Size = new System.Drawing.Size(85, 23);
             this.actualizarAdmin.TabIndex = 24;
@@ -199,42 +192,50 @@
             // 
             // deleteAdmin
             // 
-            this.deleteAdmin.Location = new System.Drawing.Point(503, 306);
+            this.deleteAdmin.Location = new System.Drawing.Point(440, 280);
             this.deleteAdmin.Name = "deleteAdmin";
             this.deleteAdmin.Size = new System.Drawing.Size(75, 23);
             this.deleteAdmin.TabIndex = 25;
             this.deleteAdmin.Text = "ELIMINAR";
             this.deleteAdmin.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(118, 270);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "GÉNERO";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(14, 13);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "#";
             // 
-            // comboBox1
+            // idPelicula
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(232, 270);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 27;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            this.idPelicula.Enabled = false;
+            this.idPelicula.Location = new System.Drawing.Point(30, 25);
+            this.idPelicula.Name = "idPelicula";
+            this.idPelicula.Size = new System.Drawing.Size(40, 20);
+            this.idPelicula.TabIndex = 29;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(232, 193);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 30;
             // 
             // peliculasAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 542);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.idPelicula);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.deleteAdmin);
             this.Controls.Add(this.actualizarAdmin);
             this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textCantCopis);
             this.Controls.Add(this.cantCopias);
@@ -275,11 +276,11 @@
         private System.Windows.Forms.Label cantCopias;
         private System.Windows.Forms.TextBox textCantCopis;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button actualizarAdmin;
         private System.Windows.Forms.Button deleteAdmin;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox idPelicula;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

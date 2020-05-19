@@ -24,6 +24,7 @@ namespace ProyectoBDM
 
         private void buttonImageAct_Click(object sender, EventArgs e)
         {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
                 if (ofd.ShowDialog() == DialogResult.OK)

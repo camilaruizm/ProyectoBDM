@@ -33,9 +33,10 @@ namespace ProyectoBDM
             arr = (byte[])converter.ConvertTo(img, typeof(byte[]));
 
             conexion.Open();
-            string Query =
-                "INSERT INTO PELICULAS(titulo,fechaEstreno,sinopsis,duracion,posterPelicula,copiasDisponibles,idDirectorf) " +
-                "values('" + textTitulo.Text + "','" + dateTimePicker1.Text + "','" + textSinopsis.Text + "','" + textDuracion.Text + "','" + arr + "','" + cantCopias.Text + comboBox2 + "');";
+            string Query = "INSERT INTO PELICULAS(titulo,fechaEstreno,sinopsis,duracion,posterPelicula,copiasDisponibles,idDirectorf) " +
+                "values('" + textTitulo.Text + "','" + dateTimePicker1.Text + "','" + textSinopsis.Text + "','" + textDuracion.Text + "','" + arr + "','" + textCantCopis.Text + "','" + comboBox2.ValueMember + "');";
+
+
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
@@ -93,9 +94,10 @@ namespace ProyectoBDM
                     MessageBox.Show(ex.Message);
                 }*/
 
-            cpa.llenarComboBox(comboBox1);
+            
             cpa.llenarComboBoxDirectores(comboBox2);
 
+          
         }
 
         private void actualizarAdmin_Click(object sender, EventArgs e)
@@ -124,6 +126,11 @@ namespace ProyectoBDM
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 

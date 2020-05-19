@@ -222,15 +222,16 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(112, 25);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(18, 13);
+            this.label7.Size = new System.Drawing.Size(14, 13);
             this.label7.TabIndex = 19;
-            this.label7.Text = "ID";
+            this.label7.Text = "#";
             // 
             // idDirector
             // 
+            this.idDirector.Enabled = false;
             this.idDirector.Location = new System.Drawing.Point(237, 18);
             this.idDirector.Name = "idDirector";
-            this.idDirector.Size = new System.Drawing.Size(100, 20);
+            this.idDirector.Size = new System.Drawing.Size(28, 20);
             this.idDirector.TabIndex = 20;
             // 
             // direcAdmin

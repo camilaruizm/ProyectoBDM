@@ -53,7 +53,7 @@ namespace ProyectoBDM
             DataGridViewRow row = dataGridView1.Rows[selectedRow];
 
             idGenero.Text = row.Cells[0].Value.ToString();
-            tipoGenero.Text = row.Cells[2].Value.ToString();
+            tipoGenero.Text = row.Cells[1].Value.ToString();
         }
 
         private void showGenero_Click(object sender, EventArgs e)
@@ -79,6 +79,11 @@ namespace ProyectoBDM
             comando.ExecuteNonQuery();
             conexion.Close();
             MessageBox.Show("!Se ha modificado al director con exito¡");
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
