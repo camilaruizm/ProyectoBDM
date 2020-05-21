@@ -106,6 +106,7 @@
       <DependentUpon>BuscarPeliculas.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\ControlActoresAdmi.cs" />
+    <Compile Include="Control\ControlBuscarPeliculas.cs" />
     <Compile Include="Control\ControlPeliculasAdmi.cs" />
     <Compile Include="Control\ControlRegistroClientes.cs" />
     <Compile Include="CuentaCliente.cs">
