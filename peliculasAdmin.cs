@@ -35,7 +35,7 @@ namespace ProyectoBDM
             conexion.Open();
             string Query =
                 "INSERT INTO PELICULAS(titulo,fechaEstreno,sinopsis,duracion,posterPelicula,copiasDisponibles,idDirectorf) " +
-                "values('" + textTitulo.Text + "','" + dateTimePicker1.Text + "','" + textSinopsis.Text + "','" + textDuracion.Text + "','" + arr + "','" + cantCopias.Text + comboBox2 + "');";
+                "values('" + textTitulo.Text + "','" + dateTimePicker1.Text + "','" + textSinopsis.Text + "','" + textDuracion.Text + "','" + arr + "','" + cantCopias.Text +"','"+ comboBox2.ValueMember +"');";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();

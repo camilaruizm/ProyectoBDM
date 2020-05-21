@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoBDM
 {
-    public partial class CuentaCliente : Form
+    public partial class AgregarGenero : Form
     {
-        public CuentaCliente()
+        public AgregarGenero()
         {
             InitializeComponent();
-        }
-
-        private void btHistorial_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

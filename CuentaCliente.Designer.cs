@@ -133,7 +133,6 @@
             this.label1.TabIndex = 47;
             this.label1.Text = "CORREO:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -348,6 +347,7 @@
             this.btHistorial.TabIndex = 73;
             this.btHistorial.Text = "VER HISTORIAL";
             this.btHistorial.UseVisualStyleBackColor = false;
+            this.btHistorial.Click += new System.EventHandler(this.btHistorial_Click);
             // 
             // label9
             // 

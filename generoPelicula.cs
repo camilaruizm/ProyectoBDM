@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using ProyectoBDM.Control;
 
 namespace ProyectoBDM
 {
@@ -15,6 +16,7 @@ namespace ProyectoBDM
     {
         int selectedRow;
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
+        ControlGeneroPelicula cgp = new ControlGeneroPelicula();
         public generoPelicula()
         {
             InitializeComponent();
@@ -22,7 +24,16 @@ namespace ProyectoBDM
 
         private void insertarGenero_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            try
+            {
+                cgp.InsertarGenero(tipoGenero);
+                MessageBox.Show("!Se ha registrado el género con exito¡");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("!Error la insertar¡");
+            }
+            /*MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
             conexion.Open();
             string Query =
@@ -30,13 +41,22 @@ namespace ProyectoBDM
                 "values('"  + tipoGenero.Text  + "');";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
-            conexion.Close();
-            MessageBox.Show("!Se ha registrado el género con exito¡");
+            conexion.Close();*/
+            
         }
 
         private void modificarGenero_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            try
+            {
+                cgp.ModificarGenero(tipoGenero, idGenero);
+                MessageBox.Show("!Se ha modificado el género con exito¡");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("!Error al modificar¡");
+            }
+            /*MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
             conexion.Open();
 
@@ -44,7 +64,7 @@ namespace ProyectoBDM
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
-            MessageBox.Show("!Se ha modificado al director con exito¡");
+            MessageBox.Show("!Se ha modificado al director con exito¡");*/
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -58,19 +78,37 @@ namespace ProyectoBDM
 
         private void showGenero_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            try
+            {
+                cgp.MostrarGenero(adaptador, dataGridView1);
+                MessageBox.Show("!Si quiere eliminar o modificar los generos recuerde usar el idGenero asociado¡");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("!No se pudo mostrar¡");
+            }
+            /*MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
             MySqlCommand comando = new MySqlCommand("SELECT * FROM GENEROS", conexion);
 
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);
-            dataGridView1.DataSource = tabla;
+            dataGridView1.DataSource = tabla;*/
         }
 
         private void eliminarGenero_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            try
+            {
+                cgp.EliminarGenero(idGenero);
+                MessageBox.Show("!Se ha eliminado el genero con exito¡");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("!Error al eliminar¡");
+            }
+            /*MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
             conexion.Open();
 
@@ -78,7 +116,7 @@ namespace ProyectoBDM
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
-            MessageBox.Show("!Se ha modificado al director con exito¡");
+            MessageBox.Show("!Se ha modificado al director con exito¡");*/
         }
     }
 }

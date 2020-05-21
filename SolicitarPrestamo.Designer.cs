@@ -350,6 +350,7 @@
             this.btBuscarM.TabIndex = 60;
             this.btBuscarM.Text = "";
             this.btBuscarM.UseVisualStyleBackColor = false;
+            this.btBuscarM.Click += new System.EventHandler(this.btBuscarM_Click);
             // 
             // lbPrestamo
             // 

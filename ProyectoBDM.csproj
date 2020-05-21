@@ -93,11 +93,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="actoresAdmin.cs">
+    <Compile Include="Control\ControlGeneroPelicula.cs" />
+    <Compile Include="Vista\actoresAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="actoresAdmin.Designer.cs">
+    <Compile Include="Vista\actoresAdmin.Designer.cs">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarGenero.Designer.cs">
+      <DependentUpon>AgregarGenero.cs</DependentUpon>
     </Compile>
     <Compile Include="BuscarPeliculas.cs">
       <SubType>Form</SubType>
@@ -191,17 +198,17 @@
     <Compile Include="SolicitarPrestamo.Designer.cs">
       <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
     </Compile>
-    <Compile Include="verPeliculas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="verPeliculas.Designer.cs">
-      <DependentUpon>verPeliculas.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="actoresAdmin.resx">
+    <EmbeddedResource Include="Vista\actoresAdmin.resx">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarGenero.resx">
+      <DependentUpon>AgregarGenero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarPeliculas.resx">
       <DependentUpon>BuscarPeliculas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentaCliente.resx">
+      <DependentUpon>CuentaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="direcAdmin.resx">
       <DependentUpon>direcAdmin.cs</DependentUpon>
@@ -231,9 +238,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SolicitarPrestamo.resx">
       <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="verPeliculas.resx">
-      <DependentUpon>verPeliculas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
