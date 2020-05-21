@@ -116,16 +116,10 @@
     <Compile Include="Control\ControlActoresAdmi.cs" />
     <Compile Include="Control\ControlPeliculasAdmi.cs" />
     <Compile Include="Control\ControlRegistroClientes.cs" />
-    <Compile Include="CuentaCliente.cs">
+    <Compile Include="Vista\direcAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CuentaCliente.Designer.cs">
-      <DependentUpon>CuentaCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="direcAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="direcAdmin.Designer.cs">
+    <Compile Include="Vista\direcAdmin.Designer.cs">
       <DependentUpon>direcAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\generoPelicula.cs">
@@ -208,10 +202,7 @@
     <EmbeddedResource Include="BuscarPeliculas.resx">
       <DependentUpon>BuscarPeliculas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CuentaCliente.resx">
-      <DependentUpon>CuentaCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="direcAdmin.resx">
+    <EmbeddedResource Include="Vista\direcAdmin.resx">
       <DependentUpon>direcAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\generoPelicula.resx">
