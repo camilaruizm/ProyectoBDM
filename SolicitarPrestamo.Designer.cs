@@ -515,13 +515,14 @@
             this.btPrestamo.TabIndex = 72;
             this.btPrestamo.Text = "SOLICITAR PRÉSTAMO";
             this.btPrestamo.UseVisualStyleBackColor = false;
+            this.btPrestamo.Click += new System.EventHandler(this.btPrestamo_Click);
             // 
             // SolicitarPrestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(583, 545);
+            this.ClientSize = new System.Drawing.Size(603, 545);
             this.Controls.Add(this.btPrestamo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

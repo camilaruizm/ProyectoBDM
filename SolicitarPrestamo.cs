@@ -16,5 +16,10 @@ namespace ProyectoBDM
         {
             InitializeComponent();
         }
+
+        private void btPrestamo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

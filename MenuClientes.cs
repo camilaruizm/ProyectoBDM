@@ -68,15 +68,12 @@ namespace ProyectoBDM
         private void BtnVerPrestamos_Click(object sender, EventArgs e)
         {
             this.Close();
-            th = new Thread(Abrir_VPrest);
+          
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
         }
 
-        private void Abrir_VPrest()
-        {
-            Application.Run(new PrestamosActivos());
-        }
+ 
 
         private void BtnVerPrestamos_MouseMove(object sender, MouseEventArgs e)
         {
