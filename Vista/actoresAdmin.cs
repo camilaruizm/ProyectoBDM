@@ -164,7 +164,11 @@ namespace ProyectoBDM
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
+<<<<<<< HEAD:Vista/actoresAdmin.cs
             MessageBox.Show("!Se ha Eliminado el actor con exito¡");*/
+=======
+            MessageBox.Show("!Se ha Eliminado el actor con exito¡");
+>>>>>>> parent of 4fb0773... FUNCIONAMIENTO PRESTAMOS ACTIVOS CLIENTE:actoresAdmin.cs
         }
     }
 }

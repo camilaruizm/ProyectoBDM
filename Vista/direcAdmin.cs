@@ -8,9 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-
-
-
+using ProyectoBDM.Control;
 
 namespace ProyectoBDM
 {
@@ -19,6 +17,7 @@ namespace ProyectoBDM
         string imageUrl = null;
         int selectedRow;
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
+        ControlDirecAdmi cda = new ControlDirecAdmi();
 
         public direcAdmin()
         {
@@ -46,25 +45,35 @@ namespace ProyectoBDM
             ImageConverter converter = new ImageConverter();
             arr3 = (byte[])converter.ConvertTo(img, typeof(byte[]));
 
-            conexion.Open();
+            try
+            {
+                cda.InsertarDirectores(nombreDir, nombreDir2, apellidoDir, apellidoDir2, correoDir, paisDir, arr3);
+                MessageBox.Show("!Se ha registrado al director con exito¡");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("!Error al registrar¡");
+            }
+            /*conexion.Open();
             string Query= "INSERT INTO DIRECTORES(nombreDirector1,nombreDirector2,apellidoDirector1,apellidoDirector2,correoDirector,paisDirector,fotoD)values('" + nombreDir.Text + "','" + nombreDir2.Text + "','" + apellidoDir.Text + "','" + apellidoDir2.Text + "','" + correoDir.Text + "','" + paisDir.Text + "','" + arr3 + "');";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
-            MessageBox.Show("!Se ha registrado al director con exito¡");
+            MessageBox.Show("!Se ha registrado al director con exito¡");*/
         }
 
         private void showDirect_Click(object sender, EventArgs e)
         {
 
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
-
-            MySqlCommand comando = new MySqlCommand("SELECT * FROM DIRECTORES", conexion);
-            
-            adaptador.SelectCommand = comando;
-            DataTable tabla = new DataTable();
-            adaptador.Fill(tabla);
-            dataGridView1.DataSource = tabla;
+            try
+            {
+                cda.MostrarDierctores(adaptador, dataGridView1);
+                MessageBox.Show("!Si desea modificar o eliminar un actor recuerde usar el idActor asociado¡");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("!Error al mostrar¡");
+            }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -91,15 +100,23 @@ namespace ProyectoBDM
             ImageConverter converter = new ImageConverter();
             arr3 = (byte[])converter.ConvertTo(img, typeof(byte[]));
 
-
-
-            conexion.Open();
+            try
+            {
+                cda.ModificarDirectores(nombreDir, nombreDir2, apellidoDir, apellidoDir2, correoDir, paisDir, arr3, idDirector);
+                MessageBox.Show("!Se ha modificado al director con exito¡");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("!Error al modificar¡");
+            }
+            
+            /*conexion.Open();
             
             string Query = "UPDATE  DIRECTORES SET nombreDirector1='" + nombreDir.Text + "', nombreDirector2 ='" + nombreDir2.Text + "', apellidoDirector1='" + apellidoDir.Text + "', apellidoDirector2='" + apellidoDir2.Text + "', correoDirector='" + correoDir.Text + "', paisDirector='" + paisDir.Text + "', fotoD='" + arr3 + "' where idDirector ='" + idDirector.Text + "'  ";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
-            MessageBox.Show("!Se ha modificado al director con exito¡");
+            MessageBox.Show("!Se ha modificado al director con exito¡");*/
         }
 
         private void direcAdmin_Load(object sender, EventArgs e)
@@ -115,12 +132,21 @@ namespace ProyectoBDM
             ImageConverter converter = new ImageConverter();
             arr3 = (byte[])converter.ConvertTo(img, typeof(byte[]));
 
-            conexion.Open();
+            try
+            {
+                cda.EliminarDirectores(idDirector);               
+                MessageBox.Show("!Se ha modificado al director con exito¡");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("!Error al eliminar");
+            }
+            /*conexion.Open();
             string Query = "DELETE FROM DIRECTORES where idDirector ='" + idDirector.Text + "'  ";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
-            MessageBox.Show("!Se ha eliminado al director con exito¡");
+            MessageBox.Show("!Se ha eliminado al director con exito¡");*/
         }
     }
 }

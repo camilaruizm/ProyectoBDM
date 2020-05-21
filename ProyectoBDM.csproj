@@ -93,6 +93,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\ControlDirecAdmi.cs" />
     <Compile Include="Control\ControlGeneroPelicula.cs" />
     <Compile Include="Vista\actoresAdmin.cs">
       <SubType>Form</SubType>
@@ -100,11 +101,11 @@
     <Compile Include="Vista\actoresAdmin.Designer.cs">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="AgregarGenero.cs">
+    <Compile Include="InsertarGeneroPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgregarGenero.Designer.cs">
-      <DependentUpon>AgregarGenero.cs</DependentUpon>
+    <Compile Include="InsertarGeneroPelicula.Designer.cs">
+      <DependentUpon>InsertarGeneroPelicula.cs</DependentUpon>
     </Compile>
     <Compile Include="BuscarPeliculas.cs">
       <SubType>Form</SubType>
@@ -127,10 +128,10 @@
     <Compile Include="direcAdmin.Designer.cs">
       <DependentUpon>direcAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="generoPelicula.cs">
+    <Compile Include="Vista\generoPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="generoPelicula.Designer.cs">
+    <Compile Include="Vista\generoPelicula.Designer.cs">
       <DependentUpon>generoPelicula.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuAdmin.cs">
@@ -201,8 +202,8 @@
     <EmbeddedResource Include="Vista\actoresAdmin.resx">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgregarGenero.resx">
-      <DependentUpon>AgregarGenero.cs</DependentUpon>
+    <EmbeddedResource Include="InsertarGeneroPelicula.resx">
+      <DependentUpon>InsertarGeneroPelicula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarPeliculas.resx">
       <DependentUpon>BuscarPeliculas.cs</DependentUpon>
@@ -213,7 +214,7 @@
     <EmbeddedResource Include="direcAdmin.resx">
       <DependentUpon>direcAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="generoPelicula.resx">
+    <EmbeddedResource Include="Vista\generoPelicula.resx">
       <DependentUpon>generoPelicula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuAdmin.resx">

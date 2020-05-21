@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoBDM
 {
-    public partial class AgregarGenero : Form
+    public partial class InsertarGeneroPelicula : Form
     {
-        public AgregarGenero()
+        public InsertarGeneroPelicula()
         {
             InitializeComponent();
         }
