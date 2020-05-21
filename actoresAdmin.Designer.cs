@@ -262,6 +262,7 @@
             this.Controls.Add(this.nombreActor);
             this.Name = "actoresAdmin";
             this.Text = "actoresAdmin";
+            this.Load += new System.EventHandler(this.actoresAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

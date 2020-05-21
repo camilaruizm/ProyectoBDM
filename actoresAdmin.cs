@@ -112,5 +112,10 @@ namespace ProyectoBDM
             conexion.Close();
             MessageBox.Show("!Se ha Eliminado el actor con exito¡");
         }
+
+        private void actoresAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

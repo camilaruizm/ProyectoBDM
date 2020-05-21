@@ -85,7 +85,7 @@ namespace ProyectoBDM
 
         private void Abrir_PM()
         {
-            Application.Run(new PagarMultas());
+            Application.Run(new CuentaCliente());
         }
 
         private void BtnPagarMultas_MouseMove(object sender, MouseEventArgs e)
