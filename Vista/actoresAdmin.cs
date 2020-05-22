@@ -170,5 +170,10 @@ namespace ProyectoBDM
             MessageBox.Show("!Se ha Eliminado el actor con exito¡");
 >>>>>>> parent of 4fb0773... FUNCIONAMIENTO PRESTAMOS ACTIVOS CLIENTE:actoresAdmin.cs*/
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

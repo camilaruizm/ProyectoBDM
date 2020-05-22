@@ -65,28 +65,7 @@ namespace ProyectoBDM
             BtnSolPrestamo.BackColor = Color.Lavender;
         }
 
-        private void BtnVerPrestamos_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            th = new Thread(Abrir_VPrest);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-        }
-
-        private void Abrir_VPrest()
-        {
-            Application.Run(new PrestamosActivos());
-        }
-
-        private void BtnVerPrestamos_MouseMove(object sender, MouseEventArgs e)
-        {
-            BtnVerPrestamos.BackColor = Color.Silver;
-        }
-
-        private void BtnVerPrestamos_MouseLeave(object sender, EventArgs e)
-        {
-            BtnVerPrestamos.BackColor = Color.Lavender;
-        }
+    
 
         private void BtnPagarMultas_Click(object sender, EventArgs e)
         {
@@ -98,7 +77,7 @@ namespace ProyectoBDM
 
         private void Abrir_PM()
         {
-            Application.Run(new PagarMultas());
+            Application.Run(new estadoCuenta());
         }
 
         private void BtnPagarMultas_MouseMove(object sender, MouseEventArgs e)

@@ -183,7 +183,6 @@ D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\Pro
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.RegistroClientes.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.InicioSesionCliente.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Properties.Resources.resources
-D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.Modificar.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.GenerateResource.cache
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.CoreCompileInputs.cache
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.CopyComplete
@@ -197,47 +196,8 @@ D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.SolicitarPrestamo.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.CuentaCliente.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.InsertarGeneroPelicula.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csprojAssemblyReference.cache
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.actoresAdmin.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.InsertarGeneroPelicula.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.BuscarPeliculas.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.direcAdmin.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.generoPelicula.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.MenuAdmin.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.MenuClientes.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.peliculasAdmin.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.RegistroClientes.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.InicioSesionCliente.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Properties.Resources.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.SolicitarPrestamo.resources
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.GenerateResource.cache
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.CoreCompileInputs.cache
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.exe
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.pdb
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\ProyectoBDM.exe.config
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\ProyectoBDM.exe
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\ProyectoBDM.pdb
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\BouncyCastle.Crypto.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\Google.Protobuf.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\K4os.Compression.LZ4.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\K4os.Compression.LZ4.Streams.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\K4os.Hash.xxHash.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\MySql.Data.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\Renci.SshNet.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\System.Buffers.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\System.Memory.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\System.Numerics.Vectors.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\Ubiety.Dns.Core.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\Zstandard.Net.dll
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\Google.Protobuf.xml
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\K4os.Compression.LZ4.xml
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\K4os.Compression.LZ4.Streams.xml
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\K4os.Hash.xxHash.xml
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\MySql.Data.xml
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\Renci.SshNet.xml
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\System.Buffers.xml
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\System.Memory.xml
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\System.Numerics.Vectors.xml
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.CopyComplete
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.InsertarGeneroPelicula.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.BuscarPeliculas.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.SolicitarPrestamo.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.estadoCuenta.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Multa.resources

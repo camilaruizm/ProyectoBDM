@@ -47,7 +47,6 @@
             this.showActor = new System.Windows.Forms.Button();
             this.modificarActor = new System.Windows.Forms.Button();
             this.deleteActor = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.idActor = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -186,6 +185,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(721, 164);
             this.dataGridView1.TabIndex = 15;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // showActor
             // 
@@ -217,21 +217,14 @@
             this.deleteActor.UseVisualStyleBackColor = true;
             this.deleteActor.Click += new System.EventHandler(this.deleteActor_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(75, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "ID";
-            // 
             // idActor
             // 
+            this.idActor.Enabled = false;
             this.idActor.Location = new System.Drawing.Point(201, 26);
             this.idActor.Name = "idActor";
-            this.idActor.Size = new System.Drawing.Size(100, 20);
+            this.idActor.Size = new System.Drawing.Size(21, 20);
             this.idActor.TabIndex = 20;
+            this.idActor.Visible = false;
             // 
             // actoresAdmin
             // 
@@ -239,7 +232,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 561);
             this.Controls.Add(this.idActor);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.deleteActor);
             this.Controls.Add(this.modificarActor);
             this.Controls.Add(this.showActor);
@@ -289,7 +281,6 @@
         private System.Windows.Forms.Button showActor;
         private System.Windows.Forms.Button modificarActor;
         private System.Windows.Forms.Button deleteActor;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox idActor;
     }
 }
