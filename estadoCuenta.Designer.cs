@@ -32,7 +32,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dgvP = new System.Windows.Forms.DataGridView();
             this.showPeliculaCliente = new System.Windows.Forms.Button();
+            this.MULTAS = new System.Windows.Forms.Label();
+            this.dgvM = new System.Windows.Forms.DataGridView();
+            this.showMultas = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvM)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -71,11 +75,41 @@
             this.showPeliculaCliente.UseVisualStyleBackColor = true;
             this.showPeliculaCliente.Click += new System.EventHandler(this.showPeliculaCliente_Click);
             // 
+            // MULTAS
+            // 
+            this.MULTAS.AutoSize = true;
+            this.MULTAS.Location = new System.Drawing.Point(80, 249);
+            this.MULTAS.Name = "MULTAS";
+            this.MULTAS.Size = new System.Drawing.Size(51, 13);
+            this.MULTAS.TabIndex = 4;
+            this.MULTAS.Text = "MULTAS";
+            // 
+            // dgvM
+            // 
+            this.dgvM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvM.Location = new System.Drawing.Point(83, 282);
+            this.dgvM.Name = "dgvM";
+            this.dgvM.Size = new System.Drawing.Size(613, 127);
+            this.dgvM.TabIndex = 5;
+            // 
+            // showMultas
+            // 
+            this.showMultas.Location = new System.Drawing.Point(369, 422);
+            this.showMultas.Name = "showMultas";
+            this.showMultas.Size = new System.Drawing.Size(75, 23);
+            this.showMultas.TabIndex = 6;
+            this.showMultas.Text = "SHOW";
+            this.showMultas.UseVisualStyleBackColor = true;
+            this.showMultas.Click += new System.EventHandler(this.showMultas_Click);
+            // 
             // estadoCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 457);
+            this.Controls.Add(this.showMultas);
+            this.Controls.Add(this.dgvM);
+            this.Controls.Add(this.MULTAS);
             this.Controls.Add(this.showPeliculaCliente);
             this.Controls.Add(this.dgvP);
             this.Controls.Add(this.label2);
@@ -83,6 +117,7 @@
             this.Name = "estadoCuenta";
             this.Text = "estadoCuenta";
             ((System.ComponentModel.ISupportInitialize)(this.dgvP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvM)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,5 +129,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvP;
         private System.Windows.Forms.Button showPeliculaCliente;
+        private System.Windows.Forms.Label MULTAS;
+        private System.Windows.Forms.DataGridView dgvM;
+        private System.Windows.Forms.Button showMultas;
     }
 }

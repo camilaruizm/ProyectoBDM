@@ -29,5 +29,16 @@ namespace ProyectoBDM
             adaptador.Fill(tabla);
             dgvP.DataSource = tabla;
         }
+
+        private void showMultas_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+
+            MySqlCommand comando = new MySqlCommand("SELECT M.fechaGeneracionMulta, M.valorMulta, P.titulo FROM  Multas M, Facturas_prestamos FP, Peliculas P, Clientes C  WHERE P.idPelicula = FP.idPeliculaf and M.idClientef2 = C.idCliente; ", conexion);
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dgvM.DataSource = tabla;
+        }
     }
 }
