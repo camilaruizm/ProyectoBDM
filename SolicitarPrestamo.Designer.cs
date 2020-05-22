@@ -25,26 +25,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label13 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.pDirector = new System.Windows.Forms.Panel();
-            this.tbDirectorPelicula = new System.Windows.Forms.TextBox();
-            this.lbDirector = new System.Windows.Forms.Label();
-            this.pPeliculas = new System.Windows.Forms.Panel();
-            this.pCategoria = new System.Windows.Forms.Panel();
-            this.dudCategorias = new System.Windows.Forms.DomainUpDown();
-            this.lbCategoria = new System.Windows.Forms.Label();
-            this.pTituloPeliculas = new System.Windows.Forms.Panel();
-            this.tbTituloPelicula = new System.Windows.Forms.TextBox();
-            this.lbTitulo = new System.Windows.Forms.Label();
-            this.msPeliculas = new System.Windows.Forms.MenuStrip();
-            this.tsTitulo = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsCategoria = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsDirector = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvPeliculas = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,23 +56,35 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btPrestamo = new System.Windows.Forms.Button();
-            this.pDirector.SuspendLayout();
-            this.pPeliculas.SuspendLayout();
-            this.pCategoria.SuspendLayout();
-            this.pTituloPeliculas.SuspendLayout();
-            this.msPeliculas.SuspendLayout();
+            this.pPanel = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tITULOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cATEGORIAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dIRECTORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelTitulo = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panelDirector = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panelCategoria = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeliculas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamo)).BeginInit();
+            this.pPanel.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            this.panelTitulo.SuspendLayout();
+            this.panelDirector.SuspendLayout();
+            this.panelCategoria.SuspendLayout();
             this.SuspendLayout();
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Agency FB", 15F);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(205)))), ((int)(((byte)(203)))));
-            this.label13.Location = new System.Drawing.Point(16, 184);
+            this.label13.Location = new System.Drawing.Point(21, 226);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(142, 24);
+            this.label13.Size = new System.Drawing.Size(269, 29);
             this.label13.TabIndex = 66;
             this.label13.Text = "Peliculas encontradas:";
             // 
@@ -95,158 +93,23 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.button2.Font = new System.Drawing.Font("Wingdings 3", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(525, 485);
+            this.button2.Location = new System.Drawing.Point(700, 597);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(46, 46);
+            this.button2.Size = new System.Drawing.Size(61, 57);
             this.button2.TabIndex = 65;
             this.button2.Text = "";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // pDirector
-            // 
-            this.pDirector.Controls.Add(this.tbDirectorPelicula);
-            this.pDirector.Controls.Add(this.lbDirector);
-            this.pDirector.Location = new System.Drawing.Point(20, 103);
-            this.pDirector.Name = "pDirector";
-            this.pDirector.Size = new System.Drawing.Size(489, 60);
-            this.pDirector.TabIndex = 64;
-            // 
-            // tbDirectorPelicula
-            // 
-            this.tbDirectorPelicula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.tbDirectorPelicula.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbDirectorPelicula.Font = new System.Drawing.Font("Agency FB", 16F);
-            this.tbDirectorPelicula.Location = new System.Drawing.Point(7, 27);
-            this.tbDirectorPelicula.Name = "tbDirectorPelicula";
-            this.tbDirectorPelicula.Size = new System.Drawing.Size(475, 26);
-            this.tbDirectorPelicula.TabIndex = 45;
-            // 
-            // lbDirector
-            // 
-            this.lbDirector.AutoSize = true;
-            this.lbDirector.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDirector.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.lbDirector.Location = new System.Drawing.Point(3, 0);
-            this.lbDirector.Name = "lbDirector";
-            this.lbDirector.Size = new System.Drawing.Size(65, 24);
-            this.lbDirector.TabIndex = 44;
-            this.lbDirector.Text = "DIRECTOR";
-            this.lbDirector.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pPeliculas
-            // 
-            this.pPeliculas.Controls.Add(this.pCategoria);
-            this.pPeliculas.Controls.Add(this.pTituloPeliculas);
-            this.pPeliculas.Controls.Add(this.msPeliculas);
-            this.pPeliculas.Location = new System.Drawing.Point(20, 72);
-            this.pPeliculas.Name = "pPeliculas";
-            this.pPeliculas.Size = new System.Drawing.Size(489, 91);
-            this.pPeliculas.TabIndex = 63;
-            // 
-            // pCategoria
-            // 
-            this.pCategoria.Controls.Add(this.dudCategorias);
-            this.pCategoria.Controls.Add(this.lbCategoria);
-            this.pCategoria.Location = new System.Drawing.Point(0, 31);
-            this.pCategoria.Name = "pCategoria";
-            this.pCategoria.Size = new System.Drawing.Size(489, 60);
-            this.pCategoria.TabIndex = 56;
-            // 
-            // dudCategorias
-            // 
-            this.dudCategorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.dudCategorias.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dudCategorias.Font = new System.Drawing.Font("Agency FB", 16F);
-            this.dudCategorias.ForeColor = System.Drawing.Color.Black;
-            this.dudCategorias.Location = new System.Drawing.Point(7, 27);
-            this.dudCategorias.Name = "dudCategorias";
-            this.dudCategorias.Size = new System.Drawing.Size(475, 29);
-            this.dudCategorias.TabIndex = 45;
-            this.dudCategorias.Text = "domainUpDown1";
-            // 
-            // lbCategoria
-            // 
-            this.lbCategoria.AutoSize = true;
-            this.lbCategoria.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.lbCategoria.Location = new System.Drawing.Point(3, 0);
-            this.lbCategoria.Name = "lbCategoria";
-            this.lbCategoria.Size = new System.Drawing.Size(79, 24);
-            this.lbCategoria.TabIndex = 44;
-            this.lbCategoria.Text = "CATEGORÍAS";
-            this.lbCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pTituloPeliculas
-            // 
-            this.pTituloPeliculas.Controls.Add(this.tbTituloPelicula);
-            this.pTituloPeliculas.Controls.Add(this.lbTitulo);
-            this.pTituloPeliculas.Location = new System.Drawing.Point(0, 31);
-            this.pTituloPeliculas.Name = "pTituloPeliculas";
-            this.pTituloPeliculas.Size = new System.Drawing.Size(489, 60);
-            this.pTituloPeliculas.TabIndex = 55;
-            // 
-            // tbTituloPelicula
-            // 
-            this.tbTituloPelicula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.tbTituloPelicula.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbTituloPelicula.Font = new System.Drawing.Font("Agency FB", 16F);
-            this.tbTituloPelicula.Location = new System.Drawing.Point(7, 27);
-            this.tbTituloPelicula.Name = "tbTituloPelicula";
-            this.tbTituloPelicula.Size = new System.Drawing.Size(475, 26);
-            this.tbTituloPelicula.TabIndex = 45;
-            // 
-            // lbTitulo
-            // 
-            this.lbTitulo.AutoSize = true;
-            this.lbTitulo.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.lbTitulo.Location = new System.Drawing.Point(3, 0);
-            this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(44, 24);
-            this.lbTitulo.TabIndex = 44;
-            this.lbTitulo.Text = "TÍTULO";
-            this.lbTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // msPeliculas
-            // 
-            this.msPeliculas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.msPeliculas.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold);
-            this.msPeliculas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsTitulo,
-            this.tsCategoria,
-            this.tsDirector});
-            this.msPeliculas.Location = new System.Drawing.Point(0, 0);
-            this.msPeliculas.Name = "msPeliculas";
-            this.msPeliculas.Size = new System.Drawing.Size(489, 28);
-            this.msPeliculas.TabIndex = 0;
-            this.msPeliculas.Text = "menuStrip2";
-            // 
-            // tsTitulo
-            // 
-            this.tsTitulo.Name = "tsTitulo";
-            this.tsTitulo.Size = new System.Drawing.Size(57, 24);
-            this.tsTitulo.Text = "TÍTULO";
-            // 
-            // tsCategoria
-            // 
-            this.tsCategoria.Name = "tsCategoria";
-            this.tsCategoria.Size = new System.Drawing.Size(78, 24);
-            this.tsCategoria.Text = "CATEGORÍA";
-            // 
-            // tsDirector
-            // 
-            this.tsDirector.Name = "tsDirector";
-            this.tsDirector.Size = new System.Drawing.Size(71, 24);
-            this.tsDirector.Text = "DIRECTOR";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.button1.Font = new System.Drawing.Font("Webdings", 25F);
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(515, 124);
+            this.button1.Location = new System.Drawing.Point(687, 153);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 46);
+            this.button1.Size = new System.Drawing.Size(61, 57);
             this.button1.TabIndex = 62;
             this.button1.Text = "";
             this.button1.UseVisualStyleBackColor = false;
@@ -258,14 +121,14 @@
             this.dgvPeliculas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.dgvPeliculas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPeliculas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Agency FB", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPeliculas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPeliculas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvPeliculas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPeliculas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -277,76 +140,86 @@
             this.Column3});
             this.dgvPeliculas.EnableHeadersVisualStyles = false;
             this.dgvPeliculas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.dgvPeliculas.Location = new System.Drawing.Point(20, 211);
+            this.dgvPeliculas.Location = new System.Drawing.Point(27, 260);
+            this.dgvPeliculas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvPeliculas.Name = "dgvPeliculas";
             this.dgvPeliculas.RowHeadersVisible = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Agency FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvPeliculas.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPeliculas.RowHeadersWidth = 51;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvPeliculas.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvPeliculas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect;
-            this.dgvPeliculas.Size = new System.Drawing.Size(489, 75);
+            this.dgvPeliculas.Size = new System.Drawing.Size(652, 92);
             this.dgvPeliculas.TabIndex = 61;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column1.Width = 22;
+            this.Column1.Width = 33;
             // 
             // TITULO
             // 
             this.TITULO.HeaderText = "TITULO";
+            this.TITULO.MinimumWidth = 6;
             this.TITULO.Name = "TITULO";
             this.TITULO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.TITULO.Width = 48;
+            this.TITULO.Width = 86;
             // 
             // DIRECTOR
             // 
             this.DIRECTOR.HeaderText = "DIRECTOR";
+            this.DIRECTOR.MinimumWidth = 6;
             this.DIRECTOR.Name = "DIRECTOR";
             this.DIRECTOR.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.DIRECTOR.Width = 62;
+            this.DIRECTOR.Width = 118;
             // 
             // DURACION
             // 
             this.DURACION.HeaderText = "DURACION";
+            this.DURACION.MinimumWidth = 6;
             this.DURACION.Name = "DURACION";
             this.DURACION.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.DURACION.Width = 64;
+            this.DURACION.Width = 120;
             // 
             // SINOPSIS
             // 
             this.SINOPSIS.HeaderText = "SINOPSIS";
+            this.SINOPSIS.MinimumWidth = 6;
             this.SINOPSIS.Name = "SINOPSIS";
             this.SINOPSIS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SINOPSIS.Width = 60;
+            this.SINOPSIS.Width = 107;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "FECHA DE ESTRENO";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column2.Width = 106;
+            this.Column2.Width = 201;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "N COPIAS";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column3.Width = 60;
+            this.Column3.Width = 99;
             // 
             // btBuscarM
             // 
             this.btBuscarM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.btBuscarM.Font = new System.Drawing.Font("Webdings", 25F);
             this.btBuscarM.ForeColor = System.Drawing.Color.Black;
-            this.btBuscarM.Location = new System.Drawing.Point(515, 72);
+            this.btBuscarM.Location = new System.Drawing.Point(687, 89);
+            this.btBuscarM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btBuscarM.Name = "btBuscarM";
-            this.btBuscarM.Size = new System.Drawing.Size(46, 46);
+            this.btBuscarM.Size = new System.Drawing.Size(61, 57);
             this.btBuscarM.TabIndex = 60;
             this.btBuscarM.Text = "";
             this.btBuscarM.UseVisualStyleBackColor = false;
@@ -355,11 +228,12 @@
             // lbPrestamo
             // 
             this.lbPrestamo.AutoSize = true;
-            this.lbPrestamo.Font = new System.Drawing.Font("Agency FB", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPrestamo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(40)))), ((int)(((byte)(70)))));
-            this.lbPrestamo.Location = new System.Drawing.Point(218, 13);
+            this.lbPrestamo.Location = new System.Drawing.Point(291, 16);
+            this.lbPrestamo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPrestamo.Name = "lbPrestamo";
-            this.lbPrestamo.Size = new System.Drawing.Size(142, 41);
+            this.lbPrestamo.Size = new System.Drawing.Size(264, 48);
             this.lbPrestamo.TabIndex = 59;
             this.lbPrestamo.Text = "PRÉSTAMO";
             this.lbPrestamo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -367,11 +241,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Agency FB", 15F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(205)))), ((int)(((byte)(203)))));
-            this.label1.Location = new System.Drawing.Point(16, 291);
+            this.label1.Location = new System.Drawing.Point(21, 358);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 24);
+            this.label1.Size = new System.Drawing.Size(162, 29);
             this.label1.TabIndex = 68;
             this.label1.Text = "Tu préstamo:";
             // 
@@ -382,14 +257,14 @@
             this.dgvPrestamo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.dgvPrestamo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPrestamo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Agency FB", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrestamo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrestamo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvPrestamo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPrestamo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -401,95 +276,107 @@
             this.dataGridViewTextBoxColumn7});
             this.dgvPrestamo.EnableHeadersVisualStyles = false;
             this.dgvPrestamo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.dgvPrestamo.Location = new System.Drawing.Point(20, 318);
+            this.dgvPrestamo.Location = new System.Drawing.Point(27, 391);
+            this.dgvPrestamo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvPrestamo.Name = "dgvPrestamo";
             this.dgvPrestamo.RowHeadersVisible = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Agency FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvPrestamo.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvPrestamo.RowHeadersWidth = 51;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvPrestamo.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvPrestamo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect;
-            this.dgvPrestamo.Size = new System.Drawing.Size(489, 75);
+            this.dgvPrestamo.Size = new System.Drawing.Size(652, 92);
             this.dgvPrestamo.TabIndex = 67;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn1.Width = 22;
+            this.dataGridViewTextBoxColumn1.Width = 33;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "TITULO";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn2.Width = 48;
+            this.dataGridViewTextBoxColumn2.Width = 86;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.HeaderText = "DIRECTOR";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn3.Width = 62;
+            this.dataGridViewTextBoxColumn3.Width = 118;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.HeaderText = "DURACION";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn4.Width = 64;
+            this.dataGridViewTextBoxColumn4.Width = 120;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.HeaderText = "SINOPSIS";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn5.Width = 60;
+            this.dataGridViewTextBoxColumn5.Width = 107;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.HeaderText = "FECHA DE ESTRENO";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn6.Width = 106;
+            this.dataGridViewTextBoxColumn6.Width = 201;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.HeaderText = "N COPIAS";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn7.Width = 60;
+            this.dataGridViewTextBoxColumn7.Width = 99;
             // 
             // dtFechaNCliente
             // 
             this.dtFechaNCliente.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.dtFechaNCliente.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold);
-            this.dtFechaNCliente.Location = new System.Drawing.Point(20, 432);
+            this.dtFechaNCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.dtFechaNCliente.Location = new System.Drawing.Point(27, 532);
+            this.dtFechaNCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtFechaNCliente.Name = "dtFechaNCliente";
-            this.dtFechaNCliente.Size = new System.Drawing.Size(229, 27);
+            this.dtFechaNCliente.Size = new System.Drawing.Size(304, 30);
             this.dtFechaNCliente.TabIndex = 69;
             this.dtFechaNCliente.Value = new System.DateTime(2020, 5, 11, 16, 28, 35, 0);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker1.Location = new System.Drawing.Point(255, 432);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.dateTimePicker1.Location = new System.Drawing.Point(340, 532);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(229, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(304, 30);
             this.dateTimePicker1.TabIndex = 70;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.label2.Location = new System.Drawing.Point(16, 405);
+            this.label2.Location = new System.Drawing.Point(21, 498);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 24);
+            this.label2.Size = new System.Drawing.Size(226, 29);
             this.label2.TabIndex = 46;
             this.label2.Text = "INICIO PRÉSTAMO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -497,11 +384,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.label3.Location = new System.Drawing.Point(251, 405);
+            this.label3.Location = new System.Drawing.Point(335, 498);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 24);
+            this.label3.Size = new System.Drawing.Size(170, 29);
             this.label3.TabIndex = 71;
             this.label3.Text = "DEVOLUCIÓN";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -509,20 +397,127 @@
             // btPrestamo
             // 
             this.btPrestamo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
-            this.btPrestamo.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btPrestamo.Location = new System.Drawing.Point(199, 485);
+            this.btPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPrestamo.Location = new System.Drawing.Point(265, 597);
+            this.btPrestamo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btPrestamo.Name = "btPrestamo";
-            this.btPrestamo.Size = new System.Drawing.Size(170, 46);
+            this.btPrestamo.Size = new System.Drawing.Size(227, 57);
             this.btPrestamo.TabIndex = 72;
             this.btPrestamo.Text = "SOLICITAR PRÉSTAMO";
             this.btPrestamo.UseVisualStyleBackColor = false;
             // 
+            // pPanel
+            // 
+            this.pPanel.Controls.Add(this.panelCategoria);
+            this.pPanel.Controls.Add(this.panelDirector);
+            this.pPanel.Controls.Add(this.panelTitulo);
+            this.pPanel.Controls.Add(this.menuStrip1);
+            this.pPanel.Location = new System.Drawing.Point(27, 89);
+            this.pPanel.Name = "pPanel";
+            this.pPanel.Size = new System.Drawing.Size(652, 121);
+            this.pPanel.TabIndex = 73;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tITULOToolStripMenuItem,
+            this.cATEGORIAToolStripMenuItem,
+            this.dIRECTORToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(652, 28);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // tITULOToolStripMenuItem
+            // 
+            this.tITULOToolStripMenuItem.Name = "tITULOToolStripMenuItem";
+            this.tITULOToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.tITULOToolStripMenuItem.Text = "TITULO";
+            this.tITULOToolStripMenuItem.Click += new System.EventHandler(this.tITULOToolStripMenuItem_Click);
+            // 
+            // cATEGORIAToolStripMenuItem
+            // 
+            this.cATEGORIAToolStripMenuItem.Name = "cATEGORIAToolStripMenuItem";
+            this.cATEGORIAToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
+            this.cATEGORIAToolStripMenuItem.Text = "CATEGORIA";
+            this.cATEGORIAToolStripMenuItem.Click += new System.EventHandler(this.cATEGORIAToolStripMenuItem_Click);
+            // 
+            // dIRECTORToolStripMenuItem
+            // 
+            this.dIRECTORToolStripMenuItem.Name = "dIRECTORToolStripMenuItem";
+            this.dIRECTORToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
+            this.dIRECTORToolStripMenuItem.Text = "DIRECTOR";
+            this.dIRECTORToolStripMenuItem.Click += new System.EventHandler(this.dIRECTORToolStripMenuItem_Click);
+            // 
+            // panelTitulo
+            // 
+            this.panelTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.panelTitulo.Controls.Add(this.label4);
+            this.panelTitulo.Location = new System.Drawing.Point(18, 33);
+            this.panelTitulo.Name = "panelTitulo";
+            this.panelTitulo.Size = new System.Drawing.Size(621, 39);
+            this.panelTitulo.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label4.ForeColor = System.Drawing.Color.Snow;
+            this.label4.Location = new System.Drawing.Point(13, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 20);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "TITULO";
+            // 
+            // panelDirector
+            // 
+            this.panelDirector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelDirector.Controls.Add(this.label6);
+            this.panelDirector.Location = new System.Drawing.Point(15, 90);
+            this.panelDirector.Name = "panelDirector";
+            this.panelDirector.Size = new System.Drawing.Size(621, 63);
+            this.panelDirector.TabIndex = 3;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label6.ForeColor = System.Drawing.Color.Snow;
+            this.label6.Location = new System.Drawing.Point(13, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(96, 20);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "DIRECTOR";
+            // 
+            // panelCategoria
+            // 
+            this.panelCategoria.BackColor = System.Drawing.Color.Red;
+            this.panelCategoria.Controls.Add(this.label5);
+            this.panelCategoria.Location = new System.Drawing.Point(18, 71);
+            this.panelCategoria.Name = "panelCategoria";
+            this.panelCategoria.Size = new System.Drawing.Size(621, 63);
+            this.panelCategoria.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label5.ForeColor = System.Drawing.Color.Snow;
+            this.label5.Location = new System.Drawing.Point(13, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 20);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "CATEGORIA";
+            // 
             // SolicitarPrestamo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(583, 545);
+            this.ClientSize = new System.Drawing.Size(777, 671);
+            this.Controls.Add(this.pPanel);
             this.Controls.Add(this.btPrestamo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -532,27 +527,27 @@
             this.Controls.Add(this.dgvPrestamo);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.pDirector);
-            this.Controls.Add(this.pPeliculas);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvPeliculas);
             this.Controls.Add(this.btBuscarM);
             this.Controls.Add(this.lbPrestamo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SolicitarPrestamo";
             this.Text = "SolicitarPrestamo";
-            this.pDirector.ResumeLayout(false);
-            this.pDirector.PerformLayout();
-            this.pPeliculas.ResumeLayout(false);
-            this.pPeliculas.PerformLayout();
-            this.pCategoria.ResumeLayout(false);
-            this.pCategoria.PerformLayout();
-            this.pTituloPeliculas.ResumeLayout(false);
-            this.pTituloPeliculas.PerformLayout();
-            this.msPeliculas.ResumeLayout(false);
-            this.msPeliculas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeliculas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamo)).EndInit();
+            this.pPanel.ResumeLayout(false);
+            this.pPanel.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.panelTitulo.ResumeLayout(false);
+            this.panelTitulo.PerformLayout();
+            this.panelDirector.ResumeLayout(false);
+            this.panelDirector.PerformLayout();
+            this.panelCategoria.ResumeLayout(false);
+            this.panelCategoria.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -562,20 +557,6 @@
 
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel pDirector;
-        private System.Windows.Forms.TextBox tbDirectorPelicula;
-        private System.Windows.Forms.Label lbDirector;
-        private System.Windows.Forms.Panel pPeliculas;
-        private System.Windows.Forms.Panel pCategoria;
-        private System.Windows.Forms.DomainUpDown dudCategorias;
-        private System.Windows.Forms.Label lbCategoria;
-        private System.Windows.Forms.Panel pTituloPeliculas;
-        private System.Windows.Forms.TextBox tbTituloPelicula;
-        private System.Windows.Forms.Label lbTitulo;
-        private System.Windows.Forms.MenuStrip msPeliculas;
-        private System.Windows.Forms.ToolStripMenuItem tsTitulo;
-        private System.Windows.Forms.ToolStripMenuItem tsCategoria;
-        private System.Windows.Forms.ToolStripMenuItem tsDirector;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgvPeliculas;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -601,5 +582,16 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btPrestamo;
+        private System.Windows.Forms.Panel pPanel;
+        private System.Windows.Forms.Panel panelTitulo;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem tITULOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cATEGORIAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dIRECTORToolStripMenuItem;
+        private System.Windows.Forms.Panel panelCategoria;
+        private System.Windows.Forms.Panel panelDirector;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }

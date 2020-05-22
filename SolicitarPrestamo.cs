@@ -21,5 +21,20 @@ namespace ProyectoBDM
         {
 
         }
+
+        private void tITULOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelTitulo.BringToFront();
+        }
+
+        private void cATEGORIAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelCategoria.BringToFront();
+        }
+
+        private void dIRECTORToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelDirector.BringToFront();
+        }
     }
 }
