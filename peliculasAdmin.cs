@@ -35,7 +35,7 @@ namespace ProyectoBDM
             conexion.Open();
             string Query =
                 "INSERT INTO PELICULAS(titulo,fechaEstreno,sinopsis,duracion,posterPelicula,copiasDisponibles,idDirectorf) " +
-                "values('" + textTitulo.Text + "','" + dateTimePicker1.Text + "','" + textSinopsis.Text + "','" + textDuracion.Text + "','" + arr + "','" + cantCopias.Text +"','"+ comboBox2.ValueMember +"');";
+                "values('" + textTitulo.Text + "','" + dateTimePicker1.Text + "','" + textSinopsis.Text + "','" + textDuracion.Text + "','" + arr + "','" + textCantCopis.Text +"','"+ comboBox2.ValueMember +"');";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
@@ -122,6 +122,16 @@ namespace ProyectoBDM
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

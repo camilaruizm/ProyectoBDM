@@ -152,7 +152,7 @@ namespace ProyectoBDM
             {
                 MessageBox.Show("!Eliminacion fallida¡");
             }
-            
+
             //MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             /*Image img = pictureBox1.Image;
             byte[] arr2;
@@ -165,10 +165,15 @@ namespace ProyectoBDM
             comando.ExecuteNonQuery();
             conexion.Close();
 <<<<<<< HEAD:Vista/actoresAdmin.cs
-            MessageBox.Show("!Se ha Eliminado el actor con exito¡");*/
+            MessageBox.Show("!Se ha Eliminado el actor con exito¡");
 =======
             MessageBox.Show("!Se ha Eliminado el actor con exito¡");
->>>>>>> parent of 4fb0773... FUNCIONAMIENTO PRESTAMOS ACTIVOS CLIENTE:actoresAdmin.cs
+>>>>>>> parent of 4fb0773... FUNCIONAMIENTO PRESTAMOS ACTIVOS CLIENTE:actoresAdmin.cs*/
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -70,5 +70,22 @@ namespace ProyectoBDM
         {
             Application.Run(new generoPelicula());
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(Abrir_MULTAS);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+        private void Abrir_MULTAS()
+        {
+            Application.Run(new Multa());
+        }
     }
 }

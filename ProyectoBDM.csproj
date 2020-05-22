@@ -93,8 +93,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Multa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multa.Designer.cs">
+      <DependentUpon>Multa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control\ControlDirecAdmi.cs" />
     <Compile Include="Control\ControlGeneroPelicula.cs" />
+    <Compile Include="estadoCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="estadoCuenta.Designer.cs">
+      <DependentUpon>estadoCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\actoresAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,23 +162,11 @@
     <Compile Include="Modelo\Peliculas.cs" />
     <Compile Include="Modelo\Peliculas_Generos.cs" />
     <Compile Include="Modelo\Prestamos.cs" />
-    <Compile Include="PagarMultas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PagarMultas.Designer.cs">
-      <DependentUpon>PagarMultas.cs</DependentUpon>
-    </Compile>
     <Compile Include="peliculasAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="peliculasAdmin.Designer.cs">
       <DependentUpon>peliculasAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PrestamosActivos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrestamosActivos.Designer.cs">
-      <DependentUpon>PrestamosActivos.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -193,6 +193,12 @@
     <Compile Include="SolicitarPrestamo.Designer.cs">
       <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="estadoCuenta.resx">
+      <DependentUpon>estadoCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multa.resx">
+      <DependentUpon>Multa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\actoresAdmin.resx">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
     </EmbeddedResource>

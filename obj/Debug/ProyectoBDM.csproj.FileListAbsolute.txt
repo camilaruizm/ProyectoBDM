@@ -183,7 +183,6 @@ D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\Pro
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.RegistroClientes.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.InicioSesionCliente.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Properties.Resources.resources
-D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.Modificar.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.GenerateResource.cache
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.CoreCompileInputs.cache
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.csproj.CopyComplete
@@ -197,3 +196,8 @@ D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.SolicitarPrestamo.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.CuentaCliente.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.InsertarGeneroPelicula.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.InsertarGeneroPelicula.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.BuscarPeliculas.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.SolicitarPrestamo.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.estadoCuenta.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Multa.resources

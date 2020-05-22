@@ -34,7 +34,6 @@
             this.modificarGenero = new System.Windows.Forms.Button();
             this.eliminarGenero = new System.Windows.Forms.Button();
             this.idGenero = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.showGenero = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -88,19 +87,12 @@
             // 
             // idGenero
             // 
+            this.idGenero.Enabled = false;
             this.idGenero.Location = new System.Drawing.Point(222, 13);
             this.idGenero.Name = "idGenero";
             this.idGenero.Size = new System.Drawing.Size(107, 20);
             this.idGenero.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(79, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "ID";
+            this.idGenero.Visible = false;
             // 
             // dataGridView1
             // 
@@ -129,7 +121,6 @@
             this.ClientSize = new System.Drawing.Size(859, 199);
             this.Controls.Add(this.showGenero);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.idGenero);
             this.Controls.Add(this.eliminarGenero);
             this.Controls.Add(this.modificarGenero);
@@ -151,7 +142,6 @@
         private System.Windows.Forms.Button modificarGenero;
         private System.Windows.Forms.Button eliminarGenero;
         private System.Windows.Forms.TextBox idGenero;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button showGenero;
     }

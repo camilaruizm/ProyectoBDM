@@ -34,6 +34,7 @@
             this.bAdir = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.generoPelicula = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -84,30 +85,44 @@
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(433, 239);
+            this.button4.Location = new System.Drawing.Point(444, 304);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(283, 127);
+            this.button4.Size = new System.Drawing.Size(238, 59);
             this.button4.TabIndex = 4;
             this.button4.Text = "CONSULTAS";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // generoPelicula
             // 
             this.generoPelicula.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.generoPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.generoPelicula.Location = new System.Drawing.Point(449, 95);
+            this.generoPelicula.Location = new System.Drawing.Point(444, 57);
             this.generoPelicula.Name = "generoPelicula";
-            this.generoPelicula.Size = new System.Drawing.Size(238, 72);
+            this.generoPelicula.Size = new System.Drawing.Size(238, 65);
             this.generoPelicula.TabIndex = 5;
             this.generoPelicula.Text = "GÉNEROS";
             this.generoPelicula.UseVisualStyleBackColor = false;
             this.generoPelicula.Click += new System.EventHandler(this.generoPelicula_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(444, 180);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(238, 70);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "MULTAS";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MenuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.generoPelicula);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.bAdir);
@@ -129,5 +144,6 @@
         private System.Windows.Forms.Button bAdir;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button generoPelicula;
+        private System.Windows.Forms.Button button1;
     }
 }
