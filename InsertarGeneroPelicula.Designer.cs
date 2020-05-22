@@ -1,6 +1,6 @@
 ﻿namespace ProyectoBDM
 {
-    partial class AgregarGenero
+    partial class InsertarGeneroPelicula
     {
         /// <summary>
         /// Required designer variable.
