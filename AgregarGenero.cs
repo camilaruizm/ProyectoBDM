@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoBDM
 {
-    public partial class SolicitarPrestamo : Form
+    public partial class AgregarGenero : Form
     {
-        public SolicitarPrestamo()
+        public AgregarGenero()
         {
             InitializeComponent();
-        }
-
-        private void btBuscarM_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

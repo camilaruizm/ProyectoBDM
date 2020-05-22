@@ -90,25 +90,24 @@
             // 
             this.idGenero.Location = new System.Drawing.Point(222, 13);
             this.idGenero.Name = "idGenero";
-            this.idGenero.Size = new System.Drawing.Size(30, 20);
+            this.idGenero.Size = new System.Drawing.Size(107, 20);
             this.idGenero.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Enabled = false;
             this.label3.Location = new System.Drawing.Point(79, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(14, 13);
+            this.label3.Size = new System.Drawing.Size(18, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "#";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.Text = "ID";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(393, 11);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(454, 150);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);

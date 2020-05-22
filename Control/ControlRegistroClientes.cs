@@ -9,6 +9,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using ProyectoBDM.Modelo;
 
 namespace ProyectoBDM.Control
 {

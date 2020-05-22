@@ -222,16 +222,15 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(75, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(14, 13);
+            this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 19;
-            this.label1.Text = "#";
+            this.label1.Text = "ID";
             // 
             // idActor
             // 
-            this.idActor.Enabled = false;
             this.idActor.Location = new System.Drawing.Point(201, 26);
             this.idActor.Name = "idActor";
-            this.idActor.Size = new System.Drawing.Size(37, 20);
+            this.idActor.Size = new System.Drawing.Size(100, 20);
             this.idActor.TabIndex = 20;
             // 
             // actoresAdmin
@@ -262,7 +261,6 @@
             this.Controls.Add(this.nombreActor);
             this.Name = "actoresAdmin";
             this.Text = "actoresAdmin";
-            this.Load += new System.EventHandler(this.actoresAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

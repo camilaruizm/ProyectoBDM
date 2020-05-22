@@ -31,8 +31,9 @@
             this.LbMenuCliente = new System.Windows.Forms.Label();
             this.BtnSolPrestamo = new System.Windows.Forms.Button();
             this.BtnVerPeliculas = new System.Windows.Forms.Button();
-            this.BtnEstadoCuenta = new System.Windows.Forms.Button();
+            this.BtnPagarMultas = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnVerPrestamos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LbMenuCliente
@@ -72,25 +73,25 @@
             this.BtnVerPeliculas.Name = "BtnVerPeliculas";
             this.BtnVerPeliculas.Size = new System.Drawing.Size(368, 163);
             this.BtnVerPeliculas.TabIndex = 8;
-            this.BtnVerPeliculas.Text = "Buscar Peliculas";
+            this.BtnVerPeliculas.Text = "Ver Peliculas";
             this.BtnVerPeliculas.UseVisualStyleBackColor = false;
             this.BtnVerPeliculas.Click += new System.EventHandler(this.BtnVerPeliculas_Click);
             this.BtnVerPeliculas.MouseLeave += new System.EventHandler(this.BtnVerPeliculas_MouseLeave);
             this.BtnVerPeliculas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnVerPeliculas_MouseMove);
             // 
-            // BtnEstadoCuenta
+            // BtnPagarMultas
             // 
-            this.BtnEstadoCuenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.BtnEstadoCuenta.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
-            this.BtnEstadoCuenta.Location = new System.Drawing.Point(213, 304);
-            this.BtnEstadoCuenta.Name = "BtnEstadoCuenta";
-            this.BtnEstadoCuenta.Size = new System.Drawing.Size(368, 163);
-            this.BtnEstadoCuenta.TabIndex = 9;
-            this.BtnEstadoCuenta.Text = "Estado de Cuenta";
-            this.BtnEstadoCuenta.UseVisualStyleBackColor = false;
-            this.BtnEstadoCuenta.Click += new System.EventHandler(this.BtnPagarMultas_Click);
-            this.BtnEstadoCuenta.MouseLeave += new System.EventHandler(this.BtnPagarMultas_MouseLeave);
-            this.BtnEstadoCuenta.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnPagarMultas_MouseMove);
+            this.BtnPagarMultas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.BtnPagarMultas.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
+            this.BtnPagarMultas.Location = new System.Drawing.Point(397, 304);
+            this.BtnPagarMultas.Name = "BtnPagarMultas";
+            this.BtnPagarMultas.Size = new System.Drawing.Size(368, 163);
+            this.BtnPagarMultas.TabIndex = 9;
+            this.BtnPagarMultas.Text = "Pagar Multas";
+            this.BtnPagarMultas.UseVisualStyleBackColor = false;
+            this.BtnPagarMultas.Click += new System.EventHandler(this.BtnPagarMultas_Click);
+            this.BtnPagarMultas.MouseLeave += new System.EventHandler(this.BtnPagarMultas_MouseLeave);
+            this.BtnPagarMultas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnPagarMultas_MouseMove);
             // 
             // BtnSalir
             // 
@@ -107,14 +108,29 @@
             this.BtnSalir.MouseLeave += new System.EventHandler(this.BtnSalir_MouseLeave);
             this.BtnSalir.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnSalir_MouseMove);
             // 
+            // BtnVerPrestamos
+            // 
+            this.BtnVerPrestamos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.BtnVerPrestamos.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
+            this.BtnVerPrestamos.Location = new System.Drawing.Point(23, 304);
+            this.BtnVerPrestamos.Name = "BtnVerPrestamos";
+            this.BtnVerPrestamos.Size = new System.Drawing.Size(368, 163);
+            this.BtnVerPrestamos.TabIndex = 11;
+            this.BtnVerPrestamos.Text = "Prestamos Activos";
+            this.BtnVerPrestamos.UseVisualStyleBackColor = false;
+            this.BtnVerPrestamos.Click += new System.EventHandler(this.BtnVerPrestamos_Click);
+            this.BtnVerPrestamos.MouseLeave += new System.EventHandler(this.BtnVerPrestamos_MouseLeave);
+            this.BtnVerPrestamos.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnVerPrestamos_MouseMove);
+            // 
             // MenuClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(786, 522);
+            this.Controls.Add(this.BtnVerPrestamos);
             this.Controls.Add(this.BtnSalir);
-            this.Controls.Add(this.BtnEstadoCuenta);
+            this.Controls.Add(this.BtnPagarMultas);
             this.Controls.Add(this.BtnSolPrestamo);
             this.Controls.Add(this.LbMenuCliente);
             this.Controls.Add(this.BtnVerPeliculas);
@@ -132,7 +148,8 @@
         private System.Windows.Forms.Label LbMenuCliente;
         private System.Windows.Forms.Button BtnSolPrestamo;
         private System.Windows.Forms.Button BtnVerPeliculas;
-        private System.Windows.Forms.Button BtnEstadoCuenta;
+        private System.Windows.Forms.Button BtnPagarMultas;
         private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Button BtnVerPrestamos;
     }
 }

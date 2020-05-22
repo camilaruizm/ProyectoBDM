@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using ProyectoBDM.Control;
+using ProyectoBDM.Modelo;
 
 namespace ProyectoBDM
 {
@@ -17,6 +19,9 @@ namespace ProyectoBDM
         string imageUrl = null;
         int selectedRow;
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
+        ControlActoresAdmi caa = new ControlActoresAdmi();
+        Actores Act = new Actores();
+
         public actoresAdmin()
         {
             InitializeComponent();
@@ -24,7 +29,6 @@ namespace ProyectoBDM
 
         private void buttonImageAct_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
                 if (ofd.ShowDialog() == DialogResult.OK)
@@ -37,36 +41,60 @@ namespace ProyectoBDM
 
         private void insertarActor_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             Image img = pictureBox1.Image;
             byte[] arr2;
             ImageConverter converter = new ImageConverter();
             arr2 = (byte[])converter.ConvertTo(img, typeof(byte[]));
 
-            conexion.Open();
+            Act.NombreActor1 = textNombreAct.Text;
+            Act.NombreActor2 = textNombreAct2.Text;
+            Act.ApellidoActor1 = textApeAct.Text;
+            Act.ApellidoActor2 = textApeAct2.Text;
+            Act.CorreoActor = textCorreoAct.Text;
+            Act.PaisActor = textPaisAct.Text;
+
+            try
+            {
+                caa.InsertarActores(textNombreAct, textNombreAct2, textApeAct, textApeAct2, textCorreoAct, textPaisAct, arr2);
+                MessageBox.Show("!Se ha registrado el actor con exito¡");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("!Error en el registro¡");
+            }
+            /*conexion.Open();
             string Query = "INSERT INTO ACTORES(nombreActor1,nombreActor2,ApellidoActor1,ApellidoActor2,correoActor,paisActor,fotoA) " +
                 "values('" + textNombreAct.Text + "','" + textNombreAct2.Text + "','" + textApeAct.Text + "','" + textApeAct2.Text + "','" + textCorreoAct.Text + "','" +textPaisAct.Text + "','" + arr2 + "');";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
-            MessageBox.Show("!Se ha registrado el actor con exito¡");
+            MessageBox.Show("!Se ha registrado el actor con exito¡");*/
         }
 
         private void showActor_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            try
+            {
+                caa.MostrarActores(adaptador, dataGridView1);
+                MessageBox.Show("Si solicita hacer una modificacion o eliminacion de un actor recuerde usar el idActor que le corresponde");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No se pudo mostrar");
+            }
+            /*MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
             MySqlCommand comando = new MySqlCommand("SELECT * FROM ACTORES", conexion);
 
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);
-            dataGridView1.DataSource = tabla;
+            dataGridView1.DataSource = tabla;*/           
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+           // MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
             selectedRow = e.RowIndex;
             DataGridViewRow row = dataGridView1.Rows[selectedRow];
@@ -82,25 +110,51 @@ namespace ProyectoBDM
 
         private void modificarActor_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            Act.NombreActor1 = textNombreAct.Text;
+            Act.NombreActor2 = textNombreAct2.Text;
+            Act.ApellidoActor1 = textApeAct.Text;
+            Act.ApellidoActor2 = textApeAct2.Text;
+            Act.CorreoActor = textCorreoAct.Text;
+            Act.PaisActor = textPaisAct.Text;
+
+            //MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             Image img = pictureBox1.Image;
             byte[] arr2;
             ImageConverter converter = new ImageConverter();
             arr2 = (byte[])converter.ConvertTo(img, typeof(byte[]));
 
-            conexion.Open();
+            try
+            {
+                caa.ModificarActores(textNombreAct, textNombreAct2, textApeAct, textApeAct2, textCorreoAct, textPaisAct, arr2, idActor);
+                MessageBox.Show("!Modificacion exitosa¡");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("!Error en la modificacion¡");
+            }
+
+            /*conexion.Open();
             string Query = "UPDATE  ACTORES SET nombreActor1='" + textNombreAct.Text + "', nombreActor2='" + textNombreAct2.Text + "',apellidoActor1='" + textApeAct.Text + "',apellidoActor2='" + textApeAct2.Text + "',correoActor='" + textCorreoAct.Text + "',paisActor='" + textPaisAct.Text + "',fotoA='" + arr2 + "' where idActor ='" + idActor.Text + "'  "; 
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
-            MessageBox.Show("!Se ha modificado el actor con exito¡");
-
+            MessageBox.Show("!Se ha modificado el actor con exito¡");*/
         }
 
         private void deleteActor_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
-            Image img = pictureBox1.Image;
+            try
+            {
+                caa.BorrarActores(idActor);
+                MessageBox.Show("!Eliminacion exitosa¡");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("!Eliminacion fallida¡");
+            }
+            
+            //MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            /*Image img = pictureBox1.Image;
             byte[] arr2;
             ImageConverter converter = new ImageConverter();
             arr2 = (byte[])converter.ConvertTo(img, typeof(byte[]));
@@ -110,12 +164,7 @@ namespace ProyectoBDM
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
-            MessageBox.Show("!Se ha Eliminado el actor con exito¡");
-        }
-
-        private void actoresAdmin_Load(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("!Se ha Eliminado el actor con exito¡");*/
         }
     }
 }
