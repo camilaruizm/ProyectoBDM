@@ -142,16 +142,16 @@
     <Compile Include="Vista\generoPelicula.Designer.cs">
       <DependentUpon>generoPelicula.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuAdmin.cs">
+    <Compile Include="Vista\MenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuAdmin.Designer.cs">
+    <Compile Include="Vista\MenuAdmin.Designer.cs">
       <DependentUpon>MenuAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuClientes.cs">
+    <Compile Include="Vista\MenuClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuClientes.Designer.cs">
+    <Compile Include="Vista\MenuClientes.Designer.cs">
       <DependentUpon>MenuClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Actores.cs" />
@@ -216,10 +216,10 @@
     <EmbeddedResource Include="Vista\generoPelicula.resx">
       <DependentUpon>generoPelicula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuAdmin.resx">
+    <EmbeddedResource Include="Vista\MenuAdmin.resx">
       <DependentUpon>MenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuClientes.resx">
+    <EmbeddedResource Include="Vista\MenuClientes.resx">
       <DependentUpon>MenuClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="peliculasAdmin.resx">
