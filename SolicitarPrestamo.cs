@@ -17,6 +17,9 @@ namespace ProyectoBDM
 {
     public partial class SolicitarPrestamo : Form
     {
+        MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+        MySqlDataAdapter adaptador = new MySqlDataAdapter();
+
         Thread th;
         public SolicitarPrestamo()
         {
@@ -67,16 +70,17 @@ namespace ProyectoBDM
 
         private void button4_Click(object sender, EventArgs e)
         {
+
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             conexion.Open();
 
-            string directorQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias Disponibles', nombreDirector1, nombreDirector2, apellidoDirector1, apellidoDirector2 from directores inner join Peliculas on peliculas.idDirectorf = directores.idDirector where directores.nombreDirector1 ='" + tbDirectorP.Text + "' and directores.apellidoDirector1='" + textBox1.Text + "';";
+            string directorQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias Disponibles', CONCAT (nombreDirector1 , ' ' ,  nombreDirector2) as 'Nombre Director', CONCAT (apellidoDirector1 , ' ' , apellidoDirector2) as 'Apellido Director' from directores inner join Peliculas on peliculas.idDirectorf = directores.idDirector where directores.nombreDirector1 ='" + tbDirectorP.Text + "'AND apellidoDirector1='" + textBox1.Text + "';";
             DataTable tPeliculasDirector = new DataTable();
             MySqlDataAdapter adapterD = new MySqlDataAdapter(directorQuery, conexion);
             adapterD.Fill(tPeliculasDirector);
             dgvPeliculas.DataSource = tPeliculasDirector;
             conexion.Close();
-        }
+        }   
 
         private void comboBoxCategoria_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -104,6 +108,38 @@ namespace ProyectoBDM
         private void volverMenu()
         {
             Application.Run(new MenuClientes());
+        }
+
+        private void SolicitarPrestamo_Load(object sender, EventArgs e)
+        {
+            
+                 
+            MySqlCommand cm = new MySqlCommand("Obtaingeneros", conexion);
+
+                cm.CommandType = CommandType.StoredProcedure;
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cm);
+                DataTable dt = new DataTable();
+
+                da.Fill(dt);
+
+                comboBoxCategoria.ValueMember = "idGenero";
+                comboBoxCategoria.DisplayMember = "tipoGenero";
+
+                comboBoxCategoria.DataSource = dt;
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            conexion.Open();
+            MySqlCommand comando = new MySqlCommand("select p.titulo, g.tipoGenero from peliculas as p, generos as g where tipoGenero = '"+ comboBoxCategoria.Text + "'", conexion);
+
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dgvPeliculas.DataSource = tabla;
+            conexion.Close();
         }
     }
     
