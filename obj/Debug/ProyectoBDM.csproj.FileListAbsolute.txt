@@ -190,11 +190,9 @@ D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\Pro
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.pdb
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.direcAdmin.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.generoPelicula.resources
-D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.BuscarPeliculas.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.direcAdmin.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.generoPelicula.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.SolicitarPrestamo.resources
-D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.CuentaCliente.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.InsertarGeneroPelicula.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.InsertarGeneroPelicula.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.BuscarPeliculas.resources
@@ -202,3 +200,6 @@ D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\Pro
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.estadoCuenta.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Multa.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.historialCliente.resources
+D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.estadoCuenta.resources
+D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.historialCliente.resources
+D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.Multa.resources

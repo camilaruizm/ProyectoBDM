@@ -44,6 +44,11 @@ namespace ProyectoBDM
         {
             Application.Run(new estadoCuenta());
         }
+
+        private void showPeliculas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

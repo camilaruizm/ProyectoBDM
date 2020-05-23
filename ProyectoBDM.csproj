@@ -93,16 +93,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\ControlInicioSesionClientes.cs" />
+    <Compile Include="Control\ControlMulta.cs" />
     <Compile Include="historialCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="historialCliente.Designer.cs">
       <DependentUpon>historialCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Multa.cs">
+    <Compile Include="Vista\Multa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Multa.Designer.cs">
+    <Compile Include="Vista\Multa.Designer.cs">
       <DependentUpon>Multa.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\ControlDirecAdmi.cs" />
@@ -124,12 +126,6 @@
     </Compile>
     <Compile Include="InsertarGeneroPelicula.Designer.cs">
       <DependentUpon>InsertarGeneroPelicula.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BuscarPeliculas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BuscarPeliculas.Designer.cs">
-      <DependentUpon>BuscarPeliculas.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\ControlActoresAdmi.cs" />
     <Compile Include="Control\ControlPeliculasAdmi.cs" />
@@ -185,10 +181,10 @@
     <Compile Include="Vista\RegistroClientes.Designer.cs">
       <DependentUpon>RegistroClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="InicioSesionCliente.cs">
+    <Compile Include="Vista\InicioSesionCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InicioSesionCliente.Designer.cs">
+    <Compile Include="Vista\InicioSesionCliente.Designer.cs">
       <DependentUpon>InicioSesionCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -205,7 +201,7 @@
     <EmbeddedResource Include="historialCliente.resx">
       <DependentUpon>historialCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Multa.resx">
+    <EmbeddedResource Include="Vista\Multa.resx">
       <DependentUpon>Multa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\actoresAdmin.resx">
@@ -213,9 +209,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InsertarGeneroPelicula.resx">
       <DependentUpon>InsertarGeneroPelicula.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BuscarPeliculas.resx">
-      <DependentUpon>BuscarPeliculas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\direcAdmin.resx">
       <DependentUpon>direcAdmin.cs</DependentUpon>
@@ -235,7 +228,7 @@
     <EmbeddedResource Include="Vista\RegistroClientes.resx">
       <DependentUpon>RegistroClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InicioSesionCliente.resx">
+    <EmbeddedResource Include="Vista\InicioSesionCliente.resx">
       <DependentUpon>InicioSesionCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

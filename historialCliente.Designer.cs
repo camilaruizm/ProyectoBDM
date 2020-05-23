@@ -101,6 +101,7 @@
             this.showPeliculas.TabIndex = 6;
             this.showPeliculas.Text = "SHOW";
             this.showPeliculas.UseVisualStyleBackColor = true;
+            this.showPeliculas.Click += new System.EventHandler(this.showPeliculas_Click);
             // 
             // back
             // 

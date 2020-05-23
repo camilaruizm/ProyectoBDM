@@ -29,7 +29,6 @@ namespace ProyectoBDM
         
         private void imageDir_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
                 if (ofd.ShowDialog() == DialogResult.OK)
@@ -129,16 +128,10 @@ namespace ProyectoBDM
 
         private void eliminarDirect_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
-            Image img = pictureBox1.Image;
-            byte[] arr3;
-            ImageConverter converter = new ImageConverter();
-            arr3 = (byte[])converter.ConvertTo(img, typeof(byte[]));
-
             try
             {
                 cda.EliminarDirectores(idDirector);               
-                MessageBox.Show("!Se ha modificado al director con exito¡");
+                MessageBox.Show("!Se ha eliminado al director con exito¡");
             }
             catch (Exception)
             {
@@ -162,6 +155,11 @@ namespace ProyectoBDM
         private void volverMenu()
         {
             Application.Run(new MenuAdmin());
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
