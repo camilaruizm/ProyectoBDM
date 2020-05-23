@@ -40,6 +40,10 @@ namespace ProyectoBDM
             {
                 cpa.InsertarPeliculas(textTitulo, dateTimePicker1, textSinopsis, textDuracion, arr, textCantCopis, TbDirectoresid);
                 MessageBox.Show("Se inserto con exito");
+                this.Close();
+                th = new Thread(Abrir_RGN);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
             }
             catch (Exception)
             {
@@ -56,9 +60,10 @@ namespace ProyectoBDM
             //MessageBox.Show("!Se ha registrado la pelicula con exito¡");
         }
 
-
-
-
+        private void Abrir_RGN()
+        {
+            Application.Run(new RelacionGeneroPelicula());
+        }
 
         private void buttonImagePelicula_Click(object sender, EventArgs e)
         {
@@ -146,6 +151,19 @@ namespace ProyectoBDM
             textDuracion.Text = row.Cells[4].Value.ToString();
             textCantCopis.Text = row.Cells[5].Value.ToString();
             TbDirectoresid.Text = row.Cells[6].Value.ToString();
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(volverMenu);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void volverMenu()
+        {
+            Application.Run(new MenuAdmin());
         }
     }
 

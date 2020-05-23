@@ -49,6 +49,7 @@
             this.idPelicula = new System.Windows.Forms.Label();
             this.textBoxidPelicula = new System.Windows.Forms.TextBox();
             this.btnMostrar = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +57,7 @@
             // labelTituloPelicula
             // 
             this.labelTituloPelicula.AutoSize = true;
-            this.labelTituloPelicula.Location = new System.Drawing.Point(94, 60);
+            this.labelTituloPelicula.Location = new System.Drawing.Point(174, 61);
             this.labelTituloPelicula.Name = "labelTituloPelicula";
             this.labelTituloPelicula.Size = new System.Drawing.Size(46, 13);
             this.labelTituloPelicula.TabIndex = 0;
@@ -65,7 +66,7 @@
             // labelDirectorPelicula
             // 
             this.labelDirectorPelicula.AutoSize = true;
-            this.labelDirectorPelicula.Location = new System.Drawing.Point(94, 98);
+            this.labelDirectorPelicula.Location = new System.Drawing.Point(174, 99);
             this.labelDirectorPelicula.Name = "labelDirectorPelicula";
             this.labelDirectorPelicula.Size = new System.Drawing.Size(108, 13);
             this.labelDirectorPelicula.TabIndex = 1;
@@ -74,7 +75,7 @@
             // labelSinopsisPelicula
             // 
             this.labelSinopsisPelicula.AutoSize = true;
-            this.labelSinopsisPelicula.Location = new System.Drawing.Point(94, 139);
+            this.labelSinopsisPelicula.Location = new System.Drawing.Point(174, 140);
             this.labelSinopsisPelicula.Name = "labelSinopsisPelicula";
             this.labelSinopsisPelicula.Size = new System.Drawing.Size(57, 13);
             this.labelSinopsisPelicula.TabIndex = 2;
@@ -83,7 +84,7 @@
             // labelDuracionPelicula
             // 
             this.labelDuracionPelicula.AutoSize = true;
-            this.labelDuracionPelicula.Location = new System.Drawing.Point(94, 179);
+            this.labelDuracionPelicula.Location = new System.Drawing.Point(174, 180);
             this.labelDuracionPelicula.Name = "labelDuracionPelicula";
             this.labelDuracionPelicula.Size = new System.Drawing.Size(64, 13);
             this.labelDuracionPelicula.TabIndex = 3;
@@ -92,7 +93,7 @@
             // labelFecha_estrenoPelicula
             // 
             this.labelFecha_estrenoPelicula.AutoSize = true;
-            this.labelFecha_estrenoPelicula.Location = new System.Drawing.Point(94, 223);
+            this.labelFecha_estrenoPelicula.Location = new System.Drawing.Point(174, 224);
             this.labelFecha_estrenoPelicula.Name = "labelFecha_estrenoPelicula";
             this.labelFecha_estrenoPelicula.Size = new System.Drawing.Size(97, 13);
             this.labelFecha_estrenoPelicula.TabIndex = 4;
@@ -129,21 +130,21 @@
             // 
             // textTitulo
             // 
-            this.textTitulo.Location = new System.Drawing.Point(214, 53);
+            this.textTitulo.Location = new System.Drawing.Point(294, 54);
             this.textTitulo.Name = "textTitulo";
             this.textTitulo.Size = new System.Drawing.Size(152, 20);
             this.textTitulo.TabIndex = 9;
             // 
             // textSinopsis
             // 
-            this.textSinopsis.Location = new System.Drawing.Point(214, 132);
+            this.textSinopsis.Location = new System.Drawing.Point(294, 133);
             this.textSinopsis.Name = "textSinopsis";
             this.textSinopsis.Size = new System.Drawing.Size(152, 20);
             this.textSinopsis.TabIndex = 11;
             // 
             // textDuracion
             // 
-            this.textDuracion.Location = new System.Drawing.Point(214, 172);
+            this.textDuracion.Location = new System.Drawing.Point(294, 173);
             this.textDuracion.Name = "textDuracion";
             this.textDuracion.Size = new System.Drawing.Size(152, 20);
             this.textDuracion.TabIndex = 12;
@@ -151,7 +152,7 @@
             // cantCopias
             // 
             this.cantCopias.AutoSize = true;
-            this.cantCopias.Location = new System.Drawing.Point(94, 279);
+            this.cantCopias.Location = new System.Drawing.Point(174, 280);
             this.cantCopias.Name = "cantCopias";
             this.cantCopias.Size = new System.Drawing.Size(104, 13);
             this.cantCopias.TabIndex = 14;
@@ -159,14 +160,14 @@
             // 
             // textCantCopis
             // 
-            this.textCantCopis.Location = new System.Drawing.Point(214, 272);
+            this.textCantCopis.Location = new System.Drawing.Point(294, 273);
             this.textCantCopis.Name = "textCantCopis";
             this.textCantCopis.Size = new System.Drawing.Size(152, 20);
             this.textCantCopis.TabIndex = 15;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(503, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(510, 30);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 232);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -177,7 +178,7 @@
             // 
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(214, 223);
+            this.dateTimePicker1.Location = new System.Drawing.Point(294, 224);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(204, 20);
             this.dateTimePicker1.TabIndex = 19;
@@ -204,7 +205,7 @@
             // 
             // TbDirectoresid
             // 
-            this.TbDirectoresid.Location = new System.Drawing.Point(214, 91);
+            this.TbDirectoresid.Location = new System.Drawing.Point(294, 92);
             this.TbDirectoresid.Name = "TbDirectoresid";
             this.TbDirectoresid.Size = new System.Drawing.Size(152, 20);
             this.TbDirectoresid.TabIndex = 28;
@@ -212,7 +213,7 @@
             // idPelicula
             // 
             this.idPelicula.AutoSize = true;
-            this.idPelicula.Location = new System.Drawing.Point(94, 18);
+            this.idPelicula.Location = new System.Drawing.Point(174, 19);
             this.idPelicula.Name = "idPelicula";
             this.idPelicula.Size = new System.Drawing.Size(69, 13);
             this.idPelicula.TabIndex = 29;
@@ -220,7 +221,7 @@
             // 
             // textBoxidPelicula
             // 
-            this.textBoxidPelicula.Location = new System.Drawing.Point(214, 11);
+            this.textBoxidPelicula.Location = new System.Drawing.Point(294, 12);
             this.textBoxidPelicula.Name = "textBoxidPelicula";
             this.textBoxidPelicula.Size = new System.Drawing.Size(152, 20);
             this.textBoxidPelicula.TabIndex = 30;
@@ -235,11 +236,22 @@
             this.btnMostrar.UseVisualStyleBackColor = true;
             this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
+            // back
+            // 
+            this.back.Location = new System.Drawing.Point(12, 10);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.TabIndex = 32;
+            this.back.Text = "BACK";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // peliculasAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 542);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.textBoxidPelicula);
             this.Controls.Add(this.idPelicula);
@@ -293,5 +305,6 @@
         private System.Windows.Forms.Label idPelicula;
         private System.Windows.Forms.TextBox textBoxidPelicula;
         private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.Button back;
     }
 }

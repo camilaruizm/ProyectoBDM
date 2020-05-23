@@ -31,7 +31,7 @@ namespace ProyectoBDM.Control
         public void ModificarPeliculas(TextBox textTitulo, DateTimePicker dateTimePicker1, TextBox textSinopsis, TextBox textDuracion, byte[] arr, TextBox textCantCopis, TextBox TbDirectoresid, TextBox idPelicula)
         {
             conexion.Open();
-            string Query = "UPDATE  peliculas SET titulo = '" + textTitulo.Text + "', fechaEstreno= '" + dateTimePicker1 + "', sinopsis= '" + textSinopsis.Text + "', duracion = '" + textDuracion.Text + "', posterPelicula = '" + arr + "', copiasDisponibles = '" + textCantCopis.Text + "', idDirectorf = '" + TbDirectoresid.Text + "' where idPelicula = '"+idPelicula+"'";
+            string Query = "UPDATE  peliculas SET titulo = '" + textTitulo.Text + "', fechaEstreno= '" + dateTimePicker1.Text + "', sinopsis= '" + textSinopsis.Text + "', duracion = '" + textDuracion.Text + "', posterPelicula = '" + arr + "', copiasDisponibles = '" + textCantCopis.Text + "', idDirectorf = '" + TbDirectoresid.Text + "' where idPelicula = '"+idPelicula.Text+"'";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
@@ -49,7 +49,7 @@ namespace ProyectoBDM.Control
         public void MostrarPelicula(DataGridView dgvP, MySqlDataAdapter adaptador)
         {
             conexion.Open();
-            MySqlCommand comando = new MySqlCommand("SELECT titulo,fechaEstreno,sinopsis,duracion, copiasDisponibles,idDirectorf FROM PELICULAS", conexion);
+            MySqlCommand comando = new MySqlCommand("SELECT idPelicula, titulo,fechaEstreno,sinopsis,duracion, copiasDisponibles,idDirectorf FROM PELICULAS", conexion);
 
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
