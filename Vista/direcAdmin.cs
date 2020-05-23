@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using ProyectoBDM.Control;
+using System.Threading;
+
 
 namespace ProyectoBDM
 {
     public partial class direcAdmin : Form
     {
+        Thread th;
         string imageUrl = null;
         int selectedRow;
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
@@ -147,6 +150,18 @@ namespace ProyectoBDM
             comando.ExecuteNonQuery();
             conexion.Close();
             MessageBox.Show("!Se ha eliminado al director con exito¡");*/
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(volverMenu);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+        private void volverMenu()
+        {
+            Application.Run(new MenuAdmin());
         }
     }
 }

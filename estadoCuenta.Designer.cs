@@ -35,6 +35,8 @@
             this.MULTAS = new System.Windows.Forms.Label();
             this.dgvM = new System.Windows.Forms.DataGridView();
             this.showMultas = new System.Windows.Forms.Button();
+            this.verHistorial = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvM)).BeginInit();
             this.SuspendLayout();
@@ -102,11 +104,33 @@
             this.showMultas.UseVisualStyleBackColor = true;
             this.showMultas.Click += new System.EventHandler(this.showMultas_Click);
             // 
+            // verHistorial
+            // 
+            this.verHistorial.Location = new System.Drawing.Point(713, 422);
+            this.verHistorial.Name = "verHistorial";
+            this.verHistorial.Size = new System.Drawing.Size(75, 23);
+            this.verHistorial.TabIndex = 7;
+            this.verHistorial.Text = "Ver Historial";
+            this.verHistorial.UseVisualStyleBackColor = true;
+            this.verHistorial.Click += new System.EventHandler(this.verHistorial_Click);
+            // 
+            // back
+            // 
+            this.back.Location = new System.Drawing.Point(36, 13);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.TabIndex = 8;
+            this.back.Text = "BACK";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // estadoCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 457);
+            this.Controls.Add(this.back);
+            this.Controls.Add(this.verHistorial);
             this.Controls.Add(this.showMultas);
             this.Controls.Add(this.dgvM);
             this.Controls.Add(this.MULTAS);
@@ -132,5 +156,7 @@
         private System.Windows.Forms.Label MULTAS;
         private System.Windows.Forms.DataGridView dgvM;
         private System.Windows.Forms.Button showMultas;
+        private System.Windows.Forms.Button verHistorial;
+        private System.Windows.Forms.Button back;
     }
 }

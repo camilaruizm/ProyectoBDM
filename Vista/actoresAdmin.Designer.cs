@@ -48,6 +48,7 @@
             this.modificarActor = new System.Windows.Forms.Button();
             this.deleteActor = new System.Windows.Forms.Button();
             this.idActor = new System.Windows.Forms.TextBox();
+            this.back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -226,11 +227,22 @@
             this.idActor.TabIndex = 20;
             this.idActor.Visible = false;
             // 
+            // back
+            // 
+            this.back.Location = new System.Drawing.Point(34, 13);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.TabIndex = 21;
+            this.back.Text = "BACK";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // actoresAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 561);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.idActor);
             this.Controls.Add(this.deleteActor);
             this.Controls.Add(this.modificarActor);
@@ -282,5 +294,6 @@
         private System.Windows.Forms.Button modificarActor;
         private System.Windows.Forms.Button deleteActor;
         private System.Windows.Forms.TextBox idActor;
+        private System.Windows.Forms.Button back;
     }
 }

@@ -93,6 +93,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="historialCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="historialCliente.Designer.cs">
+      <DependentUpon>historialCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Multa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +201,9 @@
     </Compile>
     <EmbeddedResource Include="estadoCuenta.resx">
       <DependentUpon>estadoCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="historialCliente.resx">
+      <DependentUpon>historialCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Multa.resx">
       <DependentUpon>Multa.cs</DependentUpon>

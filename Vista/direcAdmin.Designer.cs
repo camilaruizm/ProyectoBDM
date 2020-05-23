@@ -48,6 +48,7 @@
             this.modificarDirector = new System.Windows.Forms.Button();
             this.eliminarDirect = new System.Windows.Forms.Button();
             this.idDirector = new System.Windows.Forms.TextBox();
+            this.back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -225,11 +226,22 @@
             this.idDirector.TabIndex = 20;
             this.idDirector.Visible = false;
             // 
+            // back
+            // 
+            this.back.Location = new System.Drawing.Point(30, 13);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.TabIndex = 21;
+            this.back.Text = "BACK";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // direcAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 540);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.idDirector);
             this.Controls.Add(this.eliminarDirect);
             this.Controls.Add(this.modificarDirector);
@@ -282,5 +294,6 @@
         private System.Windows.Forms.Button modificarDirector;
         private System.Windows.Forms.Button eliminarDirect;
         private System.Windows.Forms.TextBox idDirector;
+        private System.Windows.Forms.Button back;
     }
 }

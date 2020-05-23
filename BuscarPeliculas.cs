@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace ProyectoBDM
 {
     public partial class BuscarPeliculas : Form
     {
+        Thread th;
         public BuscarPeliculas()
         {
             InitializeComponent();
@@ -36,5 +38,19 @@ namespace ProyectoBDM
         {
 
         }
+
+        private void btAtrasPeliculas_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(volverMenu);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void volverMenu()
+        {
+            Application.Run(new MenuClientes());
+        }
+    }
     }
 }

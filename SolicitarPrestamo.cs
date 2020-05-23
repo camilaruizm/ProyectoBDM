@@ -10,12 +10,14 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using ProyectoBDM.Control;
 using ProyectoBDM.Modelo;
+using System.Threading;
 
 
 namespace ProyectoBDM
 {
     public partial class SolicitarPrestamo : Form
     {
+        Thread th;
         public SolicitarPrestamo()
         {
             InitializeComponent();
@@ -85,5 +87,24 @@ namespace ProyectoBDM
         {
 
         }
+
+        private void btPrestamo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(volverMenu);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void volverMenu()
+        {
+            Application.Run(new MenuClientes());
+        }
     }
+    
 }

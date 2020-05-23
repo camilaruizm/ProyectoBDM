@@ -10,12 +10,14 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using ProyectoBDM.Control;
 using ProyectoBDM.Modelo;
+using System.Threading;
 
 namespace ProyectoBDM
 {
     public partial class actoresAdmin : Form
         
     {
+        Thread th;
         string imageUrl = null;
         int selectedRow;
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
@@ -175,5 +177,18 @@ namespace ProyectoBDM
         {
 
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(volverMenu);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+        private void volverMenu()
+        {
+            Application.Run(new MenuAdmin());
+        }
     }
+    
 }
