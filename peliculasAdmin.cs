@@ -40,10 +40,6 @@ namespace ProyectoBDM
             {
                 cpa.InsertarPeliculas(textTitulo, dateTimePicker1, textSinopsis, textDuracion, arr, textCantCopis, TbDirectoresid);
                 MessageBox.Show("Se inserto con exito");
-                this.Close();
-                th = new Thread(Abrir_RGN);
-                th.SetApartmentState(ApartmentState.STA);
-                th.Start();
             }
             catch (Exception)
             {
@@ -192,6 +188,27 @@ namespace ProyectoBDM
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(Abrir_RGN);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(Abrir_PA);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void Abrir_PA()
+        {
+            Application.Run(new actorPelicula());
         }
     }
 

@@ -1,4 +1,5 @@
-﻿using ProyectoBDM.Control;
+﻿using MySql.Data.MySqlClient;
+using ProyectoBDM.Control;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace ProyectoBDM
     public partial class RelacionGeneroPelicula : Form
     {
         ControlRelacionGeneroPelicula crgp = new ControlRelacionGeneroPelicula();
+        MySqlDataAdapter adaptador = new MySqlDataAdapter();
         public RelacionGeneroPelicula()
         {
             InitializeComponent();
@@ -23,7 +25,7 @@ namespace ProyectoBDM
         {
             try
             {
-                crgp.InsertarRelacionPG(tbidPelicula, tbidGenero);
+                crgp.InsertarRelacionPG(comboBox1, comboBox2);
                 MessageBox.Show("Se ha insertado con exito");
             }
             catch (Exception)
@@ -36,7 +38,7 @@ namespace ProyectoBDM
         {
             try
             {
-                crgp.ModificarRelacionPG(tbidPelicula, tbidGenero, tbidPeliGen);
+                crgp.ModificarRelacionPG(comboBox1, comboBox2, tbidPeliGen);
                 MessageBox.Show("Se ha modificado con exito");
             }
             catch (Exception)
@@ -55,6 +57,17 @@ namespace ProyectoBDM
             {
                 MessageBox.Show("Error");
             }
+        }
+
+        private void RelacionGeneroPelicula_Load(object sender, EventArgs e)
+        {
+            crgp.llenarComboboxGenero(comboBox2);
+            crgp.llenarComboboxPelicula(comboBox1);
+        }
+
+        private void buttonShow_Click(object sender, EventArgs e)
+        {
+            crgp.MostrarRelacionPG(dataGridView1, adaptador);
         }
     }
 }

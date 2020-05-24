@@ -60,7 +60,7 @@ namespace ProyectoBDM
                 caa.InsertarActores(textNombreAct, textNombreAct2, textApeAct, textApeAct2, textCorreoAct, textPaisAct, arr2);
                 MessageBox.Show("!Se ha registrado el actor con exito¡");
             }
-            catch (Exception)
+            catch (MySqlException)
             {
                 MessageBox.Show("!Error en el registro¡");
             }

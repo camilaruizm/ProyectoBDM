@@ -38,6 +38,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.back = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +68,7 @@
             this.insertarAP.TabIndex = 2;
             this.insertarAP.Text = "INSERTAR";
             this.insertarAP.UseVisualStyleBackColor = true;
+            this.insertarAP.Click += new System.EventHandler(this.insertarAP_Click);
             // 
             // modificarAP
             // 
@@ -76,6 +78,7 @@
             this.modificarAP.TabIndex = 3;
             this.modificarAP.Text = "MODIFICAR";
             this.modificarAP.UseVisualStyleBackColor = true;
+            this.modificarAP.Click += new System.EventHandler(this.modificarAP_Click);
             // 
             // eliminarAP
             // 
@@ -85,6 +88,7 @@
             this.eliminarAP.TabIndex = 4;
             this.eliminarAP.Text = "ELIMINAR";
             this.eliminarAP.UseVisualStyleBackColor = true;
+            this.eliminarAP.Click += new System.EventHandler(this.eliminarAP_Click);
             // 
             // dataGridView1
             // 
@@ -127,11 +131,22 @@
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(716, 237);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "SHOW";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // actorPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 338);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.back);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -144,6 +159,7 @@
             this.Controls.Add(this.label1);
             this.Name = "actorPelicula";
             this.Text = "actorPelicula";
+            this.Load += new System.EventHandler(this.actorPelicula_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -162,5 +178,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Button button1;
     }
 }

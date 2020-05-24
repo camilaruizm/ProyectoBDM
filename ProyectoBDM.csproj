@@ -99,6 +99,7 @@
     <Compile Include="actorPelicula.Designer.cs">
       <DependentUpon>actorPelicula.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control\ControlActorPelicula.cs" />
     <Compile Include="Control\ControlRelacionGeneroPelicula.cs" />
     <Compile Include="Control\ControlInicioSesionClientes.cs" />
     <Compile Include="Control\ControlMulta.cs" />

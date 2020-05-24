@@ -1,55 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace ProyectoBDM.Control
 {
-    class ControlRelacionGeneroPelicula
+    class ControlActorPelicula
     {
         MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
-        public void InsertarRelacionPG(ComboBox idPelicula, ComboBox idGenero)
+        public void InsertarParticipacion(ComboBox combo1, ComboBox combo2)
         {
             conexion.Open();
             string Query =
-                "INSERT INTO peliculas_generos(idPeliculaf3, idGenerof) " +
-                "values('" + idPelicula.SelectedValue + "','" + idGenero.SelectedValue + "');";
+                "INSERT INTO participaciones(idPeliculaf2, idActorf) " +
+                "values('" + combo1.SelectedValue + "','" + combo2.SelectedValue + "');";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
         }
 
-        public void ModificarRelacionPG(ComboBox idPelicula, ComboBox idGenero, TextBox idPeliculaGenero)
+        public void ModificarParticipacion(ComboBox combo1, ComboBox combo2, TextBox idParticipacion)
         {
             conexion.Open();
             string Query =
-                "UPDATE  peliculas_generos SET idPeliculaf3 = '" + idPelicula.SelectedValue + "', idGenerof= '" + idGenero.SelectedValue+"' where idPeliculaGenero = '"+idPeliculaGenero.Text+"';";
+                "UPDATE  participaciones SET idPeliculaf2 = '" + combo1.SelectedValue + "', idActorf= '" + combo2.SelectedValue + "' where idParticipacion = '" + idParticipacion.Text + "';";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
         }
 
-        public void EliminarRelacionPG(TextBox idPeliculaGenero)
+        public void EliminarParticipacion(TextBox idParticipacion) 
         {
             conexion.Open();
             string Query =
-                "DELETE FROM peliculas_genero WHERE idMulta ='" + idPeliculaGenero.Text + "'  ";
+                "DELETE FROM participaciones WHERE idParticipacion ='" + idParticipacion.Text + "'";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
         }
 
-        public void MostrarRelacionPG(DataGridView dgvP, MySqlDataAdapter adaptador)
+        public void MostrarParticipacion(DataGridView dgvP, MySqlDataAdapter adaptador)
         {
             conexion.Open();
-            MySqlCommand comando = new MySqlCommand("SELECT idPeliculaf3, idGenerof from peliculas_generos", conexion);
+            MySqlCommand comando = new MySqlCommand("SELECT idPeliculaf2, idActorf from participaciones", conexion);
 
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
@@ -58,24 +58,7 @@ namespace ProyectoBDM.Control
             conexion.Close();
         }
 
-        public void llenarComboboxGenero(ComboBox comboBoxGenero)
-        {
-            MySqlCommand cm = new MySqlCommand("Obtaingeneros", conexion);
-
-            cm.CommandType = CommandType.StoredProcedure;
-
-            MySqlDataAdapter da = new MySqlDataAdapter(cm);
-            DataTable dt = new DataTable();
-
-            da.Fill(dt);
-
-            comboBoxGenero.ValueMember = "idGenero";
-            comboBoxGenero.DisplayMember = "tipoGenero";
-
-            comboBoxGenero.DataSource = dt;
-        }
-
-        public void llenarComboboxPelicula(ComboBox comboBoxGenero)
+        public void llenarComboboxPeliculas(ComboBox comboBoxPelicula)
         {
             MySqlCommand cm = new MySqlCommand("ObtainPeliculas", conexion);
 
@@ -86,10 +69,27 @@ namespace ProyectoBDM.Control
 
             da.Fill(dt);
 
-            comboBoxGenero.ValueMember = "idPelicula";
-            comboBoxGenero.DisplayMember = "titulo";
+            comboBoxPelicula.ValueMember = "idPelicula";
+            comboBoxPelicula.DisplayMember = "titulo";
 
-            comboBoxGenero.DataSource = dt;
+            comboBoxPelicula.DataSource = dt;
+        }
+
+        public void llenarComboboxActores(ComboBox comboBoxActores)
+        {
+            MySqlCommand cm = new MySqlCommand("ObtainActores", conexion);
+
+            cm.CommandType = CommandType.StoredProcedure;
+
+            MySqlDataAdapter da = new MySqlDataAdapter(cm);
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+
+            comboBoxActores.ValueMember = "idActor";
+            comboBoxActores.DisplayMember = "nombreActor1";
+
+            comboBoxActores.DataSource = dt;
         }
     }
 }
