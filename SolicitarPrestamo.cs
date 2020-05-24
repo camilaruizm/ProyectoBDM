@@ -17,15 +17,22 @@ namespace ProyectoBDM
 {
     public partial class SolicitarPrestamo : Form
     {
-        
+       
+         string idUser;
         MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
 
         Thread th;
-        public SolicitarPrestamo()
+
+        public SolicitarPrestamo(string idUser)
         {
             InitializeComponent();
+            this.idUser = idUser;
+
         }
+
+        
+        
 
         private void btBuscarM_Click(object sender, EventArgs e)
         {
@@ -100,7 +107,8 @@ namespace ProyectoBDM
 
         private void btPrestamo_Click(object sender, EventArgs e)
         {
-
+            
+            label8.Text = "ID: " +  idUser;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -113,7 +121,7 @@ namespace ProyectoBDM
 
         private void volverMenu()
         {
-            Application.Run(new MenuClientes());
+            Application.Run(new MenuClientes( idUser));
         }
 
         private void SolicitarPrestamo_Load(object sender, EventArgs e)

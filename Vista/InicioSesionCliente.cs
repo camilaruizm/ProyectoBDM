@@ -1,19 +1,15 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace ProyectoBDM
 {
     public partial class InicioSesionCliente : Form
     {
+       string idUser;
         Thread th;
         MySqlConnection conexion = new MySqlConnection("server=localhost; Database=proyectobdm; user=root; password=root;");
         public InicioSesionCliente()
@@ -34,19 +30,20 @@ namespace ProyectoBDM
             Application.Run(new RegistroClientes());
         }
 
-        protected void BtnIngresar_Click(object sender, EventArgs e)
+        public void BtnIngresar_Click(object sender, EventArgs e)
         {
             string usuarioCli, contrasenaCli;
-
+            idUser = LbMensaje2.Text;
             usuarioCli = TbUsuarioIniCli.Text;
             contrasenaCli = TbContrasenaIniCli.Text;
-
             conexion.Open();
+            
             MySqlCommand InicioSesionCli = new MySqlCommand();
             InicioSesionCli.Connection = conexion;
             InicioSesionCli.CommandText = ("select nombreUsuario, contrasena, rol from clientes where nombreUsuario = '" + usuarioCli + "'and contrasena = '" + contrasenaCli + "' and rol = 'Usuario'");
 
             MySqlDataReader leerCli = InicioSesionCli.ExecuteReader();
+
             
             if (leerCli.Read())
                 {
@@ -57,6 +54,7 @@ namespace ProyectoBDM
                 }
             conexion.Close();
             conexion.Open();
+
             MySqlCommand InicioSesionAdm = new MySqlCommand();
             InicioSesionAdm.Connection = conexion;
             InicioSesionAdm.CommandText = ("select nombreUsuario, contrasena, rol from clientes where nombreUsuario = '" + usuarioCli + "'and contrasena = '" + contrasenaCli + "' and rol = 'Administrador' ");
@@ -74,7 +72,13 @@ namespace ProyectoBDM
                 {
                     LbIniCliMal.Visible = true;
                 }
+
             conexion.Close();
+
+
+            
+            
+
         }
 
         public void opennewform2()
@@ -84,7 +88,7 @@ namespace ProyectoBDM
 
         public void opennewform()
         {
-            Application.Run(new MenuClientes());
+            Application.Run(new MenuClientes(idUser)); 
         }
 
         private void InicioSesionCliente_Load(object sender, EventArgs e)
@@ -132,5 +136,22 @@ namespace ProyectoBDM
             BtnSalir.BackColor = Color.Red;
         }
 
+        private void LbMensaje2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            conexion.Open();
+            string idQuery = ("SELECT idCliente from clientes where clientes.nombreUsuario = 'bb';");
+            DataTable idTable = new DataTable();
+            MySqlDataAdapter idAdapter = new MySqlDataAdapter(idQuery, conexion);
+            idAdapter.Fill(idTable);
+            
+            textBox1.Text = idTable;
+            conexion.Close()
+        }
     }
 }

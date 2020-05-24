@@ -11,12 +11,16 @@ using System.Threading;
 
 namespace ProyectoBDM
 {
+    
     public partial class MenuClientes : Form
     {
+        string idUser;
         Thread th;
-        public MenuClientes()
+        public MenuClientes(string idUser)
         {
             InitializeComponent();
+            this.idUser = idUser;
+
         }
 
         private void BtnVerPeliculas_Click(object sender, EventArgs e)
@@ -29,7 +33,7 @@ namespace ProyectoBDM
 
         private void Abrir_VP()
         {
-            Application.Run(new SolicitarPrestamo());
+            Application.Run(new SolicitarPrestamo(idUser));
         }
 
         private void BtnVerPeliculas_MouseMove(object sender, MouseEventArgs e)
@@ -52,7 +56,7 @@ namespace ProyectoBDM
 
         private void Abrir_SP()
         {
-            Application.Run(new SolicitarPrestamo());
+            Application.Run(new SolicitarPrestamo(idUser));
         }
 
         private void BtnSolPrestamo_MouseMove(object sender, MouseEventArgs e)
@@ -77,7 +81,7 @@ namespace ProyectoBDM
 
         private void Abrir_PM()
         {
-            Application.Run(new estadoCuenta());
+            Application.Run(new estadoCuenta(idUser));
         }
 
         private void BtnPagarMultas_MouseMove(object sender, MouseEventArgs e)
