@@ -220,7 +220,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(716, 73);
+            this.label7.Location = new System.Drawing.Point(85, 8);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 13);
             this.label7.TabIndex = 22;
@@ -228,32 +228,36 @@
             // 
             // buscarC
             // 
-            this.buscarC.Location = new System.Drawing.Point(39, 38);
+            this.buscarC.Location = new System.Drawing.Point(62, 24);
             this.buscarC.Name = "buscarC";
             this.buscarC.Size = new System.Drawing.Size(126, 20);
             this.buscarC.TabIndex = 23;
+            this.buscarC.TextChanged += new System.EventHandler(this.buscarC_TextChanged);
             // 
             // dgvC
             // 
             this.dgvC.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvC.Location = new System.Drawing.Point(683, 139);
+            this.dgvC.Location = new System.Drawing.Point(30, 50);
             this.dgvC.Name = "dgvC";
-            this.dgvC.Size = new System.Drawing.Size(149, 58);
+            this.dgvC.Size = new System.Drawing.Size(183, 63);
             this.dgvC.TabIndex = 24;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.bc);
             this.panel1.Controls.Add(this.buscarC);
-            this.panel1.Location = new System.Drawing.Point(655, 65);
+            this.panel1.Controls.Add(this.dgvC);
+            this.panel1.Location = new System.Drawing.Point(620, 65);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 148);
+            this.panel1.Size = new System.Drawing.Size(235, 151);
             this.panel1.TabIndex = 25;
             // 
             // bc
             // 
-            this.bc.Location = new System.Drawing.Point(719, 216);
+            this.bc.Location = new System.Drawing.Point(88, 119);
             this.bc.Name = "bc";
             this.bc.Size = new System.Drawing.Size(75, 23);
             this.bc.TabIndex = 26;
@@ -266,9 +270,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 476);
-            this.Controls.Add(this.bc);
-            this.Controls.Add(this.dgvC);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.idMulta);
             this.Controls.Add(this.showMultas);

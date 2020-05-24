@@ -15,7 +15,7 @@ using System.Threading;
 namespace ProyectoBDM
 {
     public partial class actoresAdmin : Form
-        
+
     {
         Thread th;
         string imageUrl = null;
@@ -91,12 +91,12 @@ namespace ProyectoBDM
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);
-            dataGridView1.DataSource = tabla;*/           
+            dataGridView1.DataSource = tabla;*/
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           // MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            // MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
             selectedRow = e.RowIndex;
             DataGridViewRow row = dataGridView1.Rows[selectedRow];
@@ -202,5 +202,5 @@ namespace ProyectoBDM
             Application.Run(new actorPelicula());
         }
     }
-    
+
 }

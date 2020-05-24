@@ -56,12 +56,7 @@ namespace ProyectoBDM
             {
                 MessageBox.Show("!Error al registrar¡");
             }
-            /*conexion.Open();
-            string Query= "INSERT INTO DIRECTORES(nombreDirector1,nombreDirector2,apellidoDirector1,apellidoDirector2,correoDirector,paisDirector,fotoD)values('" + nombreDir.Text + "','" + nombreDir2.Text + "','" + apellidoDir.Text + "','" + apellidoDir2.Text + "','" + correoDir.Text + "','" + paisDir.Text + "','" + arr3 + "');";
-            MySqlCommand comando = new MySqlCommand(Query, conexion);
-            comando.ExecuteNonQuery();
-            conexion.Close();
-            MessageBox.Show("!Se ha registrado al director con exito¡");*/
+          
         }
 
         private void showDirect_Click(object sender, EventArgs e)
@@ -112,13 +107,7 @@ namespace ProyectoBDM
                 MessageBox.Show("!Error al modificar¡");
             }
             
-            /*conexion.Open();
-            
-            string Query = "UPDATE  DIRECTORES SET nombreDirector1='" + nombreDir.Text + "', nombreDirector2 ='" + nombreDir2.Text + "', apellidoDirector1='" + apellidoDir.Text + "', apellidoDirector2='" + apellidoDir2.Text + "', correoDirector='" + correoDir.Text + "', paisDirector='" + paisDir.Text + "', fotoD='" + arr3 + "' where idDirector ='" + idDirector.Text + "'  ";
-            MySqlCommand comando = new MySqlCommand(Query, conexion);
-            comando.ExecuteNonQuery();
-            conexion.Close();
-            MessageBox.Show("!Se ha modificado al director con exito¡");*/
+   
         }
 
         private void direcAdmin_Load(object sender, EventArgs e)
@@ -137,12 +126,7 @@ namespace ProyectoBDM
             {
                 MessageBox.Show("!Error al eliminar");
             }
-            /*conexion.Open();
-            string Query = "DELETE FROM DIRECTORES where idDirector ='" + idDirector.Text + "'  ";
-            MySqlCommand comando = new MySqlCommand(Query, conexion);
-            comando.ExecuteNonQuery();
-            conexion.Close();
-            MessageBox.Show("!Se ha eliminado al director con exito¡");*/
+        
         }
 
         private void back_Click(object sender, EventArgs e)

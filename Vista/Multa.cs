@@ -134,5 +134,10 @@ namespace ProyectoBDM
                 MessageBox.Show("Error al mostrar");
             }
         }
+
+        private void buscarC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
