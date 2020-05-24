@@ -15,7 +15,7 @@ namespace ProyectoBDM.Control
     {
         MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
-        public void InsertarActores(TextBox nombre1,TextBox nombre2, TextBox apellido1, TextBox apellido2, TextBox correo, TextBox pais, byte[] imgActor)
+        public void InsertarActores(TextBox nombre1, TextBox nombre2, TextBox apellido1, TextBox apellido2, TextBox correo, TextBox pais, byte[] imgActor)
         {
             conexion.Open();
             string Query = "INSERT INTO ACTORES(nombreActor1,nombreActor2,ApellidoActor1,ApellidoActor2,correoActor,paisActor,fotoA) " +
