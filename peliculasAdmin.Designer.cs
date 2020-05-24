@@ -41,15 +41,14 @@
             this.textDuracion = new System.Windows.Forms.TextBox();
             this.cantCopias = new System.Windows.Forms.Label();
             this.textCantCopis = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.actualizarAdmin = new System.Windows.Forms.Button();
             this.deleteAdmin = new System.Windows.Forms.Button();
             this.TbDirectoresid = new System.Windows.Forms.TextBox();
-            this.idPelicula = new System.Windows.Forms.Label();
             this.textBoxidPelicula = new System.Windows.Forms.TextBox();
             this.btnMostrar = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -165,15 +164,6 @@
             this.textCantCopis.Size = new System.Drawing.Size(152, 20);
             this.textCantCopis.TabIndex = 15;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(510, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 232);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
@@ -210,21 +200,13 @@
             this.TbDirectoresid.Size = new System.Drawing.Size(152, 20);
             this.TbDirectoresid.TabIndex = 28;
             // 
-            // idPelicula
-            // 
-            this.idPelicula.AutoSize = true;
-            this.idPelicula.Location = new System.Drawing.Point(174, 19);
-            this.idPelicula.Name = "idPelicula";
-            this.idPelicula.Size = new System.Drawing.Size(69, 13);
-            this.idPelicula.TabIndex = 29;
-            this.idPelicula.Text = "IDPELICULA";
-            // 
             // textBoxidPelicula
             // 
             this.textBoxidPelicula.Location = new System.Drawing.Point(294, 12);
             this.textBoxidPelicula.Name = "textBoxidPelicula";
             this.textBoxidPelicula.Size = new System.Drawing.Size(152, 20);
             this.textBoxidPelicula.TabIndex = 30;
+            this.textBoxidPelicula.Visible = false;
             // 
             // btnMostrar
             // 
@@ -246,6 +228,15 @@
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(510, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(177, 232);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
             // peliculasAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,7 +245,6 @@
             this.Controls.Add(this.back);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.textBoxidPelicula);
-            this.Controls.Add(this.idPelicula);
             this.Controls.Add(this.TbDirectoresid);
             this.Controls.Add(this.deleteAdmin);
             this.Controls.Add(this.actualizarAdmin);
@@ -302,7 +292,6 @@
         private System.Windows.Forms.Button actualizarAdmin;
         private System.Windows.Forms.Button deleteAdmin;
         private System.Windows.Forms.TextBox TbDirectoresid;
-        private System.Windows.Forms.Label idPelicula;
         private System.Windows.Forms.TextBox textBoxidPelicula;
         private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.Button back;

@@ -93,6 +93,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="actorPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="actorPelicula.Designer.cs">
+      <DependentUpon>actorPelicula.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control\ControlRelacionGeneroPelicula.cs" />
     <Compile Include="Control\ControlInicioSesionClientes.cs" />
     <Compile Include="Control\ControlMulta.cs" />
@@ -196,6 +202,9 @@
     <Compile Include="SolicitarPrestamo.Designer.cs">
       <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="actorPelicula.resx">
+      <DependentUpon>actorPelicula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="estadoCuenta.resx">
       <DependentUpon>estadoCuenta.cs</DependentUpon>
     </EmbeddedResource>
