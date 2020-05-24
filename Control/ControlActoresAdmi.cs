@@ -46,7 +46,7 @@ namespace ProyectoBDM.Control
         public void MostrarActores(MySqlDataAdapter adaptador, DataGridView dataGridView1)
         {
             conexion.Open();
-            MySqlCommand comando = new MySqlCommand("SELECT nombreActor1,nombreActor2,ApellidoActor1,ApellidoActor2,correoActor,paisActor FROM ACTORES", conexion);
+            MySqlCommand comando = new MySqlCommand("SELECT nombreActor1 as Nombre1, nombreActor2 as Nombre2, ApellidoActor1 as Apellido1,apellidoActor2 as Apellido2,correoActor as Correo,paisActor as Pais FROM ACTORES", conexion);
 
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();

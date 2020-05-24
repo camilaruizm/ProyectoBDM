@@ -121,6 +121,7 @@
             this.dataGridView2.Size = new System.Drawing.Size(623, 182);
             this.dataGridView2.TabIndex = 7;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick_1);
+            this.dataGridView2.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView2_CellFormatting);
             // 
             // buttonInsertPelicula
             // 

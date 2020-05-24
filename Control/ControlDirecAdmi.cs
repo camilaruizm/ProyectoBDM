@@ -44,7 +44,7 @@ namespace ProyectoBDM.Control
 
         public void MostrarDierctores(MySqlDataAdapter adaptador, DataGridView dataGridView1)
         {
-            MySqlCommand comando = new MySqlCommand("SELECT * FROM DIRECTORES", conexion);
+            MySqlCommand comando = new MySqlCommand("SELECT D.idDirector, D.nombreDirector1 as Nombre1, D.nombreDirector2 as Nombre2, D.apellidoDirector1 as Apellido1, D.apellidoDirector2 as Apellido2, D.correoDirector as Correo, D.paisDirector as Pais  FROM DIRECTORES D", conexion);
 
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();

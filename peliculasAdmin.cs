@@ -183,6 +183,11 @@ namespace ProyectoBDM
         {
 
         }
+
+        private void dataGridView2_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+
+        }
     }
 
 }
