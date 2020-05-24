@@ -59,8 +59,7 @@ namespace ProyectoBDM
         {
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             conexion.Open();
-
-            string tituloQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias Disponibles', nombreDirector1, nombreDirector2, apellidoDirector1, apellidoDirector2 from peliculas inner join Directores on directores.idDirector = peliculas.idDirectorf where peliculas.titulo ='" + tbTituloP.Text + "';";
+            string tituloQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias Disponibles', CONCAT (nombreDirector1 , ' ' ,  nombreDirector2) as 'Nombre Director', CONCAT (apellidoDirector1 , ' ' , apellidoDirector2) as 'Apellido Director' from peliculas inner join Directores on directores.idDirector = peliculas.idDirectorf where peliculas.titulo ='" + tbTituloP.Text + "';";
             DataTable tPeliculasTitulo = new DataTable();
             MySqlDataAdapter adapterT = new MySqlDataAdapter(tituloQuery, conexion);
             adapterT.Fill(tPeliculasTitulo);
@@ -132,14 +131,20 @@ namespace ProyectoBDM
 
         private void button3_Click(object sender, EventArgs e)
         {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             conexion.Open();
-            MySqlCommand comando = new MySqlCommand("select p.titulo, g.tipoGenero from peliculas as p, generos as g where tipoGenero = '"+ comboBoxCategoria.Text + "'", conexion);
+            string categoriaQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias Disponibles',  tipoGenero as 'Genero' FROM peliculas left join peliculas_generos on peliculas.idPelicula = peliculas_generos.idPeliculaf3 left join generos on peliculas_generos.idGeneroF = generos.idGenero where generos.tipoGenero = '" + comboBoxCategoria.Text + "';";
 
-            adaptador.SelectCommand = comando;
-            DataTable tabla = new DataTable();
-            adaptador.Fill(tabla);
-            dgvPeliculas.DataSource = tabla;
+            DataTable tPeliculasCategoria = new DataTable();
+            MySqlDataAdapter adapterC = new MySqlDataAdapter(categoriaQuery, conexion);
+            adapterC.Fill(tPeliculasCategoria);
+            dgvPeliculas.DataSource = tPeliculasCategoria;
             conexion.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
     
