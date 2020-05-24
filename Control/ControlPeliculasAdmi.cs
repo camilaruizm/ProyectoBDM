@@ -58,6 +58,21 @@ namespace ProyectoBDM.Control
             conexion.Close();
         }
 
+        public void BuscarDirector(DataGridView dgvD, MySqlDataAdapter adaptador, TextBox buscarD)
+        {
+            conexion.Open();
+            MySqlCommand comando = new MySqlCommand("SELECT idDirector FROM Directores WHERE  concat(Directores.nombreDirector1,' ',Directores.apellidoDirector1)LIKE @nombre ", conexion);
+            comando.Parameters.Add("@nombre", MySqlDbType.VarChar).Value = "%" + buscarD.Text + "%";
+
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dgvD.DataSource = tabla;
+            conexion.Close();
+        }
+
+
+
 
 
     }

@@ -139,6 +139,19 @@ namespace ProyectoBDM
             }
         }
 
+        private void buscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cpa.BuscarDirector(dgvD, adaptador, buscarD);
+               
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al mostrar");
+            }
+        }
+
         private void dataGridView2_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             selectedRow = e.RowIndex;
@@ -164,6 +177,11 @@ namespace ProyectoBDM
         private void volverMenu()
         {
             Application.Run(new MenuAdmin());
+        }
+
+        private void peliculasAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 
