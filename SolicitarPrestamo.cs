@@ -17,6 +17,7 @@ namespace ProyectoBDM
 {
     public partial class SolicitarPrestamo : Form
     {
+        
         MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
 
@@ -82,6 +83,8 @@ namespace ProyectoBDM
             int counter = dgvPeliculas.Rows.Count;
             textBox2.Text = counter.ToString();
 
+            int total = counter * 20000;
+            textBox3.Text = total.ToString();
             conexion.Close();
         }   
 
@@ -147,6 +150,16 @@ namespace ProyectoBDM
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
