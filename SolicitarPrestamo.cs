@@ -78,6 +78,10 @@ namespace ProyectoBDM
             MySqlDataAdapter adapterD = new MySqlDataAdapter(directorQuery, conexion);
             adapterD.Fill(tPeliculasDirector);
             dgvPeliculas.DataSource = tPeliculasDirector;
+
+            int counter = dgvPeliculas.Rows.Count;
+            textBox2.Text = counter.ToString();
+
             conexion.Close();
         }   
 
