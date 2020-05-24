@@ -189,6 +189,18 @@ namespace ProyectoBDM
         {
             Application.Run(new MenuAdmin());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(Abrir_PA);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+        private void Abrir_PA()
+        {
+            Application.Run(new actorPelicula());
+        }
     }
     
 }

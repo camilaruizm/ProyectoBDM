@@ -26,14 +26,14 @@ namespace ProyectoBDM
         private void back_Click(object sender, EventArgs e)
         {
             this.Close();
-            th = new Thread(volverMenu);
+            th = new Thread(volverActAdmi);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
         }
 
-        private void volverMenu()
+        private void volverActAdmi()
         {
-            Application.Run(new MenuAdmin());
+            Application.Run(new actoresAdmin());
         }
 
         private void insertarAP_Click(object sender, EventArgs e)
