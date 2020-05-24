@@ -121,5 +121,18 @@ namespace ProyectoBDM
             //conexion.Close();
             //MessageBox.Show("!Se ha eliminado la multa con exito¡"); 
         }
+
+        private void bc_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cm.buscarCliente(dgvC, adaptador, buscarC);
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al mostrar");
+            }
+        }
     }
 }

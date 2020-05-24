@@ -42,7 +42,7 @@ namespace ProyectoBDM.Control
             string Query = "UPDATE  Multas SET fechaGeneracionMulta = '" + dtpfechaGeneracion.Text + "', fechaPagoMulta= '" + dtpPago.Text + "', estadoMulta= '" + comboBox1.Text + "', idPrestamof2 = '" + codigoPrestamo.Text + "', idClientef2 = '" + codigoCliente.Text + "' WHERE idMulta = '" + idMulta.Text + "'  ";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
-            conexion.Close();           
+            conexion.Close();
         }
 
         public void EliminarMultas(TextBox idMulta)
@@ -54,6 +54,19 @@ namespace ProyectoBDM.Control
             conexion.Close();
         }
 
+        public void buscarCliente(DataGridView dgvC, MySqlDataAdapter adaptador, TextBox buscarC)
+        {
+            conexion.Open();
+            MySqlCommand comando = new MySqlCommand("SELECT P.idClientef, P.idPrestamo FROM prestamos P, Clientes C  Where C.idCliente= P.idClientef and concat(C.nombreCliente1, ' ', C.apellidoCliente1)LIKE @nombre ", conexion);
+            comando.Parameters.Add("@nombre", MySqlDbType.VarChar).Value = "%" + buscarC.Text + "%";
 
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dgvC.DataSource = tabla;
+            conexion.Close();
+
+
+        }
     }
 }
