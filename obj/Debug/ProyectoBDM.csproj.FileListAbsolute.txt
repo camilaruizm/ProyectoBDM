@@ -252,3 +252,4 @@ D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\Pro
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.actorPelicula.resources
 D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.actorPelicula.resources
 D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.consultasAdmin.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.consultasAdmin.resources

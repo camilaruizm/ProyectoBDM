@@ -55,7 +55,7 @@ namespace ProyectoBDM.Vista
         private void timer1_Tick(object sender, EventArgs e)
         {
             label4.Text = DateTime.Now.ToLongDateString();
-            label6.Text = DateTime.Now.ToLongDateString();
+            label6.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
@@ -70,7 +70,16 @@ namespace ProyectoBDM.Vista
 
         private void button3_Click(object sender, EventArgs e)
         {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
+            conexion.Open();
+            MySqlCommand comando = new MySqlCommand("SELECT C.nombreCliente1 as Nombre, C.apellidoCliente1 as Apellido, PL.titulo as 'Titulo Película', FP.fechaHoraFM as 'Fecha Final' FROM Clientes C, peliculas PL, facturas_prestamos FP, prestamos P WHERE P.idClientef = C.idCliente and  P.fechaHoraFP >= '2020-05-25 00:00:00' and FP.idPrestamof = P.idPrestamo and FP.idPeliculaf = PL.idPelicula; ", conexion);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dataGridView1.DataSource = tabla;
+            conexion.Close();
         }
 
         private void enPréstamoActualmenteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,6 +110,34 @@ namespace ProyectoBDM.Vista
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+
+            conexion.Open();
+            MySqlCommand comando = new MySqlCommand("SELECT C.nombreCliente1 as Nombre , C.apellidoCliente1 as Apellido ,PL.titulo, FP.fechaHoraFM as 'Fecha Factura' FROM  Clientes C, peliculas PL, facturas_prestamos FP, prestamos P WHERE P.idClientef = C.idCliente and  P.fechaHoraIP = '" + dateTimePicker2.Text + "' and FP.idPrestamof = P.idPrestamo and FP.idPeliculaf = PL.idPelicula; ", conexion);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dataGridView1.DataSource = tabla;
+            conexion.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+
+            conexion.Open();
+            MySqlCommand comando = new MySqlCommand("SELECT C.nombreCliente1 as Nombre , C.apellidoCliente1 as Apellido, PL.titulo, FP.fechaHoraFM as 'Fecha Factura'  FROM   Clientes C, peliculas PL, facturas_prestamos FP, prestamos P WHERE P.idClientef = C.idCliente and  P.fechaHoraFP <= '" + label4.Text + "' and FP.idPrestamof = P.idPrestamo and FP.idPeliculaf = PL.idPelicula; ", conexion);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dataGridView1.DataSource = tabla;
+            conexion.Close();
         }
     }
 }
