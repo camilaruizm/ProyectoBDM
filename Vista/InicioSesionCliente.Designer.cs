@@ -31,7 +31,6 @@
             this.LbInicioSesion = new System.Windows.Forms.Label();
             this.TbUsuarioIniCli = new System.Windows.Forms.TextBox();
             this.TbContrasenaIniCli = new System.Windows.Forms.TextBox();
-            this.BtnIngresar = new System.Windows.Forms.Button();
             this.LbMensaje = new System.Windows.Forms.Label();
             this.LbMensaje2 = new System.Windows.Forms.Label();
             this.LinkLbRegistro = new System.Windows.Forms.LinkLabel();
@@ -43,10 +42,11 @@
             this.BtnSalir = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dgvId = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.BtnIngresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvId)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // LbInicioSesion
@@ -83,21 +83,6 @@
             this.TbContrasenaIniCli.TabIndex = 4;
             this.TbContrasenaIniCli.Text = "Contraseña";
             this.TbContrasenaIniCli.Click += new System.EventHandler(this.TbContrasenaIniCli_Click);
-            // 
-            // BtnIngresar
-            // 
-            this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnIngresar.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
-            this.BtnIngresar.Location = new System.Drawing.Point(412, 123);
-            this.BtnIngresar.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnIngresar.Name = "BtnIngresar";
-            this.BtnIngresar.Size = new System.Drawing.Size(217, 70);
-            this.BtnIngresar.TabIndex = 5;
-            this.BtnIngresar.Text = "Ingresar";
-            this.BtnIngresar.UseVisualStyleBackColor = true;
-            this.BtnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
-            this.BtnIngresar.MouseLeave += new System.EventHandler(this.BtnIngresar_MouseLeave);
-            this.BtnIngresar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnIngresar_MouseMove);
             // 
             // LbMensaje
             // 
@@ -221,23 +206,39 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dgvId
+            // dataGridView1
             // 
-            this.dgvId.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvId.Location = new System.Drawing.Point(56, 330);
-            this.dgvId.Name = "dgvId";
-            this.dgvId.RowHeadersWidth = 51;
-            this.dgvId.RowTemplate.Height = 24;
-            this.dgvId.Size = new System.Drawing.Size(529, 69);
-            this.dgvId.TabIndex = 17;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(290, 280);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(13, 11);
+            this.dataGridView1.TabIndex = 17;
+            this.dataGridView1.Visible = false;
+            // 
+            // BtnIngresar
+            // 
+            this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnIngresar.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
+            this.BtnIngresar.Location = new System.Drawing.Point(412, 123);
+            this.BtnIngresar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnIngresar.Name = "BtnIngresar";
+            this.BtnIngresar.Size = new System.Drawing.Size(217, 70);
+            this.BtnIngresar.TabIndex = 5;
+            this.BtnIngresar.Text = "Ingresar";
+            this.BtnIngresar.UseVisualStyleBackColor = true;
+            this.BtnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
+            this.BtnIngresar.MouseLeave += new System.EventHandler(this.BtnIngresar_MouseLeave);
+            this.BtnIngresar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnIngresar_MouseMove);
             // 
             // InicioSesionCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(648, 496);
-            this.Controls.Add(this.dgvId);
+            this.ClientSize = new System.Drawing.Size(648, 300);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.BtnSalir);
@@ -260,7 +261,7 @@
             this.Load += new System.EventHandler(this.InicioSesionCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvId)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,7 +272,6 @@
         private System.Windows.Forms.Label LbInicioSesion;
         private System.Windows.Forms.TextBox TbUsuarioIniCli;
         private System.Windows.Forms.TextBox TbContrasenaIniCli;
-        private System.Windows.Forms.Button BtnIngresar;
         private System.Windows.Forms.Label LbMensaje;
         private System.Windows.Forms.LinkLabel LinkLbRegistro;
         private System.Windows.Forms.Label LbErrorIniCli;
@@ -283,6 +283,7 @@
         public System.Windows.Forms.Label LbMensaje2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dgvId;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button BtnIngresar;
     }
 }

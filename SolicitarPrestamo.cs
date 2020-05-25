@@ -78,12 +78,12 @@ namespace ProyectoBDM
         private void button4_Click(object sender, EventArgs e)
         {
 
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
-            conexion.Open();
+            MySqlCommand comando1 = new MySqlCommand("SELECT P.titulo, P.fechaEstreno as 'Fecha Estreno', P.sinopsis as Sinopsis, P.duracion as Duracion, P.copiasDisponibles as 'Copias Disponibles', D.nombreDirector1,D.nombreDirector2, D.apellidoDirector1,  D.apellidoDirector2 FROM Peliculas P, Directores D WHERE D.idDirector = P.idDirectorf  AND concat(D.nombreDirector1,' ',D.apellidoDirector1) LIKE @nombre ", conexion);
+            comando1.Parameters.Add("@nombre", MySqlDbType.VarChar).Value = "%" + tbDirectorP.Text + "%";
 
-            string directorQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias Disponibles', CONCAT (nombreDirector1 , ' ' ,  nombreDirector2) as 'Nombre Director', CONCAT (apellidoDirector1 , ' ' , apellidoDirector2) as 'Apellido Director' from directores inner join Peliculas on peliculas.idDirectorf = directores.idDirector where directores.nombreDirector1 ='" + tbDirectorP.Text + "'AND apellidoDirector1='" + textBox1.Text + "';";
+            MySqlDataAdapter adapterD = new MySqlDataAdapter();
+            adapterD.SelectCommand = comando1;
             DataTable tPeliculasDirector = new DataTable();
-            MySqlDataAdapter adapterD = new MySqlDataAdapter(directorQuery, conexion);
             adapterD.Fill(tPeliculasDirector);
             dgvPeliculas.DataSource = tPeliculasDirector;
 
@@ -93,6 +93,8 @@ namespace ProyectoBDM
             int total = counter * 20000;
             textBox3.Text = total.ToString();
             conexion.Close();
+
+
         }   
 
         private void comboBoxCategoria_SelectedIndexChanged(object sender, EventArgs e)

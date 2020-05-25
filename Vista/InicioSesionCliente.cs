@@ -33,7 +33,7 @@ namespace ProyectoBDM
         public void BtnIngresar_Click(object sender, EventArgs e)
         {
             string usuarioCli, contrasenaCli;
-            idUser = dgvId.Rows[0].Cells[0].Value.ToString();
+            idUser = dataGridView1.Rows[0].Cells[0].Value.ToString();
             usuarioCli = TbUsuarioIniCli.Text;
             contrasenaCli = TbContrasenaIniCli.Text;
             conexion.Open();
@@ -149,9 +149,9 @@ namespace ProyectoBDM
             DataTable idTable = new DataTable();
             MySqlDataAdapter idAdapter = new MySqlDataAdapter(idQuery, conexion);
             idAdapter.Fill(idTable);
-            dgvId.DataSource = idTable;
+            dataGridView1.DataSource = idTable;
 
-            textBox1.Text = dgvId.Rows[0].Cells[0].Value.ToString();
+            textBox1.Text = dataGridView1.Rows[0].Cells[0].Value.ToString();
             conexion.Close();
         }
     }
