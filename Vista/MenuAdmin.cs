@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using ProyectoBDM.Vista;
 
 namespace ProyectoBDM
 {
@@ -73,7 +74,15 @@ namespace ProyectoBDM
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Close();
+            th = new Thread(Abrir_CONSULTAS);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
 
+        private void Abrir_CONSULTAS()
+        {
+            Application.Run(new consultasAdmin());
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -109,6 +109,12 @@
     <Compile Include="historialCliente.Designer.cs">
       <DependentUpon>historialCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\consultasAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\consultasAdmin.Designer.cs">
+      <DependentUpon>consultasAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Multa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="historialCliente.resx">
       <DependentUpon>historialCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\consultasAdmin.resx">
+      <DependentUpon>consultasAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Multa.resx">
       <DependentUpon>Multa.cs</DependentUpon>
