@@ -33,7 +33,7 @@ namespace ProyectoBDM
         public void BtnIngresar_Click(object sender, EventArgs e)
         {
             string usuarioCli, contrasenaCli;
-            idUser = LbMensaje2.Text;
+            idUser = dgvId.Rows[0].Cells[0].Value.ToString();
             usuarioCli = TbUsuarioIniCli.Text;
             contrasenaCli = TbContrasenaIniCli.Text;
             conexion.Open();
@@ -145,13 +145,14 @@ namespace ProyectoBDM
         {
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             conexion.Open();
-            string idQuery = ("SELECT idCliente from clientes where clientes.nombreUsuario = 'bb';");
+            string idQuery = "SELECT idCliente from clientes where clientes.nombreUsuario = '" + TbUsuarioIniCli.Text + "'AND clientes.contrasena='" + TbContrasenaIniCli.Text + "';";
             DataTable idTable = new DataTable();
             MySqlDataAdapter idAdapter = new MySqlDataAdapter(idQuery, conexion);
             idAdapter.Fill(idTable);
-            
-            textBox1.Text = idTable;
-            conexion.Close()
+            dgvId.DataSource = idTable;
+
+            textBox1.Text = dgvId.Rows[0].Cells[0].Value.ToString();
+            conexion.Close();
         }
     }
 }

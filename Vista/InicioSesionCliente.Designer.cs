@@ -43,10 +43,10 @@
             this.BtnSalir = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataMierda = new System.Windows.Forms.DataGridView();
+            this.dgvId = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataMierda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvId)).BeginInit();
             this.SuspendLayout();
             // 
             // LbInicioSesion
@@ -221,15 +221,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataMierda
+            // dgvId
             // 
-            this.dataMierda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataMierda.Location = new System.Drawing.Point(56, 330);
-            this.dataMierda.Name = "dataMierda";
-            this.dataMierda.RowHeadersWidth = 51;
-            this.dataMierda.RowTemplate.Height = 24;
-            this.dataMierda.Size = new System.Drawing.Size(529, 69);
-            this.dataMierda.TabIndex = 17;
+            this.dgvId.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvId.Location = new System.Drawing.Point(56, 330);
+            this.dgvId.Name = "dgvId";
+            this.dgvId.RowHeadersWidth = 51;
+            this.dgvId.RowTemplate.Height = 24;
+            this.dgvId.Size = new System.Drawing.Size(529, 69);
+            this.dgvId.TabIndex = 17;
             // 
             // InicioSesionCliente
             // 
@@ -237,7 +237,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(648, 496);
-            this.Controls.Add(this.dataMierda);
+            this.Controls.Add(this.dgvId);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.BtnSalir);
@@ -260,7 +260,7 @@
             this.Load += new System.EventHandler(this.InicioSesionCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataMierda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvId)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,6 +283,6 @@
         public System.Windows.Forms.Label LbMensaje2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataMierda;
+        private System.Windows.Forms.DataGridView dgvId;
     }
 }
