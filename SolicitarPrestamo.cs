@@ -173,6 +173,31 @@ namespace ProyectoBDM
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int i = dgvPeliculas.CurrentRow.Index;
+            DataGridViewRow row = dgvPeliculas.Rows[i];
+            string titulo = row.Cells[0].Value.ToString();
+            string duracion = row.Cells[3].Value.ToString();
+            dgvCarrito.Rows.Add(titulo, duracion);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            int i = dgvCarrito.CurrentRow.Index;
+            dgvCarrito.Rows.RemoveAt(i);
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            dateTimePicker1.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
     }
     
 }
