@@ -26,31 +26,9 @@ namespace ProyectoBDM.Vista
 
         }
 
-        private void buttonEnPrestamo_Click(object sender, EventArgs e)
-        {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
-            MySqlCommand comandoC = new MySqlCommand("SELECT idCliente as 'ID', CONCAT(C.nombreCliente1, ' ', C.nombreCliente2) as 'Nombre Cliente', CONCAT(C.apellidoCliente1, ' ',C.apellidoCliente2) as 'Apellidos Cliente' FROM Clientes C WHERE CONCAT(C.nombreCliente1,' ', C.apellidoCliente1) LIKE @nombreC and rol = 'Usuario'", conexion);
-            comandoC.Parameters.Add("@nombreC", MySqlDbType.VarChar).Value = "%" + textBoxEnprestamo.Text + "%";
+        
 
-            MySqlDataAdapter adapterC = new MySqlDataAdapter();
-            adapterC.SelectCommand = comandoC;
-            DataTable tClientes = new DataTable();
-            adapterC.Fill(tClientes);
-            dgvEnPrestamo.DataSource = tClientes;
-        }
-
-        private void buttonHistorialCli_Click(object sender, EventArgs e)
-        {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
-            MySqlCommand comandoC = new MySqlCommand("SELECT idCliente as 'ID', CONCAT(C.nombreCliente1, ' ', C.nombreCliente2) as 'Nombre Cliente', CONCAT(C.apellidoCliente1, ' ',C.apellidoCliente2) as 'Apellidos Cliente' FROM Clientes C WHERE CONCAT(C.nombreCliente1, ' ', C.apellidoCliente1) LIKE @nombreC and rol = 'Usuario'", conexion);
-            comandoC.Parameters.Add("@nombreC", MySqlDbType.VarChar).Value = "%" + textBoxHistorialCli.Text + "%";
-
-            MySqlDataAdapter adapterC = new MySqlDataAdapter();
-            adapterC.SelectCommand = comandoC;
-            DataTable tClientes = new DataTable();
-            adapterC.Fill(tClientes);
-            dgvHistorialCli.DataSource = tClientes;
-        }
+      
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -101,6 +79,48 @@ namespace ProyectoBDM.Vista
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgvEnPrestamo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            conexion.Open();
+            MySqlCommand comando1 = new MySqlCommand("SELECT PL.titulo as 'Peliculas', P.fechaHoraFP as 'Fecha Vencimiento', CONCAT(nombreCliente1 , ' ',nombreCliente2) as 'Nombre',CONCAT(apellidoCliente1 , ' ',apellidoCliente2) as 'Apellido' FROM clientes C, peliculas PL, facturas_prestamos FP, prestamos P WHERE P.idPrestamo=FP.idPrestamof and C.idCliente=P.idClientef and PL.idPelicula=FP.idPeliculaf  AND concat(C.nombreCliente1,' ',apellidoCliente1) LIKE @nombre ", conexion);
+
+            comando1.Parameters.Add("@nombre", MySqlDbType.VarChar).Value = "%" + textBoxEnprestamo.Text + "%";
+
+
+            MySqlDataAdapter adapterPC = new MySqlDataAdapter();
+            adapterPC.SelectCommand = comando1;
+            DataTable tPrestamoCli = new DataTable();
+            adapterPC.Fill(tPrestamoCli);
+            dvgConsultas.DataSource = tPrestamoCli;
+        }
+
+        private void buttonEnPrestamo_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            MySqlCommand comandoC = new MySqlCommand("SELECT idCliente as 'ID', CONCAT(C.nombreCliente1, ' ', C.nombreCliente2) as 'Nombre Cliente', CONCAT(C.apellidoCliente1, ' ',C.apellidoCliente2) as 'Apellidos Cliente' FROM Clientes C WHERE CONCAT(C.nombreCliente1,' ', C.apellidoCliente1) LIKE @nombreC and rol = 'Usuario'", conexion);
+            comandoC.Parameters.Add("@nombreC", MySqlDbType.VarChar).Value = "%" + textBoxEnprestamo.Text + "%";
+
+            MySqlDataAdapter adapterC = new MySqlDataAdapter();
+            adapterC.SelectCommand = comandoC;
+            DataTable tClientes = new DataTable();
+            adapterC.Fill(tClientes);
+            dgvEnPrestamo.DataSource = tClientes;
+        }
+
+        private void buttonHistorialCli_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            MySqlCommand comandoC = new MySqlCommand("SELECT idCliente as 'ID', CONCAT(C.nombreCliente1, ' ', C.nombreCliente2) as 'Nombre Cliente', CONCAT(C.apellidoCliente1, ' ',C.apellidoCliente2) as 'Apellidos Cliente' FROM Clientes C WHERE CONCAT(C.nombreCliente1, ' ', C.apellidoCliente1) LIKE @nombreC and rol = 'Usuario'", conexion);
+            comandoC.Parameters.Add("@nombreC", MySqlDbType.VarChar).Value = "%" + textBoxHistorialCli.Text + "%";
+
+            MySqlDataAdapter adapterC = new MySqlDataAdapter();
+            adapterC.SelectCommand = comandoC;
+            DataTable tClientes = new DataTable();
+            adapterC.Fill(tClientes);
+            dgvHistorialCli.DataSource = tClientes;
         }
     }
 }

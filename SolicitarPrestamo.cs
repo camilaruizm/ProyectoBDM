@@ -198,6 +198,11 @@ namespace ProyectoBDM
         {
             dateTimePicker1.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
+
+        private void tbDirectorP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
