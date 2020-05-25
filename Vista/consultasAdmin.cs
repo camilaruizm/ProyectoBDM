@@ -55,6 +55,52 @@ namespace ProyectoBDM.Vista
         private void timer1_Tick(object sender, EventArgs e)
         {
             label4.Text = DateTime.Now.ToLongDateString();
+            label6.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void enPréstamoActualmenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelEnPrestamoCli.BringToFront();
+        }
+
+        private void historialDePréstamoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelHistorialCli.BringToFront();
+        }
+
+        private void actualmenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pPrestamoVig.BringToFront();
+        }
+
+        private void porFechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pFecha.BringToFront();
+        }
+
+        private void caducadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pCaducados.BringToFront();
+        }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

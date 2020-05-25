@@ -33,13 +33,20 @@ namespace ProyectoBDM
         public void BtnIngresar_Click(object sender, EventArgs e)
         {
             string usuarioCli, contrasenaCli;
-            idUser = dataGridView1.Rows[0].Cells[0].Value.ToString();
+            
             usuarioCli = TbUsuarioIniCli.Text;
             contrasenaCli = TbContrasenaIniCli.Text;
             conexion.Open();
             
             MySqlCommand InicioSesionCli = new MySqlCommand();
+            string idQuery = "SELECT idCliente from clientes where clientes.nombreUsuario = '" + TbUsuarioIniCli.Text + "'AND clientes.contrasena='" + TbContrasenaIniCli.Text + "';";
+            DataTable idTable = new DataTable();
+            MySqlDataAdapter idAdapter = new MySqlDataAdapter(idQuery, conexion);
+            idAdapter.Fill(idTable);
+            dataGridView1.DataSource = idTable;
             InicioSesionCli.Connection = conexion;
+            idUser = dataGridView1.Rows[0].Cells[0].Value.ToString();
+
             InicioSesionCli.CommandText = ("select nombreUsuario, contrasena, rol from clientes where nombreUsuario = '" + usuarioCli + "'and contrasena = '" + contrasenaCli + "' and rol = 'Usuario'");
 
             MySqlDataReader leerCli = InicioSesionCli.ExecuteReader();
@@ -143,7 +150,7 @@ namespace ProyectoBDM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+         /*   MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             conexion.Open();
             string idQuery = "SELECT idCliente from clientes where clientes.nombreUsuario = '" + TbUsuarioIniCli.Text + "'AND clientes.contrasena='" + TbContrasenaIniCli.Text + "';";
             DataTable idTable = new DataTable();
@@ -152,7 +159,12 @@ namespace ProyectoBDM
             dataGridView1.DataSource = idTable;
 
             textBox1.Text = dataGridView1.Rows[0].Cells[0].Value.ToString();
-            conexion.Close();
+            conexion.Close(); */
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
