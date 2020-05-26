@@ -385,12 +385,12 @@
             this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Bebas Neue", 11F);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Quicksand", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(114, 525);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(115, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(115, 26);
             this.dateTimePicker1.TabIndex = 75;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -409,12 +409,12 @@
             // 
             this.dateTimePicker2.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.dateTimePicker2.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker2.Font = new System.Drawing.Font("Bebas Neue", 11F);
+            this.dateTimePicker2.Font = new System.Drawing.Font("Quicksand", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(378, 525);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(115, 27);
+            this.dateTimePicker2.Size = new System.Drawing.Size(115, 26);
             this.dateTimePicker2.TabIndex = 77;
             // 
             // label3
@@ -431,24 +431,24 @@
             // tbCantidadP
             // 
             this.tbCantidadP.Enabled = false;
-            this.tbCantidadP.Font = new System.Drawing.Font("Bebas Neue", 11F);
+            this.tbCantidadP.Font = new System.Drawing.Font("Quicksand", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCantidadP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.tbCantidadP.Location = new System.Drawing.Point(160, 561);
             this.tbCantidadP.Margin = new System.Windows.Forms.Padding(2);
             this.tbCantidadP.Name = "tbCantidadP";
-            this.tbCantidadP.Size = new System.Drawing.Size(69, 27);
+            this.tbCantidadP.Size = new System.Drawing.Size(69, 26);
             this.tbCantidadP.TabIndex = 79;
             this.tbCantidadP.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // tbTotal
             // 
             this.tbTotal.Enabled = false;
-            this.tbTotal.Font = new System.Drawing.Font("Bebas Neue", 11F);
+            this.tbTotal.Font = new System.Drawing.Font("Quicksand", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.tbTotal.Location = new System.Drawing.Point(392, 561);
             this.tbTotal.Margin = new System.Windows.Forms.Padding(2);
             this.tbTotal.Name = "tbTotal";
-            this.tbTotal.Size = new System.Drawing.Size(101, 27);
+            this.tbTotal.Size = new System.Drawing.Size(101, 26);
             this.tbTotal.TabIndex = 81;
             this.tbTotal.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
