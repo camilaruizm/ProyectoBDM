@@ -21,11 +21,11 @@ namespace ProyectoBDM.Vista
             InitializeComponent();
         }
 
-        private void buttonBuscarP_Click(object sender, EventArgs e)
+        private void buttonBuscarP_Click(object sender, EventArgs e)                                                                                                                                                                                                                                                                
         {
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             conexion.Open();
-            string prestamosQuery = "SELECT idPrestamo as 'ID', fechaHoraIP as 'Inicio del Prestamo', fechaHoraFP as 'Final del prestamo', peliculasSolicitadas as 'Peliculas Solicitadas', idCliente as 'ID Cliente',  estadoPrestamo as 'Estado' from prestamo where idPrestamo =' + textBoxIdPrestamo.Text + ';";
+            string prestamosQuery = "SELECT idPrestamo as 'ID', fechaHoraIP as 'Inicio del Prestamo', fechaHoraFP as 'Final del prestamo', peliculasSolicitadas as 'Peliculas Solicitadas', idClientef as 'ID Cliente',  estadoPrestamo as 'Estado' from prestamos where idPrestamo = '" + textBoxIdPrestamo.Text + "'";
             DataTable tPrestamos = new DataTable();
             MySqlDataAdapter adapterP = new MySqlDataAdapter(prestamosQuery, conexion);
             adapterP.Fill(tPrestamos);

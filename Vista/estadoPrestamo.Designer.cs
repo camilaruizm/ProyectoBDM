@@ -49,10 +49,10 @@
             // 
             this.dgvEstado.AllowUserToAddRows = false;
             this.dgvEstado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEstado.ColumnHeadersVisible = false;
             this.dgvEstado.Location = new System.Drawing.Point(107, 150);
             this.dgvEstado.Name = "dgvEstado";
             this.dgvEstado.ReadOnly = true;
+            this.dgvEstado.RowHeadersVisible = false;
             this.dgvEstado.RowHeadersWidth = 51;
             this.dgvEstado.RowTemplate.Height = 24;
             this.dgvEstado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -81,7 +81,7 @@
             this.buttonBuscarP.Name = "buttonBuscarP";
             this.buttonBuscarP.Size = new System.Drawing.Size(117, 23);
             this.buttonBuscarP.TabIndex = 4;
-            this.buttonBuscarP.Text = "Buscar estado";
+            this.buttonBuscarP.Text = "Buscar préstamo";
             this.buttonBuscarP.UseVisualStyleBackColor = true;
             this.buttonBuscarP.Click += new System.EventHandler(this.buttonBuscarP_Click);
             // 

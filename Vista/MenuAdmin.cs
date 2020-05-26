@@ -96,5 +96,22 @@ namespace ProyectoBDM
         {
             Application.Run(new Multa());
         }
+
+        private void buttonEstado_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(Abrir_ESTADO);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void Abrir_ESTADO()
+        {
+            Application.Run(new estadoPrestamo());
+        }
+
+
+
+
     }
 }
