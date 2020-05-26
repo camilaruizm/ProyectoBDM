@@ -110,7 +110,7 @@ namespace ProyectoBDM
         private void btPrestamo_Click(object sender, EventArgs e)
         {
             
-            label8.Text = "ID: " +  idUser;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -143,7 +143,15 @@ namespace ProyectoBDM
                 comboBoxCategoria.DisplayMember = "tipoGenero";
 
                 comboBoxCategoria.DataSource = dt;
-            
+
+
+            conexion.Open();
+            string allQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias Disponibles' from peliculas;";
+            DataTable tPeliculasAll = new DataTable();
+            MySqlDataAdapter adapterA = new MySqlDataAdapter(allQuery, conexion);
+            adapterA.Fill(tPeliculasAll);
+            dgvPeliculas.DataSource = tPeliculasAll;
+            conexion.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
