@@ -38,15 +38,8 @@ namespace ProyectoBDM
             contrasenaCli = TbContrasenaIniCli.Text;
             conexion.Open();
             
-            MySqlCommand InicioSesionCli = new MySqlCommand();
-            string idQuery = "SELECT idCliente from clientes where clientes.nombreUsuario = '" + TbUsuarioIniCli.Text + "'AND clientes.contrasena='" + TbContrasenaIniCli.Text + "';";
-            DataTable idTable = new DataTable();
-            MySqlDataAdapter idAdapter = new MySqlDataAdapter(idQuery, conexion);
-            idAdapter.Fill(idTable);
-            dataGridView1.DataSource = idTable;
+            MySqlCommand InicioSesionCli = new MySqlCommand();           
             InicioSesionCli.Connection = conexion;
-            idUser = dataGridView1.Rows[0].Cells[0].Value.ToString();
-
             InicioSesionCli.CommandText = ("select nombreUsuario, contrasena, rol from clientes where nombreUsuario = '" + usuarioCli + "'and contrasena = '" + contrasenaCli + "' and rol = 'Usuario'");
 
             MySqlDataReader leerCli = InicioSesionCli.ExecuteReader();
@@ -60,6 +53,25 @@ namespace ProyectoBDM
                     th.Start();
                 }
             conexion.Close();
+
+            conexion.Open();
+            string idQuery = "SELECT idCliente from clientes where clientes.nombreUsuario = '" + TbUsuarioIniCli.Text + "' AND clientes.contrasena='" + TbContrasenaIniCli.Text + "';";
+            DataTable idTable = new DataTable();
+            MySqlDataAdapter idAdapter = new MySqlDataAdapter(idQuery, conexion);
+
+            if (idAdapter.GetFillParameters().Length == 0)
+            {
+                LbIniCliMal.Visible = true;
+            }
+            else
+            {
+                idAdapter.Fill(idTable);
+
+                dataGridView1.DataSource = idTable;
+                idUser = dataGridView1.Rows[0].Cells[0].Value.ToString();
+            }
+            conexion.Close();
+
             conexion.Open();
 
             MySqlCommand InicioSesionAdm = new MySqlCommand();
