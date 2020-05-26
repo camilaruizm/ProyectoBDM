@@ -268,3 +268,4 @@ C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.peliculasAd
 C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.SolicitarPrestamo.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.consultasAdmin.resources
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.estadoPrestamo.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.estadoPrestamo.resources
