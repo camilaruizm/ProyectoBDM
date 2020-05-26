@@ -73,24 +73,15 @@ namespace ProyectoBDM
 
         private void button4_Click(object sender, EventArgs e)
         {
-
-            MySqlCommand comando1 = new MySqlCommand("SELECT P.titulo, P.fechaEstreno as 'Fecha Estreno', P.sinopsis as Sinopsis, P.duracion as Duracion, P.copiasDisponibles as 'Copias', D.nombreDirector1,D.nombreDirector2, D.apellidoDirector1,  D.apellidoDirector2 FROM Peliculas P, Directores D WHERE D.idDirector = P.idDirectorf  AND concat(D.nombreDirector1,' ',D.apellidoDirector1) LIKE @nombre ", conexion);
+            MySqlCommand comando1 = new MySqlCommand("SELECT P.titulo, P.fechaEstreno as 'Fecha Estreno', P.sinopsis as Sinopsis, P.duracion as Duracion, P.copiasDisponibles as 'Copias', CONCAT (nombreDirector1 , ' ' , nombreDirector2, ' ', apellidoDirector1 , ' ' , apellidoDirector2) as 'Director' FROM Peliculas P, Directores D WHERE D.idDirector = P.idDirectorf  AND concat(D.nombreDirector1,' ',D.apellidoDirector1) LIKE @nombre ", conexion);
+            conexion.Close();
             comando1.Parameters.Add("@nombre", MySqlDbType.VarChar).Value = "%" + tbDirectorP.Text + "%";
-
             MySqlDataAdapter adapterD = new MySqlDataAdapter();
             adapterD.SelectCommand = comando1;
             DataTable tPeliculasDirector = new DataTable();
             adapterD.Fill(tPeliculasDirector);
             dgvPeliculas.DataSource = tPeliculasDirector;
-
-            int counter = dgvPeliculas.Rows.Count;
-            textBox2.Text = counter.ToString();
-
-            int total = counter * 20000;
-            textBox3.Text = total.ToString();
             conexion.Close();
-
-
         }   
 
         private void comboBoxCategoria_SelectedIndexChanged(object sender, EventArgs e)
@@ -185,12 +176,26 @@ namespace ProyectoBDM
             string titulo = row.Cells[0].Value.ToString();
             string duracion = row.Cells[3].Value.ToString();
             dgvCarrito.Rows.Add(titulo, duracion);
+
+
+            int counter = dgvCarrito.Rows.Count;
+            tbCantidadP.Text = counter.ToString();
+
+            int total = counter * 20000;
+            tbTotal.Text = total.ToString();
+            
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             int i = dgvCarrito.CurrentRow.Index;
             dgvCarrito.Rows.RemoveAt(i);
+
+            int counter = dgvCarrito.Rows.Count;
+            tbCantidadP.Text = counter.ToString();
+
+            int total = counter * 20000;
+            tbTotal.Text = total.ToString();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)

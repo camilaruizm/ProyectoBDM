@@ -30,6 +30,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label13 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.lbPrestamo = new System.Windows.Forms.Label();
@@ -57,8 +59,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbCantidadP = new System.Windows.Forms.TextBox();
+            this.tbTotal = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dgvCarrito = new System.Windows.Forms.DataGridView();
             this.TítuloC = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -147,7 +149,7 @@
             this.pPanel.Controls.Add(this.menuStrip1);
             this.pPanel.Controls.Add(this.panelTitulo);
             this.pPanel.Location = new System.Drawing.Point(20, 85);
-            this.pPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pPanel.Margin = new System.Windows.Forms.Padding(2);
             this.pPanel.Name = "pPanel";
             this.pPanel.Size = new System.Drawing.Size(530, 109);
             this.pPanel.TabIndex = 73;
@@ -159,7 +161,7 @@
             this.panelCategoria.Controls.Add(this.comboBoxCategoria);
             this.panelCategoria.Controls.Add(this.label5);
             this.panelCategoria.Location = new System.Drawing.Point(4, 31);
-            this.panelCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.panelCategoria.Name = "panelCategoria";
             this.panelCategoria.Size = new System.Drawing.Size(524, 76);
             this.panelCategoria.TabIndex = 4;
@@ -168,7 +170,7 @@
             // 
             this.btBuscarG.Font = new System.Drawing.Font("Webdings", 25F);
             this.btBuscarG.Location = new System.Drawing.Point(450, 15);
-            this.btBuscarG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btBuscarG.Margin = new System.Windows.Forms.Padding(2);
             this.btBuscarG.Name = "btBuscarG";
             this.btBuscarG.Size = new System.Drawing.Size(45, 45);
             this.btBuscarG.TabIndex = 2;
@@ -182,7 +184,7 @@
             this.comboBoxCategoria.Font = new System.Drawing.Font("Quicksand", 12F);
             this.comboBoxCategoria.FormattingEnabled = true;
             this.comboBoxCategoria.Location = new System.Drawing.Point(13, 34);
-            this.comboBoxCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxCategoria.Name = "comboBoxCategoria";
             this.comboBoxCategoria.Size = new System.Drawing.Size(408, 32);
             this.comboBoxCategoria.TabIndex = 1;
@@ -206,7 +208,7 @@
             this.panelDirector.Controls.Add(this.tbDirectorP);
             this.panelDirector.Controls.Add(this.label6);
             this.panelDirector.Location = new System.Drawing.Point(4, 31);
-            this.panelDirector.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelDirector.Margin = new System.Windows.Forms.Padding(2);
             this.panelDirector.Name = "panelDirector";
             this.panelDirector.Size = new System.Drawing.Size(524, 76);
             this.panelDirector.TabIndex = 3;
@@ -216,7 +218,7 @@
             // 
             this.btBuscarD.Font = new System.Drawing.Font("Webdings", 25F);
             this.btBuscarD.Location = new System.Drawing.Point(450, 15);
-            this.btBuscarD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btBuscarD.Margin = new System.Windows.Forms.Padding(2);
             this.btBuscarD.Name = "btBuscarD";
             this.btBuscarD.Size = new System.Drawing.Size(45, 45);
             this.btBuscarD.TabIndex = 3;
@@ -230,11 +232,10 @@
             this.tbDirectorP.Font = new System.Drawing.Font("Quicksand", 12F);
             this.tbDirectorP.ForeColor = System.Drawing.Color.DarkGray;
             this.tbDirectorP.Location = new System.Drawing.Point(13, 34);
-            this.tbDirectorP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbDirectorP.Margin = new System.Windows.Forms.Padding(2);
             this.tbDirectorP.Name = "tbDirectorP";
             this.tbDirectorP.Size = new System.Drawing.Size(408, 27);
             this.tbDirectorP.TabIndex = 2;
-            this.tbDirectorP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbDirectorP.TextChanged += new System.EventHandler(this.tbDirectorP_TextChanged);
             // 
             // label6
@@ -293,7 +294,7 @@
             this.panelTitulo.Controls.Add(this.tbTituloP);
             this.panelTitulo.Controls.Add(this.label4);
             this.panelTitulo.Location = new System.Drawing.Point(4, 31);
-            this.panelTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTitulo.Margin = new System.Windows.Forms.Padding(2);
             this.panelTitulo.Name = "panelTitulo";
             this.panelTitulo.Size = new System.Drawing.Size(524, 76);
             this.panelTitulo.TabIndex = 1;
@@ -302,7 +303,7 @@
             // 
             this.btBuscarT.Font = new System.Drawing.Font("Webdings", 25F);
             this.btBuscarT.Location = new System.Drawing.Point(450, 15);
-            this.btBuscarT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btBuscarT.Margin = new System.Windows.Forms.Padding(2);
             this.btBuscarT.Name = "btBuscarT";
             this.btBuscarT.Size = new System.Drawing.Size(45, 45);
             this.btBuscarT.TabIndex = 3;
@@ -315,7 +316,7 @@
             // 
             this.tbTituloP.Font = new System.Drawing.Font("Quicksand", 12F);
             this.tbTituloP.Location = new System.Drawing.Point(13, 34);
-            this.tbTituloP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbTituloP.Margin = new System.Windows.Forms.Padding(2);
             this.tbTituloP.Name = "tbTituloP";
             this.tbTituloP.Size = new System.Drawing.Size(408, 27);
             this.tbTituloP.TabIndex = 1;
@@ -337,6 +338,7 @@
             this.dgvPeliculas.AllowUserToAddRows = false;
             this.dgvPeliculas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvPeliculas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.dgvPeliculas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPeliculas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -358,7 +360,7 @@
             this.dgvPeliculas.EnableHeadersVisualStyles = false;
             this.dgvPeliculas.GridColor = System.Drawing.Color.LightGray;
             this.dgvPeliculas.Location = new System.Drawing.Point(20, 242);
-            this.dgvPeliculas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvPeliculas.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPeliculas.Name = "dgvPeliculas";
             this.dgvPeliculas.ReadOnly = true;
             this.dgvPeliculas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -385,7 +387,7 @@
             this.dateTimePicker1.Font = new System.Drawing.Font("Bebas Neue", 11F);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(114, 525);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(115, 27);
             this.dateTimePicker1.TabIndex = 75;
@@ -409,7 +411,7 @@
             this.dateTimePicker2.Font = new System.Drawing.Font("Bebas Neue", 11F);
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(378, 525);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(115, 27);
             this.dateTimePicker2.TabIndex = 77;
@@ -425,27 +427,29 @@
             this.label3.TabIndex = 78;
             this.label3.Text = "Cantidad películas:";
             // 
-            // textBox2
+            // tbCantidadP
             // 
-            this.textBox2.Font = new System.Drawing.Font("Bebas Neue", 11F);
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.textBox2.Location = new System.Drawing.Point(160, 561);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(69, 27);
-            this.textBox2.TabIndex = 79;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.tbCantidadP.Enabled = false;
+            this.tbCantidadP.Font = new System.Drawing.Font("Bebas Neue", 11F);
+            this.tbCantidadP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.tbCantidadP.Location = new System.Drawing.Point(160, 561);
+            this.tbCantidadP.Margin = new System.Windows.Forms.Padding(2);
+            this.tbCantidadP.Name = "tbCantidadP";
+            this.tbCantidadP.Size = new System.Drawing.Size(69, 27);
+            this.tbCantidadP.TabIndex = 79;
+            this.tbCantidadP.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // tbTotal
             // 
-            this.textBox3.Font = new System.Drawing.Font("Bebas Neue", 11F);
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.textBox3.Location = new System.Drawing.Point(392, 561);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(101, 27);
-            this.textBox3.TabIndex = 81;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.tbTotal.Enabled = false;
+            this.tbTotal.Font = new System.Drawing.Font("Bebas Neue", 11F);
+            this.tbTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.tbTotal.Location = new System.Drawing.Point(392, 561);
+            this.tbTotal.Margin = new System.Windows.Forms.Padding(2);
+            this.tbTotal.Name = "tbTotal";
+            this.tbTotal.Size = new System.Drawing.Size(101, 27);
+            this.tbTotal.TabIndex = 81;
+            this.tbTotal.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label7
             // 
@@ -464,6 +468,7 @@
             this.dgvCarrito.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCarrito.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvCarrito.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.dgvCarrito.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCarrito.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -477,13 +482,29 @@
             this.dgvCarrito.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TítuloC,
             this.DuraciónC});
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Quicksand", 9.75F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(78)))), ((int)(((byte)(77)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCarrito.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvCarrito.EnableHeadersVisualStyles = false;
             this.dgvCarrito.GridColor = System.Drawing.Color.LightGray;
             this.dgvCarrito.Location = new System.Drawing.Point(20, 396);
-            this.dgvCarrito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvCarrito.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCarrito.Name = "dgvCarrito";
             this.dgvCarrito.ReadOnly = true;
             this.dgvCarrito.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Quicksand", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(78)))), ((int)(((byte)(77)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCarrito.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvCarrito.RowHeadersVisible = false;
             this.dgvCarrito.RowHeadersWidth = 51;
             this.dgvCarrito.RowTemplate.Height = 24;
@@ -521,7 +542,7 @@
             this.button6.Font = new System.Drawing.Font("Bebas Neue", 11F);
             this.button6.ForeColor = System.Drawing.Color.Black;
             this.button6.Location = new System.Drawing.Point(432, 396);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 51);
             this.button6.TabIndex = 84;
@@ -534,7 +555,7 @@
             this.button7.Font = new System.Drawing.Font("Bebas Neue", 11F);
             this.button7.ForeColor = System.Drawing.Color.Black;
             this.button7.Location = new System.Drawing.Point(515, 396);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 51);
             this.button7.TabIndex = 85;
@@ -553,7 +574,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(553, 500);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -591,9 +612,9 @@
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dgvCarrito);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbTotal);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbCantidadP);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label2);
@@ -658,8 +679,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbCantidadP;
+        private System.Windows.Forms.TextBox tbTotal;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dgvCarrito;
         private System.Windows.Forms.Label label9;
