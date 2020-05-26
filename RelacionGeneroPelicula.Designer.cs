@@ -39,6 +39,7 @@
             this.tbidPeliGen = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,11 +155,24 @@
             this.comboBox2.Size = new System.Drawing.Size(160, 24);
             this.comboBox2.TabIndex = 13;
             // 
+            // back
+            // 
+            this.back.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.back.Font = new System.Drawing.Font("Wingdings 3", 24.5F);
+            this.back.Location = new System.Drawing.Point(29, 24);
+            this.back.Margin = new System.Windows.Forms.Padding(4);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(53, 47);
+            this.back.TabIndex = 33;
+            this.back.Text = "";
+            this.back.UseVisualStyleBackColor = false;
+            // 
             // RelacionGeneroPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1041, 409);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.tbidPeliGen);
@@ -193,5 +207,6 @@
         private System.Windows.Forms.TextBox tbidPeliGen;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button back;
     }
 }

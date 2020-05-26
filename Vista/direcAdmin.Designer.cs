@@ -56,114 +56,128 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(93, 59);
+            this.label1.Location = new System.Drawing.Point(124, 73);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.Size = new System.Drawing.Size(68, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "NOMBRE";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(93, 100);
+            this.label2.Location = new System.Drawing.Point(124, 123);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.Size = new System.Drawing.Size(76, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "NOMBRE2";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(93, 148);
+            this.label3.Location = new System.Drawing.Point(124, 182);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.Size = new System.Drawing.Size(75, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "APELLIDO";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(93, 192);
+            this.label4.Location = new System.Drawing.Point(124, 236);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
+            this.label4.Size = new System.Drawing.Size(83, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "APELLIDO2";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(96, 239);
+            this.label5.Location = new System.Drawing.Point(128, 294);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.Size = new System.Drawing.Size(68, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "CORREO";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(99, 288);
+            this.label6.Location = new System.Drawing.Point(132, 354);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 13);
+            this.label6.Size = new System.Drawing.Size(38, 17);
             this.label6.TabIndex = 5;
             this.label6.Text = "PAÍS";
             // 
             // nombreDir
             // 
-            this.nombreDir.Location = new System.Drawing.Point(237, 59);
+            this.nombreDir.Location = new System.Drawing.Point(316, 73);
+            this.nombreDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nombreDir.Name = "nombreDir";
-            this.nombreDir.Size = new System.Drawing.Size(100, 20);
+            this.nombreDir.Size = new System.Drawing.Size(132, 22);
             this.nombreDir.TabIndex = 6;
             // 
             // nombreDir2
             // 
-            this.nombreDir2.Location = new System.Drawing.Point(237, 100);
+            this.nombreDir2.Location = new System.Drawing.Point(316, 123);
+            this.nombreDir2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nombreDir2.Name = "nombreDir2";
-            this.nombreDir2.Size = new System.Drawing.Size(100, 20);
+            this.nombreDir2.Size = new System.Drawing.Size(132, 22);
             this.nombreDir2.TabIndex = 7;
             // 
             // apellidoDir
             // 
-            this.apellidoDir.Location = new System.Drawing.Point(237, 148);
+            this.apellidoDir.Location = new System.Drawing.Point(316, 182);
+            this.apellidoDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.apellidoDir.Name = "apellidoDir";
-            this.apellidoDir.Size = new System.Drawing.Size(100, 20);
+            this.apellidoDir.Size = new System.Drawing.Size(132, 22);
             this.apellidoDir.TabIndex = 8;
             // 
             // apellidoDir2
             // 
-            this.apellidoDir2.Location = new System.Drawing.Point(237, 192);
+            this.apellidoDir2.Location = new System.Drawing.Point(316, 236);
+            this.apellidoDir2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.apellidoDir2.Name = "apellidoDir2";
-            this.apellidoDir2.Size = new System.Drawing.Size(100, 20);
+            this.apellidoDir2.Size = new System.Drawing.Size(132, 22);
             this.apellidoDir2.TabIndex = 9;
             // 
             // correoDir
             // 
-            this.correoDir.Location = new System.Drawing.Point(237, 239);
+            this.correoDir.Location = new System.Drawing.Point(316, 294);
+            this.correoDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.correoDir.Name = "correoDir";
-            this.correoDir.Size = new System.Drawing.Size(100, 20);
+            this.correoDir.Size = new System.Drawing.Size(132, 22);
             this.correoDir.TabIndex = 10;
             // 
             // paisDir
             // 
-            this.paisDir.Location = new System.Drawing.Point(237, 288);
+            this.paisDir.Location = new System.Drawing.Point(316, 354);
+            this.paisDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.paisDir.Name = "paisDir";
-            this.paisDir.Size = new System.Drawing.Size(100, 20);
+            this.paisDir.Size = new System.Drawing.Size(132, 22);
             this.paisDir.TabIndex = 11;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pictureBox1.Location = new System.Drawing.Point(463, 59);
+            this.pictureBox1.Location = new System.Drawing.Point(617, 73);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(187, 249);
+            this.pictureBox1.Size = new System.Drawing.Size(249, 306);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
             // imageDir
             // 
-            this.imageDir.Location = new System.Drawing.Point(692, 181);
+            this.imageDir.Location = new System.Drawing.Point(923, 223);
+            this.imageDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.imageDir.Name = "imageDir";
-            this.imageDir.Size = new System.Drawing.Size(75, 23);
+            this.imageDir.Size = new System.Drawing.Size(100, 28);
             this.imageDir.TabIndex = 13;
             this.imageDir.Text = "Upload";
             this.imageDir.UseVisualStyleBackColor = true;
@@ -171,9 +185,10 @@
             // 
             // insertDir
             // 
-            this.insertDir.Location = new System.Drawing.Point(279, 328);
+            this.insertDir.Location = new System.Drawing.Point(372, 404);
+            this.insertDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.insertDir.Name = "insertDir";
-            this.insertDir.Size = new System.Drawing.Size(75, 23);
+            this.insertDir.Size = new System.Drawing.Size(100, 28);
             this.insertDir.TabIndex = 14;
             this.insertDir.Text = "INSERTAR";
             this.insertDir.UseVisualStyleBackColor = true;
@@ -182,9 +197,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(57, 378);
+            this.dataGridView1.Location = new System.Drawing.Point(76, 465);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(665, 150);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(887, 185);
             this.dataGridView1.TabIndex = 15;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -192,9 +209,10 @@
             // 
             // showDirect
             // 
-            this.showDirect.Location = new System.Drawing.Point(728, 418);
+            this.showDirect.Location = new System.Drawing.Point(971, 514);
+            this.showDirect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showDirect.Name = "showDirect";
-            this.showDirect.Size = new System.Drawing.Size(75, 23);
+            this.showDirect.Size = new System.Drawing.Size(100, 28);
             this.showDirect.TabIndex = 16;
             this.showDirect.Text = "SHOW";
             this.showDirect.UseVisualStyleBackColor = true;
@@ -202,9 +220,10 @@
             // 
             // modificarDirector
             // 
-            this.modificarDirector.Location = new System.Drawing.Point(395, 327);
+            this.modificarDirector.Location = new System.Drawing.Point(527, 402);
+            this.modificarDirector.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.modificarDirector.Name = "modificarDirector";
-            this.modificarDirector.Size = new System.Drawing.Size(75, 23);
+            this.modificarDirector.Size = new System.Drawing.Size(100, 28);
             this.modificarDirector.TabIndex = 17;
             this.modificarDirector.Text = "MODIFICAR";
             this.modificarDirector.UseVisualStyleBackColor = true;
@@ -212,9 +231,10 @@
             // 
             // eliminarDirect
             // 
-            this.eliminarDirect.Location = new System.Drawing.Point(505, 326);
+            this.eliminarDirect.Location = new System.Drawing.Point(673, 401);
+            this.eliminarDirect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.eliminarDirect.Name = "eliminarDirect";
-            this.eliminarDirect.Size = new System.Drawing.Size(75, 23);
+            this.eliminarDirect.Size = new System.Drawing.Size(100, 28);
             this.eliminarDirect.TabIndex = 18;
             this.eliminarDirect.Text = "ELIMINAR";
             this.eliminarDirect.UseVisualStyleBackColor = true;
@@ -223,27 +243,30 @@
             // idDirector
             // 
             this.idDirector.Enabled = false;
-            this.idDirector.Location = new System.Drawing.Point(237, 18);
+            this.idDirector.Location = new System.Drawing.Point(316, 22);
+            this.idDirector.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.idDirector.Name = "idDirector";
-            this.idDirector.Size = new System.Drawing.Size(100, 20);
+            this.idDirector.Size = new System.Drawing.Size(132, 22);
             this.idDirector.TabIndex = 20;
             this.idDirector.Visible = false;
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(30, 13);
+            this.back.Font = new System.Drawing.Font("Wingdings 3", 24.75F);
+            this.back.Location = new System.Drawing.Point(40, 16);
+            this.back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(60, 53);
             this.back.TabIndex = 21;
-            this.back.Text = "BACK";
+            this.back.Text = "";
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // direcAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 540);
+            this.ClientSize = new System.Drawing.Size(1083, 665);
             this.Controls.Add(this.back);
             this.Controls.Add(this.idDirector);
             this.Controls.Add(this.eliminarDirect);
@@ -265,6 +288,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "direcAdmin";
             this.Text = "direcAdmin";
             this.Load += new System.EventHandler(this.direcAdmin_Load);

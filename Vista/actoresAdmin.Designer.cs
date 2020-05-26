@@ -57,113 +57,127 @@
             // nombreActor
             // 
             this.nombreActor.AutoSize = true;
-            this.nombreActor.Location = new System.Drawing.Point(72, 65);
+            this.nombreActor.Location = new System.Drawing.Point(96, 80);
+            this.nombreActor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nombreActor.Name = "nombreActor";
-            this.nombreActor.Size = new System.Drawing.Size(54, 13);
+            this.nombreActor.Size = new System.Drawing.Size(68, 17);
             this.nombreActor.TabIndex = 0;
             this.nombreActor.Text = "NOMBRE";
             // 
             // nombreActor2
             // 
             this.nombreActor2.AutoSize = true;
-            this.nombreActor2.Location = new System.Drawing.Point(72, 103);
+            this.nombreActor2.Location = new System.Drawing.Point(96, 127);
+            this.nombreActor2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nombreActor2.Name = "nombreActor2";
-            this.nombreActor2.Size = new System.Drawing.Size(60, 13);
+            this.nombreActor2.Size = new System.Drawing.Size(76, 17);
             this.nombreActor2.TabIndex = 1;
             this.nombreActor2.Text = "NOMBRE2";
             // 
             // apellidoActor
             // 
             this.apellidoActor.AutoSize = true;
-            this.apellidoActor.Location = new System.Drawing.Point(72, 150);
+            this.apellidoActor.Location = new System.Drawing.Point(96, 185);
+            this.apellidoActor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.apellidoActor.Name = "apellidoActor";
-            this.apellidoActor.Size = new System.Drawing.Size(59, 13);
+            this.apellidoActor.Size = new System.Drawing.Size(75, 17);
             this.apellidoActor.TabIndex = 2;
             this.apellidoActor.Text = "APELLIDO";
             // 
             // apellidoActor2
             // 
             this.apellidoActor2.AutoSize = true;
-            this.apellidoActor2.Location = new System.Drawing.Point(72, 188);
+            this.apellidoActor2.Location = new System.Drawing.Point(96, 231);
+            this.apellidoActor2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.apellidoActor2.Name = "apellidoActor2";
-            this.apellidoActor2.Size = new System.Drawing.Size(65, 13);
+            this.apellidoActor2.Size = new System.Drawing.Size(83, 17);
             this.apellidoActor2.TabIndex = 3;
             this.apellidoActor2.Text = "APELLIDO2";
             // 
             // correoActor
             // 
             this.correoActor.AutoSize = true;
-            this.correoActor.Location = new System.Drawing.Point(72, 223);
+            this.correoActor.Location = new System.Drawing.Point(96, 274);
+            this.correoActor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.correoActor.Name = "correoActor";
-            this.correoActor.Size = new System.Drawing.Size(53, 13);
+            this.correoActor.Size = new System.Drawing.Size(68, 17);
             this.correoActor.TabIndex = 4;
             this.correoActor.Text = "CORREO";
             // 
             // paisActor
             // 
             this.paisActor.AutoSize = true;
-            this.paisActor.Location = new System.Drawing.Point(72, 267);
+            this.paisActor.Location = new System.Drawing.Point(96, 329);
+            this.paisActor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.paisActor.Name = "paisActor";
-            this.paisActor.Size = new System.Drawing.Size(31, 13);
+            this.paisActor.Size = new System.Drawing.Size(38, 17);
             this.paisActor.TabIndex = 5;
             this.paisActor.Text = "PAÍS";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(406, 65);
+            this.pictureBox1.Location = new System.Drawing.Point(541, 80);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 228);
+            this.pictureBox1.Size = new System.Drawing.Size(261, 281);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // textNombreAct
             // 
-            this.textNombreAct.Location = new System.Drawing.Point(201, 65);
+            this.textNombreAct.Location = new System.Drawing.Point(268, 80);
+            this.textNombreAct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textNombreAct.Name = "textNombreAct";
-            this.textNombreAct.Size = new System.Drawing.Size(100, 20);
+            this.textNombreAct.Size = new System.Drawing.Size(132, 22);
             this.textNombreAct.TabIndex = 7;
             // 
             // textNombreAct2
             // 
-            this.textNombreAct2.Location = new System.Drawing.Point(201, 103);
+            this.textNombreAct2.Location = new System.Drawing.Point(268, 127);
+            this.textNombreAct2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textNombreAct2.Name = "textNombreAct2";
-            this.textNombreAct2.Size = new System.Drawing.Size(100, 20);
+            this.textNombreAct2.Size = new System.Drawing.Size(132, 22);
             this.textNombreAct2.TabIndex = 8;
             // 
             // textApeAct
             // 
-            this.textApeAct.Location = new System.Drawing.Point(201, 150);
+            this.textApeAct.Location = new System.Drawing.Point(268, 185);
+            this.textApeAct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textApeAct.Name = "textApeAct";
-            this.textApeAct.Size = new System.Drawing.Size(100, 20);
+            this.textApeAct.Size = new System.Drawing.Size(132, 22);
             this.textApeAct.TabIndex = 9;
             // 
             // textApeAct2
             // 
-            this.textApeAct2.Location = new System.Drawing.Point(201, 188);
+            this.textApeAct2.Location = new System.Drawing.Point(268, 231);
+            this.textApeAct2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textApeAct2.Name = "textApeAct2";
-            this.textApeAct2.Size = new System.Drawing.Size(100, 20);
+            this.textApeAct2.Size = new System.Drawing.Size(132, 22);
             this.textApeAct2.TabIndex = 10;
             // 
             // textCorreoAct
             // 
-            this.textCorreoAct.Location = new System.Drawing.Point(201, 223);
+            this.textCorreoAct.Location = new System.Drawing.Point(268, 274);
+            this.textCorreoAct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textCorreoAct.Name = "textCorreoAct";
-            this.textCorreoAct.Size = new System.Drawing.Size(100, 20);
+            this.textCorreoAct.Size = new System.Drawing.Size(132, 22);
             this.textCorreoAct.TabIndex = 11;
             // 
             // textPaisAct
             // 
-            this.textPaisAct.Location = new System.Drawing.Point(201, 267);
+            this.textPaisAct.Location = new System.Drawing.Point(268, 329);
+            this.textPaisAct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textPaisAct.Name = "textPaisAct";
-            this.textPaisAct.Size = new System.Drawing.Size(100, 20);
+            this.textPaisAct.Size = new System.Drawing.Size(132, 22);
             this.textPaisAct.TabIndex = 12;
             // 
             // buttonImageAct
             // 
-            this.buttonImageAct.Location = new System.Drawing.Point(527, 299);
+            this.buttonImageAct.Location = new System.Drawing.Point(703, 368);
+            this.buttonImageAct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonImageAct.Name = "buttonImageAct";
-            this.buttonImageAct.Size = new System.Drawing.Size(75, 23);
+            this.buttonImageAct.Size = new System.Drawing.Size(100, 28);
             this.buttonImageAct.TabIndex = 13;
             this.buttonImageAct.Text = "Upload";
             this.buttonImageAct.UseVisualStyleBackColor = true;
@@ -171,9 +185,10 @@
             // 
             // insertarActor
             // 
-            this.insertarActor.Location = new System.Drawing.Point(216, 347);
+            this.insertarActor.Location = new System.Drawing.Point(288, 427);
+            this.insertarActor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.insertarActor.Name = "insertarActor";
-            this.insertarActor.Size = new System.Drawing.Size(75, 23);
+            this.insertarActor.Size = new System.Drawing.Size(100, 28);
             this.insertarActor.TabIndex = 14;
             this.insertarActor.Text = "INSERTAR";
             this.insertarActor.UseVisualStyleBackColor = true;
@@ -182,18 +197,21 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 385);
+            this.dataGridView1.Location = new System.Drawing.Point(45, 474);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(721, 164);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(961, 202);
             this.dataGridView1.TabIndex = 15;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // showActor
             // 
-            this.showActor.Location = new System.Drawing.Point(769, 440);
+            this.showActor.Location = new System.Drawing.Point(1025, 542);
+            this.showActor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showActor.Name = "showActor";
-            this.showActor.Size = new System.Drawing.Size(75, 23);
+            this.showActor.Size = new System.Drawing.Size(100, 28);
             this.showActor.TabIndex = 16;
             this.showActor.Text = "SHOW";
             this.showActor.UseVisualStyleBackColor = true;
@@ -201,9 +219,10 @@
             // 
             // modificarActor
             // 
-            this.modificarActor.Location = new System.Drawing.Point(323, 347);
+            this.modificarActor.Location = new System.Drawing.Point(431, 427);
+            this.modificarActor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.modificarActor.Name = "modificarActor";
-            this.modificarActor.Size = new System.Drawing.Size(75, 23);
+            this.modificarActor.Size = new System.Drawing.Size(100, 28);
             this.modificarActor.TabIndex = 17;
             this.modificarActor.Text = "MODIFICAR";
             this.modificarActor.UseVisualStyleBackColor = true;
@@ -211,9 +230,10 @@
             // 
             // deleteActor
             // 
-            this.deleteActor.Location = new System.Drawing.Point(444, 346);
+            this.deleteActor.Location = new System.Drawing.Point(592, 426);
+            this.deleteActor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.deleteActor.Name = "deleteActor";
-            this.deleteActor.Size = new System.Drawing.Size(75, 23);
+            this.deleteActor.Size = new System.Drawing.Size(100, 28);
             this.deleteActor.TabIndex = 18;
             this.deleteActor.Text = "ELIMINAR";
             this.deleteActor.UseVisualStyleBackColor = true;
@@ -222,27 +242,31 @@
             // idActor
             // 
             this.idActor.Enabled = false;
-            this.idActor.Location = new System.Drawing.Point(201, 26);
+            this.idActor.Location = new System.Drawing.Point(268, 32);
+            this.idActor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.idActor.Name = "idActor";
-            this.idActor.Size = new System.Drawing.Size(21, 20);
+            this.idActor.Size = new System.Drawing.Size(27, 22);
             this.idActor.TabIndex = 20;
             this.idActor.Visible = false;
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(34, 13);
+            this.back.Font = new System.Drawing.Font("Wingdings 3", 24.75F);
+            this.back.Location = new System.Drawing.Point(22, 13);
+            this.back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(65, 60);
             this.back.TabIndex = 21;
-            this.back.Text = "BACK";
+            this.back.Text = "";
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(34, 329);
+            this.button2.Location = new System.Drawing.Point(45, 405);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 41);
+            this.button2.Size = new System.Drawing.Size(172, 50);
             this.button2.TabIndex = 40;
             this.button2.Text = "Insertar Participacion de Actores";
             this.button2.UseVisualStyleBackColor = true;
@@ -250,9 +274,9 @@
             // 
             // actoresAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 561);
+            this.ClientSize = new System.Drawing.Size(1141, 690);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.back);
             this.Controls.Add(this.idActor);
@@ -275,6 +299,7 @@
             this.Controls.Add(this.apellidoActor);
             this.Controls.Add(this.nombreActor2);
             this.Controls.Add(this.nombreActor);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "actoresAdmin";
             this.Text = "actoresAdmin";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

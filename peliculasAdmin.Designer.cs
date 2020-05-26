@@ -114,7 +114,7 @@
             // buttonImagePelicula
             // 
             this.buttonImagePelicula.Location = new System.Drawing.Point(1036, 172);
-            this.buttonImagePelicula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonImagePelicula.Margin = new System.Windows.Forms.Padding(4);
             this.buttonImagePelicula.Name = "buttonImagePelicula";
             this.buttonImagePelicula.Size = new System.Drawing.Size(100, 28);
             this.buttonImagePelicula.TabIndex = 6;
@@ -126,7 +126,7 @@
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(260, 414);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.Size = new System.Drawing.Size(831, 224);
@@ -137,7 +137,7 @@
             // buttonInsertPelicula
             // 
             this.buttonInsertPelicula.Location = new System.Drawing.Point(361, 378);
-            this.buttonInsertPelicula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonInsertPelicula.Margin = new System.Windows.Forms.Padding(4);
             this.buttonInsertPelicula.Name = "buttonInsertPelicula";
             this.buttonInsertPelicula.Size = new System.Drawing.Size(100, 28);
             this.buttonInsertPelicula.TabIndex = 8;
@@ -148,7 +148,7 @@
             // textTitulo
             // 
             this.textTitulo.Location = new System.Drawing.Point(504, 68);
-            this.textTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.textTitulo.Name = "textTitulo";
             this.textTitulo.Size = new System.Drawing.Size(201, 22);
             this.textTitulo.TabIndex = 9;
@@ -156,7 +156,7 @@
             // textSinopsis
             // 
             this.textSinopsis.Location = new System.Drawing.Point(504, 165);
-            this.textSinopsis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textSinopsis.Margin = new System.Windows.Forms.Padding(4);
             this.textSinopsis.Name = "textSinopsis";
             this.textSinopsis.Size = new System.Drawing.Size(201, 22);
             this.textSinopsis.TabIndex = 11;
@@ -164,7 +164,7 @@
             // textDuracion
             // 
             this.textDuracion.Location = new System.Drawing.Point(504, 214);
-            this.textDuracion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textDuracion.Margin = new System.Windows.Forms.Padding(4);
             this.textDuracion.Name = "textDuracion";
             this.textDuracion.Size = new System.Drawing.Size(201, 22);
             this.textDuracion.TabIndex = 12;
@@ -182,7 +182,7 @@
             // textCantCopis
             // 
             this.textCantCopis.Location = new System.Drawing.Point(504, 337);
-            this.textCantCopis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textCantCopis.Margin = new System.Windows.Forms.Padding(4);
             this.textCantCopis.Name = "textCantCopis";
             this.textCantCopis.Size = new System.Drawing.Size(201, 22);
             this.textCantCopis.TabIndex = 15;
@@ -192,7 +192,7 @@
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(504, 277);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(271, 22);
             this.dateTimePicker1.TabIndex = 19;
@@ -200,7 +200,7 @@
             // actualizarAdmin
             // 
             this.actualizarAdmin.Location = new System.Drawing.Point(588, 378);
-            this.actualizarAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.actualizarAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.actualizarAdmin.Name = "actualizarAdmin";
             this.actualizarAdmin.Size = new System.Drawing.Size(113, 28);
             this.actualizarAdmin.TabIndex = 24;
@@ -211,7 +211,7 @@
             // deleteAdmin
             // 
             this.deleteAdmin.Location = new System.Drawing.Point(845, 378);
-            this.deleteAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.deleteAdmin.Name = "deleteAdmin";
             this.deleteAdmin.Size = new System.Drawing.Size(100, 28);
             this.deleteAdmin.TabIndex = 25;
@@ -222,7 +222,7 @@
             // TbDirectoresid
             // 
             this.TbDirectoresid.Location = new System.Drawing.Point(504, 114);
-            this.TbDirectoresid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbDirectoresid.Margin = new System.Windows.Forms.Padding(4);
             this.TbDirectoresid.Name = "TbDirectoresid";
             this.TbDirectoresid.Size = new System.Drawing.Size(201, 22);
             this.TbDirectoresid.TabIndex = 28;
@@ -230,7 +230,7 @@
             // textBoxidPelicula
             // 
             this.textBoxidPelicula.Location = new System.Drawing.Point(504, 16);
-            this.textBoxidPelicula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxidPelicula.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxidPelicula.Name = "textBoxidPelicula";
             this.textBoxidPelicula.Size = new System.Drawing.Size(201, 22);
             this.textBoxidPelicula.TabIndex = 30;
@@ -239,7 +239,7 @@
             // btnMostrar
             // 
             this.btnMostrar.Location = new System.Drawing.Point(621, 645);
-            this.btnMostrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMostrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(119, 27);
             this.btnMostrar.TabIndex = 31;
@@ -249,12 +249,13 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(16, 12);
-            this.back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.back.Font = new System.Drawing.Font("Wingdings 3", 24.5F);
+            this.back.Location = new System.Drawing.Point(45, 16);
+            this.back.Margin = new System.Windows.Forms.Padding(4);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(100, 28);
+            this.back.Size = new System.Drawing.Size(53, 47);
             this.back.TabIndex = 32;
-            this.back.Text = "BACK";
+            this.back.Text = "";
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
@@ -264,7 +265,7 @@
             this.dgvD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvD.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvD.Location = new System.Drawing.Point(16, 71);
-            this.dgvD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvD.Margin = new System.Windows.Forms.Padding(4);
             this.dgvD.Name = "dgvD";
             this.dgvD.RowHeadersWidth = 51;
             this.dgvD.Size = new System.Drawing.Size(187, 87);
@@ -273,7 +274,7 @@
             // buscarD
             // 
             this.buscarD.Location = new System.Drawing.Point(29, 43);
-            this.buscarD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buscarD.Margin = new System.Windows.Forms.Padding(4);
             this.buscarD.Name = "buscarD";
             this.buscarD.Size = new System.Drawing.Size(157, 22);
             this.buscarD.TabIndex = 35;
@@ -281,7 +282,7 @@
             // buscar
             // 
             this.buscar.Location = new System.Drawing.Point(63, 177);
-            this.buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buscar.Margin = new System.Windows.Forms.Padding(4);
             this.buscar.Name = "buscar";
             this.buscar.Size = new System.Drawing.Size(100, 28);
             this.buscar.TabIndex = 36;
@@ -298,7 +299,7 @@
             this.panel1.Controls.Add(this.dgvD);
             this.panel1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel1.Location = new System.Drawing.Point(16, 118);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(237, 218);
             this.panel1.TabIndex = 37;
@@ -319,7 +320,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(32, 462);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(172, 50);
             this.button1.TabIndex = 38;
@@ -366,7 +367,7 @@
             this.Controls.Add(this.labelDirectorPelicula);
             this.Controls.Add(this.labelTituloPelicula);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "peliculasAdmin";
             this.Text = "peliculasAdmin";
             this.Load += new System.EventHandler(this.peliculasAdmin_Load);
