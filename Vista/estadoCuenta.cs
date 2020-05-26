@@ -29,7 +29,7 @@ namespace ProyectoBDM
         {
             try
             {
-                cec.showPeliculaCli(adaptador, dgvP);
+                cec.showPeliculaCli(adaptador, dgvP, idUser);
             }
             catch (MySqlException)
             {
@@ -48,7 +48,7 @@ namespace ProyectoBDM
         {
             try
             {
-                cec.showMultaCli(adaptador, dgvM);
+                cec.showMultaCli(adaptador, dgvM, idUser);
             }
             catch (MySqlException)
             {
