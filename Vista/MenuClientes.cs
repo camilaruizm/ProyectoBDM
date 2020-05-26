@@ -23,28 +23,11 @@ namespace ProyectoBDM
 
         }
 
-        private void BtnVerPeliculas_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            th = new Thread(Abrir_VP);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-        }
-
         private void Abrir_VP()
         {
             Application.Run(new SolicitarPrestamo(idUser));
         }
 
-        private void BtnVerPeliculas_MouseMove(object sender, MouseEventArgs e)
-        {
-            BtnVerPeliculas.BackColor = Color.LightGray;
-        }
-
-        private void BtnVerPeliculas_MouseLeave(object sender, EventArgs e)
-        {
-            BtnVerPeliculas.BackColor = Color.FromArgb(224, 224, 224);
-        }
 
         private void BtnSolPrestamo_Click(object sender, EventArgs e)
         {
