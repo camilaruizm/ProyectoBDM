@@ -38,12 +38,12 @@ namespace ProyectoBDM
 
         private void BtnVerPeliculas_MouseMove(object sender, MouseEventArgs e)
         {
-            BtnVerPeliculas.BackColor = Color.Silver;
+            BtnVerPeliculas.BackColor = Color.LightGray;
         }
 
         private void BtnVerPeliculas_MouseLeave(object sender, EventArgs e)
         {
-            BtnVerPeliculas.BackColor = Color.Lavender;
+            BtnVerPeliculas.BackColor = Color.FromArgb(224, 224, 224);
         }
 
         private void BtnSolPrestamo_Click(object sender, EventArgs e)
@@ -61,12 +61,12 @@ namespace ProyectoBDM
 
         private void BtnSolPrestamo_MouseMove(object sender, MouseEventArgs e)
         {
-            BtnSolPrestamo.BackColor = Color.Silver;
+            BtnSolPrestamo.BackColor = Color.LightGray;
         }
 
         private void BtnSolPrestamo_MouseLeave(object sender, EventArgs e)
         {
-            BtnSolPrestamo.BackColor = Color.Lavender;
+            BtnSolPrestamo.BackColor = Color.FromArgb(224, 224, 224);
         }
 
     
@@ -86,29 +86,12 @@ namespace ProyectoBDM
 
         private void BtnPagarMultas_MouseMove(object sender, MouseEventArgs e)
         {
-            BtnPagarMultas.BackColor = Color.Silver;
+            BtnEstadoCuenta.BackColor = Color.LightGray;
         }
 
         private void BtnPagarMultas_MouseLeave(object sender, EventArgs e)
         {
-            BtnPagarMultas.BackColor = Color.Lavender;
-        }
-
-        private void BtnSalir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void BtnSalir_MouseMove(object sender, MouseEventArgs e)
-        {
-            BtnSalir.Text = "Salir";
-            BtnSalir.BackColor = Color.DarkRed;
-        }
-
-        private void BtnSalir_MouseLeave(object sender, EventArgs e)
-        {
-            BtnSalir.Text = "X";
-            BtnSalir.BackColor = Color.Red;
+            BtnEstadoCuenta.BackColor = Color.FromArgb(224, 224, 224);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -122,6 +105,26 @@ namespace ProyectoBDM
         }
 
         private void LbMenuCliente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnSalir_MouseLeave(object sender, EventArgs e)
+        {
+            BtnSalir.BackColor = Color.FromArgb(64, 64, 64);
+        }
+
+        private void BtnSalir_MouseMove(object sender, MouseEventArgs e)
+        {
+            BtnSalir.BackColor = Color.Gray;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

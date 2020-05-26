@@ -254,3 +254,15 @@ D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.acto
 D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.consultasAdmin.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.consultasAdmin.resources
 D:\7MO SEMESTRE\BDM\TERCER CORTE\PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.estadoPrestamo.resources
+C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.actorPelicula.resources
+C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.estadoCuenta.resources
+C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.historialCliente.resources
+C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.consultasAdmin.resources
+C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.estadoPrestamo.resources
+C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.Multa.resources
+C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.actoresAdmin.resources
+C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.RelacionGeneroPelicula.resources
+C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.direcAdmin.resources
+C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.generoPelicula.resources
+C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.peliculasAdmin.resources
+C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.SolicitarPrestamo.resources

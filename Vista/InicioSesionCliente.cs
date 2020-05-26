@@ -82,10 +82,6 @@ namespace ProyectoBDM
 
             conexion.Close();
 
-
-            
-            
-
         }
 
         public void opennewform2()
@@ -105,12 +101,12 @@ namespace ProyectoBDM
 
         private void BtnIngresar_MouseMove(object sender, MouseEventArgs e)
         {
-            BtnIngresar.BackColor = Color.Silver;
+            BtnIngresar.BackColor = Color.LightGray;
         }
 
         private void BtnIngresar_MouseLeave(object sender, EventArgs e)
         {
-            BtnIngresar.BackColor = Color.Lavender;
+            BtnIngresar.BackColor = Color.FromArgb(224, 224, 224);
         }
 
         private void TbUsuarioIniCli_Click(object sender, EventArgs e)
@@ -133,14 +129,12 @@ namespace ProyectoBDM
 
         private void BtnSalir_MouseMove(object sender, MouseEventArgs e)
         {
-            BtnSalir.Text = "Salir";
-            BtnSalir.BackColor = Color.DarkRed;
+            BtnSalir.BackColor = Color.Gray;
         }
 
         private void BtnSalir_MouseLeave(object sender, EventArgs e)
         {
-            BtnSalir.Text = "X";
-            BtnSalir.BackColor = Color.Red;
+            BtnSalir.BackColor = Color.FromArgb(64, 64, 64);
         }
 
         private void LbMensaje2_Click(object sender, EventArgs e)
