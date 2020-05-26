@@ -33,6 +33,9 @@
             this.textBoxIdPrestamo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonBuscarP = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.buttonLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,15 +51,16 @@
             // dgvEstado
             // 
             this.dgvEstado.AllowUserToAddRows = false;
-            this.dgvEstado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEstado.Location = new System.Drawing.Point(107, 150);
+            this.dgvEstado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvEstado.ColumnHeadersHeight = 29;
+            this.dgvEstado.Location = new System.Drawing.Point(63, 175);
             this.dgvEstado.Name = "dgvEstado";
             this.dgvEstado.ReadOnly = true;
             this.dgvEstado.RowHeadersVisible = false;
             this.dgvEstado.RowHeadersWidth = 51;
             this.dgvEstado.RowTemplate.Height = 24;
             this.dgvEstado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEstado.Size = new System.Drawing.Size(622, 103);
+            this.dgvEstado.Size = new System.Drawing.Size(708, 196);
             this.dgvEstado.TabIndex = 1;
             // 
             // textBoxIdPrestamo
@@ -85,11 +89,44 @@
             this.buttonBuscarP.UseVisualStyleBackColor = true;
             this.buttonBuscarP.Click += new System.EventHandler(this.buttonBuscarP_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(548, 72);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 33);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Entregado";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(660, 72);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(111, 33);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "No entregado";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // buttonLimpiar
+            // 
+            this.buttonLimpiar.Location = new System.Drawing.Point(585, 121);
+            this.buttonLimpiar.Name = "buttonLimpiar";
+            this.buttonLimpiar.Size = new System.Drawing.Size(122, 31);
+            this.buttonLimpiar.TabIndex = 7;
+            this.buttonLimpiar.Text = "Limpiar estado";
+            this.buttonLimpiar.UseVisualStyleBackColor = true;
+            this.buttonLimpiar.Click += new System.EventHandler(this.buttonLimpiar_Click);
+            // 
             // estadoPrestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonLimpiar);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonBuscarP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxIdPrestamo);
@@ -110,5 +147,8 @@
         private System.Windows.Forms.TextBox textBoxIdPrestamo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonBuscarP;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonLimpiar;
     }
 }

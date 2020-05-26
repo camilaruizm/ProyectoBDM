@@ -196,11 +196,11 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(361, 21);
+            this.button3.Location = new System.Drawing.Point(361, 33);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(262, 39);
+            this.button3.Size = new System.Drawing.Size(90, 27);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Buscar gonorrea ome gonorrea";
+            this.button3.Text = "Buscar ";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
