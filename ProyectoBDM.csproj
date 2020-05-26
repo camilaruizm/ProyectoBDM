@@ -144,6 +144,12 @@
     <Compile Include="Vista\actoresAdmin.Designer.cs">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\RelacionGeneroPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\actoresAdmin.resx">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\RelacionGeneroPelicula.resx">
       <DependentUpon>RelacionGeneroPelicula.cs</DependentUpon>
