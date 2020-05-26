@@ -28,11 +28,7 @@ namespace ProyectoBDM
         {
             InitializeComponent();
             this.idUser = idUser;
-
-        }
-
-        
-        
+        }        
 
         private void btBuscarM_Click(object sender, EventArgs e)
         {
@@ -67,7 +63,7 @@ namespace ProyectoBDM
         {
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             conexion.Open();
-            string tituloQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias Disponibles', CONCAT (nombreDirector1 , ' ' ,  nombreDirector2) as 'Nombre Director', CONCAT (apellidoDirector1 , ' ' , apellidoDirector2) as 'Apellido Director' from peliculas inner join Directores on directores.idDirector = peliculas.idDirectorf where peliculas.titulo ='" + tbTituloP.Text + "';";
+            string tituloQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias', CONCAT (nombreDirector1 , ' ' ,  nombreDirector2) as 'Nombre Director', CONCAT (apellidoDirector1 , ' ' , apellidoDirector2) as 'Apellido Director' from peliculas inner join Directores on directores.idDirector = peliculas.idDirectorf where peliculas.titulo ='" + tbTituloP.Text + "';";
             DataTable tPeliculasTitulo = new DataTable();
             MySqlDataAdapter adapterT = new MySqlDataAdapter(tituloQuery, conexion);
             adapterT.Fill(tPeliculasTitulo);
@@ -77,24 +73,15 @@ namespace ProyectoBDM
 
         private void button4_Click(object sender, EventArgs e)
         {
-
-            MySqlCommand comando1 = new MySqlCommand("SELECT P.titulo, P.fechaEstreno as 'Fecha Estreno', P.sinopsis as Sinopsis, P.duracion as Duracion, P.copiasDisponibles as 'Copias Disponibles', D.nombreDirector1,D.nombreDirector2, D.apellidoDirector1,  D.apellidoDirector2 FROM Peliculas P, Directores D WHERE D.idDirector = P.idDirectorf  AND concat(D.nombreDirector1,' ',D.apellidoDirector1) LIKE @nombre ", conexion);
+            MySqlCommand comando1 = new MySqlCommand("SELECT P.titulo, P.fechaEstreno as 'Fecha Estreno', P.sinopsis as Sinopsis, P.duracion as Duracion, P.copiasDisponibles as 'Copias', CONCAT (nombreDirector1 , ' ' , nombreDirector2, ' ', apellidoDirector1 , ' ' , apellidoDirector2) as 'Director' FROM Peliculas P, Directores D WHERE D.idDirector = P.idDirectorf  AND concat(D.nombreDirector1,' ',D.apellidoDirector1) LIKE @nombre ", conexion);
+            conexion.Close();
             comando1.Parameters.Add("@nombre", MySqlDbType.VarChar).Value = "%" + tbDirectorP.Text + "%";
-
             MySqlDataAdapter adapterD = new MySqlDataAdapter();
             adapterD.SelectCommand = comando1;
             DataTable tPeliculasDirector = new DataTable();
             adapterD.Fill(tPeliculasDirector);
             dgvPeliculas.DataSource = tPeliculasDirector;
-
-            int counter = dgvPeliculas.Rows.Count;
-            textBox2.Text = counter.ToString();
-
-            int total = counter * 20000;
-            textBox3.Text = total.ToString();
             conexion.Close();
-
-
         }   
 
         private void comboBoxCategoria_SelectedIndexChanged(object sender, EventArgs e)
@@ -137,7 +124,7 @@ namespace ProyectoBDM
                 MySqlDataAdapter da = new MySqlDataAdapter(cm);
                 DataTable dt = new DataTable();
 
-                da.Fill(dt);
+                //da.Fill(dt);
 
                 comboBoxCategoria.ValueMember = "idGenero";
                 comboBoxCategoria.DisplayMember = "tipoGenero";
@@ -146,7 +133,7 @@ namespace ProyectoBDM
 
 
             conexion.Open();
-            string allQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias Disponibles' from peliculas;";
+            string allQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias' from peliculas;";
             DataTable tPeliculasAll = new DataTable();
             MySqlDataAdapter adapterA = new MySqlDataAdapter(allQuery, conexion);
             adapterA.Fill(tPeliculasAll);
@@ -158,7 +145,7 @@ namespace ProyectoBDM
         {
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             conexion.Open();
-            string categoriaQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias Disponibles',  tipoGenero as 'Genero' FROM peliculas left join peliculas_generos on peliculas.idPelicula = peliculas_generos.idPeliculaf3 left join generos on peliculas_generos.idGeneroF = generos.idGenero where generos.tipoGenero = '" + comboBoxCategoria.Text + "';";
+            string categoriaQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias',  tipoGenero as 'Genero' FROM peliculas left join peliculas_generos on peliculas.idPelicula = peliculas_generos.idPeliculaf3 left join generos on peliculas_generos.idGeneroF = generos.idGenero where generos.tipoGenero = '" + comboBoxCategoria.Text + "';";
 
             DataTable tPeliculasCategoria = new DataTable();
             MySqlDataAdapter adapterC = new MySqlDataAdapter(categoriaQuery, conexion);
@@ -189,12 +176,26 @@ namespace ProyectoBDM
             string titulo = row.Cells[0].Value.ToString();
             string duracion = row.Cells[3].Value.ToString();
             dgvCarrito.Rows.Add(titulo, duracion);
+
+
+            int counter = dgvCarrito.Rows.Count;
+            tbCantidadP.Text = counter.ToString();
+
+            int total = counter * 20000;
+            tbTotal.Text = total.ToString();
+            
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             int i = dgvCarrito.CurrentRow.Index;
             dgvCarrito.Rows.RemoveAt(i);
+
+            int counter = dgvCarrito.Rows.Count;
+            tbCantidadP.Text = counter.ToString();
+
+            int total = counter * 20000;
+            tbTotal.Text = total.ToString();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -210,6 +211,21 @@ namespace ProyectoBDM
         private void tbDirectorP_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnSalir_MouseLeave(object sender, EventArgs e)
+        {
+            BtnSalir.BackColor = Color.FromArgb(64, 64, 64);
+        }
+
+        private void BtnSalir_MouseMove(object sender, MouseEventArgs e)
+        {
+            BtnSalir.BackColor = Color.Gray;
         }
     }
     
