@@ -20,7 +20,7 @@ namespace ProyectoBDM.Control
         public void showPeliculaCli(MySqlDataAdapter adaptador, DataGridView dgvP, string idUsuario)
         {
             conexion.Open();
-            MySqlCommand comando = new MySqlCommand("Select idPrestamo, titulo, fechaHoraFP as 'Fecha Final' FROM prestamos P, peliculas PL, clientes C, facturas_prestamos FP where C.idCliente = '" + idUsuario + "' and P.idClientef= '" + idUsuario + "'  and FP.idPeliculaf = PL.idPelicula and FP.idPrestamof = P.idPrestamo;", conexion);
+            MySqlCommand comando = new MySqlCommand("Select idPrestamo, titulo, fechaHoraFP as 'Fecha Final' FROM prestamos P, peliculas PL, clientes C, facturas_prestamos FP where C.idCliente = '" + idUsuario + "' and P.idClientef= '" + idUsuario + "'  and FP.idPeliculaf = PL.idPelicula and FP.idPrestamof = P.idPrestamo AND P.estadoPrestamo IS NULL;", conexion);
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);

@@ -31,7 +31,7 @@ namespace ProyectoBDM
         {
             try
             {
-                chc.showHistMult(adaptador, dgvH);
+                chc.showHistMult(adaptador, dgvH, idUser);
             }
             catch (MySqlException)
             {
@@ -60,7 +60,7 @@ namespace ProyectoBDM
         {
             try
             {
-                chc.showHistPel(adaptador, dataGridView1);
+                chc.showHistPel(adaptador, dataGridView1, idUser);
             }
             catch (MySqlException)
             {

@@ -16,10 +16,10 @@ namespace ProyectoBDM.Control
     {
         MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
-        public void showHistMult(MySqlDataAdapter adaptador, DataGridView dgvH)
+        public void showHistMult(MySqlDataAdapter adaptador, DataGridView dgvH, string idUsuario)
         {
             conexion.Open();
-            MySqlCommand comando = new MySqlCommand("SELECT M.fechaGeneracionMulta, M.valorMulta, P.titulo FROM  Multas M, Facturas_prestamos FP, Peliculas P, Clientes C  WHERE P.idPelicula = FP.idPeliculaf and M.idClientef2 = C.idCliente and M.estadoMulta= 'Inactivo' ", conexion);
+            MySqlCommand comando = new MySqlCommand("SELECT fechaGeneracionMulta, valorMulta, estadoMulta, titulo  FROM  multas M, facturas_prestamos FP, peliculas PL, prestamos P ,  clientes C WHERE M.estadoMulta = 'Inactivo' AND C.idCliente = M.idClientef2 AND C.idCliente = P.idClientef AND M.idPrestamof2 = P.idPrestamo AND P.idPrestamo = FP.idPrestamof AND PL.idPelicula = FP.idPeliculaf AND C.idCliente= '" + idUsuario + "'; ", conexion);
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);
@@ -27,10 +27,10 @@ namespace ProyectoBDM.Control
             conexion.Close();
         }
 
-        public void showHistPel(MySqlDataAdapter adaptador, DataGridView dataGridView1)
+        public void showHistPel(MySqlDataAdapter adaptador, DataGridView dataGridView1, string idUsuario)
         {
             conexion.Open();
-            MySqlCommand comando = new MySqlCommand("SELECT C.nombreCliente1, C.apellidoCliente1, P.titulo, P.duracion FROM  Peliculas P, Clientes C, facturas_prestamos FP, prestamos Pr  WHERE P.idPelicula = FP.idPeliculaf and Pr.idPrestamo = FP.idPrestamof and C.idCliente = Pr.idClientef; ", conexion);
+            MySqlCommand comando = new MySqlCommand("Select idPrestamo, titulo, fechaHoraFP as 'Fecha Final' FROM prestamos P, peliculas PL, clientes C, facturas_prestamos FP where C.idCliente = '" + idUsuario + "' and P.idClientef= '" + idUsuario + "'  and FP.idPeliculaf = PL.idPelicula and FP.idPrestamof = P.idPrestamo ", conexion);
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);
