@@ -40,7 +40,7 @@ namespace ProyectoBDM.Control
         public void EliminarPelicula(TextBox idPelicula)
         {
             conexion.Open();
-            string Query = "DELETE FROM  PELICULAS WHERE   idActor ='" + idPelicula.Text + "'";
+            string Query = "DELETE FROM  PELICULAS WHERE   idPelicula ='" + idPelicula.Text + "'";
             MySqlCommand comando = new MySqlCommand(Query, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
