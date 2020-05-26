@@ -24,7 +24,7 @@ namespace ProyectoBDM.Vista
             InitializeComponent();
         }
 
-        private void buttonBuscarP_Click(object sender, EventArgs e)                                                                                                                                                                                                                                                                
+        private void buttonBuscarP_Click(object sender, EventArgs e)
         {
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             conexion.Open();
@@ -55,7 +55,7 @@ namespace ProyectoBDM.Vista
 
             DataTable tEstados = new DataTable();
             MySqlDataAdapter adapterE = new MySqlDataAdapter(estadosQuery, conexion);
-           
+
             adapterE.Fill(tEstados);
             dgvEstado.DataSource = tEstados;
             conexion.Close();
@@ -108,6 +108,36 @@ namespace ProyectoBDM.Vista
 
             adapterE.Fill(tEstados);
             dgvEstado.DataSource = tEstados;
+            conexion.Close();
+        }
+
+        private void estadoPrestamo_Load(object sender, EventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            conexion.Open();
+
+            string allQuery = "SELECT idPrestamo as 'ID', fechaHoraIP as 'Inicio del Prestamo', fechaHoraFP as 'Final del prestamo', peliculasSolicitadas as 'Peliculas Solicitadas', idClientef as 'ID Cliente', CONCAT (nombreCliente1 , ' ' ,  nombreCliente2, ' ', apellidoCliente1 , ' ' , apellidoCliente2) as 'Cliente', estadoPrestamo as 'Estado' from prestamos, clientes where clientes.idCliente = prestamos.idClientef;";
+
+            DataTable tAll = new DataTable();
+            MySqlDataAdapter adapterA = new MySqlDataAdapter(allQuery, conexion);
+
+            adapterA.Fill(tAll);
+            dgvEstado.DataSource = tAll;
+            conexion.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            conexion.Open();
+
+            string allQuery = "SELECT idPrestamo as 'ID', fechaHoraIP as 'Inicio del Prestamo', fechaHoraFP as 'Final del prestamo', peliculasSolicitadas as 'Peliculas Solicitadas', idClientef as 'ID Cliente', CONCAT (nombreCliente1 , ' ' ,  nombreCliente2, ' ', apellidoCliente1 , ' ' , apellidoCliente2) as 'Cliente', estadoPrestamo as 'Estado' from prestamos, clientes where clientes.idCliente = prestamos.idClientef;";
+
+            DataTable tAll = new DataTable();
+            MySqlDataAdapter adapterA = new MySqlDataAdapter(allQuery, conexion);
+
+            adapterA.Fill(tAll);
+            dgvEstado.DataSource = tAll;
             conexion.Close();
         }
     }
