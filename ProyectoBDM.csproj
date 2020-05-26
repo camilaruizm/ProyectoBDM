@@ -93,13 +93,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="actorPelicula.cs">
+    <Compile Include="Control\ControlEstadoCuenta.cs" />
+    <Compile Include="Control\ControlHistorialCliente.cs" />
+    <Compile Include="Vista\actorPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="actorPelicula.Designer.cs">
+    <Compile Include="Vista\actorPelicula.Designer.cs">
       <DependentUpon>actorPelicula.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\ControlActorPelicula.cs" />
+    <Compile Include="Control\ControlConsultasAdmi.cs" />
     <Compile Include="Control\ControlRelacionGeneroPelicula.cs" />
     <Compile Include="Control\ControlInicioSesionClientes.cs" />
     <Compile Include="Control\ControlMulta.cs" />
@@ -129,10 +132,10 @@
     </Compile>
     <Compile Include="Control\ControlDirecAdmi.cs" />
     <Compile Include="Control\ControlGeneroPelicula.cs" />
-    <Compile Include="estadoCuenta.cs">
+    <Compile Include="Vista\estadoCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="estadoCuenta.Designer.cs">
+    <Compile Include="Vista\estadoCuenta.Designer.cs">
       <DependentUpon>estadoCuenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\actoresAdmin.cs">
@@ -141,10 +144,10 @@
     <Compile Include="Vista\actoresAdmin.Designer.cs">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="RelacionGeneroPelicula.cs">
+    <Compile Include="Vista\RelacionGeneroPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RelacionGeneroPelicula.Designer.cs">
+    <Compile Include="Vista\RelacionGeneroPelicula.Designer.cs">
       <DependentUpon>RelacionGeneroPelicula.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\ControlActoresAdmi.cs" />
@@ -184,10 +187,10 @@
     <Compile Include="Modelo\Peliculas.cs" />
     <Compile Include="Modelo\Peliculas_Generos.cs" />
     <Compile Include="Modelo\Prestamos.cs" />
-    <Compile Include="peliculasAdmin.cs">
+    <Compile Include="Vista\peliculasAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="peliculasAdmin.Designer.cs">
+    <Compile Include="Vista\peliculasAdmin.Designer.cs">
       <DependentUpon>peliculasAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -215,10 +218,10 @@
     <Compile Include="SolicitarPrestamo.Designer.cs">
       <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="actorPelicula.resx">
+    <EmbeddedResource Include="Vista\actorPelicula.resx">
       <DependentUpon>actorPelicula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="estadoCuenta.resx">
+    <EmbeddedResource Include="Vista\estadoCuenta.resx">
       <DependentUpon>estadoCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="historialCliente.resx">
@@ -236,7 +239,7 @@
     <EmbeddedResource Include="Vista\actoresAdmin.resx">
       <DependentUpon>actoresAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RelacionGeneroPelicula.resx">
+    <EmbeddedResource Include="Vista\RelacionGeneroPelicula.resx">
       <DependentUpon>RelacionGeneroPelicula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\direcAdmin.resx">
@@ -251,7 +254,7 @@
     <EmbeddedResource Include="Vista\MenuClientes.resx">
       <DependentUpon>MenuClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="peliculasAdmin.resx">
+    <EmbeddedResource Include="Vista\peliculasAdmin.resx">
       <DependentUpon>peliculasAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\RegistroClientes.resx">
