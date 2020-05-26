@@ -63,7 +63,7 @@ namespace ProyectoBDM
         {
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             conexion.Open();
-            string tituloQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias', CONCAT (nombreDirector1 , ' ' ,  nombreDirector2) as 'Nombre Director', CONCAT (apellidoDirector1 , ' ' , apellidoDirector2) as 'Apellido Director' from peliculas inner join Directores on directores.idDirector = peliculas.idDirectorf where peliculas.titulo ='" + tbTituloP.Text + "';";
+            string tituloQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', duracion as 'Duracion', copiasDisponibles as 'Copias', CONCAT (nombreDirector1 , ' ' ,  nombreDirector2, ' ', apellidoDirector1 , ' ' , apellidoDirector2) as 'Director', sinopsis as 'Sinopsis' from peliculas inner join Directores on directores.idDirector = peliculas.idDirectorf where peliculas.titulo ='" + tbTituloP.Text + "';";
             DataTable tPeliculasTitulo = new DataTable();
             MySqlDataAdapter adapterT = new MySqlDataAdapter(tituloQuery, conexion);
             adapterT.Fill(tPeliculasTitulo);
@@ -73,7 +73,7 @@ namespace ProyectoBDM
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MySqlCommand comando1 = new MySqlCommand("SELECT P.titulo, P.fechaEstreno as 'Fecha Estreno', P.sinopsis as Sinopsis, P.duracion as Duracion, P.copiasDisponibles as 'Copias', CONCAT (nombreDirector1 , ' ' , nombreDirector2, ' ', apellidoDirector1 , ' ' , apellidoDirector2) as 'Director' FROM Peliculas P, Directores D WHERE D.idDirector = P.idDirectorf  AND concat(D.nombreDirector1,' ',D.apellidoDirector1) LIKE @nombre ", conexion);
+            MySqlCommand comando1 = new MySqlCommand("SELECT P.titulo, P.fechaEstreno as 'Fecha Estreno', P.duracion as Duracion, P.copiasDisponibles as 'Copias', CONCAT (nombreDirector1 , ' ' , nombreDirector2, ' ', apellidoDirector1 , ' ' , apellidoDirector2) as 'Director', sinopsis as 'Sinopsis' FROM Peliculas P, Directores D WHERE D.idDirector = P.idDirectorf  AND concat(D.nombreDirector1,' ',D.apellidoDirector1) LIKE @nombre ", conexion);
             conexion.Close();
             comando1.Parameters.Add("@nombre", MySqlDbType.VarChar).Value = "%" + tbDirectorP.Text + "%";
             MySqlDataAdapter adapterD = new MySqlDataAdapter();
@@ -96,8 +96,35 @@ namespace ProyectoBDM
 
         private void btPrestamo_Click(object sender, EventArgs e)
         {
-            
+            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
+            //string idPQuery = "SELECT idPelicula from peliculas where titulo ='" + tbTituloP.Text + "';";
+            //DataTable tPeliculasID = new DataTable();
+            //MySqlDataAdapter adapterT = new MySqlDataAdapter(idPQuery, conexion);
+            //adapterT.Fill(tPeliculasID);
+            //dgvP_ID.DataSource = tPeliculasID;
+            string linea = "";
+            foreach (DataGridViewRow item in dgvCarrito.Rows)
+            {
+                conexion.Open();
+                string idPQuery = "SELECT idPelicula from peliculas where titulo ='" + item.Cells[0].Value.ToString() + "';";
+                DataTable tPeliculasID = new DataTable();
+                MySqlDataAdapter adapterT = new MySqlDataAdapter(idPQuery, conexion);
+                adapterT.Fill(tPeliculasID);
+                dgvP_ID.DataSource = tPeliculasID;
+                conexion.Close();
+
+                string idP = dgvP_ID.Rows[0].Cells[0].Value.ToString();
+                /*
+                conexion.Open();
+                string inPQuery = "INSERT INTO facturas_prestamos(fechaHoraFM, valorFacturaM, idPrestamof, idPeliculaf) values ('" + dateTimePicker1.Text + "', 20000,'" + idP + "','" + item.Cells[1].Value.ToString() + "');";
+                MySqlCommand comando = new MySqlCommand(inPQuery, conexion);
+                comando.ExecuteNonQuery();
+                conexion.Close();*/
+
+                linea = linea + idP;
+            }
+            label8.Text = linea;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -133,7 +160,7 @@ namespace ProyectoBDM
 
 
             conexion.Open();
-            string allQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias' from peliculas;";
+            string allQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', duracion as 'Duracion', copiasDisponibles as 'Copias', sinopsis as 'Sinopsis' from peliculas;";
             DataTable tPeliculasAll = new DataTable();
             MySqlDataAdapter adapterA = new MySqlDataAdapter(allQuery, conexion);
             adapterA.Fill(tPeliculasAll);
@@ -145,7 +172,7 @@ namespace ProyectoBDM
         {
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             conexion.Open();
-            string categoriaQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', sinopsis as 'Sinopsis', duracion as 'Duracion', copiasDisponibles as 'Copias',  tipoGenero as 'Genero' FROM peliculas left join peliculas_generos on peliculas.idPelicula = peliculas_generos.idPeliculaf3 left join generos on peliculas_generos.idGeneroF = generos.idGenero where generos.tipoGenero = '" + comboBoxCategoria.Text + "';";
+            string categoriaQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', duracion as 'Duracion', copiasDisponibles as 'Copias',  tipoGenero as 'Genero', sinopsis as 'Sinopsis' FROM peliculas left join peliculas_generos on peliculas.idPelicula = peliculas_generos.idPeliculaf3 left join generos on peliculas_generos.idGeneroF = generos.idGenero where generos.tipoGenero = '" + comboBoxCategoria.Text + "';";
 
             DataTable tPeliculasCategoria = new DataTable();
             MySqlDataAdapter adapterC = new MySqlDataAdapter(categoriaQuery, conexion);
@@ -174,7 +201,7 @@ namespace ProyectoBDM
             int i = dgvPeliculas.CurrentRow.Index;
             DataGridViewRow row = dgvPeliculas.Rows[i];
             string titulo = row.Cells[0].Value.ToString();
-            string duracion = row.Cells[3].Value.ToString();
+            string duracion = row.Cells[2].Value.ToString();
             dgvCarrito.Rows.Add(titulo, duracion);
 
 
