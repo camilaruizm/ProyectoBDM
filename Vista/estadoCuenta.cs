@@ -15,11 +15,11 @@ namespace ProyectoBDM
 {
     public partial class estadoCuenta : Form
     {
-        int idUser;
+        string idUser;
         Thread th;
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
         ControlEstadoCuenta cec = new ControlEstadoCuenta();
-        public estadoCuenta(int idUser)
+        public estadoCuenta(string idUser)
         {
             InitializeComponent();
             this.idUser = idUser;

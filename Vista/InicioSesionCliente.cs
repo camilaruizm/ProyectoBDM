@@ -9,7 +9,7 @@ namespace ProyectoBDM
 {
     public partial class InicioSesionCliente : Form
     {
-        int idUser;
+        string idUser;
         Thread th;
         MySqlConnection conexion = new MySqlConnection("server=localhost; Database=proyectobdm; user=root; password=root;");
         public InicioSesionCliente()
@@ -68,8 +68,7 @@ namespace ProyectoBDM
                 idAdapter.Fill(idTable);
 
                 dataGridView1.DataSource = idTable;
-                string stringUser = dataGridView1.Rows[0].Cells[0].Value.ToString();
-                int idUser = Int16.Parse(stringUser);
+                idUser = dataGridView1.Rows[0].Cells[0].Value.ToString();
             }
             conexion.Close();
 

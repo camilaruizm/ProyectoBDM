@@ -15,13 +15,13 @@ namespace ProyectoBDM
 {
     public partial class historialCliente : Form
     {
-        int idUser;
+        string idUser;
         Thread th;
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
         ControlHistorialCliente chc = new ControlHistorialCliente();
 
        
-        public historialCliente(int idUser)
+        public historialCliente(string idUser)
         {
             InitializeComponent();
             this.idUser = idUser;
