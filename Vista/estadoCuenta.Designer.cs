@@ -143,6 +143,7 @@
             this.Controls.Add(this.label1);
             this.Name = "estadoCuenta";
             this.Text = "estadoCuenta";
+            this.Load += new System.EventHandler(this.estadoCuenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvM)).EndInit();
             this.ResumeLayout(false);

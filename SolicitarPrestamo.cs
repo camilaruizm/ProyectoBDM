@@ -18,13 +18,13 @@ namespace ProyectoBDM
     public partial class SolicitarPrestamo : Form
     {
        
-         string idUser;
+        int idUser;
         MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
 
         Thread th;
 
-        public SolicitarPrestamo(string idUser)
+        public SolicitarPrestamo(int idUser)
         {
             InitializeComponent();
             this.idUser = idUser;

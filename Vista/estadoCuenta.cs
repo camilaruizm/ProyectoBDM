@@ -15,11 +15,11 @@ namespace ProyectoBDM
 {
     public partial class estadoCuenta : Form
     {
-        string idUser;
+        int idUser;
         Thread th;
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
         ControlEstadoCuenta cec = new ControlEstadoCuenta();
-        public estadoCuenta(string idUser)
+        public estadoCuenta(int idUser)
         {
             InitializeComponent();
             this.idUser = idUser;
@@ -85,6 +85,11 @@ namespace ProyectoBDM
         private void volverMenu()
         {
             Application.Run(new MenuClientes(idUser));
+        }
+
+        private void estadoCuenta_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

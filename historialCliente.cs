@@ -15,13 +15,13 @@ namespace ProyectoBDM
 {
     public partial class historialCliente : Form
     {
-        string idUser;
+        int idUser;
         Thread th;
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
         ControlHistorialCliente chc = new ControlHistorialCliente();
 
        
-        public historialCliente(string idUser)
+        public historialCliente(int idUser)
         {
             InitializeComponent();
             this.idUser = idUser;
@@ -71,6 +71,11 @@ namespace ProyectoBDM
             //DataTable tabla = new DataTable();
             //adaptador.Fill(tabla);
             //dataGridView1.DataSource = tabla;
+        }
+
+        private void historialCliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 
