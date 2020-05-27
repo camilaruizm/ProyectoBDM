@@ -71,7 +71,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dgvP_ID = new System.Windows.Forms.DataGridView();
             this.BtnSalir = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
+            this.dgvID_P = new System.Windows.Forms.DataGridView();
             this.pPanel.SuspendLayout();
             this.panelCategoria.SuspendLayout();
             this.panelDirector.SuspendLayout();
@@ -80,6 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeliculas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvP_ID)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvID_P)).BeginInit();
             this.SuspendLayout();
             // 
             // label13
@@ -135,7 +136,7 @@
             this.btPrestamo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.btPrestamo.Font = new System.Drawing.Font("Bebas Neue", 20.25F);
             this.btPrestamo.ForeColor = System.Drawing.Color.Black;
-            this.btPrestamo.Location = new System.Drawing.Point(235, 624);
+            this.btPrestamo.Location = new System.Drawing.Point(236, 624);
             this.btPrestamo.Name = "btPrestamo";
             this.btPrestamo.Size = new System.Drawing.Size(170, 44);
             this.btPrestamo.TabIndex = 72;
@@ -399,7 +400,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bebas Neue", 15F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(205)))), ((int)(((byte)(203)))));
-            this.label2.Location = new System.Drawing.Point(296, 526);
+            this.label2.Location = new System.Drawing.Point(324, 526);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 26);
             this.label2.TabIndex = 76;
@@ -411,7 +412,7 @@
             this.dateTimePicker2.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker2.Font = new System.Drawing.Font("Quicksand", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(378, 525);
+            this.dateTimePicker2.Location = new System.Drawing.Point(406, 525);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(115, 26);
@@ -445,7 +446,7 @@
             this.tbTotal.Enabled = false;
             this.tbTotal.Font = new System.Drawing.Font("Quicksand", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.tbTotal.Location = new System.Drawing.Point(392, 561);
+            this.tbTotal.Location = new System.Drawing.Point(420, 561);
             this.tbTotal.Margin = new System.Windows.Forms.Padding(2);
             this.tbTotal.Name = "tbTotal";
             this.tbTotal.Size = new System.Drawing.Size(101, 26);
@@ -457,7 +458,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bebas Neue", 15F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(205)))), ((int)(((byte)(203)))));
-            this.label7.Location = new System.Drawing.Point(296, 563);
+            this.label7.Location = new System.Drawing.Point(324, 563);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(93, 26);
             this.label7.TabIndex = 80;
@@ -573,14 +574,15 @@
             // 
             this.dgvP_ID.AllowUserToAddRows = false;
             this.dgvP_ID.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.dgvP_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvP_ID.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvP_ID.Location = new System.Drawing.Point(515, 500);
+            this.dgvP_ID.Location = new System.Drawing.Point(73, 624);
             this.dgvP_ID.Margin = new System.Windows.Forms.Padding(2);
             this.dgvP_ID.Name = "dgvP_ID";
             this.dgvP_ID.ReadOnly = true;
             this.dgvP_ID.RowHeadersWidth = 51;
             this.dgvP_ID.RowTemplate.Height = 24;
-            this.dgvP_ID.Size = new System.Drawing.Size(108, 79);
+            this.dgvP_ID.Size = new System.Drawing.Size(77, 32);
             this.dgvP_ID.TabIndex = 86;
             // 
             // BtnSalir
@@ -601,16 +603,15 @@
             this.BtnSalir.MouseLeave += new System.EventHandler(this.BtnSalir_MouseLeave);
             this.BtnSalir.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnSalir_MouseMove);
             // 
-            // label8
+            // dgvID_P
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(445, 644);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 20);
-            this.label8.TabIndex = 88;
-            this.label8.Text = "label8";
+            this.dgvID_P.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.dgvID_P.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvID_P.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvID_P.Location = new System.Drawing.Point(455, 624);
+            this.dgvID_P.Name = "dgvID_P";
+            this.dgvID_P.Size = new System.Drawing.Size(78, 38);
+            this.dgvID_P.TabIndex = 89;
             // 
             // SolicitarPrestamo
             // 
@@ -618,7 +619,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(643, 693);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.dgvID_P);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.dgvP_ID);
             this.Controls.Add(this.button7);
@@ -658,6 +659,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeliculas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvP_ID)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvID_P)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -704,6 +706,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.DataGridView dgvP_ID;
         private System.Windows.Forms.Button BtnSalir;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dgvID_P;
     }
 }

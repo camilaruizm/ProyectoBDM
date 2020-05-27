@@ -98,12 +98,24 @@ namespace ProyectoBDM
         {
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
-            //string idPQuery = "SELECT idPelicula from peliculas where titulo ='" + tbTituloP.Text + "';";
-            //DataTable tPeliculasID = new DataTable();
-            //MySqlDataAdapter adapterT = new MySqlDataAdapter(idPQuery, conexion);
-            //adapterT.Fill(tPeliculasID);
-            //dgvP_ID.DataSource = tPeliculasID;
-            string linea = "";
+            conexion.Open();
+            string idPrQuery = "SELECT idPrestamo from prestamos;";
+            DataTable tPrestamoID = new DataTable();
+            MySqlDataAdapter adapterP = new MySqlDataAdapter(idPrQuery, conexion);
+            adapterP.Fill(tPrestamoID);
+            dgvID_P.DataSource = tPrestamoID;
+            conexion.Close();
+
+            int CounterPr = (dgvID_P.Rows.Count) - 1;
+            string idPr = dgvID_P.Rows[CounterPr].Cells[0].Value.ToString();
+
+            conexion.Open();
+            string PQuery = "INSERT INTO prestamos(fechaHoraIP, fechaHoraFP, peliculasSolicitadas, valorTotalP, idClientef) values ('" + dateTimePicker1.Text + "','" + dateTimePicker2.Text + "','" + tbCantidadP.Text + "','" + tbTotal.Text + "','" + idUser + "');";
+            MySqlCommand comandoP = new MySqlCommand(PQuery, conexion);
+            comandoP.ExecuteNonQuery();
+            conexion.Close();
+
+
             foreach (DataGridViewRow item in dgvCarrito.Rows)
             {
                 conexion.Open();
@@ -115,16 +127,13 @@ namespace ProyectoBDM
                 conexion.Close();
 
                 string idP = dgvP_ID.Rows[0].Cells[0].Value.ToString();
-                /*
+                                
                 conexion.Open();
-                string inPQuery = "INSERT INTO facturas_prestamos(fechaHoraFM, valorFacturaM, idPrestamof, idPeliculaf) values ('" + dateTimePicker1.Text + "', 20000,'" + idP + "','" + item.Cells[1].Value.ToString() + "');";
-                MySqlCommand comando = new MySqlCommand(inPQuery, conexion);
+                string FPQuery = "INSERT INTO facturas_prestamos(fechaHoraFM, valorFacturaM, idPrestamof, idPeliculaf) values ('" + dateTimePicker1.Text + "', 20000,'" + idPr + "','" + idP + "');";
+                MySqlCommand comando = new MySqlCommand(FPQuery, conexion);
                 comando.ExecuteNonQuery();
-                conexion.Close();*/
-
-                linea = linea + idP;
+                conexion.Close();
             }
-            label8.Text = linea;
         }
 
         private void button2_Click(object sender, EventArgs e)
