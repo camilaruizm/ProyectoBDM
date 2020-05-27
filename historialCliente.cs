@@ -15,23 +15,23 @@ namespace ProyectoBDM
 {
     public partial class historialCliente : Form
     {
-        string idUser;
+        string idUser = "a";
         Thread th;
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
         ControlHistorialCliente chc = new ControlHistorialCliente();
 
        
-        public historialCliente(string idUser)
+        public historialCliente()
         {
             InitializeComponent();
-            this.idUser = idUser;
+           // this.idUser = idUser;
         }
 
         private void showMultasHist_Click(object sender, EventArgs e)
         {
             try
             {
-                chc.showHistMult(adaptador, dgvH, idUser);
+                chc.showHistMult(adaptador, dgvH,idUser);
             }
             catch (MySqlException)
             {
@@ -53,14 +53,14 @@ namespace ProyectoBDM
         }
         private void volverMenu()
         {
-            Application.Run(new estadoCuenta(idUser));
+            Application.Run(new estadoCuenta());
         }
 
         private void showPeliculas_Click(object sender, EventArgs e)
         {
             try
             {
-                chc.showHistPel(adaptador, dataGridView1, idUser);
+                chc.showHistPel(adaptador, dataGridView1,idUser);
             }
             catch (MySqlException)
             {

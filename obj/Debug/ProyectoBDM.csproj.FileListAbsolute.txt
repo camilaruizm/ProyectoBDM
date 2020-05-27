@@ -270,3 +270,4 @@ D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\
 D:\Documentos\SEBASTIAN UNIVERSIDAD\SEPTIMO SEMESTRE\Bases de datos\GitProyecto\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.estadoPrestamo.resources
 D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.estadoPrestamo.resources
 C:\Users\david\Desktop\PeliculasDB\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.Perfil.resources
+D:\Clases2020-1\BASES DE DATOS\BASES DE DATOS PROYECTO\ProyectoBDM\obj\Debug\ProyectoBDM.Vista.Perfil.resources

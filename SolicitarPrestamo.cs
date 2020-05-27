@@ -95,10 +95,13 @@ namespace ProyectoBDM
 
         private void btPrestamo_Click(object sender, EventArgs e)
         {
+            label8.Text = idUser;
+            MessageBox.Show("tengo sueño" + idUser);
+            /*
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
             conexion.Open();
-            string PQuery = "INSERT INTO prestamos(fechaHoraIP, fechaHoraFP, peliculasSolicitadas, valorTotalP, idClientef) values ('" + dateTimePicker1.Text + "','" + dateTimePicker2.Text + "','" + tbCantidadP.Text + "','" + tbTotal.Text + "','" + idUser + "');";
+            string PQuery = "INSERT INTO prestamos(fechaHoraIP, fechaHoraFP, peliculasSolicitadas, valorTotalP, idClientef) values ('" + dateTimePicker1.Text + "','" + dateTimePicker2.Text + "','" + tbCantidadP.Text + "','" + tbTotal.Text + "','" + idUserinicio + "');";
             MySqlCommand comandoP = new MySqlCommand(PQuery, conexion);
             comandoP.ExecuteNonQuery();
             conexion.Close();
@@ -132,7 +135,7 @@ namespace ProyectoBDM
                 MySqlCommand comando = new MySqlCommand(FPQuery, conexion);
                 comando.ExecuteNonQuery();
                 conexion.Close();
-            }
+            }*/
         }
 
         private void button2_Click(object sender, EventArgs e)

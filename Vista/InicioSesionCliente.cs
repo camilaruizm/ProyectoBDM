@@ -9,7 +9,7 @@ namespace ProyectoBDM
 {
     public partial class InicioSesionCliente : Form
     {
-        string idUser;
+        public string idUserinicio;
         Thread th;
         MySqlConnection conexion = new MySqlConnection("server=localhost; Database=proyectobdm; user=root; password=root;");
         public InicioSesionCliente()
@@ -45,13 +45,13 @@ namespace ProyectoBDM
             MySqlDataReader leerCli = InicioSesionCli.ExecuteReader();
 
             
-            if (leerCli.Read())
+           /* if (leerCli.Read())
                 {
                     this.Close();
                     th = new Thread(opennewform);
                     th.SetApartmentState(ApartmentState.STA);
                     th.Start();
-                }
+                }*/
             conexion.Close();
 
             conexion.Open();
@@ -68,7 +68,9 @@ namespace ProyectoBDM
                 idAdapter.Fill(idTable);
 
                 dataGridView1.DataSource = idTable;
-                idUser = dataGridView1.Rows[0].Cells[0].Value.ToString();
+                idUserinicio = dataGridView1.Rows[0].Cells[0].Value.ToString();
+                MessageBox.Show(idUserinicio);
+                
             }
             conexion.Close();
 
@@ -98,12 +100,15 @@ namespace ProyectoBDM
 
         public void opennewform2()
         {
+            
             Application.Run(new MenuAdmin());
         }
 
         public void opennewform()
         {
-            Application.Run(new MenuClientes(idUser)); 
+            MenuClientes objc = new MenuClientes();
+            objc.setIdU(idUserinicio);
+            Application.Run(objc); 
         }
 
         private void InicioSesionCliente_Load(object sender, EventArgs e)
