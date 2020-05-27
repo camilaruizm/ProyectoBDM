@@ -118,10 +118,10 @@
             // 
             // back
             // 
-            this.back.Font = new System.Drawing.Font("Wingdings 3", 24.5F);
-            this.back.Location = new System.Drawing.Point(36, 13);
+            this.back.Font = new System.Drawing.Font("Wingdings 3", 24.75F);
+            this.back.Location = new System.Drawing.Point(131, 126);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(49, 42);
+            this.back.Size = new System.Drawing.Size(46, 46);
             this.back.TabIndex = 8;
             this.back.Text = "";
             this.back.UseVisualStyleBackColor = true;

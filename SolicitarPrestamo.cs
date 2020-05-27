@@ -99,6 +99,12 @@ namespace ProyectoBDM
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
             conexion.Open();
+            string PQuery = "INSERT INTO prestamos(fechaHoraIP, fechaHoraFP, peliculasSolicitadas, valorTotalP, idClientef) values ('" + dateTimePicker1.Text + "','" + dateTimePicker2.Text + "','" + tbCantidadP.Text + "','" + tbTotal.Text + "','" + idUser + "');";
+            MySqlCommand comandoP = new MySqlCommand(PQuery, conexion);
+            comandoP.ExecuteNonQuery();
+            conexion.Close();
+
+            conexion.Open();
             string idPrQuery = "SELECT idPrestamo from prestamos;";
             DataTable tPrestamoID = new DataTable();
             MySqlDataAdapter adapterP = new MySqlDataAdapter(idPrQuery, conexion);
@@ -109,13 +115,7 @@ namespace ProyectoBDM
             int CounterPr = (dgvID_P.Rows.Count) - 1;
             string idPr = dgvID_P.Rows[CounterPr].Cells[0].Value.ToString();
 
-            conexion.Open();
-            string PQuery = "INSERT INTO prestamos(fechaHoraIP, fechaHoraFP, peliculasSolicitadas, valorTotalP, idClientef) values ('" + dateTimePicker1.Text + "','" + dateTimePicker2.Text + "','" + tbCantidadP.Text + "','" + tbTotal.Text + "','" + idUser + "');";
-            MySqlCommand comandoP = new MySqlCommand(PQuery, conexion);
-            comandoP.ExecuteNonQuery();
-            conexion.Close();
-
-
+            
             foreach (DataGridViewRow item in dgvCarrito.Rows)
             {
                 conexion.Open();
