@@ -263,7 +263,7 @@
             // 
             // btCrearCliente
             // 
-            this.btCrearCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
+            this.btCrearCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btCrearCliente.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btCrearCliente.Font = new System.Drawing.Font("Bebas Neue", 20.25F);
             this.btCrearCliente.Location = new System.Drawing.Point(172, 543);
@@ -329,7 +329,7 @@
             // 
             // BtnEscogerIma
             // 
-            this.BtnEscogerIma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
+            this.BtnEscogerIma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BtnEscogerIma.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.BtnEscogerIma.Font = new System.Drawing.Font("Bebas Neue", 12F);
             this.BtnEscogerIma.Location = new System.Drawing.Point(398, 489);

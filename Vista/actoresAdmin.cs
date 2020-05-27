@@ -201,6 +201,26 @@ namespace ProyectoBDM
         {
             Application.Run(new actorPelicula());
         }
+
+        private void textPaisAct_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textCorreoAct_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textApeAct2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textApeAct_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
