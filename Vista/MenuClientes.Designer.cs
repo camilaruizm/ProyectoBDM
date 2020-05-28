@@ -69,7 +69,7 @@
             this.BtnEstadoCuenta.Font = new System.Drawing.Font("Bebas Neue", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEstadoCuenta.Location = new System.Drawing.Point(26, 216);
             this.BtnEstadoCuenta.Name = "BtnEstadoCuenta";
-            this.BtnEstadoCuenta.Size = new System.Drawing.Size(520, 115);
+            this.BtnEstadoCuenta.Size = new System.Drawing.Size(257, 115);
             this.BtnEstadoCuenta.TabIndex = 9;
             this.BtnEstadoCuenta.Text = "Ver ESTADO De CUENTA";
             this.BtnEstadoCuenta.UseVisualStyleBackColor = false;
@@ -85,7 +85,7 @@
             this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSalir.Font = new System.Drawing.Font("Wingdings 2", 17F, System.Drawing.FontStyle.Bold);
             this.BtnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.BtnSalir.Location = new System.Drawing.Point(471, 12);
+            this.BtnSalir.Location = new System.Drawing.Point(491, 0);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(75, 27);
             this.BtnSalir.TabIndex = 15;
@@ -97,12 +97,14 @@
             // 
             // btnPerfil
             // 
-            this.btnPerfil.Location = new System.Drawing.Point(12, 12);
+            this.btnPerfil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnPerfil.Font = new System.Drawing.Font("Bebas Neue", 20.25F);
+            this.btnPerfil.Location = new System.Drawing.Point(289, 216);
             this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(113, 37);
+            this.btnPerfil.Size = new System.Drawing.Size(257, 115);
             this.btnPerfil.TabIndex = 16;
             this.btnPerfil.Text = "Perfil";
-            this.btnPerfil.UseVisualStyleBackColor = true;
+            this.btnPerfil.UseVisualStyleBackColor = false;
             this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // MenuClientes
