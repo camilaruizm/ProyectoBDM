@@ -96,6 +96,7 @@
     <Compile Include="Control\ControlPerfil.cs" />
     <Compile Include="Control\ControlEstadoCuenta.cs" />
     <Compile Include="Control\ControlHistorialCliente.cs" />
+    <Compile Include="Control\ControlSolicitarPrestamo.cs" />
     <Compile Include="Vista\actorPelicula.cs">
       <SubType>Form</SubType>
     </Compile>

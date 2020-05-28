@@ -22,6 +22,8 @@ namespace ProyectoBDM
         MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
 
+        ControlSolicitarPrestamo csp = new ControlSolicitarPrestamo();
+
         Thread th;
 
         public SolicitarPrestamo(string idUser)
@@ -61,27 +63,43 @@ namespace ProyectoBDM
 
         private void button5_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
-            conexion.Open();
-            string tituloQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', duracion as 'Duracion', copiasDisponibles as 'Copias', CONCAT (nombreDirector1 , ' ' ,  nombreDirector2, ' ', apellidoDirector1 , ' ' , apellidoDirector2) as 'Director', sinopsis as 'Sinopsis' from peliculas inner join Directores on directores.idDirector = peliculas.idDirectorf where peliculas.titulo ='" + tbTituloP.Text + "';";
-            DataTable tPeliculasTitulo = new DataTable();
-            MySqlDataAdapter adapterT = new MySqlDataAdapter(tituloQuery, conexion);
-            adapterT.Fill(tPeliculasTitulo);
-            dgvPeliculas.DataSource = tPeliculasTitulo;
-            conexion.Close();
+            try
+            {
+                csp.button5(dgvPeliculas, dgvCarrito, tbCantidadP, tbTotal, tbTituloP);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error");
+            }
+            //MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+            //conexion.Open();
+            //string tituloQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', duracion as 'Duracion', copiasDisponibles as 'Copias', CONCAT (nombreDirector1 , ' ' ,  nombreDirector2, ' ', apellidoDirector1 , ' ' , apellidoDirector2) as 'Director', sinopsis as 'Sinopsis' from peliculas inner join Directores on directores.idDirector = peliculas.idDirectorf where peliculas.titulo ='" + tbTituloP.Text + "';";
+            //DataTable tPeliculasTitulo = new DataTable();
+            //MySqlDataAdapter adapterT = new MySqlDataAdapter(tituloQuery, conexion);
+            //adapterT.Fill(tPeliculasTitulo);
+            //dgvPeliculas.DataSource = tPeliculasTitulo;
+            //conexion.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MySqlCommand comando1 = new MySqlCommand("SELECT P.titulo, P.fechaEstreno as 'Fecha Estreno', P.duracion as Duracion, P.copiasDisponibles as 'Copias', CONCAT (nombreDirector1 , ' ' , nombreDirector2, ' ', apellidoDirector1 , ' ' , apellidoDirector2) as 'Director', sinopsis as 'Sinopsis' FROM Peliculas P, Directores D WHERE D.idDirector = P.idDirectorf  AND concat(D.nombreDirector1,' ',D.apellidoDirector1) LIKE @nombre ", conexion);
-            conexion.Close();
-            comando1.Parameters.Add("@nombre", MySqlDbType.VarChar).Value = "%" + tbDirectorP.Text + "%";
-            MySqlDataAdapter adapterD = new MySqlDataAdapter();
-            adapterD.SelectCommand = comando1;
-            DataTable tPeliculasDirector = new DataTable();
-            adapterD.Fill(tPeliculasDirector);
-            dgvPeliculas.DataSource = tPeliculasDirector;
-            conexion.Close();
+            try
+            {
+                csp.button4(dgvPeliculas, tbDirectorP, tbCantidadP, tbTotal);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error");
+            }
+            //MySqlCommand comando1 = new MySqlCommand("SELECT P.titulo, P.fechaEstreno as 'Fecha Estreno', P.duracion as Duracion, P.copiasDisponibles as 'Copias', CONCAT (nombreDirector1 , ' ' , nombreDirector2, ' ', apellidoDirector1 , ' ' , apellidoDirector2) as 'Director', sinopsis as 'Sinopsis' FROM Peliculas P, Directores D WHERE D.idDirector = P.idDirectorf  AND concat(D.nombreDirector1,' ',D.apellidoDirector1) LIKE @nombre ", conexion);
+            //conexion.Close();
+            //comando1.Parameters.Add("@nombre", MySqlDbType.VarChar).Value = "%" + tbDirectorP.Text + "%";
+            //MySqlDataAdapter adapterD = new MySqlDataAdapter();
+            //adapterD.SelectCommand = comando1;
+            //DataTable tPeliculasDirector = new DataTable();
+            //adapterD.Fill(tPeliculasDirector);
+            //dgvPeliculas.DataSource = tPeliculasDirector;
+            //conexion.Close();
         }   
 
         private void comboBoxCategoria_SelectedIndexChanged(object sender, EventArgs e)
@@ -96,46 +114,54 @@ namespace ProyectoBDM
 
         private void btPrestamo_Click(object sender, EventArgs e)
         {
-            MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
-
-            conexion.Open();
-            string PQuery = "INSERT INTO prestamos(fechaHoraIP, fechaHoraFP, peliculasSolicitadas, valorTotalP, idClientef) values ('" + dateTimePicker1.Text + "','" + dateTimePicker2.Text + "','" + tbCantidadP.Text + "','" + tbTotal.Text + "','" + idUsersp + "');";
-            MySqlCommand comandoP = new MySqlCommand(PQuery, conexion);
-            comandoP.ExecuteNonQuery();
-            conexion.Close();
-
-            conexion.Open();
-            string idPrQuery = "SELECT * from prestamos;";
-            DataTable tPrestamoID = new DataTable();
-            MySqlDataAdapter adapterP = new MySqlDataAdapter(idPrQuery, conexion);
-            adapterP.Fill(tPrestamoID);
-            dgvID_P.DataSource = tPrestamoID;
-            conexion.Close();
-
-            int CounterPr = (dgvID_P.Rows.Count)-1;
-            string idPr = dgvID_P.Rows[CounterPr].Cells[0].Value.ToString();
-          
-            foreach (DataGridViewRow item in dgvCarrito.Rows)
+            try
             {
-                conexion.Open();
-                string idPQuery = "SELECT idPelicula from peliculas where titulo ='" + item.Cells[0].Value.ToString() + "';";
-                DataTable tPeliculasID = new DataTable();
-                MySqlDataAdapter adapterT = new MySqlDataAdapter(idPQuery, conexion);
-                adapterT.Fill(tPeliculasID);
-                dgvP_ID.DataSource = tPeliculasID;
-                conexion.Close();
-
-                string idP = dgvP_ID.Rows[0].Cells[0].Value.ToString();
-
-                conexion.Open();
-                string FPQuery = "INSERT INTO facturas_prestamos(fechaHoraFM, valorFacturaM, idPrestamof, idPeliculaf) values ('" + dateTimePicker1.Text + "', 20000,'" + idPr + "','" + idP + "');";
-                MySqlCommand comando = new MySqlCommand(FPQuery, conexion);
-                comando.ExecuteNonQuery();
-                conexion.Close();
-
-                MessageBox.Show("¡Prestamo solicitado con éxito!");
-                ReniciarPrestamo();
+                csp.btPrestamo(dgvPeliculas, dgvID_P, dgvCarrito, dgvP_ID, tbDirectorP, tbCantidadP, tbTotal, dateTimePicker1, dateTimePicker2, idUsersp);
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Error");
+            }
+            //MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
+
+            //conexion.Open();
+            //string PQuery = "INSERT INTO prestamos(fechaHoraIP, fechaHoraFP, peliculasSolicitadas, valorTotalP, idClientef) values ('" + dateTimePicker1.Text + "','" + dateTimePicker2.Text + "','" + tbCantidadP.Text + "','" + tbTotal.Text + "','" + idUsersp + "');";
+            //MySqlCommand comandoP = new MySqlCommand(PQuery, conexion);
+            //comandoP.ExecuteNonQuery();
+            //conexion.Close();
+
+            //conexion.Open();
+            //string idPrQuery = "SELECT * from prestamos;";
+            //DataTable tPrestamoID = new DataTable();
+            //MySqlDataAdapter adapterP = new MySqlDataAdapter(idPrQuery, conexion);
+            //adapterP.Fill(tPrestamoID);
+            //dgvID_P.DataSource = tPrestamoID;
+            //conexion.Close();
+
+            //int CounterPr = (dgvID_P.Rows.Count) - 1;
+            //string idPr = dgvID_P.Rows[CounterPr].Cells[0].Value.ToString();
+
+            //foreach (DataGridViewRow item in dgvCarrito.Rows)
+            //{
+            //    conexion.Open();
+            //    string idPQuery = "SELECT idPelicula from peliculas where titulo ='" + item.Cells[0].Value.ToString() + "';";
+            //    DataTable tPeliculasID = new DataTable();
+            //    MySqlDataAdapter adapterT = new MySqlDataAdapter(idPQuery, conexion);
+            //    adapterT.Fill(tPeliculasID);
+            //    dgvP_ID.DataSource = tPeliculasID;
+            //    conexion.Close();
+
+            //    string idP = dgvP_ID.Rows[0].Cells[0].Value.ToString();
+
+            //    conexion.Open();
+            //    string FPQuery = "INSERT INTO facturas_prestamos(fechaHoraFM, valorFacturaM, idPrestamof, idPeliculaf) values ('" + dateTimePicker1.Text + "', 20000,'" + idPr + "','" + idP + "');";
+            //    MySqlCommand comando = new MySqlCommand(FPQuery, conexion);
+            //    comando.ExecuteNonQuery();
+            //    conexion.Close();
+
+            //    MessageBox.Show("¡Prestamo solicitado con éxito!");
+            //    ReniciarPrestamo();
+            //}
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -264,25 +290,6 @@ namespace ProyectoBDM
         private void BtnSalir_MouseMove(object sender, MouseEventArgs e)
         {
             BtnSalir.BackColor = Color.Gray;
-        }
-
-        public void ReniciarPrestamo()
-        {
-            conexion.Open();
-            string allQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', duracion as 'Duracion', copiasDisponibles as 'Copias', sinopsis as 'Sinopsis' from peliculas;";
-            DataTable tPeliculasAll = new DataTable();
-            MySqlDataAdapter adapterA = new MySqlDataAdapter(allQuery, conexion);
-            adapterA.Fill(tPeliculasAll);
-            dgvPeliculas.DataSource = tPeliculasAll;
-            conexion.Close();
-
-            foreach (DataGridViewRow item in dgvCarrito.Rows)
-            {
-                dgvCarrito.Rows.RemoveAt(0);
-            }
-
-            tbCantidadP.Clear();
-            tbTotal.Clear();
         }
     }
 }
