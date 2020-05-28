@@ -107,10 +107,10 @@
     <Compile Include="Control\ControlRelacionGeneroPelicula.cs" />
     <Compile Include="Control\ControlInicioSesionClientes.cs" />
     <Compile Include="Control\ControlMulta.cs" />
-    <Compile Include="historialCliente.cs">
+    <Compile Include="Vista\historialCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="historialCliente.Designer.cs">
+    <Compile Include="Vista\historialCliente.Designer.cs">
       <DependentUpon>historialCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\consultasAdmin.cs">
@@ -231,7 +231,7 @@
     <EmbeddedResource Include="Vista\estadoCuenta.resx">
       <DependentUpon>estadoCuenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="historialCliente.resx">
+    <EmbeddedResource Include="Vista\historialCliente.resx">
       <DependentUpon>historialCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\consultasAdmin.resx">

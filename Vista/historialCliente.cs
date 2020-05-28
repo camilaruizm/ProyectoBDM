@@ -68,11 +68,6 @@ namespace ProyectoBDM
             {
                 MessageBox.Show("No se encontraron Peliculas");
             }
-            MySqlCommand comando = new MySqlCommand("SELECT C.nombreCliente1, C.apellidoCliente1, P.titulo, P.duracion FROM  Peliculas P, Clientes C, facturas_prestamos FP, prestamos Pr  WHERE P.idPelicula = FP.idPeliculaf and Pr.idPrestamo = FP.idPrestamof and C.idCliente = Pr.idClientef and C.idCliente = '" + idUserh + "'; ", conexion);
-            adaptador.SelectCommand = comando;
-            DataTable tabla = new DataTable();
-            adaptador.Fill(tabla);
-            dataGridView1.DataSource = tabla;
         }
 
         private void historialCliente_Load(object sender, EventArgs e)
