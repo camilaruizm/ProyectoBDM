@@ -36,22 +36,7 @@ namespace ProyectoBDM
 
             usuarioCli = TbUsuarioIniCli.Text;
             contrasenaCli = TbContrasenaIniCli.Text;
-            conexion.Open();
-            MySqlCommand InicioSesionCli = new MySqlCommand();
-            InicioSesionCli.Connection = conexion;
-            InicioSesionCli.CommandText = ("select nombreUsuario, contrasena, rol from clientes where nombreUsuario = '" + usuarioCli + "'and contrasena = '" + contrasenaCli + "' and rol = 'Usuario'");
-
-            MySqlDataReader leerCli = InicioSesionCli.ExecuteReader();
-
-
-            if (leerCli.Read())
-            {
-                //this.Close();
-                //th = new Thread(opennewform);
-                //th.SetApartmentState(ApartmentState.STA);
-                //th.Start();
-            }
-            conexion.Close();
+           
 
             conexion.Open();
             string idQuery = "SELECT idCliente from clientes where clientes.nombreUsuario = '" + TbUsuarioIniCli.Text + "' AND clientes.contrasena='" + TbContrasenaIniCli.Text + "';";
@@ -76,6 +61,30 @@ namespace ProyectoBDM
                 MessageBox.Show(idUserinicio);
             }
             conexion.Close();
+
+
+            conexion.Open();
+            MySqlCommand InicioSesionCli = new MySqlCommand();
+            InicioSesionCli.Connection = conexion;
+            InicioSesionCli.CommandText = ("select nombreUsuario, contrasena, rol from clientes where nombreUsuario = '" + usuarioCli + "'and contrasena = '" + contrasenaCli + "' and rol = 'Usuario'");
+
+            MySqlDataReader leerCli = InicioSesionCli.ExecuteReader();
+
+
+            if (leerCli.Read())
+            {
+                MessageBox.Show(idUserinicio);
+                this.Close();
+                th = new Thread(opennewform);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
+
+            }
+            conexion.Close();
+
+
+
+
 
             conexion.Open();
             MySqlCommand InicioSesionAdm = new MySqlCommand();

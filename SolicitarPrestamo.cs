@@ -23,10 +23,10 @@ namespace ProyectoBDM
 
         Thread th;
 
-        public SolicitarPrestamo(string idUser)
+        public SolicitarPrestamo()
         {
             InitializeComponent();
-            this.idUser = idUser;
+            /*this.idUser = idUser;*/
         }        
 
         private void btBuscarM_Click(object sender, EventArgs e)
@@ -148,7 +148,7 @@ namespace ProyectoBDM
 
         private void volverMenu()
         {
-            Application.Run(new MenuClientes(idUser));
+            Application.Run(new MenuClientes());
         }
 
         private void SolicitarPrestamo_Load(object sender, EventArgs e)

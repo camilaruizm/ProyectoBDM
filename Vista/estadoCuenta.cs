@@ -19,10 +19,10 @@ namespace ProyectoBDM
         Thread th;
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
         ControlEstadoCuenta cec = new ControlEstadoCuenta();
-        public estadoCuenta(string idUser)
+        public estadoCuenta()
         {
             InitializeComponent();
-            this.idUser = idUser;
+            //this.idUser = idUser;
         }
 
         private void showPeliculaCliente_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace ProyectoBDM
         }
         private void Abrir_Historial()
         {
-            Application.Run(new historialCliente(idUser));
+            Application.Run(new historialCliente());
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace ProyectoBDM
         }
         private void volverMenu()
         {
-            Application.Run(new MenuClientes(idUser));
+            Application.Run(new MenuClientes());
         }
 
         private void estadoCuenta_Load(object sender, EventArgs e)

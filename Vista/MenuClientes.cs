@@ -34,7 +34,7 @@ namespace ProyectoBDM
         private void Abrir_VP()
         {
 
-            Application.Run(new SolicitarPrestamo(idUser));
+            Application.Run(new SolicitarPrestamo());
         }
 
 
@@ -48,7 +48,7 @@ namespace ProyectoBDM
 
         private void Abrir_SP()
         {
-            Application.Run(new SolicitarPrestamo(idUser));
+            Application.Run(new SolicitarPrestamo());
         }
 
         private void BtnSolPrestamo_MouseMove(object sender, MouseEventArgs e)
@@ -73,7 +73,7 @@ namespace ProyectoBDM
 
         private void Abrir_PM()
         {
-            Application.Run(new estadoCuenta(idUser));
+            Application.Run(new estadoCuenta());
         }
 
         private void BtnPagarMultas_MouseMove(object sender, MouseEventArgs e)
