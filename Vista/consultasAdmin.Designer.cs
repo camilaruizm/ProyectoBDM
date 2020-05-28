@@ -36,11 +36,23 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pCaducados = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pFecha = new System.Windows.Forms.Panel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.prestamosFecha = new System.Windows.Forms.Button();
             this.panelHistorialCli = new System.Windows.Forms.Panel();
             this.buttonHistorialCli = new System.Windows.Forms.Button();
             this.dgvHistorialCli = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxHistorialCli = new System.Windows.Forms.TextBox();
+            this.pPrestamoVig = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.enPréstamoActualmenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,23 +61,11 @@
             this.actualmenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.caducadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pCaducados = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.panelEnPrestamoCli = new System.Windows.Forms.Panel();
             this.buttonEnPrestamo = new System.Windows.Forms.Button();
             this.dgvEnPrestamo = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxEnprestamo = new System.Windows.Forms.TextBox();
-            this.pPrestamoVig = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pFecha = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.prestamosFecha = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
@@ -73,14 +73,14 @@
             this.lbPrestamo = new System.Windows.Forms.Label();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.pCaducados.SuspendLayout();
+            this.pFecha.SuspendLayout();
             this.panelHistorialCli.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialCli)).BeginInit();
+            this.pPrestamoVig.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.pCaducados.SuspendLayout();
             this.panelEnPrestamoCli.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEnPrestamo)).BeginInit();
-            this.pPrestamoVig.SuspendLayout();
-            this.pFecha.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,6 +97,108 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(534, 171);
             this.panel1.TabIndex = 0;
+            // 
+            // pCaducados
+            // 
+            this.pCaducados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.pCaducados.Controls.Add(this.label6);
+            this.pCaducados.Controls.Add(this.label9);
+            this.pCaducados.Controls.Add(this.button3);
+            this.pCaducados.Location = new System.Drawing.Point(2, 32);
+            this.pCaducados.Margin = new System.Windows.Forms.Padding(2);
+            this.pCaducados.Name = "pCaducados";
+            this.pCaducados.Size = new System.Drawing.Size(527, 134);
+            this.pCaducados.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.label6.Font = new System.Drawing.Font("Quicksand", 15F);
+            this.label6.ForeColor = System.Drawing.Color.Snow;
+            this.label6.Location = new System.Drawing.Point(203, 48);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(131, 30);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "yyyy-MM-dd";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.label9.Font = new System.Drawing.Font("Quicksand", 12F);
+            this.label9.ForeColor = System.Drawing.Color.Snow;
+            this.label9.Location = new System.Drawing.Point(157, 25);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(218, 24);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Prestamos caducados hasta";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.button3.Font = new System.Drawing.Font("Webdings", 25F);
+            this.button3.Location = new System.Drawing.Point(418, 37);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(45, 45);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // pFecha
+            // 
+            this.pFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.pFecha.Controls.Add(this.dateTimePicker2);
+            this.pFecha.Controls.Add(this.label8);
+            this.pFecha.Controls.Add(this.prestamosFecha);
+            this.pFecha.Location = new System.Drawing.Point(2, 32);
+            this.pFecha.Margin = new System.Windows.Forms.Padding(2);
+            this.pFecha.Name = "pFecha";
+            this.pFecha.Size = new System.Drawing.Size(527, 134);
+            this.pFecha.TabIndex = 11;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Quicksand", 11.25F);
+            this.dateTimePicker2.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.dateTimePicker2.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePicker2.Font = new System.Drawing.Font("Quicksand", 11.25F);
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(205, 56);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(115, 26);
+            this.dateTimePicker2.TabIndex = 10;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.label8.Font = new System.Drawing.Font("Quicksand", 12F);
+            this.label8.ForeColor = System.Drawing.Color.Snow;
+            this.label8.Location = new System.Drawing.Point(174, 25);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(175, 24);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Prestamos pedidos en:";
+            // 
+            // prestamosFecha
+            // 
+            this.prestamosFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.prestamosFecha.Font = new System.Drawing.Font("Webdings", 25F);
+            this.prestamosFecha.Location = new System.Drawing.Point(418, 37);
+            this.prestamosFecha.Margin = new System.Windows.Forms.Padding(2);
+            this.prestamosFecha.Name = "prestamosFecha";
+            this.prestamosFecha.Size = new System.Drawing.Size(45, 45);
+            this.prestamosFecha.TabIndex = 5;
+            this.prestamosFecha.Text = "";
+            this.prestamosFecha.UseVisualStyleBackColor = false;
+            this.prestamosFecha.Click += new System.EventHandler(this.button2_Click);
             // 
             // panelHistorialCli
             // 
@@ -164,7 +266,7 @@
             this.label2.Location = new System.Drawing.Point(5, 4);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 24);
+            this.label2.Size = new System.Drawing.Size(150, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre del cliente:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -179,6 +281,57 @@
             this.textBoxHistorialCli.Size = new System.Drawing.Size(358, 27);
             this.textBoxHistorialCli.TabIndex = 1;
             // 
+            // pPrestamoVig
+            // 
+            this.pPrestamoVig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.pPrestamoVig.Controls.Add(this.label4);
+            this.pPrestamoVig.Controls.Add(this.label3);
+            this.pPrestamoVig.Controls.Add(this.button1);
+            this.pPrestamoVig.Location = new System.Drawing.Point(2, 32);
+            this.pPrestamoVig.Margin = new System.Windows.Forms.Padding(2);
+            this.pPrestamoVig.Name = "pPrestamoVig";
+            this.pPrestamoVig.Size = new System.Drawing.Size(527, 134);
+            this.pPrestamoVig.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.label4.Font = new System.Drawing.Font("Quicksand", 15F);
+            this.label4.ForeColor = System.Drawing.Color.Snow;
+            this.label4.Location = new System.Drawing.Point(203, 48);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(131, 30);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "yyyy-MM-dd";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.label3.Font = new System.Drawing.Font("Quicksand", 12F);
+            this.label3.ForeColor = System.Drawing.Color.Snow;
+            this.label3.Location = new System.Drawing.Point(168, 25);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(200, 24);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Prestamos vigentes hasta:";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.button1.Font = new System.Drawing.Font("Webdings", 25F);
+            this.button1.Location = new System.Drawing.Point(418, 37);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(45, 45);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -190,7 +343,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(534, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(534, 27);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -200,21 +353,21 @@
             this.enPréstamoActualmenteToolStripMenuItem,
             this.historialDePréstamoToolStripMenuItem});
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(62, 25);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(61, 23);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // enPréstamoActualmenteToolStripMenuItem
             // 
             this.enPréstamoActualmenteToolStripMenuItem.Name = "enPréstamoActualmenteToolStripMenuItem";
-            this.enPréstamoActualmenteToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
+            this.enPréstamoActualmenteToolStripMenuItem.Size = new System.Drawing.Size(217, 24);
             this.enPréstamoActualmenteToolStripMenuItem.Text = "En préstamo actualmente";
             this.enPréstamoActualmenteToolStripMenuItem.Click += new System.EventHandler(this.enPréstamoActualmenteToolStripMenuItem_Click);
             // 
             // historialDePréstamoToolStripMenuItem
             // 
             this.historialDePréstamoToolStripMenuItem.Name = "historialDePréstamoToolStripMenuItem";
-            this.historialDePréstamoToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
+            this.historialDePréstamoToolStripMenuItem.Size = new System.Drawing.Size(217, 24);
             this.historialDePréstamoToolStripMenuItem.Text = "Historial de préstamo";
             this.historialDePréstamoToolStripMenuItem.Click += new System.EventHandler(this.historialDePréstamoToolStripMenuItem_Click);
             // 
@@ -225,80 +378,29 @@
             this.porFechaToolStripMenuItem,
             this.caducadosToolStripMenuItem});
             this.préstamosToolStripMenuItem.Name = "préstamosToolStripMenuItem";
-            this.préstamosToolStripMenuItem.Size = new System.Drawing.Size(78, 25);
+            this.préstamosToolStripMenuItem.Size = new System.Drawing.Size(77, 23);
             this.préstamosToolStripMenuItem.Text = "Préstamos";
             // 
             // actualmenteToolStripMenuItem
             // 
             this.actualmenteToolStripMenuItem.Name = "actualmenteToolStripMenuItem";
-            this.actualmenteToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.actualmenteToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
             this.actualmenteToolStripMenuItem.Text = "Actualmente";
             this.actualmenteToolStripMenuItem.Click += new System.EventHandler(this.actualmenteToolStripMenuItem_Click);
             // 
             // porFechaToolStripMenuItem
             // 
             this.porFechaToolStripMenuItem.Name = "porFechaToolStripMenuItem";
-            this.porFechaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.porFechaToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
             this.porFechaToolStripMenuItem.Text = "Por fecha";
             this.porFechaToolStripMenuItem.Click += new System.EventHandler(this.porFechaToolStripMenuItem_Click);
             // 
             // caducadosToolStripMenuItem
             // 
             this.caducadosToolStripMenuItem.Name = "caducadosToolStripMenuItem";
-            this.caducadosToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.caducadosToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
             this.caducadosToolStripMenuItem.Text = "Caducados";
             this.caducadosToolStripMenuItem.Click += new System.EventHandler(this.caducadosToolStripMenuItem_Click);
-            // 
-            // pCaducados
-            // 
-            this.pCaducados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.pCaducados.Controls.Add(this.label6);
-            this.pCaducados.Controls.Add(this.label9);
-            this.pCaducados.Controls.Add(this.button3);
-            this.pCaducados.Location = new System.Drawing.Point(2, 32);
-            this.pCaducados.Margin = new System.Windows.Forms.Padding(2);
-            this.pCaducados.Name = "pCaducados";
-            this.pCaducados.Size = new System.Drawing.Size(527, 134);
-            this.pCaducados.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.label6.Font = new System.Drawing.Font("Quicksand", 15F);
-            this.label6.ForeColor = System.Drawing.Color.Snow;
-            this.label6.Location = new System.Drawing.Point(203, 48);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 30);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "yyyy-MM-dd";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.label9.Font = new System.Drawing.Font("Quicksand", 12F);
-            this.label9.ForeColor = System.Drawing.Color.Snow;
-            this.label9.Location = new System.Drawing.Point(157, 25);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(224, 24);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Prestamos caducados hasta";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.button3.Font = new System.Drawing.Font("Webdings", 25F);
-            this.button3.Location = new System.Drawing.Point(418, 37);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(45, 45);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panelEnPrestamoCli
             // 
@@ -367,7 +469,7 @@
             this.label1.Location = new System.Drawing.Point(5, 4);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 24);
+            this.label1.Size = new System.Drawing.Size(150, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre del cliente:";
             // 
@@ -380,108 +482,6 @@
             this.textBoxEnprestamo.Name = "textBoxEnprestamo";
             this.textBoxEnprestamo.Size = new System.Drawing.Size(358, 27);
             this.textBoxEnprestamo.TabIndex = 1;
-            // 
-            // pPrestamoVig
-            // 
-            this.pPrestamoVig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.pPrestamoVig.Controls.Add(this.label4);
-            this.pPrestamoVig.Controls.Add(this.label3);
-            this.pPrestamoVig.Controls.Add(this.button1);
-            this.pPrestamoVig.Location = new System.Drawing.Point(2, 32);
-            this.pPrestamoVig.Margin = new System.Windows.Forms.Padding(2);
-            this.pPrestamoVig.Name = "pPrestamoVig";
-            this.pPrestamoVig.Size = new System.Drawing.Size(527, 134);
-            this.pPrestamoVig.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.label4.Font = new System.Drawing.Font("Quicksand", 15F);
-            this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(203, 48);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 30);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "yyyy-MM-dd";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.label3.Font = new System.Drawing.Font("Quicksand", 12F);
-            this.label3.ForeColor = System.Drawing.Color.Snow;
-            this.label3.Location = new System.Drawing.Point(168, 25);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(205, 24);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Prestamos vigentes hasta:";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.button1.Font = new System.Drawing.Font("Webdings", 25F);
-            this.button1.Location = new System.Drawing.Point(418, 37);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 45);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pFecha
-            // 
-            this.pFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.pFecha.Controls.Add(this.dateTimePicker2);
-            this.pFecha.Controls.Add(this.label8);
-            this.pFecha.Controls.Add(this.prestamosFecha);
-            this.pFecha.Location = new System.Drawing.Point(2, 32);
-            this.pFecha.Margin = new System.Windows.Forms.Padding(2);
-            this.pFecha.Name = "pFecha";
-            this.pFecha.Size = new System.Drawing.Size(527, 134);
-            this.pFecha.TabIndex = 11;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Quicksand", 11.25F);
-            this.dateTimePicker2.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.dateTimePicker2.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker2.Font = new System.Drawing.Font("Quicksand", 11.25F);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(205, 56);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(115, 26);
-            this.dateTimePicker2.TabIndex = 10;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.label8.Font = new System.Drawing.Font("Quicksand", 12F);
-            this.label8.ForeColor = System.Drawing.Color.Snow;
-            this.label8.Location = new System.Drawing.Point(174, 25);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(180, 24);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Prestamos pedidos en:";
-            // 
-            // prestamosFecha
-            // 
-            this.prestamosFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.prestamosFecha.Font = new System.Drawing.Font("Webdings", 25F);
-            this.prestamosFecha.Location = new System.Drawing.Point(418, 37);
-            this.prestamosFecha.Margin = new System.Windows.Forms.Padding(2);
-            this.prestamosFecha.Name = "prestamosFecha";
-            this.prestamosFecha.Size = new System.Drawing.Size(45, 45);
-            this.prestamosFecha.TabIndex = 5;
-            this.prestamosFecha.Text = "";
-            this.prestamosFecha.UseVisualStyleBackColor = false;
-            this.prestamosFecha.Click += new System.EventHandler(this.button2_Click);
             // 
             // timer1
             // 
@@ -527,7 +527,7 @@
             this.label5.Location = new System.Drawing.Point(15, 283);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 26);
+            this.label5.Size = new System.Drawing.Size(169, 24);
             this.label5.TabIndex = 8;
             this.label5.Text = "Resultados de búsqueda:";
             // 
@@ -541,6 +541,7 @@
             this.back.TabIndex = 22;
             this.back.Text = "";
             this.back.UseVisualStyleBackColor = false;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // lbPrestamo
             // 
@@ -549,7 +550,7 @@
             this.lbPrestamo.ForeColor = System.Drawing.Color.Crimson;
             this.lbPrestamo.Location = new System.Drawing.Point(194, 19);
             this.lbPrestamo.Name = "lbPrestamo";
-            this.lbPrestamo.Size = new System.Drawing.Size(183, 61);
+            this.lbPrestamo.Size = new System.Drawing.Size(180, 56);
             this.lbPrestamo.TabIndex = 61;
             this.lbPrestamo.Text = "CONSULTAS";
             this.lbPrestamo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -588,20 +589,20 @@
             this.Text = "v";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.pCaducados.ResumeLayout(false);
+            this.pCaducados.PerformLayout();
+            this.pFecha.ResumeLayout(false);
+            this.pFecha.PerformLayout();
             this.panelHistorialCli.ResumeLayout(false);
             this.panelHistorialCli.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialCli)).EndInit();
+            this.pPrestamoVig.ResumeLayout(false);
+            this.pPrestamoVig.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.pCaducados.ResumeLayout(false);
-            this.pCaducados.PerformLayout();
             this.panelEnPrestamoCli.ResumeLayout(false);
             this.panelEnPrestamoCli.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEnPrestamo)).EndInit();
-            this.pPrestamoVig.ResumeLayout(false);
-            this.pPrestamoVig.PerformLayout();
-            this.pFecha.ResumeLayout(false);
-            this.pFecha.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

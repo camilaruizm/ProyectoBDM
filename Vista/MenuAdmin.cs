@@ -110,8 +110,9 @@ namespace ProyectoBDM
             Application.Run(new estadoPrestamo());
         }
 
-
-
-
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

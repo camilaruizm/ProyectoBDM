@@ -51,6 +51,7 @@
             this.dgvC = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bc = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvC)).BeginInit();
             this.panel1.SuspendLayout();
@@ -265,11 +266,22 @@
             this.bc.UseVisualStyleBackColor = true;
             this.bc.Click += new System.EventHandler(this.bc_Click);
             // 
+            // back
+            // 
+            this.back.Location = new System.Drawing.Point(23, 13);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(53, 23);
+            this.back.TabIndex = 26;
+            this.back.Text = "Back";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // Multa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 476);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.idMulta);
             this.Controls.Add(this.showMultas);
@@ -325,5 +337,6 @@
         private System.Windows.Forms.DataGridView dgvC;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button bc;
+        private System.Windows.Forms.Button back;
     }
 }

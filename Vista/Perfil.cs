@@ -9,13 +9,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace ProyectoBDM.Vista
 {
     public partial class Perfil : Form
     {
         ControlPerfil cp = new ControlPerfil();
-        string idUserPerfil;        
+        string idUserPerfil;
+        Thread th;
         public Perfil(string idUser)
         {
             InitializeComponent();
@@ -91,7 +93,15 @@ namespace ProyectoBDM.Vista
 
         private void back_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            th = new Thread(volverMenu);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
         }
+        private void volverMenu()
+        {
+            Application.Run(new MenuClientes(idUserPerfil));
+        }
+    
     }
 }

@@ -22,9 +22,6 @@ namespace ProyectoBDM
             InitializeComponent();
             this.idUsern = idUser;
 
-            MessageBox.Show("codigo " + idUsern);
-
-
         }
 
         private void BtnSolPrestamo_Click(object sender, EventArgs e)

@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using ProyectoBDM.Control;
+using System.Threading;
 
 namespace ProyectoBDM
 {
     public partial class Multa : Form
     {
         int selectedRow;
+        Thread th;
+
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
         ControlMulta cm = new ControlMulta();
         public Multa()
@@ -138,6 +141,18 @@ namespace ProyectoBDM
         private void buscarC_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(volverMenu);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+        private void volverMenu()
+        {
+            Application.Run(new MenuAdmin());
         }
     }
 }
