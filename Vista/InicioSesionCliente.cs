@@ -115,9 +115,9 @@ namespace ProyectoBDM
 
         public void opennewform()
         {
-            MenuClientes objc = new MenuClientes();
-            objc.setIdU(idUserinicio);
-            Application.Run(objc); 
+            //MenuClientes objc = new MenuClientes(idUserinicio);
+            //objc.setIdU(idUserinicio);
+            Application.Run(new MenuClientes(idUserinicio)); 
         }
 
         private void InicioSesionCliente_Load(object sender, EventArgs e)

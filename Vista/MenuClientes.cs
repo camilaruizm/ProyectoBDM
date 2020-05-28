@@ -14,21 +14,21 @@ namespace ProyectoBDM
     
     public partial class MenuClientes : Form
     {
-        public string idUser;
+        public string idUsern;
         Thread th;
-        public MenuClientes()
+        public MenuClientes(string idUser)
         {
             InitializeComponent();
-            //this.idUser = idUser;
+            this.idUsern = idUser;
 
-            MessageBox.Show("codigo " + idUser);
+            MessageBox.Show("codigo " + idUsern);
 
 
         }
 
         public void setIdU(String idu)
         {
-            idUser = idu;
+          //  idUser = idu;
         }
 
         private void Abrir_VP()

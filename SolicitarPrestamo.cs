@@ -148,7 +148,7 @@ namespace ProyectoBDM
 
         private void volverMenu()
         {
-            Application.Run(new MenuClientes());
+           // Application.Run(new MenuClientes());
         }
 
         private void SolicitarPrestamo_Load(object sender, EventArgs e)

@@ -84,7 +84,7 @@ namespace ProyectoBDM
         }
         private void volverMenu()
         {
-            Application.Run(new MenuClientes());
+            //Application.Run(new MenuClientes(idUser));
         }
 
         private void estadoCuenta_Load(object sender, EventArgs e)
