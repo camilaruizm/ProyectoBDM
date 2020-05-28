@@ -220,10 +220,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SolicitarPrestamo.cs">
+    <Compile Include="Vista\SolicitarPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SolicitarPrestamo.Designer.cs">
+    <Compile Include="Vista\SolicitarPrestamo.Designer.cs">
       <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Vista\actorPelicula.resx">
@@ -279,7 +279,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SolicitarPrestamo.resx">
+    <EmbeddedResource Include="Vista\SolicitarPrestamo.resx">
       <DependentUpon>SolicitarPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

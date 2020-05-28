@@ -52,7 +52,7 @@
             this.label1.ForeColor = System.Drawing.Color.Snow;
             this.label1.Location = new System.Drawing.Point(24, 109);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 24);
+            this.label1.Size = new System.Drawing.Size(84, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "PELÍCULA:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -64,7 +64,7 @@
             this.label2.ForeColor = System.Drawing.Color.Snow;
             this.label2.Location = new System.Drawing.Point(24, 147);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 24);
+            this.label2.Size = new System.Drawing.Size(129, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "ACTRIZ-ACTOR:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -210,6 +210,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "actorPelicula";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "actorPelicula";
             this.Load += new System.EventHandler(this.actorPelicula_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

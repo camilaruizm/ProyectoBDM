@@ -57,7 +57,7 @@
             this.dgvEstado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvEstado.ColumnHeadersHeight = 29;
             this.dgvEstado.Location = new System.Drawing.Point(9, 151);
-            this.dgvEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvEstado.Margin = new System.Windows.Forms.Padding(2);
             this.dgvEstado.Name = "dgvEstado";
             this.dgvEstado.ReadOnly = true;
             this.dgvEstado.RowHeadersVisible = false;
@@ -70,7 +70,7 @@
             // textBoxIdPrestamo
             // 
             this.textBoxIdPrestamo.Location = new System.Drawing.Point(167, 63);
-            this.textBoxIdPrestamo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxIdPrestamo.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxIdPrestamo.Name = "textBoxIdPrestamo";
             this.textBoxIdPrestamo.Size = new System.Drawing.Size(76, 20);
             this.textBoxIdPrestamo.TabIndex = 2;
@@ -88,7 +88,7 @@
             // buttonBuscarP
             // 
             this.buttonBuscarP.Location = new System.Drawing.Point(264, 63);
-            this.buttonBuscarP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonBuscarP.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBuscarP.Name = "buttonBuscarP";
             this.buttonBuscarP.Size = new System.Drawing.Size(88, 19);
             this.buttonBuscarP.TabIndex = 4;
@@ -99,7 +99,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(470, 58);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(65, 27);
             this.button1.TabIndex = 5;
@@ -110,7 +110,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(554, 58);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(83, 27);
             this.button2.TabIndex = 6;
@@ -121,7 +121,7 @@
             // buttonLimpiar
             // 
             this.buttonLimpiar.Location = new System.Drawing.Point(504, 98);
-            this.buttonLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLimpiar.Name = "buttonLimpiar";
             this.buttonLimpiar.Size = new System.Drawing.Size(92, 25);
             this.buttonLimpiar.TabIndex = 7;
@@ -132,7 +132,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(264, 93);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(88, 21);
             this.button3.TabIndex = 8;
@@ -165,8 +165,9 @@
             this.Controls.Add(this.textBoxIdPrestamo);
             this.Controls.Add(this.dgvEstado);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "estadoPrestamo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "estadoPrestamo";
             this.Load += new System.EventHandler(this.estadoPrestamo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstado)).EndInit();

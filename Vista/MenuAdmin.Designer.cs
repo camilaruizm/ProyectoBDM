@@ -140,7 +140,7 @@
             this.LbMenuCliente.ForeColor = System.Drawing.Color.Crimson;
             this.LbMenuCliente.Location = new System.Drawing.Point(129, 19);
             this.LbMenuCliente.Name = "LbMenuCliente";
-            this.LbMenuCliente.Size = new System.Drawing.Size(278, 56);
+            this.LbMenuCliente.Size = new System.Drawing.Size(281, 61);
             this.LbMenuCliente.TabIndex = 8;
             this.LbMenuCliente.Text = "ELIGE UNA OPCIóN";
             // 
@@ -178,6 +178,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuAdmin";
             this.ResumeLayout(false);
             this.PerformLayout();

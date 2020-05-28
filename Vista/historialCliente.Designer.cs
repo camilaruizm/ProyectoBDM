@@ -130,6 +130,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "historialCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "historialCliente";
             this.Load += new System.EventHandler(this.historialCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvH)).EndInit();
