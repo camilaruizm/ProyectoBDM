@@ -125,7 +125,7 @@
             this.buttonEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonEstado.Font = new System.Drawing.Font("Bebas Neue", 20.25F);
             this.buttonEstado.Location = new System.Drawing.Point(28, 336);
-            this.buttonEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonEstado.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEstado.Name = "buttonEstado";
             this.buttonEstado.Size = new System.Drawing.Size(482, 75);
             this.buttonEstado.TabIndex = 7;
@@ -140,7 +140,7 @@
             this.LbMenuCliente.ForeColor = System.Drawing.Color.Crimson;
             this.LbMenuCliente.Location = new System.Drawing.Point(129, 19);
             this.LbMenuCliente.Name = "LbMenuCliente";
-            this.LbMenuCliente.Size = new System.Drawing.Size(281, 61);
+            this.LbMenuCliente.Size = new System.Drawing.Size(278, 56);
             this.LbMenuCliente.TabIndex = 8;
             this.LbMenuCliente.Text = "ELIGE UNA OPCIóN";
             // 
@@ -158,6 +158,7 @@
             this.BtnSalir.TabIndex = 16;
             this.BtnSalir.Text = "";
             this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // MenuAdmin
             // 
