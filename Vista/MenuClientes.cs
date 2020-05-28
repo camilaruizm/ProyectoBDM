@@ -17,9 +17,12 @@ namespace ProyectoBDM
     {
         public string idUsern;
         Thread th;
+        /*a menuCliente le llega un string idUser(el nombre no importa)*/
+        /*En este método recibe el idUserInicio de inicioSesionCliente*/
         public MenuClientes(string idUser)
         {
             InitializeComponent();
+            /*se le asigna el mismo valor que llega de inicioSesionCliente*/
             this.idUsern = idUser;
 
         }

@@ -22,6 +22,7 @@ namespace ProyectoBDM.Control
             conexion.Open();
             MySqlCommand InicioSesionCli = new MySqlCommand();
             InicioSesionCli.Connection = conexion;
+            /*CommandText: se indica que inicioSesionCli es un command*/
             InicioSesionCli.CommandText = ("select nombreUsuario, contrasena, rol from clientes where nombreUsuario = '" + user.Text + "'and contrasena = '" + pass.Text + "' and rol = 'Usuario'");
 
             MySqlDataReader leerCli = InicioSesionCli.ExecuteReader();

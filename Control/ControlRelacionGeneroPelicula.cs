@@ -59,7 +59,10 @@ namespace ProyectoBDM.Control
         }
 
         public void llenarComboboxGenero(ComboBox comboBoxGenero)
-        {
+        {/*el MysqlCommand se usa cuando se va a sobreescribir, escribir o eliminar en la bd*/
+
+            /*PARA USAR STOREPROCEDURE: mysqlcommand llama el storeP. Le especifico que tipo de comando es, en este caso es un tipo sp. 
+             * El adaptador llena la tabla creada (dataTable) */
             MySqlCommand cm = new MySqlCommand("Obtaingeneros", conexion);
 
             cm.CommandType = CommandType.StoredProcedure;

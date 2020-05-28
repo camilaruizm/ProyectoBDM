@@ -23,6 +23,7 @@ namespace ProyectoBDM.Control
         {
             conexion.Open();
             string categoriaQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', duracion as 'Duracion', copiasDisponibles as 'Copias',  tipoGenero as 'Genero', sinopsis as 'Sinopsis' FROM peliculas left join peliculas_generos on peliculas.idPelicula = peliculas_generos.idPeliculaf3 left join generos on peliculas_generos.idGeneroF = generos.idGenero where generos.tipoGenero = '" + comboBoxCategoria.Text + "';";
+            /*el adaptador se usa cuando se necesita visualizar la información de la bd en la aplicación*/
 
             DataTable tPeliculasCategoria = new DataTable();
             MySqlDataAdapter adapterC = new MySqlDataAdapter(categoriaQuery, conexion);

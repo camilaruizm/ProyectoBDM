@@ -23,7 +23,6 @@ namespace ProyectoBDM
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
 
         ControlSolicitarPrestamo csp = new ControlSolicitarPrestamo();
-
         Thread th;
 
         public SolicitarPrestamo(string idUser)
@@ -188,7 +187,7 @@ namespace ProyectoBDM
                 MySqlDataAdapter da = new MySqlDataAdapter(cm);
                 DataTable dt = new DataTable();
 
-                //da.Fill(dt);
+                da.Fill(dt);
 
                 comboBoxCategoria.ValueMember = "idGenero";
                 comboBoxCategoria.DisplayMember = "tipoGenero";

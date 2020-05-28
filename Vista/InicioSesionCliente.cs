@@ -9,11 +9,14 @@ namespace ProyectoBDM
 {
     public partial class InicioSesionCliente : Form
     {
+        /*para pasar una variable de un form a otro se declara la variable que se va a pasar string idUserInicio*/
         public string idUserinicio;
         Thread th;
         MySqlConnection conexion = new MySqlConnection("server=localhost; Database=proyectobdm; user=root; password=root;");
+
         public InicioSesionCliente()
         {
+            /*inicializa el form*/
             InitializeComponent();
         }
 
@@ -42,15 +45,17 @@ namespace ProyectoBDM
             MySqlCommand comando = new MySqlCommand(idQuery, conexion);
             MySqlDataAdapter idAdapter = new MySqlDataAdapter();
             idAdapter.SelectCommand = comando;
-
+            /*aquí se guardan los id de usuario*/
             DataTable idTable = new DataTable();
-
+            /*se crea una variable entera de parseara de string a int.*/
             int nn = int.Parse(idAdapter.Fill(new DataSet()).ToString());
-            
+            /*si el adaptador llega vació aparece un mensaje de error*/
             if (nn == 0)
             {
                 LbIniCliMal.Visible = true;
             }
+            /*se llena la tabla con el valor 
+             el datasource toma el dato de una fuente de información, en este caso la tabla que se llenó con el adaptador*/
             else
             {
                 idAdapter.Fill(idTable);
@@ -68,7 +73,7 @@ namespace ProyectoBDM
 
             MySqlDataReader leerCli = InicioSesionCli.ExecuteReader();
 
-
+            /*llama a menuClientes */
             if (leerCli.Read())
             {
                 this.Close();
@@ -105,6 +110,7 @@ namespace ProyectoBDM
             Application.Run(new MenuAdmin());
         }
 
+        /*corre MenuCliente y de esta manera le enviamos el id creado */
         public void opennewform()
         {
             Application.Run(new MenuClientes(idUserinicio)); 
