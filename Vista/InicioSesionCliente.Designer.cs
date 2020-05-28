@@ -56,7 +56,7 @@
             this.LbInicioSesion.Name = "LbInicioSesion";
             this.LbInicioSesion.Size = new System.Drawing.Size(259, 56);
             this.LbInicioSesion.TabIndex = 0;
-            this.LbInicioSesion.Text = "Inicio de Sesion";
+            this.LbInicioSesion.Text = "Inicio de Sesión";
             this.LbInicioSesion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TbUsuarioIniCli
@@ -90,7 +90,7 @@
             this.LbMensaje.Name = "LbMensaje";
             this.LbMensaje.Size = new System.Drawing.Size(179, 24);
             this.LbMensaje.TabIndex = 6;
-            this.LbMensaje.Text = "Aun No Tienes Cuenta?";
+            this.LbMensaje.Text = "Aún No Tienes Cuenta?";
             // 
             // LbMensaje2
             // 
@@ -115,7 +115,7 @@
             this.LinkLbRegistro.Size = new System.Drawing.Size(45, 24);
             this.LinkLbRegistro.TabIndex = 8;
             this.LinkLbRegistro.TabStop = true;
-            this.LinkLbRegistro.Text = "Aqui!";
+            this.LinkLbRegistro.Text = "Aquí!";
             this.LinkLbRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // LbErrorIniCli
@@ -187,13 +187,14 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(252, 158);
+            this.dataGridView1.Location = new System.Drawing.Point(449, 227);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(213, 79);
+            this.dataGridView1.Size = new System.Drawing.Size(16, 10);
             this.dataGridView1.TabIndex = 17;
+            this.dataGridView1.Visible = false;
             // 
             // BtnIngresar
             // 
