@@ -26,18 +26,6 @@ namespace ProyectoBDM
 
         }
 
-        public void setIdU(String idu)
-        {
-          //  idUser = idu;
-        }
-
-        private void Abrir_VP()
-        {
-
-            Application.Run(new SolicitarPrestamo());
-        }
-
-
         private void BtnSolPrestamo_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -48,7 +36,7 @@ namespace ProyectoBDM
 
         private void Abrir_SP()
         {
-            Application.Run(new SolicitarPrestamo());
+            Application.Run(new SolicitarPrestamo(idUsern));
         }
 
         private void BtnSolPrestamo_MouseMove(object sender, MouseEventArgs e)
@@ -73,7 +61,7 @@ namespace ProyectoBDM
 
         private void Abrir_PM()
         {
-            Application.Run(new estadoCuenta());
+            Application.Run(new estadoCuenta(idUsern));
         }
 
         private void BtnPagarMultas_MouseMove(object sender, MouseEventArgs e)

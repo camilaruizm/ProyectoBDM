@@ -17,16 +17,17 @@ namespace ProyectoBDM
 {
     public partial class SolicitarPrestamo : Form
     {
-        string idUser;
+        string idUsersp;
+        
         MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
         MySqlDataAdapter adaptador = new MySqlDataAdapter();
 
         Thread th;
 
-        public SolicitarPrestamo()
+        public SolicitarPrestamo(string idUser)
         {
             InitializeComponent();
-            /*this.idUser = idUser;*/
+            this.idUsersp = idUser;
         }        
 
         private void btBuscarM_Click(object sender, EventArgs e)
@@ -95,29 +96,27 @@ namespace ProyectoBDM
 
         private void btPrestamo_Click(object sender, EventArgs e)
         {
-            label8.Text = idUser;
-            MessageBox.Show("tengo sueño" + idUser);
-            /*
+
+            
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
             conexion.Open();
-            string PQuery = "INSERT INTO prestamos(fechaHoraIP, fechaHoraFP, peliculasSolicitadas, valorTotalP, idClientef) values ('" + dateTimePicker1.Text + "','" + dateTimePicker2.Text + "','" + tbCantidadP.Text + "','" + tbTotal.Text + "','" + idUserinicio + "');";
+            string PQuery = "INSERT INTO prestamos(fechaHoraIP, fechaHoraFP, peliculasSolicitadas, valorTotalP, idClientef) values ('" + dateTimePicker1.Text + "','" + dateTimePicker2.Text + "','" + tbCantidadP.Text + "','" + tbTotal.Text + "','" + idUsersp + "');";
             MySqlCommand comandoP = new MySqlCommand(PQuery, conexion);
             comandoP.ExecuteNonQuery();
             conexion.Close();
 
             conexion.Open();
-            string idPrQuery = "SELECT idPrestamo from prestamos;";
+            string idPrQuery = "SELECT * from prestamos;";
             DataTable tPrestamoID = new DataTable();
             MySqlDataAdapter adapterP = new MySqlDataAdapter(idPrQuery, conexion);
             adapterP.Fill(tPrestamoID);
             dgvID_P.DataSource = tPrestamoID;
             conexion.Close();
 
-            int CounterPr = (dgvID_P.Rows.Count) - 1;
+            int CounterPr = (dgvID_P.Rows.Count)-1;
             string idPr = dgvID_P.Rows[CounterPr].Cells[0].Value.ToString();
-
-            
+          
             foreach (DataGridViewRow item in dgvCarrito.Rows)
             {
                 conexion.Open();
@@ -129,13 +128,13 @@ namespace ProyectoBDM
                 conexion.Close();
 
                 string idP = dgvP_ID.Rows[0].Cells[0].Value.ToString();
-                                
+
                 conexion.Open();
                 string FPQuery = "INSERT INTO facturas_prestamos(fechaHoraFM, valorFacturaM, idPrestamof, idPeliculaf) values ('" + dateTimePicker1.Text + "', 20000,'" + idPr + "','" + idP + "');";
                 MySqlCommand comando = new MySqlCommand(FPQuery, conexion);
                 comando.ExecuteNonQuery();
                 conexion.Close();
-            }*/
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -148,7 +147,7 @@ namespace ProyectoBDM
 
         private void volverMenu()
         {
-           // Application.Run(new MenuClientes());
+            Application.Run(new MenuClientes(idUsersp));
         }
 
         private void SolicitarPrestamo_Load(object sender, EventArgs e)

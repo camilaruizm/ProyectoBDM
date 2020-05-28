@@ -119,7 +119,7 @@
             // back
             // 
             this.back.Font = new System.Drawing.Font("Wingdings 3", 24.75F);
-            this.back.Location = new System.Drawing.Point(131, 126);
+            this.back.Location = new System.Drawing.Point(22, 12);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(46, 46);
             this.back.TabIndex = 8;
