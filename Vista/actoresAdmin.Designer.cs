@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.nombreActor = new System.Windows.Forms.Label();
             this.nombreActor2 = new System.Windows.Forms.Label();
             this.apellidoActor = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@
             this.nombreActor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.nombreActor.Location = new System.Drawing.Point(20, 119);
             this.nombreActor.Name = "nombreActor";
-            this.nombreActor.Size = new System.Drawing.Size(127, 29);
+            this.nombreActor.Size = new System.Drawing.Size(126, 26);
             this.nombreActor.TabIndex = 0;
             this.nombreActor.Text = "Primer NOMBRE:";
             // 
@@ -78,7 +78,7 @@
             this.nombreActor2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.nombreActor2.Location = new System.Drawing.Point(20, 149);
             this.nombreActor2.Name = "nombreActor2";
-            this.nombreActor2.Size = new System.Drawing.Size(138, 29);
+            this.nombreActor2.Size = new System.Drawing.Size(137, 26);
             this.nombreActor2.TabIndex = 1;
             this.nombreActor2.Text = "Segundo NOMBRE:";
             // 
@@ -89,7 +89,7 @@
             this.apellidoActor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.apellidoActor.Location = new System.Drawing.Point(20, 179);
             this.apellidoActor.Name = "apellidoActor";
-            this.apellidoActor.Size = new System.Drawing.Size(134, 29);
+            this.apellidoActor.Size = new System.Drawing.Size(133, 26);
             this.apellidoActor.TabIndex = 2;
             this.apellidoActor.Text = "Primer APELLIDO:";
             // 
@@ -100,7 +100,7 @@
             this.apellidoActor2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.apellidoActor2.Location = new System.Drawing.Point(20, 209);
             this.apellidoActor2.Name = "apellidoActor2";
-            this.apellidoActor2.Size = new System.Drawing.Size(145, 29);
+            this.apellidoActor2.Size = new System.Drawing.Size(144, 26);
             this.apellidoActor2.TabIndex = 3;
             this.apellidoActor2.Text = "Segundo APELLIDO:";
             // 
@@ -111,7 +111,7 @@
             this.correoActor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.correoActor.Location = new System.Drawing.Point(20, 258);
             this.correoActor.Name = "correoActor";
-            this.correoActor.Size = new System.Drawing.Size(69, 29);
+            this.correoActor.Size = new System.Drawing.Size(68, 26);
             this.correoActor.TabIndex = 4;
             this.correoActor.Text = "CORREO:";
             // 
@@ -122,7 +122,7 @@
             this.paisActor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.paisActor.Location = new System.Drawing.Point(20, 288);
             this.paisActor.Name = "paisActor";
-            this.paisActor.Size = new System.Drawing.Size(45, 29);
+            this.paisActor.Size = new System.Drawing.Size(44, 26);
             this.paisActor.TabIndex = 5;
             this.paisActor.Text = "PAÍS:";
             // 
@@ -222,23 +222,23 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bebas Neue", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bebas Neue", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Quicksand", 9.75F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Quicksand", 9.75F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(25, 390);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -314,7 +314,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(154, 60);
             this.button2.TabIndex = 40;
-            this.button2.Text = "Insertar Participacion de Actores";
+            this.button2.Text = "Insertar Participación de Actores";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -325,7 +325,7 @@
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(205)))), ((int)(((byte)(203)))));
             this.label13.Location = new System.Drawing.Point(21, 100);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(89, 19);
+            this.label13.Size = new System.Drawing.Size(88, 18);
             this.label13.TabIndex = 41;
             this.label13.Text = "Datos del actor:";
             // 
@@ -336,7 +336,7 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(234)))));
             this.label11.Location = new System.Drawing.Point(411, 89);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 29);
+            this.label11.Size = new System.Drawing.Size(50, 26);
             this.label11.TabIndex = 42;
             this.label11.Text = "FOTO:";
             // 
@@ -347,7 +347,7 @@
             this.lbPrestamo.ForeColor = System.Drawing.Color.Crimson;
             this.lbPrestamo.Location = new System.Drawing.Point(190, 19);
             this.lbPrestamo.Name = "lbPrestamo";
-            this.lbPrestamo.Size = new System.Drawing.Size(153, 61);
+            this.lbPrestamo.Size = new System.Drawing.Size(150, 56);
             this.lbPrestamo.TabIndex = 61;
             this.lbPrestamo.Text = "Actores";
             this.lbPrestamo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

@@ -19,7 +19,7 @@ namespace ProyectoBDM.Control
         public void showHistMult(MySqlDataAdapter adaptador, DataGridView dgvH, string idUsuario)
         {
             conexion.Open();
-            MySqlCommand comando = new MySqlCommand("SELECT fechaGeneracionMulta, valorMulta, estadoMulta, titulo  FROM  multas M, facturas_prestamos FP, peliculas PL, prestamos P ,  clientes C WHERE M.estadoMulta = 'Inactivo' AND C.idCliente = M.idClientef2 AND C.idCliente = P.idClientef AND M.idPrestamof2 = P.idPrestamo AND P.idPrestamo = FP.idPrestamof AND PL.idPelicula = FP.idPeliculaf  AND C.idCliente= '" + idUsuario + "'; ", conexion);
+            MySqlCommand comando = new MySqlCommand("SELECT fechaGeneracionMulta, valorMulta, estadoMulta, titulo  FROM  multas M, facturas_prestamos FP,peliculas PL, prestamos P, clientes C WHERE M.estadoMulta = 'Inactivo' AND C.idCliente = M.idClientef2 AND C.idCliente = P.idClientef AND M.idPrestamof2 = P.idPrestamo AND P.idPrestamo = FP.idPrestamof AND PL.idPelicula = FP.idPeliculaf  AND C.idCliente = '" + idUsuario + "'; ", conexion);
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);

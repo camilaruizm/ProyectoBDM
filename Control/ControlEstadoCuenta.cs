@@ -16,7 +16,7 @@ namespace ProyectoBDM.Control
     {
      
         MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
-        string idUsuario = "a";
+        
         public void showPeliculaCli(MySqlDataAdapter adaptador, DataGridView dgvP, string idUsuario)
         {
             conexion.Open();
