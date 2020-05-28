@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using ProyectoBDM.Vista;
 
 namespace ProyectoBDM
 {
@@ -107,6 +108,19 @@ namespace ProyectoBDM
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(Abrir_MP);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void Abrir_MP()
+        {
+            Application.Run(new Perfil(idUsern));
         }
     }
 }

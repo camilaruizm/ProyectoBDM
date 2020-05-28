@@ -32,6 +32,7 @@
             this.BtnSolPrestamo = new System.Windows.Forms.Button();
             this.BtnEstadoCuenta = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
+            this.btnPerfil = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LbMenuCliente
@@ -84,7 +85,7 @@
             this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSalir.Font = new System.Drawing.Font("Wingdings 2", 17F, System.Drawing.FontStyle.Bold);
             this.BtnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.BtnSalir.Location = new System.Drawing.Point(496, 0);
+            this.BtnSalir.Location = new System.Drawing.Point(471, 12);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(75, 27);
             this.BtnSalir.TabIndex = 15;
@@ -94,12 +95,23 @@
             this.BtnSalir.MouseLeave += new System.EventHandler(this.BtnSalir_MouseLeave);
             this.BtnSalir.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnSalir_MouseMove);
             // 
+            // btnPerfil
+            // 
+            this.btnPerfil.Location = new System.Drawing.Point(12, 12);
+            this.btnPerfil.Name = "btnPerfil";
+            this.btnPerfil.Size = new System.Drawing.Size(113, 37);
+            this.btnPerfil.TabIndex = 16;
+            this.btnPerfil.Text = "Perfil";
+            this.btnPerfil.UseVisualStyleBackColor = true;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
+            // 
             // MenuClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(571, 357);
+            this.ClientSize = new System.Drawing.Size(566, 357);
+            this.Controls.Add(this.btnPerfil);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnEstadoCuenta);
             this.Controls.Add(this.BtnSolPrestamo);
@@ -119,5 +131,6 @@
         private System.Windows.Forms.Button BtnSolPrestamo;
         private System.Windows.Forms.Button BtnEstadoCuenta;
         private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Button btnPerfil;
     }
 }

@@ -36,7 +36,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -46,17 +45,15 @@
             this.tbNombre2 = new System.Windows.Forms.TextBox();
             this.tbApellido2 = new System.Windows.Forms.TextBox();
             this.tbApellido1 = new System.Windows.Forms.TextBox();
-            this.tbCorreo = new System.Windows.Forms.TextBox();
             this.tbTel2 = new System.Windows.Forms.TextBox();
             this.tbTel1 = new System.Windows.Forms.TextBox();
             this.tbDireccion = new System.Windows.Forms.TextBox();
             this.tbContra = new System.Windows.Forms.TextBox();
             this.tbUsuario = new System.Windows.Forms.TextBox();
-            this.pbFoto = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.btModificarP = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
+            this.dgvIdUSER = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIdUSER)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,6 +81,7 @@
             this.BtnSalir.TabIndex = 88;
             this.BtnSalir.Text = "";
             this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // label2
             // 
@@ -150,17 +148,6 @@
             this.label7.Size = new System.Drawing.Size(85, 29);
             this.label7.TabIndex = 95;
             this.label7.Text = "Dirección:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Bebas Neue", 16F);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(26, 235);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 29);
-            this.label9.TabIndex = 93;
-            this.label9.Text = "Correo:";
             // 
             // label8
             // 
@@ -250,14 +237,6 @@
             this.tbApellido1.Size = new System.Drawing.Size(312, 26);
             this.tbApellido1.TabIndex = 105;
             // 
-            // tbCorreo
-            // 
-            this.tbCorreo.Font = new System.Drawing.Font("Quicksand", 11.25F);
-            this.tbCorreo.Location = new System.Drawing.Point(183, 234);
-            this.tbCorreo.Name = "tbCorreo";
-            this.tbCorreo.Size = new System.Drawing.Size(312, 26);
-            this.tbCorreo.TabIndex = 107;
-            // 
             // tbTel2
             // 
             this.tbTel2.Font = new System.Drawing.Font("Quicksand", 11.25F);
@@ -298,26 +277,6 @@
             this.tbUsuario.Size = new System.Drawing.Size(147, 26);
             this.tbUsuario.TabIndex = 111;
             // 
-            // pbFoto
-            // 
-            this.pbFoto.BackColor = System.Drawing.SystemColors.Window;
-            this.pbFoto.Location = new System.Drawing.Point(358, 308);
-            this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(137, 163);
-            this.pbFoto.TabIndex = 113;
-            this.pbFoto.TabStop = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Bebas Neue", 16F);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(402, 279);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 29);
-            this.label14.TabIndex = 114;
-            this.label14.Text = "Foto:";
-            // 
             // btModificarP
             // 
             this.btModificarP.Font = new System.Drawing.Font("Bebas Neue", 20.25F);
@@ -327,6 +286,7 @@
             this.btModificarP.TabIndex = 115;
             this.btModificarP.Text = "Modificar";
             this.btModificarP.UseVisualStyleBackColor = true;
+            this.btModificarP.Click += new System.EventHandler(this.btModificarP_Click);
             // 
             // button1
             // 
@@ -337,6 +297,15 @@
             this.button1.TabIndex = 116;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dgvIdUSER
+            // 
+            this.dgvIdUSER.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvIdUSER.Location = new System.Drawing.Point(352, 286);
+            this.dgvIdUSER.Name = "dgvIdUSER";
+            this.dgvIdUSER.Size = new System.Drawing.Size(142, 188);
+            this.dgvIdUSER.TabIndex = 117;
             // 
             // Perfil
             // 
@@ -344,16 +313,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(528, 571);
+            this.Controls.Add(this.dgvIdUSER);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btModificarP);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.pbFoto);
             this.Controls.Add(this.tbContra);
             this.Controls.Add(this.tbUsuario);
             this.Controls.Add(this.tbTel2);
             this.Controls.Add(this.tbTel1);
             this.Controls.Add(this.tbDireccion);
-            this.Controls.Add(this.tbCorreo);
             this.Controls.Add(this.tbApellido2);
             this.Controls.Add(this.tbApellido1);
             this.Controls.Add(this.tbNombre2);
@@ -365,7 +332,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -374,8 +340,10 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Perfil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil";
-            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
+            this.Load += new System.EventHandler(this.Perfil_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIdUSER)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -391,7 +359,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -401,15 +368,13 @@
         private System.Windows.Forms.TextBox tbNombre2;
         private System.Windows.Forms.TextBox tbApellido2;
         private System.Windows.Forms.TextBox tbApellido1;
-        private System.Windows.Forms.TextBox tbCorreo;
         private System.Windows.Forms.TextBox tbTel2;
         private System.Windows.Forms.TextBox tbTel1;
         private System.Windows.Forms.TextBox tbDireccion;
         private System.Windows.Forms.TextBox tbContra;
         private System.Windows.Forms.TextBox tbUsuario;
-        private System.Windows.Forms.PictureBox pbFoto;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btModificarP;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvIdUSER;
     }
 }

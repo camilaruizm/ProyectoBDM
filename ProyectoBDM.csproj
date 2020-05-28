@@ -93,6 +93,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\ControlPerfil.cs" />
     <Compile Include="Control\ControlEstadoCuenta.cs" />
     <Compile Include="Control\ControlHistorialCliente.cs" />
     <Compile Include="Vista\actorPelicula.cs">
