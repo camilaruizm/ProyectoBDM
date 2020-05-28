@@ -29,7 +29,15 @@ namespace ProyectoBDM.Vista
 
         private void btModificarP_Click(object sender, EventArgs e)
         {
-
+            tbNombre1.Enabled = true;
+            tbNombre2.Enabled = true;
+            tbApellido1.Enabled = true;
+            tbApellido2.Enabled = true;
+            tbDireccion.Enabled = true;
+            tbTel1.Enabled = true;
+            tbTel2.Enabled = true;
+            tbUsuario.Enabled = true;
+            tbContra.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,6 +62,17 @@ namespace ProyectoBDM.Vista
             {
                 MessageBox.Show("Error");
             }
+
+            tbNombre1.Enabled = false;
+            tbNombre2.Enabled = false;
+            tbApellido1.Enabled = false;
+            tbApellido2.Enabled = false;
+            tbDireccion.Enabled = false;
+            tbTel1.Enabled = false;
+            tbTel2.Enabled = false;
+            tbUsuario.Enabled = false;
+            tbContra.Enabled = false;
+
             //MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
             //conexion.Open();
             //string idUQuery = "SELECT * FROM Clientes WHERE idCliente ='" + idUserPerfil + "';";
@@ -68,6 +87,11 @@ namespace ProyectoBDM.Vista
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
