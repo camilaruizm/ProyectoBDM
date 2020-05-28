@@ -96,8 +96,6 @@ namespace ProyectoBDM
 
         private void btPrestamo_Click(object sender, EventArgs e)
         {
-
-            
             MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
             conexion.Open();
@@ -134,6 +132,9 @@ namespace ProyectoBDM
                 MySqlCommand comando = new MySqlCommand(FPQuery, conexion);
                 comando.ExecuteNonQuery();
                 conexion.Close();
+
+                MessageBox.Show("¡Prestamo solicitado con éxito!");
+                ReniciarPrestamo();
             }
         }
 
@@ -264,6 +265,24 @@ namespace ProyectoBDM
         {
             BtnSalir.BackColor = Color.Gray;
         }
+
+        public void ReniciarPrestamo()
+        {
+            conexion.Open();
+            string allQuery = "SELECT titulo as 'Titulo', fechaEstreno as 'Fecha de Estreno', duracion as 'Duracion', copiasDisponibles as 'Copias', sinopsis as 'Sinopsis' from peliculas;";
+            DataTable tPeliculasAll = new DataTable();
+            MySqlDataAdapter adapterA = new MySqlDataAdapter(allQuery, conexion);
+            adapterA.Fill(tPeliculasAll);
+            dgvPeliculas.DataSource = tPeliculasAll;
+            conexion.Close();
+
+            foreach (DataGridViewRow item in dgvCarrito.Rows)
+            {
+                dgvCarrito.Rows.RemoveAt(0);
+            }
+
+            tbCantidadP.Clear();
+            tbTotal.Clear();
+        }
     }
-    
 }

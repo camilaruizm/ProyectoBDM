@@ -185,5 +185,15 @@ namespace ProyectoBDM.Vista
             //dataGridView1.DataSource = tabla;
             //conexion.Close();
         }
+
+        private void dgvEnPrestamo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
