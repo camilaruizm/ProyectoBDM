@@ -33,33 +33,37 @@ namespace ProyectoBDM
         public void BtnIngresar_Click(object sender, EventArgs e)
         {
             string usuarioCli, contrasenaCli;
-            
+
             usuarioCli = TbUsuarioIniCli.Text;
             contrasenaCli = TbContrasenaIniCli.Text;
             conexion.Open();
-            
-            MySqlCommand InicioSesionCli = new MySqlCommand();           
+            MySqlCommand InicioSesionCli = new MySqlCommand();
             InicioSesionCli.Connection = conexion;
             InicioSesionCli.CommandText = ("select nombreUsuario, contrasena, rol from clientes where nombreUsuario = '" + usuarioCli + "'and contrasena = '" + contrasenaCli + "' and rol = 'Usuario'");
 
             MySqlDataReader leerCli = InicioSesionCli.ExecuteReader();
 
-            
-           /* if (leerCli.Read())
-                {
-                    this.Close();
-                    th = new Thread(opennewform);
-                    th.SetApartmentState(ApartmentState.STA);
-                    th.Start();
-                }*/
+
+            if (leerCli.Read())
+            {
+                //this.Close();
+                //th = new Thread(opennewform);
+                //th.SetApartmentState(ApartmentState.STA);
+                //th.Start();
+            }
             conexion.Close();
 
             conexion.Open();
             string idQuery = "SELECT idCliente from clientes where clientes.nombreUsuario = '" + TbUsuarioIniCli.Text + "' AND clientes.contrasena='" + TbContrasenaIniCli.Text + "';";
-            DataTable idTable = new DataTable();
-            MySqlDataAdapter idAdapter = new MySqlDataAdapter(idQuery, conexion);
+            MySqlCommand comando = new MySqlCommand(idQuery, conexion);
+            MySqlDataAdapter idAdapter = new MySqlDataAdapter();
+            idAdapter.SelectCommand = comando;
 
-            if (idAdapter.GetFillParameters().Length == 0)
+            DataTable idTable = new DataTable();
+
+            int nn = int.Parse(idAdapter.Fill(new DataSet()).ToString());
+            // GetFillParameters().GetLength(0);
+            if (nn == 0)
             {
                 LbIniCliMal.Visible = true;
             }
@@ -70,12 +74,10 @@ namespace ProyectoBDM
                 dataGridView1.DataSource = idTable;
                 idUserinicio = dataGridView1.Rows[0].Cells[0].Value.ToString();
                 MessageBox.Show(idUserinicio);
-                
             }
             conexion.Close();
 
             conexion.Open();
-
             MySqlCommand InicioSesionAdm = new MySqlCommand();
             InicioSesionAdm.Connection = conexion;
             InicioSesionAdm.CommandText = ("select nombreUsuario, contrasena, rol from clientes where nombreUsuario = '" + usuarioCli + "'and contrasena = '" + contrasenaCli + "' and rol = 'Administrador' ");
@@ -90,12 +92,10 @@ namespace ProyectoBDM
                 th.Start();
             }
             else
-                {
-                    LbIniCliMal.Visible = true;
-                }
-
+            {
+                //LbIniCliMal.Visible = true;
+            }
             conexion.Close();
-
         }
 
         public void opennewform2()
