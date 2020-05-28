@@ -17,6 +17,7 @@ namespace ProyectoBDM.Vista
     public partial class consultasAdmin : Form
     {
         ControlConsultasAdmi cca = new ControlConsultasAdmi();
+        Thread th;
         public consultasAdmin()
         {
             InitializeComponent();
@@ -194,6 +195,18 @@ namespace ProyectoBDM.Vista
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(volverMenu);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+        private void volverMenu()
+        {
+            Application.Run(new MenuAdmin());
         }
     }
 }

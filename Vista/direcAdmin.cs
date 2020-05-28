@@ -150,5 +150,10 @@ namespace ProyectoBDM
         {
            
         }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

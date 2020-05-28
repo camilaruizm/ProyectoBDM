@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,6 +51,9 @@
             this.eliminarDirect = new System.Windows.Forms.Button();
             this.idDirector = new System.Windows.Forms.TextBox();
             this.back = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbPrestamo = new System.Windows.Forms.Label();
+            this.BtnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,152 +61,176 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(124, 73);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Bebas Neue", 16F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(25, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.Size = new System.Drawing.Size(127, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "NOMBRE";
+            this.label1.Text = "PRIMER NOMBRE:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(124, 123);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Font = new System.Drawing.Font("Bebas Neue", 16F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(25, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 17);
+            this.label2.Size = new System.Drawing.Size(138, 29);
             this.label2.TabIndex = 1;
-            this.label2.Text = "NOMBRE2";
+            this.label2.Text = "SEGUNDO NOMBRE:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(124, 182);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Font = new System.Drawing.Font("Bebas Neue", 16F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(25, 146);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 17);
+            this.label3.Size = new System.Drawing.Size(134, 29);
             this.label3.TabIndex = 2;
-            this.label3.Text = "APELLIDO";
+            this.label3.Text = "PRIMER APELLIDO:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(124, 236);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Font = new System.Drawing.Font("Bebas Neue", 16F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(25, 176);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 17);
+            this.label4.Size = new System.Drawing.Size(145, 29);
             this.label4.TabIndex = 3;
-            this.label4.Text = "APELLIDO2";
+            this.label4.Text = "SEGUNDO APELLIDO:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(128, 294);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Font = new System.Drawing.Font("Bebas Neue", 16F);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(25, 206);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 17);
+            this.label5.Size = new System.Drawing.Size(69, 29);
             this.label5.TabIndex = 4;
-            this.label5.Text = "CORREO";
+            this.label5.Text = "CORREO:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(132, 354);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Font = new System.Drawing.Font("Bebas Neue", 16F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(25, 236);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 17);
+            this.label6.Size = new System.Drawing.Size(45, 29);
             this.label6.TabIndex = 5;
-            this.label6.Text = "PAÍS";
+            this.label6.Text = "PAÍS:";
             // 
             // nombreDir
             // 
-            this.nombreDir.Location = new System.Drawing.Point(316, 73);
-            this.nombreDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nombreDir.Font = new System.Drawing.Font("Quicksand", 11.25F);
+            this.nombreDir.Location = new System.Drawing.Point(173, 85);
             this.nombreDir.Name = "nombreDir";
-            this.nombreDir.Size = new System.Drawing.Size(132, 22);
+            this.nombreDir.Size = new System.Drawing.Size(100, 26);
             this.nombreDir.TabIndex = 6;
             // 
             // nombreDir2
             // 
-            this.nombreDir2.Location = new System.Drawing.Point(316, 123);
-            this.nombreDir2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nombreDir2.Font = new System.Drawing.Font("Quicksand", 11.25F);
+            this.nombreDir2.Location = new System.Drawing.Point(173, 115);
             this.nombreDir2.Name = "nombreDir2";
-            this.nombreDir2.Size = new System.Drawing.Size(132, 22);
+            this.nombreDir2.Size = new System.Drawing.Size(100, 26);
             this.nombreDir2.TabIndex = 7;
             // 
             // apellidoDir
             // 
-            this.apellidoDir.Location = new System.Drawing.Point(316, 182);
-            this.apellidoDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.apellidoDir.Font = new System.Drawing.Font("Quicksand", 11.25F);
+            this.apellidoDir.Location = new System.Drawing.Point(173, 145);
             this.apellidoDir.Name = "apellidoDir";
-            this.apellidoDir.Size = new System.Drawing.Size(132, 22);
+            this.apellidoDir.Size = new System.Drawing.Size(100, 26);
             this.apellidoDir.TabIndex = 8;
             // 
             // apellidoDir2
             // 
-            this.apellidoDir2.Location = new System.Drawing.Point(316, 236);
-            this.apellidoDir2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.apellidoDir2.Font = new System.Drawing.Font("Quicksand", 11.25F);
+            this.apellidoDir2.Location = new System.Drawing.Point(173, 175);
             this.apellidoDir2.Name = "apellidoDir2";
-            this.apellidoDir2.Size = new System.Drawing.Size(132, 22);
+            this.apellidoDir2.Size = new System.Drawing.Size(100, 26);
             this.apellidoDir2.TabIndex = 9;
             // 
             // correoDir
             // 
-            this.correoDir.Location = new System.Drawing.Point(316, 294);
-            this.correoDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.correoDir.Font = new System.Drawing.Font("Quicksand", 11.25F);
+            this.correoDir.Location = new System.Drawing.Point(173, 205);
             this.correoDir.Name = "correoDir";
-            this.correoDir.Size = new System.Drawing.Size(132, 22);
+            this.correoDir.Size = new System.Drawing.Size(100, 26);
             this.correoDir.TabIndex = 10;
             // 
             // paisDir
             // 
-            this.paisDir.Location = new System.Drawing.Point(316, 354);
-            this.paisDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.paisDir.Font = new System.Drawing.Font("Quicksand", 11.25F);
+            this.paisDir.Location = new System.Drawing.Point(173, 235);
             this.paisDir.Name = "paisDir";
-            this.paisDir.Size = new System.Drawing.Size(132, 22);
+            this.paisDir.Size = new System.Drawing.Size(100, 26);
             this.paisDir.TabIndex = 11;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pictureBox1.Location = new System.Drawing.Point(617, 73);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(370, 107);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(249, 306);
+            this.pictureBox1.Size = new System.Drawing.Size(126, 162);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
             // imageDir
             // 
-            this.imageDir.Location = new System.Drawing.Point(923, 223);
-            this.imageDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imageDir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.imageDir.Font = new System.Drawing.Font("Bebas Neue", 12F);
+            this.imageDir.Location = new System.Drawing.Point(431, 275);
             this.imageDir.Name = "imageDir";
-            this.imageDir.Size = new System.Drawing.Size(100, 28);
+            this.imageDir.Size = new System.Drawing.Size(65, 25);
             this.imageDir.TabIndex = 13;
-            this.imageDir.Text = "Upload";
-            this.imageDir.UseVisualStyleBackColor = true;
+            this.imageDir.Text = "Subir";
+            this.imageDir.UseVisualStyleBackColor = false;
             this.imageDir.Click += new System.EventHandler(this.imageDir_Click);
             // 
             // insertDir
             // 
-            this.insertDir.Location = new System.Drawing.Point(372, 404);
-            this.insertDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.insertDir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.insertDir.Font = new System.Drawing.Font("Bebas Neue", 13F);
+            this.insertDir.Location = new System.Drawing.Point(30, 337);
             this.insertDir.Name = "insertDir";
-            this.insertDir.Size = new System.Drawing.Size(100, 28);
+            this.insertDir.Size = new System.Drawing.Size(80, 30);
             this.insertDir.TabIndex = 14;
             this.insertDir.Text = "INSERTAR";
-            this.insertDir.UseVisualStyleBackColor = true;
+            this.insertDir.UseVisualStyleBackColor = false;
             this.insertDir.Click += new System.EventHandler(this.insertDir_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bebas Neue", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(76, 465);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Quicksand", 9.75F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(30, 373);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(887, 185);
+            this.dataGridView1.Size = new System.Drawing.Size(466, 150);
             this.dataGridView1.TabIndex = 15;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -209,64 +238,108 @@
             // 
             // showDirect
             // 
-            this.showDirect.Location = new System.Drawing.Point(971, 514);
-            this.showDirect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.showDirect.Font = new System.Drawing.Font("Bebas Neue", 13F);
+            this.showDirect.Location = new System.Drawing.Point(336, 529);
             this.showDirect.Name = "showDirect";
-            this.showDirect.Size = new System.Drawing.Size(100, 28);
+            this.showDirect.Size = new System.Drawing.Size(160, 30);
             this.showDirect.TabIndex = 16;
-            this.showDirect.Text = "SHOW";
+            this.showDirect.Text = "MOSTRAR DIRECTORES";
             this.showDirect.UseVisualStyleBackColor = true;
             this.showDirect.Click += new System.EventHandler(this.showDirect_Click);
             // 
             // modificarDirector
             // 
-            this.modificarDirector.Location = new System.Drawing.Point(527, 402);
-            this.modificarDirector.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.modificarDirector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.modificarDirector.Font = new System.Drawing.Font("Bebas Neue", 13F);
+            this.modificarDirector.Location = new System.Drawing.Point(116, 337);
             this.modificarDirector.Name = "modificarDirector";
-            this.modificarDirector.Size = new System.Drawing.Size(100, 28);
+            this.modificarDirector.Size = new System.Drawing.Size(80, 30);
             this.modificarDirector.TabIndex = 17;
             this.modificarDirector.Text = "MODIFICAR";
-            this.modificarDirector.UseVisualStyleBackColor = true;
+            this.modificarDirector.UseVisualStyleBackColor = false;
             this.modificarDirector.Click += new System.EventHandler(this.modificarDirector_Click);
             // 
             // eliminarDirect
             // 
-            this.eliminarDirect.Location = new System.Drawing.Point(673, 401);
-            this.eliminarDirect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.eliminarDirect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.eliminarDirect.Font = new System.Drawing.Font("Bebas Neue", 13F);
+            this.eliminarDirect.Location = new System.Drawing.Point(202, 337);
             this.eliminarDirect.Name = "eliminarDirect";
-            this.eliminarDirect.Size = new System.Drawing.Size(100, 28);
+            this.eliminarDirect.Size = new System.Drawing.Size(80, 30);
             this.eliminarDirect.TabIndex = 18;
             this.eliminarDirect.Text = "ELIMINAR";
-            this.eliminarDirect.UseVisualStyleBackColor = true;
+            this.eliminarDirect.UseVisualStyleBackColor = false;
             this.eliminarDirect.Click += new System.EventHandler(this.eliminarDirect_Click);
             // 
             // idDirector
             // 
             this.idDirector.Enabled = false;
-            this.idDirector.Location = new System.Drawing.Point(316, 22);
-            this.idDirector.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.idDirector.Font = new System.Drawing.Font("Quicksand", 11.25F);
+            this.idDirector.Location = new System.Drawing.Point(173, 267);
             this.idDirector.Name = "idDirector";
-            this.idDirector.Size = new System.Drawing.Size(132, 22);
+            this.idDirector.Size = new System.Drawing.Size(32, 26);
             this.idDirector.TabIndex = 20;
             this.idDirector.Visible = false;
             // 
             // back
             // 
             this.back.Font = new System.Drawing.Font("Wingdings 3", 24.75F);
-            this.back.Location = new System.Drawing.Point(40, 16);
-            this.back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.back.Location = new System.Drawing.Point(471, 572);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(60, 53);
+            this.back.Size = new System.Drawing.Size(46, 46);
             this.back.TabIndex = 21;
             this.back.Text = "";
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Bebas Neue", 16F);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(408, 78);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 29);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "FOTO:";
+            // 
+            // lbPrestamo
+            // 
+            this.lbPrestamo.AutoSize = true;
+            this.lbPrestamo.Font = new System.Drawing.Font("Bebas Neue", 35F);
+            this.lbPrestamo.ForeColor = System.Drawing.Color.Crimson;
+            this.lbPrestamo.Location = new System.Drawing.Point(165, 19);
+            this.lbPrestamo.Name = "lbPrestamo";
+            this.lbPrestamo.Size = new System.Drawing.Size(198, 61);
+            this.lbPrestamo.TabIndex = 63;
+            this.lbPrestamo.Text = "dIRECTORES";
+            this.lbPrestamo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnSalir.Cursor = System.Windows.Forms.Cursors.Default;
+            this.BtnSalir.FlatAppearance.BorderSize = 0;
+            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalir.Font = new System.Drawing.Font("Wingdings 2", 17F, System.Drawing.FontStyle.Bold);
+            this.BtnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.BtnSalir.Location = new System.Drawing.Point(454, 0);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(75, 27);
+            this.BtnSalir.TabIndex = 89;
+            this.BtnSalir.Text = "";
+            this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
             // direcAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 665);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
+            this.ClientSize = new System.Drawing.Size(529, 630);
+            this.Controls.Add(this.BtnSalir);
+            this.Controls.Add(this.lbPrestamo);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.back);
             this.Controls.Add(this.idDirector);
             this.Controls.Add(this.eliminarDirect);
@@ -288,7 +361,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "direcAdmin";
             this.Text = "direcAdmin";
             this.Load += new System.EventHandler(this.direcAdmin_Load);
@@ -322,5 +395,8 @@
         private System.Windows.Forms.Button eliminarDirect;
         private System.Windows.Forms.TextBox idDirector;
         private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbPrestamo;
+        private System.Windows.Forms.Button BtnSalir;
     }
 }

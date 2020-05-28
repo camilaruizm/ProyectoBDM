@@ -53,6 +53,7 @@
             this.btModificarP = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvIdUSER = new System.Windows.Forms.DataGridView();
+            this.back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIdUSER)).BeginInit();
             this.SuspendLayout();
             // 
@@ -306,6 +307,19 @@
             this.dgvIdUSER.Name = "dgvIdUSER";
             this.dgvIdUSER.Size = new System.Drawing.Size(142, 188);
             this.dgvIdUSER.TabIndex = 117;
+            this.dgvIdUSER.Visible = false;
+            // 
+            // back
+            // 
+            this.back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.back.Font = new System.Drawing.Font("Wingdings 3", 24.75F);
+            this.back.Location = new System.Drawing.Point(467, 510);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(49, 49);
+            this.back.TabIndex = 118;
+            this.back.Text = "";
+            this.back.UseVisualStyleBackColor = false;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // Perfil
             // 
@@ -313,6 +327,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(528, 571);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.dgvIdUSER);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btModificarP);
@@ -376,5 +391,6 @@
         private System.Windows.Forms.Button btModificarP;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgvIdUSER;
+        private System.Windows.Forms.Button back;
     }
 }

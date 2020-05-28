@@ -110,15 +110,7 @@ namespace ProyectoBDM
             {
                 MessageBox.Show("!Error al eliminar¡");
             }
-            /*MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
 
-            conexion.Open();
-
-            string Query = "DELETE  FROM GENEROS   WHERE idGenero ='" + idGenero.Text + "'  ";
-            MySqlCommand comando = new MySqlCommand(Query, conexion);
-            comando.ExecuteNonQuery();
-            conexion.Close();
-            MessageBox.Show("!Se ha modificado al director con exito¡");*/
         }
 
         private void back_Click(object sender, EventArgs e)

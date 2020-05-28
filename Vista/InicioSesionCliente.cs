@@ -37,7 +37,6 @@ namespace ProyectoBDM
             usuarioCli = TbUsuarioIniCli.Text;
             contrasenaCli = TbContrasenaIniCli.Text;
            
-
             conexion.Open();
             string idQuery = "SELECT idCliente from clientes where clientes.nombreUsuario = '" + TbUsuarioIniCli.Text + "' AND clientes.contrasena='" + TbContrasenaIniCli.Text + "';";
             MySqlCommand comando = new MySqlCommand(idQuery, conexion);
@@ -47,7 +46,7 @@ namespace ProyectoBDM
             DataTable idTable = new DataTable();
 
             int nn = int.Parse(idAdapter.Fill(new DataSet()).ToString());
-            // GetFillParameters().GetLength(0);
+            
             if (nn == 0)
             {
                 LbIniCliMal.Visible = true;
@@ -58,7 +57,6 @@ namespace ProyectoBDM
 
                 dataGridView1.DataSource = idTable;
                 idUserinicio = dataGridView1.Rows[0].Cells[0].Value.ToString();
-                MessageBox.Show(idUserinicio);
             }
             conexion.Close();
 
@@ -73,18 +71,12 @@ namespace ProyectoBDM
 
             if (leerCli.Read())
             {
-                MessageBox.Show(idUserinicio);
                 this.Close();
                 th = new Thread(opennewform);
                 th.SetApartmentState(ApartmentState.STA);
                 th.Start();
-
             }
             conexion.Close();
-
-
-
-
 
             conexion.Open();
             MySqlCommand InicioSesionAdm = new MySqlCommand();
@@ -102,7 +94,7 @@ namespace ProyectoBDM
             }
             else
             {
-                //LbIniCliMal.Visible = true;
+                LbIniCliMal.Visible = true;
             }
             conexion.Close();
         }
@@ -115,8 +107,6 @@ namespace ProyectoBDM
 
         public void opennewform()
         {
-            //MenuClientes objc = new MenuClientes(idUserinicio);
-            //objc.setIdU(idUserinicio);
             Application.Run(new MenuClientes(idUserinicio)); 
         }
 
@@ -170,16 +160,7 @@ namespace ProyectoBDM
 
         private void button1_Click(object sender, EventArgs e)
         {
-         /*   MySqlConnection conexion = new MySqlConnection("server = localhost; Database = proyectobdm; user = root; password = root;");
-            conexion.Open();
-            string idQuery = "SELECT idCliente from clientes where clientes.nombreUsuario = '" + TbUsuarioIniCli.Text + "'AND clientes.contrasena='" + TbContrasenaIniCli.Text + "';";
-            DataTable idTable = new DataTable();
-            MySqlDataAdapter idAdapter = new MySqlDataAdapter(idQuery, conexion);
-            idAdapter.Fill(idTable);
-            dataGridView1.DataSource = idTable;
 
-            textBox1.Text = dataGridView1.Rows[0].Cells[0].Value.ToString();
-            conexion.Close(); */
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

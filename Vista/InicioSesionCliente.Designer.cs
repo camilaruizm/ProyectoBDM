@@ -37,13 +37,11 @@
             this.LbErrorIniCli = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LbIniCliMal = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.BtnIngresar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +52,7 @@
             this.LbInicioSesion.ForeColor = System.Drawing.Color.Crimson;
             this.LbInicioSesion.Location = new System.Drawing.Point(110, 19);
             this.LbInicioSesion.Name = "LbInicioSesion";
-            this.LbInicioSesion.Size = new System.Drawing.Size(259, 56);
+            this.LbInicioSesion.Size = new System.Drawing.Size(262, 61);
             this.LbInicioSesion.TabIndex = 0;
             this.LbInicioSesion.Text = "Inicio de Sesión";
             this.LbInicioSesion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,7 +86,7 @@
             this.LbMensaje.ForeColor = System.Drawing.Color.White;
             this.LbMensaje.Location = new System.Drawing.Point(295, 176);
             this.LbMensaje.Name = "LbMensaje";
-            this.LbMensaje.Size = new System.Drawing.Size(179, 24);
+            this.LbMensaje.Size = new System.Drawing.Size(180, 24);
             this.LbMensaje.TabIndex = 6;
             this.LbMensaje.Text = "Aún No Tienes Cuenta?";
             // 
@@ -99,7 +97,7 @@
             this.LbMensaje2.ForeColor = System.Drawing.Color.White;
             this.LbMensaje2.Location = new System.Drawing.Point(295, 201);
             this.LbMensaje2.Name = "LbMensaje2";
-            this.LbMensaje2.Size = new System.Drawing.Size(85, 24);
+            this.LbMensaje2.Size = new System.Drawing.Size(86, 24);
             this.LbMensaje2.TabIndex = 7;
             this.LbMensaje2.Text = "Registrate";
             this.LbMensaje2.Click += new System.EventHandler(this.LbMensaje2_Click);
@@ -139,32 +137,14 @@
             // LbIniCliMal
             // 
             this.LbIniCliMal.AutoSize = true;
-            this.LbIniCliMal.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbIniCliMal.Font = new System.Drawing.Font("Bebas Neue", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbIniCliMal.ForeColor = System.Drawing.Color.Crimson;
-            this.LbIniCliMal.Location = new System.Drawing.Point(27, 183);
+            this.LbIniCliMal.Location = new System.Drawing.Point(39, 192);
             this.LbIniCliMal.Name = "LbIniCliMal";
-            this.LbIniCliMal.Size = new System.Drawing.Size(247, 24);
+            this.LbIniCliMal.Size = new System.Drawing.Size(235, 25);
             this.LbIniCliMal.TabIndex = 11;
             this.LbIniCliMal.Text = "Usuario o contraseña incorrectos";
             this.LbIniCliMal.Visible = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ProyectoBDM.Properties.Resources.ContrasenaCli;
-            this.pictureBox2.Location = new System.Drawing.Point(31, 135);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ProyectoBDM.Properties.Resources.UsuarioCli;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 81);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // BtnSalir
             // 
@@ -211,16 +191,40 @@
             this.BtnIngresar.MouseLeave += new System.EventHandler(this.BtnIngresar_MouseLeave);
             this.BtnIngresar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BtnIngresar_MouseMove);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Webdings", 28F);
+            this.label2.ForeColor = System.Drawing.Color.Snow;
+            this.label2.Location = new System.Drawing.Point(12, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 40);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Webdings", 28F);
+            this.label3.ForeColor = System.Drawing.Color.Snow;
+            this.label3.Location = new System.Drawing.Point(11, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 40);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // InicioSesionCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(486, 244);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnSalir);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LbIniCliMal);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LbErrorIniCli);
@@ -235,8 +239,6 @@
             this.Name = "InicioSesionCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.InicioSesionCliente_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -253,11 +255,11 @@
         private System.Windows.Forms.Label LbErrorIniCli;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LbIniCliMal;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button BtnSalir;
         public System.Windows.Forms.Label LbMensaje2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button BtnIngresar;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

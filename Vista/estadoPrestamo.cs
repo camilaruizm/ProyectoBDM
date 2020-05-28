@@ -19,6 +19,7 @@ namespace ProyectoBDM.Vista
         public string idP;
         public int selectedRow;
         public string idC;
+        Thread th;
         public estadoPrestamo()
         {
             InitializeComponent();
@@ -139,6 +140,18 @@ namespace ProyectoBDM.Vista
             adapterA.Fill(tAll);
             dgvEstado.DataSource = tAll;
             conexion.Close();
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(volverMenu);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+        private void volverMenu()
+        {
+            Application.Run(new MenuAdmin());
         }
     }
 }
